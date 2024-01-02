@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "foundation:block/oak_support",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "foundation:block/oak_support"
+    },
+    "facing=south": {
+      "model": "foundation:block/oak_support",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "foundation:block/oak_support",
+      "y": 270
+    }
+  }
+}

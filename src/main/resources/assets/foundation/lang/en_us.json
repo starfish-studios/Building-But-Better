@@ -1,0 +1,13 @@
+{
+  "itemGroup.foundation.tab": "Foundation",
+
+  "block.foundation.cobblestone_layer": "Cobblestone Layer",
+  "block.foundation.iron_fence": "Iron Fence",
+
+  "block.foundation.oak_support": "Oak Support",
+
+  "item.foundation.wrench": "Wrench",
+  "item.foundation.wrench.empty": "%s has no properties",
+  "item.foundation.wrench.select": "selected \"%s\" (%s)",
+  "item.foundation.wrench.update": "\"%s\" to %s"
+}

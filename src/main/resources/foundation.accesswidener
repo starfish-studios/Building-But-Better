@@ -1,0 +1,2 @@
+accessWidener   v2  named
+accessible method net/minecraft/world/level/block/WallBlock updateShape (Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;ZZZZ)Lnet/minecraft/world/level/block/state/BlockState;

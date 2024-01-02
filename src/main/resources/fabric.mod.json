@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "foundation",
+	"version": "${version}",
+	"name": "Foundation",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"accessWidener" : "foundation.accesswidener",
+	"authors": [
+		"Starfish Studios"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/nomad",
+		"issues": "https://github.com/starfish-studios/Foundation/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/foundation/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.starfish_studios.foundation.Foundation"
+		],
+		"client": [
+			"com.starfish_studios.foundation.FoundationClient"
+		]
+	},
+	"mixins": [
+		"foundation.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"fabric-api": "*",
+		"minecraft": "~1.20.1",
+		"java": ">=17"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
