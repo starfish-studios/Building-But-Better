@@ -1,0 +1,7 @@
+{
+    "parent": "foundation:block/template/balustrade_side2",
+    "textures": {
+        "particle": "minecraft:block/mangrove_planks",
+        "texture": "foundation:block/balustrade/mangrove"
+    }
+}

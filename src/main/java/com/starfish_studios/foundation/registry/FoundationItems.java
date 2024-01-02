@@ -19,8 +19,18 @@ public class FoundationItems {
 
 
     public static final Item OAK_SUPPORT = register("oak_support", new BlockItem(FoundationBlocks.OAK_SUPPORT, new FabricItemSettings()));
-
     public static final Item OAK_BEAM = register("oak_beam", new BlockItem(FoundationBlocks.OAK_BEAM, new FabricItemSettings()));
+
+
+    public static final Item OAK_BALUSTRADE = register("oak_balustrade", new BlockItem(FoundationBlocks.OAK_BALUSTRADE, new FabricItemSettings()));
+    public static final Item SPRUCE_BALUSTRADE = register("spruce_balustrade", new BlockItem(FoundationBlocks.SPRUCE_BALUSTRADE, new FabricItemSettings()));
+    public static final Item BIRCH_BALUSTRADE = register("birch_balustrade", new BlockItem(FoundationBlocks.BIRCH_BALUSTRADE, new FabricItemSettings()));
+    public static final Item JUNGLE_BALUSTRADE = register("jungle_balustrade", new BlockItem(FoundationBlocks.JUNGLE_BALUSTRADE, new FabricItemSettings()));
+    public static final Item ACACIA_BALUSTRADE = register("acacia_balustrade", new BlockItem(FoundationBlocks.ACACIA_BALUSTRADE, new FabricItemSettings()));
+    public static final Item DARK_OAK_BALUSTRADE = register("dark_oak_balustrade", new BlockItem(FoundationBlocks.DARK_OAK_BALUSTRADE, new FabricItemSettings()));
+    public static final Item CRIMSON_BALUSTRADE = register("crimson_balustrade", new BlockItem(FoundationBlocks.CRIMSON_BALUSTRADE, new FabricItemSettings()));
+    public static final Item WARPED_BALUSTRADE = register("warped_balustrade", new BlockItem(FoundationBlocks.WARPED_BALUSTRADE, new FabricItemSettings()));
+
 
     public static final Item STONE_BALUSTRADE = register("stone_balustrade", new BlockItem(FoundationBlocks.STONE_BALUSTRADE, new FabricItemSettings()));
     public static final Item STONE_MOULDING = register("stone_moulding", new BlockItem(FoundationBlocks.STONE_MOULDING, new FabricItemSettings()));

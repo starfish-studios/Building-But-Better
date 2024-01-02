@@ -1,0 +1,6 @@
+{
+    "parent": "foundation:block/template/balustrade_inventory",
+    "textures": {
+        "texture": "foundation:block/balustrade/mangrove"
+    }
+}

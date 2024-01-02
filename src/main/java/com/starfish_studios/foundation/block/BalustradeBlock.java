@@ -1,5 +1,6 @@
 package com.starfish_studios.foundation.block;
 
+import com.starfish_studios.foundation.registry.FoundationBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;

@@ -23,8 +23,16 @@ public class FoundationCreativeModeTab {
 
 
         output.accept(OAK_SUPPORT);
-
         output.accept(OAK_BEAM);
+
+        output.accept(OAK_BALUSTRADE);
+        output.accept(SPRUCE_BALUSTRADE);
+        output.accept(BIRCH_BALUSTRADE);
+        output.accept(JUNGLE_BALUSTRADE);
+        output.accept(ACACIA_BALUSTRADE);
+        output.accept(DARK_OAK_BALUSTRADE);
+        output.accept(CRIMSON_BALUSTRADE);
+        output.accept(WARPED_BALUSTRADE);
 
         }).build()
     );

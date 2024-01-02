@@ -1,0 +1,7 @@
+{
+    "parent": "foundation:block/template/balustrade_post",
+    "textures": {
+        "particle": "minecraft:block/spruce_planks",
+        "texture": "foundation:block/balustrade/spruce"
+    }
+}

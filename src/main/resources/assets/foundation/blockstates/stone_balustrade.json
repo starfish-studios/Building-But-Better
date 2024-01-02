@@ -2,12 +2,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "foundation:block/stone_balustrade_post",
-
-        "type=none,axis=y": {"model": "hearth_and_home:block/stone_balustrade_post"},
-        "type=top,axis=y": {"model": "hearth_and_home:block/stone_balustrade_top"},
-        "type=middle,axis=y": {"model": "hearth_and_home:block/stone_balustrade_middle"},
-        "type=bottom,axis=y": {"model": "hearth_and_home:block/stone_balustrade_bottom"}
+        "model": "foundation:block/stone_balustrade_post"
       },
       "when": {
         "up": "true"
@@ -15,7 +10,7 @@
     },
     {
       "apply": {
-        "model": "foundation:block/stone_balustrade_side2",
+        "model": "foundation:block/stone_balustrade_side",
         "uvlock": true
       },
       "when": {
@@ -34,7 +29,7 @@
     },
     {
       "apply": {
-        "model": "foundation:block/stone_balustrade_side",
+        "model": "foundation:block/stone_balustrade_side2",
         "uvlock": false,
         "y": 180
       },
@@ -54,7 +49,7 @@
     },
     {
       "apply": {
-        "model": "foundation:block/stone_balustrade_side_tall",
+        "model": "foundation:block/stone_balustrade_side",
         "uvlock": true
       },
       "when": {
@@ -63,7 +58,7 @@
     },
     {
       "apply": {
-        "model": "foundation:block/stone_balustrade_side_tall",
+        "model": "foundation:block/stone_balustrade_side",
         "uvlock": false,
         "y": 90
       },
@@ -73,7 +68,7 @@
     },
     {
       "apply": {
-        "model": "foundation:block/stone_balustrade_side_tall",
+        "model": "foundation:block/stone_balustrade_side",
         "uvlock": false,
         "y": 180
       },
@@ -83,7 +78,7 @@
     },
     {
       "apply": {
-        "model": "foundation:block/stone_balustrade_side_tall",
+        "model": "foundation:block/stone_balustrade_side",
         "uvlock": false,
         "y": 270
       },

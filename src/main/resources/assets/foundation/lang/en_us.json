@@ -6,6 +6,15 @@
 
   "block.foundation.oak_support": "Oak Support",
 
+  "block.foundation.oak_balustrade": "Oak Balustrade",
+  "block.foundation.spruce_balustrade": "Spruce Balustrade",
+  "block.foundation.birch_balustrade": "Birch Balustrade",
+  "block.foundation.jungle_balustrade": "Jungle Balustrade",
+  "block.foundation.acacia_balustrade": "Acacia Balustrade",
+  "block.foundation.dark_oak_balustrade": "Dark Oak Balustrade",
+  "block.foundation.crimson_balustrade": "Crimson Balustrade",
+  "block.foundation.warped_balustrade": "Warped Balustrade",
+
   "item.foundation.wrench": "Wrench",
   "item.foundation.wrench.empty": "%s has no properties",
   "item.foundation.wrench.select": "selected \"%s\" (%s)",
