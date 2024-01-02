@@ -8,6 +8,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class FoundationBlocks {
 
@@ -22,6 +24,7 @@ public class FoundationBlocks {
     public static final Block OAK_BEAM = register("oak_beam", new BeamBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
 
     public static final Block STONE_BALUSTRADE = register("stone_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.STONE))));
+    public static final Block STONE_MOULDING = register("stone_moulding", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
 
     private static Block register(String id, Block block) {

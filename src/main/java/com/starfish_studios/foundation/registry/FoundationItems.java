@@ -23,6 +23,7 @@ public class FoundationItems {
     public static final Item OAK_BEAM = register("oak_beam", new BlockItem(FoundationBlocks.OAK_BEAM, new FabricItemSettings()));
 
     public static final Item STONE_BALUSTRADE = register("stone_balustrade", new BlockItem(FoundationBlocks.STONE_BALUSTRADE, new FabricItemSettings()));
+    public static final Item STONE_MOULDING = register("stone_moulding", new BlockItem(FoundationBlocks.STONE_MOULDING, new FabricItemSettings()));
 
     public static final Item WRENCH = register("wrench", new WrenchItem(new FabricItemSettings().maxCount(1)));
 

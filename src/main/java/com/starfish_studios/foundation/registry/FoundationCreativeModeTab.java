@@ -19,6 +19,7 @@ public class FoundationCreativeModeTab {
         output.accept(WRENCH);
         output.accept(IRON_FENCE);
         output.accept(STONE_BALUSTRADE);
+        output.accept(STONE_MOULDING);
 
 
         output.accept(OAK_SUPPORT);
