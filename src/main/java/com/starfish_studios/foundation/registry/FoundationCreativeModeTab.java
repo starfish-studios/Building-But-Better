@@ -34,6 +34,8 @@ public class FoundationCreativeModeTab {
         output.accept(CRIMSON_BALUSTRADE);
         output.accept(WARPED_BALUSTRADE);
 
+        output.accept(BIG_OAK_DOOR);
+
         }).build()
     );
 

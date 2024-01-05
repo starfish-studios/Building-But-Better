@@ -1,6 +1,8 @@
 package com.starfish_studios.foundation.registry;
 
 import com.starfish_studios.foundation.Foundation;
+import com.starfish_studios.foundation.block.BigDoorBlock;
+import com.starfish_studios.foundation.item.BigDoorItem;
 import com.starfish_studios.foundation.item.WrenchItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.core.Registry;
@@ -37,6 +39,7 @@ public class FoundationItems {
 
     public static final Item WRENCH = register("wrench", new WrenchItem(new FabricItemSettings().maxCount(1)));
 
+    public static final Item BIG_OAK_DOOR = register("big_oak_door", new BigDoorItem(FoundationBlocks.BIG_OAK_DOOR, new FabricItemSettings()));
 
 
     private static Item register(String id, Item item) {

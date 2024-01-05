@@ -36,6 +36,8 @@ public class FoundationBlocks {
     public static final Block STONE_BALUSTRADE = register("stone_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.STONE))));
     public static final Block STONE_MOULDING = register("stone_moulding", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
+    public static final Block BIG_OAK_DOOR = register("big_oak_door", new BigDoorBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
+
 
     private static Block register(String id, Block block) {
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(Foundation.MOD_ID, id), block);
