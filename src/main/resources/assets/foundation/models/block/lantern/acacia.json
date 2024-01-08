@@ -1,0 +1,7 @@
+{
+    "parent": "foundation:block/template/wooden_lantern",
+    "textures": {
+        "particle": "minecraft:block/acacia_planks",
+        "texture": "foundation:block/lantern/acacia"
+    }
+}

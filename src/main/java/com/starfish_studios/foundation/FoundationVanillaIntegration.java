@@ -26,7 +26,8 @@ public class FoundationVanillaIntegration {
 
         private static void registerBlockRenderLayers() {
             BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(),
-                    FoundationBlocks.IRON_FENCE
+                    FoundationBlocks.IRON_FENCE,
+                    FoundationBlocks.BIG_OAK_DOOR
             );
         }
     }

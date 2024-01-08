@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "hanging=false": {
+            "model": "foundation:block/lantern/spruce"
+        },
+        "hanging=true": {
+            "model": "foundation:block/lantern/spruce"
+        }
+    }
+}

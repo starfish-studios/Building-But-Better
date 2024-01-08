@@ -1,0 +1,21 @@
+{
+    "group": "foundation/lanterns",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "_",
+        "T",
+        "_"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:mangrove_slab"
+        },
+        "T": {
+            "item": "minecraft:torch"
+        }
+    },
+    "result": {
+        "item": "foundation:mangrove_lantern",
+        "count": 1
+    }
+}

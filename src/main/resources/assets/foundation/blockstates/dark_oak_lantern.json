@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "hanging=false": {
+            "model": "foundation:block/lantern/dark_oak"
+        },
+        "hanging=true": {
+            "model": "foundation:block/lantern/dark_oak"
+        }
+    }
+}

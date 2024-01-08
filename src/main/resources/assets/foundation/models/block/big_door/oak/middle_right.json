@@ -1,0 +1,6 @@
+{
+  "parent": "foundation:block/template/door_middle_right",
+  "textures": {
+    "middle": "foundation:block/big_door/oak_middle"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "group": "foundation/lanterns",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "_",
+        "T",
+        "_"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:bamboo_slab"
+        },
+        "T": {
+            "item": "minecraft:torch"
+        }
+    },
+    "result": {
+        "item": "foundation:bamboo_lantern",
+        "count": 1
+    }
+}

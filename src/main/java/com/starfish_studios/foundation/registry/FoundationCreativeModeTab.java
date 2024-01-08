@@ -14,16 +14,39 @@ public class FoundationCreativeModeTab {
 
     @SuppressWarnings("unused")
     public static final CreativeModeTab ITEM_GROUP = register("item_group", FabricItemGroup.builder().icon(FOUNDATION::getDefaultInstance).title(Component.translatable("itemGroup.foundation.tab")).displayItems((featureFlagSet, output) -> {
+        output.accept(OAK_LANTERN);
+        output.accept(SPRUCE_LANTERN);
+        output.accept(BIRCH_LANTERN);
+        output.accept(JUNGLE_LANTERN);
+        output.accept(ACACIA_LANTERN);
+        output.accept(DARK_OAK_LANTERN);
+        output.accept(MANGROVE_LANTERN);
+        output.accept(CHERRY_LANTERN);
+        output.accept(BAMBOO_LANTERN);
+        output.accept(CRIMSON_LANTERN);
+        output.accept(WARPED_LANTERN);
 
-        output.accept(COBBLESTONE_LAYER);
+        output.accept(OAK_TRIM);
+        output.accept(SPRUCE_TRIM);
+        output.accept(BIRCH_TRIM);
+        output.accept(JUNGLE_TRIM);
+        output.accept(ACACIA_TRIM);
+        output.accept(DARK_OAK_TRIM);
+        output.accept(MANGROVE_TRIM);
+        output.accept(CHERRY_TRIM);
+        output.accept(BAMBOO_TRIM);
+        output.accept(CRIMSON_TRIM);
+        output.accept(WARPED_TRIM);
+
+        // output.accept(COBBLESTONE_LAYER);
         output.accept(WRENCH);
         output.accept(IRON_FENCE);
         output.accept(STONE_BALUSTRADE);
         output.accept(STONE_MOULDING);
 
 
-        output.accept(OAK_SUPPORT);
-        output.accept(OAK_BEAM);
+        // output.accept(OAK_SUPPORT);
+        // output.accept(OAK_BEAM);
 
         output.accept(OAK_BALUSTRADE);
         output.accept(SPRUCE_BALUSTRADE);
@@ -31,6 +54,9 @@ public class FoundationCreativeModeTab {
         output.accept(JUNGLE_BALUSTRADE);
         output.accept(ACACIA_BALUSTRADE);
         output.accept(DARK_OAK_BALUSTRADE);
+        output.accept(MANGROVE_BALUSTRADE);
+        output.accept(CHERRY_BALUSTRADE);
+        output.accept(BAMBOO_BALUSTRADE);
         output.accept(CRIMSON_BALUSTRADE);
         output.accept(WARPED_BALUSTRADE);
 

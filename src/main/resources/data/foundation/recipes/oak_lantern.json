@@ -1,0 +1,21 @@
+{
+  "group": "foundation/lanterns",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "_",
+    "T",
+    "_"
+  ],
+  "key": {
+    "_": {
+      "item": "minecraft:oak_slab"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "item": "foundation:oak_lantern",
+    "count": 1
+  }
+}
