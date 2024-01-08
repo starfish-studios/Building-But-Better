@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "foundation:block/tiki_torch_bottom"
+    },
+    "half=upper": {
+      "model": "foundation:block/tiki_torch_top"
+    }
+  }
+}

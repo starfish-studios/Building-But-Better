@@ -14,6 +14,8 @@ public class FoundationCreativeModeTab {
 
     @SuppressWarnings("unused")
     public static final CreativeModeTab ITEM_GROUP = register("item_group", FabricItemGroup.builder().icon(FOUNDATION::getDefaultInstance).title(Component.translatable("itemGroup.foundation.tab")).displayItems((featureFlagSet, output) -> {
+
+        output.accept(TIKI_TORCH);
         output.accept(OAK_LANTERN);
         output.accept(SPRUCE_LANTERN);
         output.accept(BIRCH_LANTERN);
