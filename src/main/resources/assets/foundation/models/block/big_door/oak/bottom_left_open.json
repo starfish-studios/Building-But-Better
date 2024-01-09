@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/door_bottom_left_open",
   "textures": {
-    "bottom": "minecraft:block/oak_door_bottom",
-    "top": "minecraft:block/oak_door_top"
+    "bottom": "foundation:block/big_door/oak_bottom",
+    "top": "foundation:block/big_door/oak_top"
   }
 }
