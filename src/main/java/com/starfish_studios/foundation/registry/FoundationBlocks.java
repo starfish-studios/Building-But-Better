@@ -7,15 +7,14 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DoublePlantBlock;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.PushReaction;
 
 public class FoundationBlocks {
+
+    public static final Block ROPE = register("rope", new ChainBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).forceSolidOn().strength(1.0F, 1.0F).sound(SoundType.WOOL).noOcclusion()));
 
     public static final Block TIKI_TORCH = register("tiki_torch", new TikiTorchBlock(FabricBlockSettings.copy((Blocks.TORCH)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F), ParticleTypes.FLAME));
 
@@ -73,6 +72,7 @@ public class FoundationBlocks {
 
 
     private static Block register(String id, Block block) {
+        System.out.println(Foundation.MOD_ID + ":" + id);
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(Foundation.MOD_ID, id), block);
     }
 }

@@ -28,7 +28,8 @@ public class FoundationVanillaIntegration {
             BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(),
                     FoundationBlocks.TIKI_TORCH,
                     FoundationBlocks.IRON_FENCE,
-                    FoundationBlocks.BIG_OAK_DOOR
+                    FoundationBlocks.BIG_OAK_DOOR,
+                    FoundationBlocks.ROPE
             );
         }
     }
