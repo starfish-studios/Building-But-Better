@@ -11,7 +11,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "foundation:dark_oak_lantern"
+                    "name": "foundation:big_oak_door"
                 }
             ],
             "rolls": 1.0
