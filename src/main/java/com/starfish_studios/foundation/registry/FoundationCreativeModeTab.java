@@ -15,15 +15,17 @@ public class FoundationCreativeModeTab {
     @SuppressWarnings("unused")
     public static final CreativeModeTab ITEM_GROUP = register("item_group", FabricItemGroup.builder().icon(FOUNDATION::getDefaultInstance).title(Component.translatable("itemGroup.foundation.tab")).displayItems((featureFlagSet, output) -> {
 
+        output.accept(POLISHED_STONE);
+        output.accept(POLISHED_STONE_STAIRS);
+        output.accept(POLISHED_STONE_SLAB);
+        output.accept(STONE_TILES);
+        output.accept(STONE_FENCE);
+        output.accept(STONE_MOULDING);
 
         output.accept(BRAZIER);
-        output.accept(STONE_FENCE);
-        output.accept(STONE_TILES);
-        output.accept(OAK_BRANCH);
         output.accept(URN);
         output.accept(ROPE);
 
-        output.accept(TIKI_TORCH);
         output.accept(OAK_LANTERN);
         output.accept(SPRUCE_LANTERN);
         output.accept(BIRCH_LANTERN);
@@ -48,27 +50,8 @@ public class FoundationCreativeModeTab {
         output.accept(CRIMSON_TRIM);
         output.accept(WARPED_TRIM);
 
-        // output.accept(COBBLESTONE_LAYER);
         output.accept(WRENCH);
         output.accept(IRON_FENCE);
-        output.accept(STONE_BALUSTRADE);
-        output.accept(STONE_MOULDING);
-
-
-        // output.accept(OAK_SUPPORT);
-        // output.accept(OAK_BEAM);
-
-        output.accept(OAK_BALUSTRADE);
-        output.accept(SPRUCE_BALUSTRADE);
-        output.accept(BIRCH_BALUSTRADE);
-        output.accept(JUNGLE_BALUSTRADE);
-        output.accept(ACACIA_BALUSTRADE);
-        output.accept(DARK_OAK_BALUSTRADE);
-        output.accept(MANGROVE_BALUSTRADE);
-        output.accept(CHERRY_BALUSTRADE);
-        output.accept(BAMBOO_BALUSTRADE);
-        output.accept(CRIMSON_BALUSTRADE);
-        output.accept(WARPED_BALUSTRADE);
 
         output.accept(BIG_OAK_DOOR);
 

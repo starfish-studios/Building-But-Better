@@ -1,7 +1,0 @@
-{
-    "parent": "foundation:block/template/balustrade_side2",
-    "textures": {
-        "particle": "minecraft:block/spruce_planks",
-        "texture": "foundation:block/balustrade/spruce"
-    }
-}
