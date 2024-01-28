@@ -29,7 +29,9 @@ public class FoundationVanillaIntegration {
                     FoundationBlocks.TIKI_TORCH,
                     FoundationBlocks.IRON_FENCE,
                     FoundationBlocks.BIG_OAK_DOOR,
-                    FoundationBlocks.ROPE
+                    FoundationBlocks.ROPE,
+                    FoundationBlocks.BRAZIER,
+                    FoundationBlocks.URN
             );
         }
     }

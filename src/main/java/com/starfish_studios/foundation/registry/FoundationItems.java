@@ -14,6 +14,11 @@ import net.minecraft.world.item.Rarity;
 
 public class FoundationItems {
 
+    public static final Item BRAZIER = register("brazier", new BlockItem(FoundationBlocks.BRAZIER, new FabricItemSettings()));
+    public static final Item STONE_FENCE = register("stone_fence", new BlockItem(FoundationBlocks.STONE_FENCE, new FabricItemSettings()));
+    public static final Item STONE_TILES = register("stone_tiles", new BlockItem(FoundationBlocks.STONE_TILES, new FabricItemSettings()));
+    public static final Item OAK_BRANCH = register("oak_branch", new BlockItem(FoundationBlocks.OAK_BRANCH, new FabricItemSettings()));
+    public static final Item URN = register("urn", new BlockItem(FoundationBlocks.URN, new FabricItemSettings()));
     public static final Item ROPE = register("rope", new BlockItem(FoundationBlocks.ROPE, new FabricItemSettings()));
 
     public static final Item TIKI_TORCH = register("tiki_torch", new BlockItem(FoundationBlocks.TIKI_TORCH, new FabricItemSettings()));

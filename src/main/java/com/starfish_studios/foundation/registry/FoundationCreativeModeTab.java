@@ -16,6 +16,11 @@ public class FoundationCreativeModeTab {
     public static final CreativeModeTab ITEM_GROUP = register("item_group", FabricItemGroup.builder().icon(FOUNDATION::getDefaultInstance).title(Component.translatable("itemGroup.foundation.tab")).displayItems((featureFlagSet, output) -> {
 
 
+        output.accept(BRAZIER);
+        output.accept(STONE_FENCE);
+        output.accept(STONE_TILES);
+        output.accept(OAK_BRANCH);
+        output.accept(URN);
         output.accept(ROPE);
 
         output.accept(TIKI_TORCH);

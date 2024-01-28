@@ -12,8 +12,18 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.PushReaction;
 
+import static net.minecraft.world.level.block.Blocks.litBlockEmission;
+
 public class FoundationBlocks {
 
+    public static final Block BRAZIER = register("brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(15)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
+
+    public static final Block STONE_FENCE = register("stone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.STONE)).noOcclusion()));
+    public static final Block STONE_TILES = register("stone_tiles", new Block(FabricBlockSettings.copy((Blocks.STONE_BRICKS))));
+
+    public static final Block OAK_BRANCH = register("oak_branch", new BranchBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
+
+    public static final Block URN = register("urn", new Block(FabricBlockSettings.copy((Blocks.STONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final Block ROPE = register("rope", new ChainBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).forceSolidOn().strength(0.1F).sound(SoundType.WOOL).noOcclusion()));
 
     public static final Block TIKI_TORCH = register("tiki_torch", new TikiTorchBlock(FabricBlockSettings.copy((Blocks.TORCH)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F), ParticleTypes.FLAME));
