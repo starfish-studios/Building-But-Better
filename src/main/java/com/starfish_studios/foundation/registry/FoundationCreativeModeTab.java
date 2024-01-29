@@ -18,12 +18,23 @@ public class FoundationCreativeModeTab {
         output.accept(POLISHED_STONE);
         output.accept(POLISHED_STONE_STAIRS);
         output.accept(POLISHED_STONE_SLAB);
+
         output.accept(STONE_TILES);
+        output.accept(STONE_TILE_STAIRS);
+        output.accept(STONE_TILE_SLAB);
+
+
+
         output.accept(STONE_FENCE);
         output.accept(STONE_MOULDING);
 
         output.accept(BRAZIER);
         output.accept(URN);
+
+
+        output.accept(OAK_PLATFORM);
+
+
         output.accept(ROPE);
 
         output.accept(OAK_LANTERN);
