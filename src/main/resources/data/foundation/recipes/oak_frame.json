@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "___",
+    "/ /",
+    "___"
+  ],
+  "key": {
+    "_": {
+      "item": "minecraft:oak_slab"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "foundation:oak_frame",
+    "count": 12
+  }
+}

@@ -15,6 +15,8 @@ public interface FoundationTags {
     TagKey<Block> STONE_BALUSTRADES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "stone_balustrades"));
 
     TagKey<Block> STONE_FENCES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "stone_fences"));
+    TagKey<Block> WOODEN_BLOCKS = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "wooden_blocks"));
+    TagKey<Block> WOODEN_FRAMES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "wooden_frames"));
 
     // endregion
 

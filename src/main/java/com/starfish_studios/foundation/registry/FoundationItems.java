@@ -28,6 +28,8 @@ public class FoundationItems {
 
     public static final Item OAK_PLATFORM = register("oak_platform", new BlockItem(FoundationBlocks.OAK_PLATFORM, new FabricItemSettings()));
 
+    public static final Item OAK_FRAME = register("oak_frame", new BlockItem(FoundationBlocks.OAK_FRAME, new FabricItemSettings()));
+
 
     public static final Item ROPE = register("rope", new BlockItem(FoundationBlocks.ROPE, new FabricItemSettings()));
 

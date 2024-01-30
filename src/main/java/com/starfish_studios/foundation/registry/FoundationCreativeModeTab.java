@@ -34,6 +34,8 @@ public class FoundationCreativeModeTab {
 
         output.accept(OAK_PLATFORM);
 
+        output.accept(OAK_FRAME);
+
 
         output.accept(ROPE);
 

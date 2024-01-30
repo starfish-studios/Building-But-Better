@@ -27,6 +27,7 @@ public class FoundationBlocks {
     public static final Block OAK_PLATFORM = register("oak_platform", new PlatformBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
 
 
+    public static final Block OAK_FRAME = register("oak_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion().noCollission()));
 
     public static final Block BRAZIER = register("brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(15)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
 
