@@ -8,6 +8,7 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -52,6 +53,14 @@ public class BrazierBlock extends Block implements SimpleWaterloggedBlock {
 
     public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
         ItemStack itemStack = player.getItemInHand(interactionHand);
+        if (itemStack.is(ItemTags.SHOVELS)) {
+            if (blockState.getValue(LIT)) {
+                dowse(player, level, blockPos, blockState);
+                level.setBlock(blockPos, blockState.setValue(LIT, false), 11);
+                return InteractionResult.SUCCESS;
+            }
+        }
+
         if(itemStack.getItem() == Items.FLINT_AND_STEEL && !blockState.getValue(LIT)) {
             itemStack.hurtAndBreak(1, player, (playerEntity) -> { playerEntity.broadcastBreakEvent(interactionHand); });
             level.playSound(null, blockPos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS, 1.0F, level.random.nextFloat() * 0.4F + 0.8F);
