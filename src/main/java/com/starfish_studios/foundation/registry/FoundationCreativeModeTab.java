@@ -32,10 +32,33 @@ public class FoundationCreativeModeTab {
         output.accept(URN);
 
 
-        output.accept(OAK_PLATFORM);
+        output.accept(OAK_PALLET);
+        output.accept(SPRUCE_PALLET);
+        output.accept(BIRCH_PALLET);
+        output.accept(JUNGLE_PALLET);
+        output.accept(ACACIA_PALLET);
+        output.accept(DARK_OAK_PALLET);
+        output.accept(MANGROVE_PALLET);
+        output.accept(CHERRY_PALLET);
+        output.accept(BAMBOO_PALLET);
+        output.accept(CRIMSON_PALLET);
+        output.accept(WARPED_PALLET);
+
 
         output.accept(OAK_FRAME);
+        output.accept(SPRUCE_FRAME);
+        output.accept(BIRCH_FRAME);
+        output.accept(JUNGLE_FRAME);
+        output.accept(ACACIA_FRAME);
+        output.accept(DARK_OAK_FRAME);
+        output.accept(MANGROVE_FRAME);
+        output.accept(CHERRY_FRAME);
+        output.accept(BAMBOO_FRAME);
+        output.accept(CRIMSON_FRAME);
+        output.accept(WARPED_FRAME);
 
+
+        output.accept(ROOFING);
 
         output.accept(ROPE);
 

@@ -10,4 +10,6 @@ public class FoundationBlockStateProperties {
     public static final BooleanProperty RIGHT = BooleanProperty.create("right");
     public static final BooleanProperty TOP = BooleanProperty.create("top");
     public static final BooleanProperty BOTTOM = BooleanProperty.create("bottom");
+    public static final BooleanProperty LAYER_ONE = BooleanProperty.create("layer_one");
+    public static final BooleanProperty LAYER_TWO = BooleanProperty.create("layer_two");
 }

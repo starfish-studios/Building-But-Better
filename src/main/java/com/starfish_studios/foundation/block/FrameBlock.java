@@ -1,15 +1,13 @@
 package com.starfish_studios.foundation.block;
 
 import com.starfish_studios.foundation.block.properties.FoundationBlockStateProperties;
+import com.starfish_studios.foundation.registry.FoundationItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.SimpleWaterloggedBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -68,6 +66,20 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
         };
     }
 
+    // TODO: For some reason, this is causing a crash when blocks are broken "too fast". It doesn't crash when the blocks are broken slowly.
+    /** "No bounds for empty shape" **/
+    /*
+    public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
+        if (collisionContext.isHoldingItem(FoundationItems.OAK_FRAME.asItem())) {
+            return switch (blockState.getValue(FACING)) {
+                case EAST -> EAST;
+                case SOUTH -> SOUTH;
+                case WEST -> WEST;
+                default -> NORTH;
+            };
+        } else return Shapes.empty();
+    } */
+
     public VoxelShape getCollisionShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
         return switch (blockState.getValue(FACING)) {
             case NORTH -> Shapes.or(blockState.getValue(TOP) ? TOP_NORTH_AABB : Shapes.empty(), blockState.getValue(BOTTOM) ? BOTTOM_NORTH_AABB : Shapes.empty());
@@ -93,10 +105,6 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
         if (state.getValue(WATERLOGGED)) level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         return getConnections(state, level, currentPos);
     }
-
-
-
-
 
     @Override
     public FluidState getFluidState(BlockState state) {

@@ -1,8 +1,8 @@
 package com.starfish_studios.foundation.registry;
 
 import com.starfish_studios.foundation.Foundation;
-import com.starfish_studios.foundation.block.BigDoorBlock;
 import com.starfish_studios.foundation.item.BigDoorItem;
+import com.starfish_studios.foundation.item.DescriptionBlockItem;
 import com.starfish_studios.foundation.item.WrenchItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.core.Registry;
@@ -24,11 +24,36 @@ public class FoundationItems {
 
     public static final Item BRAZIER = register("brazier", new BlockItem(FoundationBlocks.BRAZIER, new FabricItemSettings()));
     public static final Item URN = register("urn", new BlockItem(FoundationBlocks.URN, new FabricItemSettings()));
+    public static final Item ROOFING = register("roofing", new BlockItem(FoundationBlocks.ROOFING, new FabricItemSettings()));
 
 
-    public static final Item OAK_PLATFORM = register("oak_platform", new BlockItem(FoundationBlocks.OAK_PLATFORM, new FabricItemSettings()));
+    // region PALLETS
+    public static final Item OAK_PALLET = register("oak_pallet", new DescriptionBlockItem(FoundationBlocks.OAK_PALLET, new FabricItemSettings()));
+    public static final Item SPRUCE_PALLET = register("spruce_pallet", new DescriptionBlockItem(FoundationBlocks.SPRUCE_PALLET, new FabricItemSettings()));
+    public static final Item BIRCH_PALLET = register("birch_pallet", new DescriptionBlockItem(FoundationBlocks.BIRCH_PALLET, new FabricItemSettings()));
+    public static final Item JUNGLE_PALLET = register("jungle_pallet", new DescriptionBlockItem(FoundationBlocks.JUNGLE_PALLET, new FabricItemSettings()));
+    public static final Item ACACIA_PALLET = register("acacia_pallet", new DescriptionBlockItem(FoundationBlocks.ACACIA_PALLET, new FabricItemSettings()));
+    public static final Item DARK_OAK_PALLET = register("dark_oak_pallet", new DescriptionBlockItem(FoundationBlocks.DARK_OAK_PALLET, new FabricItemSettings()));
+    public static final Item MANGROVE_PALLET = register("mangrove_pallet", new DescriptionBlockItem(FoundationBlocks.MANGROVE_PALLET, new FabricItemSettings()));
+    public static final Item CHERRY_PALLET = register("cherry_pallet", new DescriptionBlockItem(FoundationBlocks.CHERRY_PALLET, new FabricItemSettings()));
+    public static final Item BAMBOO_PALLET = register("bamboo_pallet", new DescriptionBlockItem(FoundationBlocks.BAMBOO_PALLET, new FabricItemSettings()));
+    public static final Item CRIMSON_PALLET = register("crimson_pallet", new DescriptionBlockItem(FoundationBlocks.CRIMSON_PALLET, new FabricItemSettings()));
+    public static final Item WARPED_PALLET = register("warped_pallet", new DescriptionBlockItem(FoundationBlocks.WARPED_PALLET, new FabricItemSettings()));
+    // endregion
 
-    public static final Item OAK_FRAME = register("oak_frame", new BlockItem(FoundationBlocks.OAK_FRAME, new FabricItemSettings()));
+    // region FRAMES
+    public static final Item OAK_FRAME = register("oak_frame", new DescriptionBlockItem(FoundationBlocks.OAK_FRAME, new FabricItemSettings()));
+    public static final Item SPRUCE_FRAME = register("spruce_frame", new DescriptionBlockItem(FoundationBlocks.SPRUCE_FRAME, new FabricItemSettings()));
+    public static final Item BIRCH_FRAME = register("birch_frame", new DescriptionBlockItem(FoundationBlocks.BIRCH_FRAME, new FabricItemSettings()));
+    public static final Item JUNGLE_FRAME = register("jungle_frame", new DescriptionBlockItem(FoundationBlocks.JUNGLE_FRAME, new FabricItemSettings()));
+    public static final Item ACACIA_FRAME = register("acacia_frame", new DescriptionBlockItem(FoundationBlocks.ACACIA_FRAME, new FabricItemSettings()));
+    public static final Item DARK_OAK_FRAME = register("dark_oak_frame", new DescriptionBlockItem(FoundationBlocks.DARK_OAK_FRAME, new FabricItemSettings()));
+    public static final Item MANGROVE_FRAME = register("mangrove_frame", new DescriptionBlockItem(FoundationBlocks.MANGROVE_FRAME, new FabricItemSettings()));
+    public static final Item CHERRY_FRAME = register("cherry_frame", new DescriptionBlockItem(FoundationBlocks.CHERRY_FRAME, new FabricItemSettings()));
+    public static final Item BAMBOO_FRAME = register("bamboo_frame", new DescriptionBlockItem(FoundationBlocks.BAMBOO_FRAME, new FabricItemSettings()));
+    public static final Item CRIMSON_FRAME = register("crimson_frame", new DescriptionBlockItem(FoundationBlocks.CRIMSON_FRAME, new FabricItemSettings()));
+    public static final Item WARPED_FRAME = register("warped_frame", new DescriptionBlockItem(FoundationBlocks.WARPED_FRAME, new FabricItemSettings()));
+    // endregion
 
 
     public static final Item ROPE = register("rope", new BlockItem(FoundationBlocks.ROPE, new FabricItemSettings()));

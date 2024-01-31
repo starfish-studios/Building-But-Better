@@ -1,0 +1,20 @@
+{
+  "group": "foundation/pallets",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "///",
+    "OOO"
+  ],
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "result": {
+    "item": "foundation:oak_pallet",
+    "count": 8
+  }
+}

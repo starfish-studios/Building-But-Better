@@ -1,4 +1,5 @@
 {
+  "group": "foundation/frames",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "___",

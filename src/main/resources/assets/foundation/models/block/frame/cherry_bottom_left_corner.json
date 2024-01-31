@@ -1,0 +1,127 @@
+{
+    "credit": "Made with Blockbench",
+    "texture_size": [
+        32,
+        32
+    ],
+    "textures": {
+        "particle": "minecraft:block/cherry_planks",
+        "texture": "foundation:block/frame/cherry_frame"
+    },
+    "elements": [
+        {
+            "from": [
+                15.99,
+                -4.01,
+                12.99
+            ],
+            "to": [
+                21.01,
+                0.01,
+                16.01
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "z",
+                "origin": [
+                    8,
+                    -2,
+                    -1.5
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        2,
+                        2.5,
+                        0
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        5,
+                        9,
+                        6.5,
+                        7
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        2.5,
+                        4,
+                        0,
+                        2
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        6.5,
+                        9,
+                        8,
+                        7
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        2.5,
+                        7,
+                        0,
+                        5.5
+                    ],
+                    "texture": "#texture"
+                },
+                "down": {
+                    "uv": [
+                        2.5,
+                        4,
+                        0,
+                        5.5
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        }
+    ],
+    "groups": [
+        {
+            "name": "group",
+            "origin": [
+                0,
+                0,
+                0
+            ],
+            "color": 0,
+            "nbt": "{}",
+            "children": []
+        },
+        {
+            "name": "group",
+            "origin": [
+                0,
+                0,
+                0
+            ],
+            "color": 0,
+            "nbt": "{}",
+            "children": []
+        },
+        {
+            "name": "group",
+            "origin": [
+                0,
+                0,
+                0
+            ],
+            "color": 0,
+            "nbt": "{}",
+            "children": [
+                0
+            ]
+        }
+    ]
+}

@@ -1,0 +1,407 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "top": "true",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_top",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "bottom": "true",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_bottom",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "left": "true",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_left",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "right": "true",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_right",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "left": "true",
+                "top": "true",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_top_left_corner",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "right": "true",
+                "top": "true",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_top_right_corner",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "left": "true",
+                "bottom": "true",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_bottom_left_corner",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "right": "true",
+                "bottom": "true",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_bottom_right_corner",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "top": "true",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_top",
+                "uvlock": false,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "bottom": "true",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_bottom",
+                "uvlock": false,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "left": "true",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_left",
+                "uvlock": false,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "right": "true",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_right",
+                "uvlock": false,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "left": "true",
+                "top": "true",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_top_left_corner",
+                "uvlock": false,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "right": "true",
+                "top": "true",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_top_right_corner",
+                "uvlock": false,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "left": "true",
+                "bottom": "true",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_bottom_left_corner",
+                "uvlock": false,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "right": "true",
+                "bottom": "true",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_bottom_right_corner",
+                "uvlock": false,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "top": "true",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_top",
+                "uvlock": false,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "bottom": "true",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_bottom",
+                "uvlock": false,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "left": "true",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_left",
+                "uvlock": false,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "right": "true",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_right",
+                "uvlock": false,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "left": "true",
+                "top": "true",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_top_left_corner",
+                "uvlock": false,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "right": "true",
+                "top": "true",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_top_right_corner",
+                "uvlock": false,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "left": "true",
+                "bottom": "true",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_bottom_left_corner",
+                "uvlock": false,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "right": "true",
+                "bottom": "true",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_bottom_right_corner",
+                "uvlock": false,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "top": "true",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_top",
+                "uvlock": false,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "bottom": "true",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_bottom",
+                "uvlock": false,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "left": "true",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_left",
+                "uvlock": false,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "right": "true",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_right",
+                "uvlock": false,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "left": "true",
+                "top": "true",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_top_left_corner",
+                "uvlock": false,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "right": "true",
+                "top": "true",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_top_right_corner",
+                "uvlock": false,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "left": "true",
+                "bottom": "true",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_bottom_left_corner",
+                "uvlock": false,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "right": "true",
+                "bottom": "true",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_bottom_right_corner",
+                "uvlock": false,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "middle": "true",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_middle",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "middle": "true",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_middle",
+                "uvlock": false,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "middle": "true",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_middle",
+                "uvlock": false,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "middle": "true",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "foundation:block/frame/spruce_middle",
+                "uvlock": false,
+                "y": 270
+            }
+        }
+    ]
+}

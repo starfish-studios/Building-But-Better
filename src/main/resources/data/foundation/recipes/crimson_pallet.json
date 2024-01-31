@@ -1,0 +1,20 @@
+{
+    "group": "foundation/pallets",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "///",
+        "OOO"
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "O": {
+            "item": "minecraft:crimson_planks"
+        }
+    },
+    "result": {
+        "item": "foundation:crimson_pallet",
+        "count": 8
+    }
+}

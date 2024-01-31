@@ -1,0 +1,21 @@
+{
+    "group": "foundation/frames",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "___",
+        "/ /",
+        "___"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:mangrove_slab"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "foundation:mangrove_frame",
+        "count": 12
+    }
+}

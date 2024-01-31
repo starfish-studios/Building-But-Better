@@ -22,6 +22,6 @@ public class IronFenceBlock extends FenceBlock {
     }
 
     private boolean isSameFence(BlockState blockState) {
-        return blockState.is(BlockTags.FENCES) && blockState.is(FoundationTags.METAL_FENCES) == this.defaultBlockState().is(FoundationTags.METAL_FENCES);
+        return blockState.is(BlockTags.FENCES) && blockState.is(FoundationTags.FoundationBlockTags.METAL_FENCES) == this.defaultBlockState().is(FoundationTags.FoundationBlockTags.METAL_FENCES);
     }
 }

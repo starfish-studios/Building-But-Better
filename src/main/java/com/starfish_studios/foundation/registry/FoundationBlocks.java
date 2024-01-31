@@ -4,7 +4,6 @@ import com.starfish_studios.foundation.Foundation;
 import com.starfish_studios.foundation.block.*;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.core.Registry;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
@@ -24,17 +23,42 @@ public class FoundationBlocks {
 
     public static final Block STONE_FENCE = register("stone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS))));
 
-    public static final Block OAK_PLATFORM = register("oak_platform", new PlatformBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
+    // region PALLETS
+    public static final Block OAK_PALLET = register("oak_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
+    public static final Block SPRUCE_PALLET = register("spruce_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion()));
+    public static final Block BIRCH_PALLET = register("birch_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noOcclusion()));
+    public static final Block JUNGLE_PALLET = register("jungle_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).noOcclusion()));
+    public static final Block ACACIA_PALLET = register("acacia_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).noOcclusion()));
+    public static final Block DARK_OAK_PALLET = register("dark_oak_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion()));
+    public static final Block MANGROVE_PALLET = register("mangrove_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).noOcclusion()));
+    public static final Block CHERRY_PALLET = register("cherry_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).noOcclusion()));
+    public static final Block BAMBOO_PALLET = register("bamboo_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).noOcclusion()));
+    public static final Block CRIMSON_PALLET = register("crimson_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).noOcclusion()));
+    public static final Block WARPED_PALLET = register("warped_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noOcclusion()));
+    // endregion
 
-
+    // region FRAMES
     public static final Block OAK_FRAME = register("oak_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion().noCollission()));
+    public static final Block SPRUCE_FRAME = register("spruce_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion().noCollission()));
+    public static final Block BIRCH_FRAME = register("birch_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noOcclusion().noCollission()));
+    public static final Block JUNGLE_FRAME = register("jungle_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).noOcclusion().noCollission()));
+    public static final Block ACACIA_FRAME = register("acacia_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).noOcclusion().noCollission()));
+    public static final Block DARK_OAK_FRAME = register("dark_oak_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion().noCollission()));
+    public static final Block MANGROVE_FRAME = register("mangrove_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).noOcclusion().noCollission()));
+    public static final Block CHERRY_FRAME = register("cherry_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).noOcclusion().noCollission()));
+    public static final Block BAMBOO_FRAME = register("bamboo_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).noOcclusion().noCollission()));
+    public static final Block CRIMSON_FRAME = register("crimson_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).noOcclusion().noCollission()));
+    public static final Block WARPED_FRAME = register("warped_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noOcclusion().noCollission()));
+    // endregion
 
     public static final Block BRAZIER = register("brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(15)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
 
+    public static final Block ROOFING = register("roofing", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
 
     public static final Block URN = register("urn", new Block(FabricBlockSettings.copy((Blocks.STONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final Block ROPE = register("rope", new ChainBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).forceSolidOn().strength(0.1F).sound(SoundType.WOOL).noOcclusion()));
+
 
     // region WOODEN LANTERNS
     public static final Block OAK_LANTERN = register("oak_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
@@ -50,7 +74,6 @@ public class FoundationBlocks {
     public static final Block WARPED_LANTERN = register("warped_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
     // endregion
 
-
     // region TRIMS
     public static final Block OAK_TRIM = register("oak_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
     public static final Block SPRUCE_TRIM = register("spruce_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS))));
@@ -64,6 +87,7 @@ public class FoundationBlocks {
     public static final Block CRIMSON_TRIM = register("crimson_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS))));
     public static final Block WARPED_TRIM = register("warped_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS))));
     // endregion
+
 
     public static final Block IRON_FENCE = register("iron_fence", new WallBlock(FabricBlockSettings.copy((Blocks.IRON_BARS))));
 

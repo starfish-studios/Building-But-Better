@@ -1,3 +1,3 @@
 {
-    "parent": "foundation:block/oak_frame_inventory"
+    "parent": "foundation:block/frame/oak_frame_inventory"
 }

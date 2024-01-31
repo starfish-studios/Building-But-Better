@@ -26,6 +26,6 @@ public class StoneFenceBlock extends FenceBlock {
     }
 
     private boolean isSameFence(BlockState blockState) {
-        return blockState.is(FoundationTags.STONE_FENCES);
+        return blockState.is(FoundationTags.FoundationBlockTags.STONE_FENCES);
     }
 }
