@@ -2,8 +2,10 @@ package com.starfish_studios.foundation.block;
 
 import com.starfish_studios.foundation.block.properties.FoundationBlockStateProperties;
 import com.starfish_studios.foundation.registry.FoundationItems;
+import com.starfish_studios.foundation.registry.FoundationTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
@@ -187,6 +189,6 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
             || state.isFaceSturdy(null, null, Direction.DOWN)) {
             return true;
         }
-        return state.is(this);
+        return state.is(FoundationTags.FoundationBlockTags.FRAMES);
     }
 }

@@ -1,11 +1,13 @@
 {
   "itemGroup.foundation.tab": "Foundation",
+  "item.foundation.foundation": "Foundation",
 
-  "description.foundation.shift": "Shift",
   "description.foundation.pencil": "✐ ",
 
-  "description.foundation.frame1": "Hold the block",
-  "description.foundation.frame2": "to see the hitbox!",
+  "description.foundation.layer1": "Right-Click with a Pencil",
+
+  "description.foundation.frame1": "Automatically connects",
+  "description.foundation.frame2": "to other Frames.",
 
   "description.foundation.pallet1": "Right-Click with an Axe",
   "description.foundation.pallet2": "to add/remove layers.",
@@ -13,7 +15,26 @@
   "description.foundation.pallet4": "with an empty hand",
   "description.foundation.pallet5": "to open/close the block.",
 
+  "description.foundation.column1": "Right-Click with a Pickaxe",
+  "description.foundation.column2": "to add/remove outside layers.",
+
   "block.foundation.rope": "Rope",
+  "block.foundation.stone_moulding": "Stone Moulding",
+  "block.foundation.urn": "Urn",
+  "block.foundation.brazier": "Brazier",
+  "block.foundation.iron_fence": "Iron Fence",
+  "block.foundation.tall_oak_door": "Tall Oak Door",
+
+  "block.foundation.polished_stone": "Polished Stone",
+  "block.foundation.polished_stone_stairs": "Polished Stone Stairs",
+  "block.foundation.polished_stone_slab": "Polished Stone Slab",
+  "block.foundation.polished_stone_column": "Polished Stone Column",
+
+  "block.foundation.stone_tiles": "Stone Tiles",
+  "block.foundation.stone_tile_stairs": "Stone Tile Stairs",
+  "block.foundation.stone_tile_slab": "Stone Tile Slab",
+  "block.foundation.stone_fence": "Stone Fence",
+
 
   "block.foundation.oak_pallet": "Oak Pallet",
       "block.foundation.spruce_pallet": "Spruce Pallet",

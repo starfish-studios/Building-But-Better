@@ -1,0 +1,327 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "up"
+      },
+      "apply": {
+        "model": "foundation:block/column/polished_stone_column_pillar"
+      }
+    },
+    {
+      "when": {
+        "facing": "north"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_pillar",
+            "uvlock": false,
+            "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_pillar",
+            "uvlock": false,
+            "x": 90,
+            "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_pillar",
+            "uvlock": false,
+            "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "west"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_pillar",
+            "uvlock": false,
+            "y": 90,
+            "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "down"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_pillar",
+            "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "layer_one": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer1",
+            "uvlock": false,
+            "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "layer_one": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer1",
+            "uvlock": false,
+            "x": 90,
+            "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "layer_one": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer1",
+            "uvlock": false,
+            "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "layer_one": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer1",
+            "uvlock": false,
+            "y": 90,
+            "x": 90
+        }
+    },
+    {
+      "when": {
+        "facing": "up",
+        "layer_one": "true"
+      },
+      "apply": {
+        "model": "foundation:block/column/polished_stone_column_layer1",
+        "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "down",
+        "layer_one": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer1",
+            "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "layer_two": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer2",
+            "uvlock": false,
+            "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "layer_two": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer2",
+            "uvlock": false,
+            "x": 90,
+            "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "layer_two": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer2",
+            "uvlock": false,
+            "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "layer_two": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer2",
+            "uvlock": false,
+            "y": 90,
+            "x": 90
+        }
+    },
+    {
+      "when": {
+        "facing": "up",
+        "layer_two": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer2",
+            "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "down",
+        "layer_two": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer2",
+            "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "layer_three": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer3",
+            "uvlock": false,
+            "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "layer_three": "true"
+      },
+      "apply": {
+        "model": "foundation:block/column/polished_stone_column_layer3",
+        "uvlock": false,
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "layer_three": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer3",
+            "uvlock": false,
+            "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "layer_three": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer3",
+            "uvlock": false,
+            "y": 90,
+            "x": 90
+        }
+    },
+    {
+      "when": {
+        "facing": "up",
+        "layer_three": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer3",
+            "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "down",
+        "layer_three": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer3",
+            "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "layer_four": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer4",
+            "uvlock": false,
+            "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "layer_four": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer4",
+            "uvlock": false,
+            "x": 90,
+            "y": 90
+        }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "layer_four": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer4",
+            "uvlock": false,
+            "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "layer_four": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer4",
+            "uvlock": false,
+            "y": 90,
+            "x": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "up",
+        "layer_four": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer4",
+            "uvlock": false
+      }
+    },
+    {
+      "when": {
+        "facing": "down",
+        "layer_four": "true"
+      },
+        "apply": {
+            "model": "foundation:block/column/polished_stone_column_layer4",
+            "uvlock": false
+      }
+    }
+  ]
+}

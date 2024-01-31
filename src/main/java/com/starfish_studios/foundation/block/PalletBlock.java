@@ -27,6 +27,7 @@ import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -68,20 +69,7 @@ public class PalletBlock extends HorizontalDirectionalBlock implements SimpleWat
                 .setValue(LAYER_TWO, true));
     }
 
-    public VoxelShape getInteractionShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-        if (blockState.getValue(HALF) == Half.BOTTOM) {
-            assert Minecraft.getInstance().hitResult != null;
-            if (Minecraft.getInstance().hitResult.getLocation().y - (double)blockPos.getY() < 0.25) {
-                return BOTTOM_AABB_LAYER_ONE;
-            } else {
-                return BOTTOM_AABB_LAYER_TWO;
-            }
-        }
-
-        return super.getShape(blockState, blockGetter, blockPos, collisionContext);
-    }
-
-
+    @Override
     public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
         if (blockState.getValue(OPEN)) {
             return switch (blockState.getValue(FACING)) {
@@ -96,8 +84,18 @@ public class PalletBlock extends HorizontalDirectionalBlock implements SimpleWat
         } else return BOTTOM_AABB;
     }
 
+    @Override
     public boolean propagatesSkylightDown(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos) {
         return true;
+    }
+
+    @Override
+    public boolean isPathfindable(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, PathComputationType pathComputationType) {
+        if (blockState.getValue(OPEN)) {
+            return false;
+        } else {
+            return super.isPathfindable(blockState, blockGetter, blockPos, pathComputationType);
+        }
     }
 
     protected void playSound(@Nullable Player player, Level level, BlockPos blockPos, boolean bl) {
@@ -105,6 +103,7 @@ public class PalletBlock extends HorizontalDirectionalBlock implements SimpleWat
         level.gameEvent(player, bl ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, blockPos);
     }
 
+    @Override
     public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
         if (player.getItemInHand(interactionHand).is(ItemTags.AXES)) {
             if (blockHitResult.getLocation().z - (double)blockPos.getZ() > 0.5 && blockState.getValue(FACING) == Direction.NORTH) {
@@ -113,73 +112,44 @@ public class PalletBlock extends HorizontalDirectionalBlock implements SimpleWat
                 } else {
                     blockState = blockState.cycle(LAYER_TWO);
                 }
-                if (!blockState.getValue(LAYER_ONE) && !blockState.getValue(LAYER_TWO)) {
-                    blockState = blockState.setValue(LAYER_ONE, true).setValue(LAYER_TWO, true);
-                }
-                level.setBlock(blockPos, blockState, 2);
-                level.playSound(player, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
-                return InteractionResult.SUCCESS;
             } else if (blockHitResult.getLocation().z - (double)blockPos.getZ() < 0.5 && blockState.getValue(FACING) == Direction.SOUTH) {
                 if (blockHitResult.getLocation().z - (double)blockPos.getZ() > 0.25) {
                     blockState = blockState.cycle(LAYER_ONE);
                 } else {
                     blockState = blockState.cycle(LAYER_TWO);
                 }
-                if (!blockState.getValue(LAYER_ONE) && !blockState.getValue(LAYER_TWO)) {
-                    blockState = blockState.setValue(LAYER_ONE, true).setValue(LAYER_TWO, true);
-                }
-                level.setBlock(blockPos, blockState, 2);
-                level.playSound(player, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
-                return InteractionResult.SUCCESS;
             } else if (blockHitResult.getLocation().x - (double)blockPos.getX() > 0.5 && blockState.getValue(FACING) == Direction.WEST) {
                 if (blockHitResult.getLocation().x - (double) blockPos.getX() < 0.75) {
                     blockState = blockState.cycle(LAYER_ONE);
                 } else {
                     blockState = blockState.cycle(LAYER_TWO);
                 }
-                if (!blockState.getValue(LAYER_ONE) && !blockState.getValue(LAYER_TWO)) {
-                    blockState = blockState.setValue(LAYER_ONE, true).setValue(LAYER_TWO, true);
-                }
-                level.setBlock(blockPos, blockState, 2);
-                level.playSound(player, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
-                return InteractionResult.SUCCESS;
             } else if (blockHitResult.getLocation().x - (double)blockPos.getX() < 0.5 && blockState.getValue(FACING) == Direction.EAST) {
                 if (blockHitResult.getLocation().x - (double)blockPos.getX() > 0.25) {
                     blockState = blockState.cycle(LAYER_ONE);
                 } else {
                     blockState = blockState.cycle(LAYER_TWO);
                 }
-                if (!blockState.getValue(LAYER_ONE) && !blockState.getValue(LAYER_TWO)) {
-                    blockState = blockState.setValue(LAYER_ONE, true).setValue(LAYER_TWO, true);
-                }
-                level.setBlock(blockPos, blockState, 2);
-                level.playSound(player, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
-                return InteractionResult.SUCCESS;
             } else if (blockHitResult.getLocation().y - (double)blockPos.getY() < 0.5 && blockState.getValue(HALF) == Half.BOTTOM) {
                 if (blockHitResult.getLocation().y - (double)blockPos.getY() < 0.25) {
                     blockState = blockState.cycle(LAYER_ONE);
                 } else {
                     blockState = blockState.cycle(LAYER_TWO);
                 }
-                if (!blockState.getValue(LAYER_ONE) && !blockState.getValue(LAYER_TWO)) {
-                    blockState = blockState.setValue(LAYER_ONE, true).setValue(LAYER_TWO, true);
-                }
-                level.setBlock(blockPos, blockState, 2);
-                level.playSound(player, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
-                return InteractionResult.SUCCESS;
             } if (blockHitResult.getLocation().y - (double)blockPos.getY() > 0.5 && blockState.getValue(HALF) == Half.TOP) {
                 if (blockHitResult.getLocation().y - (double)blockPos.getY() < 0.75) {
                     blockState = blockState.cycle(LAYER_ONE);
                 } else {
                     blockState = blockState.cycle(LAYER_TWO);
                 }
-                if (!blockState.getValue(LAYER_ONE) && !blockState.getValue(LAYER_TWO)) {
-                    blockState = blockState.setValue(LAYER_ONE, true).setValue(LAYER_TWO, true);
-                }
-                level.setBlock(blockPos, blockState, 2);
-                level.playSound(player, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
-                return InteractionResult.SUCCESS;
             }
+            if (!blockState.getValue(LAYER_ONE) && !blockState.getValue(LAYER_TWO)) {
+                blockState = blockState.setValue(LAYER_ONE, true).setValue(LAYER_TWO, true);
+            }
+
+            level.setBlock(blockPos, blockState, 2);
+            level.playSound(player, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
+            return InteractionResult.SUCCESS;
         }
          else if (player.isCrouching()) {
             blockState = blockState.cycle(OPEN);
@@ -221,10 +191,12 @@ public class PalletBlock extends HorizontalDirectionalBlock implements SimpleWat
         return state.rotate(mirror.getRotation(state.getValue(FACING)));
     }
 
+    @Override
     public FluidState getFluidState(BlockState blockState) {
         return blockState.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(blockState);
     }
 
+    @Override
     public BlockState updateShape(BlockState blockState, Direction direction, BlockState blockState2, LevelAccessor levelAccessor, BlockPos blockPos, BlockPos blockPos2) {
         if (blockState.getValue(WATERLOGGED)) {
             levelAccessor.scheduleTick(blockPos, Fluids.WATER, Fluids.WATER.getTickDelay(levelAccessor));

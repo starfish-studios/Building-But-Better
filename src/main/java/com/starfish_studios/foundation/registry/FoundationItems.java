@@ -1,7 +1,7 @@
 package com.starfish_studios.foundation.registry;
 
 import com.starfish_studios.foundation.Foundation;
-import com.starfish_studios.foundation.item.BigDoorItem;
+import com.starfish_studios.foundation.item.TallDoorItem;
 import com.starfish_studios.foundation.item.DescriptionBlockItem;
 import com.starfish_studios.foundation.item.WrenchItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -14,9 +14,15 @@ import net.minecraft.world.item.Rarity;
 
 public class FoundationItems {
 
+    public static final Item FOUNDATION = register("foundation", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON).fireproof()));
+
+    public static final Item STONE_LAYER = register("stone_layer", new DescriptionBlockItem(FoundationBlocks.STONE_LAYER, new FabricItemSettings()));
+
     public static final Item POLISHED_STONE = register("polished_stone", new BlockItem(FoundationBlocks.POLISHED_STONE, new FabricItemSettings()));
     public static final Item POLISHED_STONE_STAIRS = register("polished_stone_stairs", new BlockItem(FoundationBlocks.POLISHED_STONE_STAIRS, new FabricItemSettings()));
     public static final Item POLISHED_STONE_SLAB = register("polished_stone_slab", new BlockItem(FoundationBlocks.POLISHED_STONE_SLAB, new FabricItemSettings()));
+    public static final Item POLISHED_STONE_COLUMN = register("polished_stone_column", new DescriptionBlockItem(FoundationBlocks.POLISHED_STONE_COLUMN, new FabricItemSettings()));
+
     public static final Item STONE_TILES = register("stone_tiles", new BlockItem(FoundationBlocks.STONE_TILES, new FabricItemSettings()));
     public static final Item STONE_TILE_STAIRS = register("stone_tile_stairs", new BlockItem(FoundationBlocks.STONE_TILE_STAIRS, new FabricItemSettings()));
     public static final Item STONE_TILE_SLAB = register("stone_tile_slab", new BlockItem(FoundationBlocks.STONE_TILE_SLAB, new FabricItemSettings()));
@@ -87,8 +93,6 @@ public class FoundationItems {
     public static final Item WARPED_TRIM = register("warped_trim", new BlockItem(FoundationBlocks.WARPED_TRIM, new FabricItemSettings()));
     // endregion
 
-    public static final Item FOUNDATION = register("foundation", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC).fireproof()));
-
     // public static final Item COBBLESTONE_LAYER = register("cobblestone_layer", new BlockItem(FoundationBlocks.COBBLESTONE_LAYER, new FabricItemSettings()));
 
     public static final Item IRON_FENCE = register("iron_fence", new BlockItem(FoundationBlocks.IRON_FENCE, new FabricItemSettings()));
@@ -97,7 +101,7 @@ public class FoundationItems {
 
     public static final Item WRENCH = register("wrench", new WrenchItem(new FabricItemSettings().maxCount(1)));
 
-    public static final Item BIG_OAK_DOOR = register("big_oak_door", new BigDoorItem(FoundationBlocks.BIG_OAK_DOOR, new FabricItemSettings()));
+    public static final Item TALL_OAK_DOOR = register("tall_oak_door", new TallDoorItem(FoundationBlocks.TALL_OAK_DOOR, new FabricItemSettings()));
 
 
     private static Item register(String id, Item item) {

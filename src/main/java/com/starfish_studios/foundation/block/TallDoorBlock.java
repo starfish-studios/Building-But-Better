@@ -1,6 +1,6 @@
 package com.starfish_studios.foundation.block;
 
-import com.starfish_studios.foundation.block.properties.BigDoorHalf;
+import com.starfish_studios.foundation.block.properties.TallDoorHalf;
 import com.starfish_studios.foundation.block.properties.FoundationBlockStateProperties;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -31,22 +31,22 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
-public class BigDoorBlock extends Block {
+public class TallDoorBlock extends Block {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty OPEN = BlockStateProperties.OPEN;
     public static final EnumProperty<DoorHingeSide> HINGE = BlockStateProperties.DOOR_HINGE;
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
-    public static final EnumProperty<BigDoorHalf> HALVES = FoundationBlockStateProperties.HALVES;
+    public static final EnumProperty<TallDoorHalf> HALVES = FoundationBlockStateProperties.HALVES;
     protected static final VoxelShape SOUTH_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 3.0);
     protected static final VoxelShape NORTH_AABB = Block.box(0.0, 0.0, 13.0, 16.0, 16.0, 16.0);
     protected static final VoxelShape WEST_AABB = Block.box(13.0, 0.0, 0.0, 16.0, 16.0, 16.0);
     protected static final VoxelShape EAST_AABB = Block.box(0.0, 0.0, 0.0, 3.0, 16.0, 16.0);
     private final BlockSetType type;
 
-    public BigDoorBlock(Properties properties, BlockSetType blockSetType) {
+    public TallDoorBlock(Properties properties, BlockSetType blockSetType) {
         super(properties);
         this.type = blockSetType;
-        this.registerDefaultState((this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, false).setValue(HINGE, DoorHingeSide.LEFT)).setValue(POWERED, false).setValue(HALVES, BigDoorHalf.LOWER));
+        this.registerDefaultState((this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, false).setValue(HINGE, DoorHingeSide.LEFT)).setValue(POWERED, false).setValue(HALVES, TallDoorHalf.LOWER));
     }
 
     public BlockSetType type() {
@@ -72,14 +72,14 @@ public class BigDoorBlock extends Block {
 
 
     public BlockState updateShape(BlockState blockState, Direction direction, BlockState blockState2, LevelAccessor levelAccessor, BlockPos blockPos, BlockPos blockPos2) {
-        BigDoorHalf half = blockState.getValue(HALVES);
-        if (direction.getAxis() == Direction.Axis.Y && (half == BigDoorHalf.LOWER == (direction == Direction.UP) || half == BigDoorHalf.MIDDLE == (direction == Direction.UP))) {
+        TallDoorHalf half = blockState.getValue(HALVES);
+        if (direction.getAxis() == Direction.Axis.Y && (half == TallDoorHalf.LOWER == (direction == Direction.UP) || half == TallDoorHalf.MIDDLE == (direction == Direction.UP))) {
             if (blockState2.is(this) && blockState2.getValue(HALVES) != half) {
                 return (((blockState.setValue(FACING, blockState2.getValue(FACING))).setValue(OPEN, blockState2.getValue(OPEN))).setValue(HINGE, blockState2.getValue(HINGE))).setValue(POWERED, blockState2.getValue(POWERED));
             }
             return Blocks.AIR.defaultBlockState();
         }
-        if (half == BigDoorHalf.LOWER && direction == Direction.DOWN && !blockState.canSurvive(levelAccessor, blockPos)) {
+        if (half == TallDoorHalf.LOWER && direction == Direction.DOWN && !blockState.canSurvive(levelAccessor, blockPos)) {
             return Blocks.AIR.defaultBlockState();
         }
         return super.updateShape(blockState, direction, blockState2, levelAccessor, blockPos, blockPos2);
@@ -109,7 +109,7 @@ public class BigDoorBlock extends Block {
                     .setValue(HINGE, this.getHinge(blockPlaceContext))
                     .setValue(POWERED, bl)
                     .setValue(OPEN, bl)
-                    .setValue(HALVES, BigDoorHalf.LOWER);
+                    .setValue(HALVES, TallDoorHalf.LOWER);
 
         } else {
             return null;
@@ -132,8 +132,8 @@ public class BigDoorBlock extends Block {
         BlockPos blockPos6 = blockPos2.relative(direction3);
         BlockState blockState4 = blockGetter.getBlockState(blockPos6);
         int i = (blockState.isCollisionShapeFullBlock(blockGetter, blockPos3) ? -1 : 0) + (blockState2.isCollisionShapeFullBlock(blockGetter, blockPos4) ? -1 : 0) + (blockState3.isCollisionShapeFullBlock(blockGetter, blockPos5) ? 1 : 0) + (blockState4.isCollisionShapeFullBlock(blockGetter, blockPos6) ? 1 : 0);
-        boolean bl = blockState.is(this) && blockState.getValue(HALVES) == BigDoorHalf.LOWER;
-        boolean bl2 = blockState3.is(this) && blockState3.getValue(HALVES) == BigDoorHalf.LOWER;
+        boolean bl = blockState.is(this) && blockState.getValue(HALVES) == TallDoorHalf.LOWER;
+        boolean bl2 = blockState3.is(this) && blockState3.getValue(HALVES) == TallDoorHalf.LOWER;
         if ((!bl || bl2) && i <= 0) {
             if ((!bl2 || bl) && i >= 0) {
                 int j = direction.getStepX();
@@ -171,7 +171,7 @@ public class BigDoorBlock extends Block {
     }
 
     public void neighborChanged(BlockState blockState, Level level, BlockPos blockPos, Block block, BlockPos blockPos2, boolean bl) {
-        boolean bl2 = level.hasNeighborSignal(blockPos) || level.hasNeighborSignal(blockPos.relative(blockState.getValue(HALVES) == BigDoorHalf.LOWER && blockState.getValue(HALVES) != BigDoorHalf.UPPER ? Direction.UP : Direction.DOWN));
+        boolean bl2 = level.hasNeighborSignal(blockPos) || level.hasNeighborSignal(blockPos.relative(blockState.getValue(HALVES) == TallDoorHalf.LOWER && blockState.getValue(HALVES) != TallDoorHalf.UPPER ? Direction.UP : Direction.DOWN));
         if (!this.defaultBlockState().is(block) && bl2 != blockState.getValue(POWERED)) {
             if (bl2 != blockState.getValue(OPEN)) {
                 this.playSound(null, level, blockPos, bl2);
@@ -213,19 +213,19 @@ public class BigDoorBlock extends Block {
     public void setPlacedBy(Level level, BlockPos blockPos, BlockState blockState, LivingEntity livingEntity, ItemStack itemStack) {
         BlockPos blockPos2 = blockPos.above();
         BlockPos blockPos3 = blockPos2.above();
-        level.setBlock(blockPos2, copyWaterloggedFrom(level, blockPos2, this.defaultBlockState().setValue(HALVES, BigDoorHalf.MIDDLE).setValue(FACING, blockState.getValue(FACING)).setValue(HINGE, blockState.getValue(HINGE))), 3);
-        level.setBlock(blockPos3, copyWaterloggedFrom(level, blockPos3, this.defaultBlockState().setValue(HALVES, BigDoorHalf.UPPER).setValue(FACING, blockState.getValue(FACING)).setValue(HINGE, blockState.getValue(HINGE))), 3);
+        level.setBlock(blockPos2, copyWaterloggedFrom(level, blockPos2, this.defaultBlockState().setValue(HALVES, TallDoorHalf.MIDDLE).setValue(FACING, blockState.getValue(FACING)).setValue(HINGE, blockState.getValue(HINGE))), 3);
+        level.setBlock(blockPos3, copyWaterloggedFrom(level, blockPos3, this.defaultBlockState().setValue(HALVES, TallDoorHalf.UPPER).setValue(FACING, blockState.getValue(FACING)).setValue(HINGE, blockState.getValue(HINGE))), 3);
     }
 
     public boolean canSurvive(BlockState blockState, LevelReader levelReader, BlockPos blockPos) {
-        if (blockState.getValue(HALVES) != BigDoorHalf.UPPER && blockState.getValue(HALVES) != BigDoorHalf.MIDDLE) {
+        if (blockState.getValue(HALVES) != TallDoorHalf.UPPER && blockState.getValue(HALVES) != TallDoorHalf.MIDDLE) {
             return super.canSurvive(blockState, levelReader, blockPos);
-        } else if (blockState.getValue(HALVES) == BigDoorHalf.MIDDLE) {
+        } else if (blockState.getValue(HALVES) == TallDoorHalf.MIDDLE) {
             BlockState blockState2 = levelReader.getBlockState(blockPos.below());
-            return blockState2.is(this) && blockState2.getValue(HALVES) == BigDoorHalf.LOWER;
+            return blockState2.is(this) && blockState2.getValue(HALVES) == TallDoorHalf.LOWER;
         } else {
             BlockState blockState2 = levelReader.getBlockState(blockPos.below());
-            return blockState2.is(this) && blockState2.getValue(HALVES) == BigDoorHalf.MIDDLE;
+            return blockState2.is(this) && blockState2.getValue(HALVES) == TallDoorHalf.MIDDLE;
         }
     }
 
@@ -250,17 +250,17 @@ public class BigDoorBlock extends Block {
     }
 
     protected static void preventCreativeDropFromBottomPart(Level level, BlockPos blockPos, BlockState blockState, Player player) {
-        BigDoorHalf halvesState = blockState.getValue(HALVES);
-        if (halvesState == BigDoorHalf.UPPER) {
+        TallDoorHalf halvesState = blockState.getValue(HALVES);
+        if (halvesState == TallDoorHalf.UPPER) {
             BlockPos blockPosBelow = blockPos.below();
             BlockState stateBelow = level.getBlockState(blockPosBelow);
-            if (stateBelow.is(blockState.getBlock()) && stateBelow.getValue(HALVES) == BigDoorHalf.MIDDLE) {
+            if (stateBelow.is(blockState.getBlock()) && stateBelow.getValue(HALVES) == TallDoorHalf.MIDDLE) {
                 BlockState blockState3 = stateBelow.getFluidState().is(Fluids.WATER) ? Blocks.WATER.defaultBlockState() : Blocks.AIR.defaultBlockState();
                 level.setBlock(blockPosBelow, blockState3, 35);
                 level.levelEvent(player, 2001, blockPosBelow, Block.getId(stateBelow));
                 BlockPos blockPosBelow2 = blockPosBelow.below();
                 BlockState stateBelow2 = level.getBlockState(blockPosBelow2);
-                if (stateBelow2.is(blockState.getBlock()) && stateBelow2.getValue(HALVES) == BigDoorHalf.LOWER) {
+                if (stateBelow2.is(blockState.getBlock()) && stateBelow2.getValue(HALVES) == TallDoorHalf.LOWER) {
                     BlockState blockState4 = stateBelow2.getFluidState().is(Fluids.WATER) ? Blocks.WATER.defaultBlockState() : Blocks.AIR.defaultBlockState();
                     level.setBlock(blockPosBelow2, blockState4, 35);
                     level.levelEvent(player, 2001, blockPosBelow2, Block.getId(stateBelow2));
@@ -275,6 +275,6 @@ public class BigDoorBlock extends Block {
     }
 
     public long getSeed(BlockState blockState, BlockPos blockPos) {
-        return Mth.getSeed(blockPos.getX(), blockPos.below(blockState.getValue(HALVES) == BigDoorHalf.MIDDLE ? 0 : 1).getY(), blockPos.getZ());
+        return Mth.getSeed(blockPos.getX(), blockPos.below(blockState.getValue(HALVES) == TallDoorHalf.MIDDLE ? 0 : 1).getY(), blockPos.getZ());
     }
 }

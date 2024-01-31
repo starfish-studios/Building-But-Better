@@ -14,14 +14,20 @@ import net.minecraft.world.level.material.PushReaction;
 import static net.minecraft.world.level.block.Blocks.litBlockEmission;
 
 public class FoundationBlocks {
+
+    public static final Block STONE_LAYER = register("stone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.STONE))));
+
     public static final Block POLISHED_STONE = register("polished_stone", new Block(FabricBlockSettings.copy((Blocks.SMOOTH_STONE))));
     public static final Block POLISHED_STONE_STAIRS = register("polished_stone_stairs", new StairBlock((Blocks.SMOOTH_STONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)));
     public static final Block POLISHED_STONE_SLAB = register("polished_stone_slab", new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)));
+    public static final Block POLISHED_STONE_COLUMN = register("polished_stone_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS)).noOcclusion()));
     public static final Block STONE_TILES = register("stone_tiles", new Block(FabricBlockSettings.copy((Blocks.STONE_BRICKS))));
     public static final Block STONE_TILE_STAIRS = register("stone_tile_stairs", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
     public static final Block STONE_TILE_SLAB = register("stone_tile_slab", new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
-    public static final Block STONE_FENCE = register("stone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS))));
+    public static final Block STONE_FENCE = register("stone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS)).noOcclusion()));
+
+
 
     // region PALLETS
     public static final Block OAK_PALLET = register("oak_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
@@ -53,10 +59,10 @@ public class FoundationBlocks {
 
     public static final Block BRAZIER = register("brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(15)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
 
-    public static final Block ROOFING = register("roofing", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+    public static final Block ROOFING = register("roofing", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
 
 
-    public static final Block URN = register("urn", new Block(FabricBlockSettings.copy((Blocks.STONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final Block URN = register("urn", new Block(FabricBlockSettings.copy((Blocks.STONE)).noOcclusion().pushReaction(PushReaction.DESTROY).noOcclusion()));
     public static final Block ROPE = register("rope", new ChainBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).forceSolidOn().strength(0.1F).sound(SoundType.WOOL).noOcclusion()));
 
 
@@ -75,25 +81,25 @@ public class FoundationBlocks {
     // endregion
 
     // region TRIMS
-    public static final Block OAK_TRIM = register("oak_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
-    public static final Block SPRUCE_TRIM = register("spruce_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS))));
-    public static final Block BIRCH_TRIM = register("birch_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS))));
-    public static final Block JUNGLE_TRIM = register("jungle_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS))));
-    public static final Block ACACIA_TRIM = register("acacia_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS))));
-    public static final Block DARK_OAK_TRIM = register("dark_oak_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS))));
-    public static final Block MANGROVE_TRIM = register("mangrove_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS))));
-    public static final Block CHERRY_TRIM = register("cherry_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS))));
-    public static final Block BAMBOO_TRIM = register("bamboo_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS))));
-    public static final Block CRIMSON_TRIM = register("crimson_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS))));
-    public static final Block WARPED_TRIM = register("warped_trim", new ColumnBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS))));
+    public static final Block OAK_TRIM = register("oak_trim", new FacingConnectingBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
+    public static final Block SPRUCE_TRIM = register("spruce_trim", new FacingConnectingBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS))));
+    public static final Block BIRCH_TRIM = register("birch_trim", new FacingConnectingBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS))));
+    public static final Block JUNGLE_TRIM = register("jungle_trim", new FacingConnectingBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS))));
+    public static final Block ACACIA_TRIM = register("acacia_trim", new FacingConnectingBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS))));
+    public static final Block DARK_OAK_TRIM = register("dark_oak_trim", new FacingConnectingBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS))));
+    public static final Block MANGROVE_TRIM = register("mangrove_trim", new FacingConnectingBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS))));
+    public static final Block CHERRY_TRIM = register("cherry_trim", new FacingConnectingBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS))));
+    public static final Block BAMBOO_TRIM = register("bamboo_trim", new FacingConnectingBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS))));
+    public static final Block CRIMSON_TRIM = register("crimson_trim", new FacingConnectingBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS))));
+    public static final Block WARPED_TRIM = register("warped_trim", new FacingConnectingBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS))));
     // endregion
 
 
-    public static final Block IRON_FENCE = register("iron_fence", new WallBlock(FabricBlockSettings.copy((Blocks.IRON_BARS))));
+    public static final Block IRON_FENCE = register("iron_fence", new WallBlock(FabricBlockSettings.copy((Blocks.IRON_BARS)).noOcclusion()));
 
-    public static final Block STONE_MOULDING = register("stone_moulding", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+    public static final Block STONE_MOULDING = register("stone_moulding", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
 
-    public static final Block BIG_OAK_DOOR = register("big_oak_door", new BigDoorBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion(), BlockSetType.OAK));
+    public static final Block TALL_OAK_DOOR = register("tall_oak_door", new TallDoorBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion(), BlockSetType.OAK));
 
 
     private static Block register(String id, Block block) {

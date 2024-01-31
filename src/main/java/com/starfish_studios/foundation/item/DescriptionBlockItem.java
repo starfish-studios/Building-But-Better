@@ -23,14 +23,9 @@ public class DescriptionBlockItem extends BlockItem {
 
     @Override
     public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag flagIn) {
-        /*if (stack.is(FoundationTags.FoundationItemTags.FRAMES)) {
-            if (Screen.hasShiftDown()) {
-                tooltip.add(Component.translatable("description.foundation.frame1").withStyle(ChatFormatting.GRAY));
-                tooltip.add(Component.translatable("description.foundation.frame2").withStyle(ChatFormatting.GRAY));
-            } else
-                tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
-        }
-        else*/ if (stack.is(FoundationTags.FoundationItemTags.PALLETS)) {
+
+
+        if (stack.is(FoundationTags.FoundationItemTags.PALLETS)) {
             if (Screen.hasShiftDown()) {
                 tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.pallet1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.foundation.pallet2").withStyle(ChatFormatting.GRAY));
@@ -39,6 +34,33 @@ public class DescriptionBlockItem extends BlockItem {
                 tooltip.add(Component.translatable("description.foundation.pallet5").withStyle(ChatFormatting.GRAY));
             } else
                 tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+        }
+
+        else if (stack.is(FoundationTags.FoundationItemTags.COLUMNS)) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.column1").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.foundation.column2").withStyle(ChatFormatting.GRAY));
+            } else
+                tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+        }
+
+        else if (stack.is(FoundationTags.FoundationItemTags.LAYERS)) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.layer1").withStyle(ChatFormatting.GRAY)));
+            } else
+                tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+        }
+
+        else if (stack.is(FoundationTags.FoundationItemTags.FRAMES)) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.frame1").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.foundation.frame2").withStyle(ChatFormatting.GRAY));
+            } else
+                tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+        }
+
+        else {
+            super.appendHoverText(stack, level, tooltip, flagIn);
         }
     }
 }

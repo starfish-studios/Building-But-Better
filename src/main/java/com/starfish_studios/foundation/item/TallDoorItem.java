@@ -9,8 +9,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class BigDoorItem extends BlockItem {
-    public BigDoorItem(Block block, Item.Properties properties) {
+public class TallDoorItem extends BlockItem {
+    public TallDoorItem(Block block, Item.Properties properties) {
         super(block, properties);
     }
 

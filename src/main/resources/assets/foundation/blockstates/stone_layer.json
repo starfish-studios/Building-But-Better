@@ -1,0 +1,102 @@
+{
+  "variants": {
+    "facing=up,layers=1": {
+      "model": "foundation:block/layer/stone_layer1"
+    },
+    "facing=up,layers=2": {
+      "model": "foundation:block/layer/stone_layer2"
+    },
+    "facing=up,layers=3": {
+      "model": "foundation:block/layer/stone_layer3"
+    },
+    "facing=up,layers=4": {
+      "model": "minecraft:block/stone"
+    },
+    
+    "facing=north,layers=1": {
+      "model": "foundation:block/layer/stone_layer1",
+      "x": 90
+    },
+    "facing=north,layers=2": {
+      "model": "foundation:block/layer/stone_layer2",
+      "x": 90
+    },
+    "facing=north,layers=3": {
+      "model": "foundation:block/layer/stone_layer3",
+      "x": 90
+    },
+    "facing=north,layers=4": {
+      "model": "minecraft:block/stone"
+    },
+    
+    "facing=south,layers=1": {
+      "model": "foundation:block/layer/stone_layer1",
+      "x": 90,
+      "y": 180
+    },
+    "facing=south,layers=2": {
+      "model": "foundation:block/layer/stone_layer2",
+      "x": 90,
+      "y": 180
+    },
+    "facing=south,layers=3": {
+      "model": "foundation:block/layer/stone_layer3",
+      "x": 90,
+      "y": 180
+    },
+    "facing=south,layers=4": {
+      "model": "minecraft:block/stone"
+    },
+    
+    "facing=west,layers=1": {
+      "model": "foundation:block/layer/stone_layer1",
+      "x": 90,
+      "y": 270
+    },
+    "facing=west,layers=2": {
+      "model": "foundation:block/layer/stone_layer2",
+      "x": 90,
+      "y": 270
+    },
+    "facing=west,layers=3": {
+      "model": "foundation:block/layer/stone_layer3",
+      "x": 90,
+      "y": 270
+    },
+    "facing=west,layers=4": {
+      "model": "minecraft:block/stone"
+    },
+   
+    "facing=east,layers=1": {
+      "model": "foundation:block/layer/stone_layer1",
+      "y": 90
+    },
+    "facing=east,layers=2": {
+      "model": "foundation:block/layer/stone_layer2",
+      "y": 90
+    },
+    "facing=east,layers=3": {
+      "model": "foundation:block/layer/stone_layer3",
+      "y": 90
+    },
+    "facing=east,layers=4": {
+      "model": "minecraft:block/stone"
+    },
+    
+    "facing=down,layers=1": {
+      "model": "foundation:block/layer/stone_layer1",
+      "x": 180
+    },
+    "facing=down,layers=2": {
+      "model": "foundation:block/layer/stone_layer2",
+      "x": 180
+    },
+    "facing=down,layers=3": {
+      "model": "foundation:block/layer/stone_layer3",
+      "x": 180
+    },
+    "facing=down,layers=4": {
+      "model": "minecraft:block/stone"
+    }
+  }
+}

@@ -1,13 +1,11 @@
 package com.starfish_studios.foundation.block;
 
-import com.starfish_studios.foundation.block.entity.BrazierBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.stats.Stats;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
@@ -19,7 +17,6 @@ import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.crafting.CampfireCookingRecipe;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -39,8 +36,6 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.Optional;
 
 public class BrazierBlock extends Block implements SimpleWaterloggedBlock {
     public static final BooleanProperty LIT = BlockStateProperties.LIT;
@@ -139,12 +134,6 @@ public class BrazierBlock extends Block implements SimpleWaterloggedBlock {
             if (blockState.getValue(LIT)) {
                 levelAccessor.playSound(null, blockPos, SoundEvents.GENERIC_EXTINGUISH_FIRE, SoundSource.BLOCKS, 1.0F, 1.0F);
             }
-        }
-
-
-        BlockEntity blockEntity = levelAccessor.getBlockEntity(blockPos);
-        if (blockEntity instanceof BrazierBlockEntity) {
-            ((BrazierBlockEntity)blockEntity).dowse();
         }
 
         levelAccessor.gameEvent(entity, GameEvent.BLOCK_CHANGE, blockPos);
