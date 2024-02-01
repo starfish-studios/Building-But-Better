@@ -15,15 +15,6 @@ import static net.minecraft.world.level.block.Blocks.litBlockEmission;
 
 public class FoundationBlocks {
 
-    public static final Block OAK_HEDGE = register("oak_hedge", new HedgeBlock(FabricBlockSettings.copy((Blocks.OAK_LEAVES)).noOcclusion()));
-    public static final Block SPRUCE_HEDGE = register("spruce_hedge", new HedgeBlock(FabricBlockSettings.copy((Blocks.SPRUCE_LEAVES)).noOcclusion()));
-    public static final Block BIRCH_HEDGE = register("birch_hedge", new HedgeBlock(FabricBlockSettings.copy((Blocks.BIRCH_LEAVES)).noOcclusion()));
-    public static final Block JUNGLE_HEDGE = register("jungle_hedge", new HedgeBlock(FabricBlockSettings.copy((Blocks.JUNGLE_LEAVES)).noOcclusion()));
-    public static final Block ACACIA_HEDGE = register("acacia_hedge", new HedgeBlock(FabricBlockSettings.copy((Blocks.ACACIA_LEAVES)).noOcclusion()));
-    public static final Block DARK_OAK_HEDGE = register("dark_oak_hedge", new HedgeBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_LEAVES)).noOcclusion()));
-    public static final Block MANGROVE_HEDGE = register("mangrove_hedge", new HedgeBlock(FabricBlockSettings.copy((Blocks.MANGROVE_LEAVES)).noOcclusion()));
-    public static final Block CHERRY_HEDGE = register("cherry_hedge", new HedgeBlock(FabricBlockSettings.copy((Blocks.CHERRY_LEAVES)).noOcclusion()));
-
     public static final Block STONE_LAYER = register("stone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.STONE))));
 
     public static final Block POLISHED_STONE = register("polished_stone", new Block(FabricBlockSettings.copy((Blocks.SMOOTH_STONE))));

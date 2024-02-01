@@ -16,15 +16,6 @@ public class FoundationItems {
 
     public static final Item FOUNDATION = register("foundation", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON).fireproof()));
 
-    public static final Item OAK_HEDGE = register("oak_hedge", new BlockItem(FoundationBlocks.OAK_HEDGE, new FabricItemSettings()));
-    public static final Item SPRUCE_HEDGE = register("spruce_hedge", new BlockItem(FoundationBlocks.SPRUCE_HEDGE, new FabricItemSettings()));
-    public static final Item BIRCH_HEDGE = register("birch_hedge", new BlockItem(FoundationBlocks.BIRCH_HEDGE, new FabricItemSettings()));
-    public static final Item JUNGLE_HEDGE = register("jungle_hedge", new BlockItem(FoundationBlocks.JUNGLE_HEDGE, new FabricItemSettings()));
-    public static final Item ACACIA_HEDGE = register("acacia_hedge", new BlockItem(FoundationBlocks.ACACIA_HEDGE, new FabricItemSettings()));
-    public static final Item DARK_OAK_HEDGE = register("dark_oak_hedge", new BlockItem(FoundationBlocks.DARK_OAK_HEDGE, new FabricItemSettings()));
-    public static final Item MANGROVE_HEDGE = register("mangrove_hedge", new BlockItem(FoundationBlocks.MANGROVE_HEDGE, new FabricItemSettings()));
-    public static final Item CHERRY_HEDGE = register("cherry_hedge", new BlockItem(FoundationBlocks.CHERRY_HEDGE, new FabricItemSettings()));
-
     public static final Item STONE_LAYER = register("stone_layer", new DescriptionBlockItem(FoundationBlocks.STONE_LAYER, new FabricItemSettings()));
 
     public static final Item POLISHED_STONE = register("polished_stone", new BlockItem(FoundationBlocks.POLISHED_STONE, new FabricItemSettings()));

@@ -30,15 +30,7 @@ public class FoundationVanillaIntegration {
                     FoundationBlocks.TALL_OAK_DOOR,
                     FoundationBlocks.ROPE,
                     FoundationBlocks.BRAZIER,
-                    FoundationBlocks.URN,
-                    FoundationBlocks.OAK_HEDGE,
-                    FoundationBlocks.SPRUCE_HEDGE,
-                    FoundationBlocks.BIRCH_HEDGE,
-                    FoundationBlocks.JUNGLE_HEDGE,
-                    FoundationBlocks.ACACIA_HEDGE,
-                    FoundationBlocks.DARK_OAK_HEDGE,
-                    FoundationBlocks.MANGROVE_HEDGE,
-                    FoundationBlocks.CHERRY_HEDGE
+                    FoundationBlocks.URN
             );
         }
     }

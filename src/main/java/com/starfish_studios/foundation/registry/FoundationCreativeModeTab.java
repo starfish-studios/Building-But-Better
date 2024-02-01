@@ -19,15 +19,6 @@ public class FoundationCreativeModeTab {
         // output.accept(STONE_LAYER);
         output.accept(HAMMER);
 
-        output.accept(OAK_HEDGE);
-        output.accept(SPRUCE_HEDGE);
-        output.accept(BIRCH_HEDGE);
-        output.accept(JUNGLE_HEDGE);
-        output.accept(ACACIA_HEDGE);
-        output.accept(DARK_OAK_HEDGE);
-        output.accept(MANGROVE_HEDGE);
-        output.accept(CHERRY_HEDGE);
-
         output.accept(POLISHED_STONE);
         output.accept(POLISHED_STONE_STAIRS);
         output.accept(POLISHED_STONE_SLAB);

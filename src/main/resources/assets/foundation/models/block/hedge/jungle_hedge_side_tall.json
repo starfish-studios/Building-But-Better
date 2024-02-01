@@ -1,6 +1,0 @@
-{
-    "parent": "foundation:block/hedge/template_hedge_side_tall",
-    "textures": {
-        "wall": "minecraft:block/jungle_leaves"
-    }
-}
