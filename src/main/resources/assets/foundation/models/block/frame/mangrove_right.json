@@ -5,20 +5,20 @@
         32
     ],
     "textures": {
-        "particle": "minecraft:block/mangrove_planks",
-        "texture": "foundation:block/frame/mangrove_frame"
+        "texture": "foundation:block/frame/mangrove_frame",
+        "particle": "block/mangrove_planks"
     },
     "elements": [
         {
             "from": [
-                -3,
-                0,
-                14
+                -3.01,
+                -0.01,
+                13.99
             ],
             "to": [
-                0,
-                16,
-                16
+                0.01,
+                16.01,
+                16.01
             ],
             "rotation": {
                 "angle": 0,

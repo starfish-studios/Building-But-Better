@@ -1,13 +1,19 @@
 package com.starfish_studios.foundation.block;
 
 import com.starfish_studios.foundation.block.properties.FoundationBlockStateProperties;
+import com.starfish_studios.foundation.block.properties.FrameStickDirection;
 import com.starfish_studios.foundation.registry.FoundationItems;
 import com.starfish_studios.foundation.registry.FoundationTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.stats.Stats;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
@@ -15,9 +21,11 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.pathfinder.PathComputationType;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -25,7 +33,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class FrameBlock extends Block implements SimpleWaterloggedBlock {
     public static final BooleanProperty SIDES = BooleanProperty.create("sides");
-    public static final BooleanProperty MIDDLE = BooleanProperty.create("middle");
+    public static final EnumProperty<FrameStickDirection> FRAME_CENTER = FoundationBlockStateProperties.FRAME_CENTER;
 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
@@ -56,7 +64,35 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
                 .setValue(LEFT, true)
                 .setValue(RIGHT, true)
                 .setValue(SIDES, true)
-                .setValue(MIDDLE, false));
+                .setValue(FRAME_CENTER, FrameStickDirection.NONE));
+    }
+
+    @Override
+    public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
+        if (player.getItemInHand(interactionHand).is(FoundationTags.FoundationItemTags.HAMMERS)) {
+            if (blockState.getValue(FRAME_CENTER) == FrameStickDirection.NONE) {
+                blockState = blockState.setValue(FRAME_CENTER, FrameStickDirection.VERTICAL);
+            } else if (blockState.getValue(FRAME_CENTER) == FrameStickDirection.VERTICAL) {
+                blockState = blockState.setValue(FRAME_CENTER, FrameStickDirection.RIGHT);
+            } else if (blockState.getValue(FRAME_CENTER) == FrameStickDirection.RIGHT) {
+                blockState = blockState.setValue(FRAME_CENTER, FrameStickDirection.HORIZONTAL);
+            } else if (blockState.getValue(FRAME_CENTER) == FrameStickDirection.HORIZONTAL) {
+                blockState = blockState.setValue(FRAME_CENTER, FrameStickDirection.LEFT);
+            } else if (blockState.getValue(FRAME_CENTER) == FrameStickDirection.LEFT) {
+                blockState = blockState.setValue(FRAME_CENTER, FrameStickDirection.VERTICAL);
+            }
+            level.setBlock(blockPos, blockState, 3);
+            level.playSound(player, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
+            return InteractionResult.SUCCESS;
+        } else return InteractionResult.PASS;
+    }
+
+    @Override
+    public void attack(BlockState blockState, Level level, BlockPos blockPos, Player player) {
+        if (!level.isClientSide) {
+            level.setBlock(blockPos, blockState.setValue(FRAME_CENTER, FrameStickDirection.NONE), 3);
+            level.playSound(null, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getBreakSound(), player.getSoundSource(), 1.0F, 1.0F);
+        }
     }
 
     public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
@@ -115,7 +151,7 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING, WATERLOGGED, TOP, BOTTOM, LEFT, RIGHT, SIDES, MIDDLE);
+        builder.add(FACING, WATERLOGGED, TOP, BOTTOM, LEFT, RIGHT, SIDES, FRAME_CENTER);
     }
 
     @Override

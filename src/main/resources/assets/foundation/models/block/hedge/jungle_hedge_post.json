@@ -1,0 +1,6 @@
+{
+    "parent": "foundation:block/hedge/template_hedge_post",
+    "textures": {
+        "wall": "minecraft:block/jungle_leaves"
+    }
+}

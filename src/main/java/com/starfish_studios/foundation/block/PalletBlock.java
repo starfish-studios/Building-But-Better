@@ -1,6 +1,7 @@
 package com.starfish_studios.foundation.block;
 
 import com.starfish_studios.foundation.block.properties.FoundationBlockStateProperties;
+import com.starfish_studios.foundation.registry.FoundationTags;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
@@ -105,7 +106,7 @@ public class PalletBlock extends HorizontalDirectionalBlock implements SimpleWat
 
     @Override
     public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
-        if (player.getItemInHand(interactionHand).is(ItemTags.AXES)) {
+        if (player.getItemInHand(interactionHand).is(FoundationTags.FoundationItemTags.HAMMERS)) {
             if (blockHitResult.getLocation().z - (double)blockPos.getZ() > 0.5 && blockState.getValue(FACING) == Direction.NORTH) {
                 if (blockHitResult.getLocation().z - (double)blockPos.getZ() < 0.75) {
                     blockState = blockState.cycle(LAYER_ONE);

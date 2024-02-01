@@ -4,6 +4,7 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 
 public class FoundationBlockStateProperties {
+    public static final EnumProperty<FrameStickDirection> FRAME_CENTER = EnumProperty.create("center", FrameStickDirection.class);
     public static final EnumProperty<ColumnType> COLUMN_TYPE = EnumProperty.create("type", ColumnType.class);
     public static final EnumProperty<TallDoorHalf> HALVES = EnumProperty.create("type", TallDoorHalf.class);
     public static final EnumProperty<LayerNumber> LAYERS = EnumProperty.create("layer", LayerNumber.class);

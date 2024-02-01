@@ -47,6 +47,8 @@ public class DescriptionBlockItem extends BlockItem {
         else if (stack.is(FoundationTags.FoundationItemTags.LAYERS)) {
             if (Screen.hasShiftDown()) {
                 tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.layer1").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.layer2").withStyle(ChatFormatting.GRAY)));
+
             } else
                 tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
         }

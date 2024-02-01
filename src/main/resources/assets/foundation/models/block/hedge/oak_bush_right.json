@@ -1,0 +1,28 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"texture_size": [48, 48],
+	"textures": {
+		"leaves": "foundation:block/hedge/oak_leaves"
+	},
+	"elements": [
+		{
+			"from": [8, -8, -8],
+			"to": [8, 24, 8],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [8.33333, 2.66667, 14, 13.33333], "texture": "#leaves", "tintindex": 0},
+				"west": {"uv": [14, 2.66667, 8.33333, 13.33333], "texture": "#leaves", "tintindex": 0}
+			}
+		},
+		{
+			"from": [8, -8, -8],
+			"to": [8, 24, 8],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [8.33333, 2.66667, 14, 13.33333], "texture": "#leaves", "tintindex": 0},
+				"west": {"uv": [14, 2.66667, 8.33333, 13.33333], "texture": "#leaves", "tintindex": 0}
+			}
+		}
+	]
+}

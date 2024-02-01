@@ -1,0 +1,6 @@
+{
+  "parent": "foundation:block/hedge/template_hedge_side",
+  "textures": {
+    "wall": "minecraft:block/oak_leaves"
+  }
+}

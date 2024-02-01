@@ -362,43 +362,172 @@
         },
         {
             "when": {
-                "middle": "true",
+                "center": "vertical",
                 "facing": "north"
             },
             "apply": {
-                "model": "foundation:block/frame/mangrove_middle",
+                "model": "foundation:block/frame/mangrove_vertical",
                 "uvlock": false
             }
         },
         {
             "when": {
-                "middle": "true",
+                "center": "vertical",
                 "facing": "east"
             },
             "apply": {
-                "model": "foundation:block/frame/mangrove_middle",
+                "model": "foundation:block/frame/mangrove_vertical",
                 "uvlock": false,
                 "y": 90
             }
         },
         {
             "when": {
-                "middle": "true",
+                "center": "vertical",
                 "facing": "south"
             },
             "apply": {
-                "model": "foundation:block/frame/mangrove_middle",
+                "model": "foundation:block/frame/mangrove_vertical",
                 "uvlock": false,
                 "y": 180
             }
         },
         {
             "when": {
-                "middle": "true",
+                "center": "vertical",
                 "facing": "west"
             },
             "apply": {
-                "model": "foundation:block/frame/mangrove_middle",
+                "model": "foundation:block/frame/mangrove_vertical",
+                "uvlock": false,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "center": "horizontal",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "foundation:block/frame/mangrove_horizontal",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "center": "horizontal",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "foundation:block/frame/mangrove_horizontal",
+                "uvlock": false,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "center": "horizontal",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "foundation:block/frame/mangrove_horizontal",
+                "uvlock": false,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "center": "horizontal",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "foundation:block/frame/mangrove_horizontal",
+                "uvlock": false,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "center": "left",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "foundation:block/frame/mangrove_diagonal_left",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "center": "left",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "foundation:block/frame/mangrove_diagonal_left",
+                "uvlock": false,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "center": "left",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "foundation:block/frame/mangrove_diagonal_left",
+                "uvlock": false,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "center": "left",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "foundation:block/frame/mangrove_diagonal_left",
+                "uvlock": false,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "center": "right",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "foundation:block/frame/mangrove_diagonal_right",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "center": "right",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "foundation:block/frame/mangrove_diagonal_right",
+                "uvlock": false,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "center": "right",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "foundation:block/frame/mangrove_diagonal_right",
+                "uvlock": false,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "center": "right",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "foundation:block/frame/mangrove_diagonal_right",
                 "uvlock": false,
                 "y": 270
             }
