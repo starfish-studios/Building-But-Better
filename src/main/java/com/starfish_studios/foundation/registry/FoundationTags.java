@@ -13,6 +13,7 @@ public interface FoundationTags {
     // region BLOCK TAGS
     interface FoundationBlockTags {
         TagKey<Block> METAL_FENCES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "metal_fences"));
+        TagKey<Block> HEDGES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "hedges"));
         TagKey<Block> STONE_BALUSTRADES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "stone_balustrades"));
 
         TagKey<Block> STONE_FENCES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "stone_fences"));
@@ -29,6 +30,7 @@ public interface FoundationTags {
         TagKey<Item> PALLETS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "pallets"));
         TagKey<Item> COLUMNS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "columns"));
         TagKey<Item> LAYERS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "layers"));
+        TagKey<Item> HAMMERS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "hammers"));
     }
 
 }

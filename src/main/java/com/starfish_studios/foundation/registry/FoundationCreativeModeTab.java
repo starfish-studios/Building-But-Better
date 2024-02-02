@@ -17,6 +17,7 @@ public class FoundationCreativeModeTab {
     public static final CreativeModeTab ITEM_GROUP = register("item_group", FabricItemGroup.builder().icon(FOUNDATION::getDefaultInstance).title(Component.translatable("itemGroup.foundation.tab")).displayItems((featureFlagSet, output) -> {
 
         // output.accept(STONE_LAYER);
+        output.accept(HAMMER);
 
         output.accept(POLISHED_STONE);
         output.accept(POLISHED_STONE_STAIRS);

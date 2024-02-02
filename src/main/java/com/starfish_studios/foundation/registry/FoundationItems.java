@@ -99,7 +99,7 @@ public class FoundationItems {
 
     public static final Item STONE_MOULDING = register("stone_moulding", new BlockItem(FoundationBlocks.STONE_MOULDING, new FabricItemSettings()));
 
-    public static final Item WRENCH = register("wrench", new WrenchItem(new FabricItemSettings().maxCount(1)));
+    public static final Item HAMMER = register("hammer", new Item(new FabricItemSettings().maxCount(1)));
 
     //public static final Item TALL_OAK_DOOR = register("tall_oak_door", new TallDoorItem(FoundationBlocks.TALL_OAK_DOOR, new FabricItemSettings()));
 

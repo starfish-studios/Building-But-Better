@@ -95,7 +95,7 @@ public class FoundationBlocks {
     // endregion
 
 
-    public static final Block IRON_FENCE = register("iron_fence", new WallBlock(FabricBlockSettings.copy((Blocks.IRON_BARS)).noOcclusion()));
+    public static final Block IRON_FENCE = register("iron_fence", new IronFenceBlock(FabricBlockSettings.copy((Blocks.IRON_BARS)).noOcclusion()));
 
     public static final Block STONE_MOULDING = register("stone_moulding", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
 

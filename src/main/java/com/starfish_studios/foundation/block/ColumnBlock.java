@@ -2,6 +2,7 @@ package com.starfish_studios.foundation.block;
 
 import com.starfish_studios.foundation.Foundation;
 import com.starfish_studios.foundation.block.properties.FoundationBlockStateProperties;
+import com.starfish_studios.foundation.registry.FoundationTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.ItemTags;
@@ -57,7 +58,7 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
-        if (player.getItemInHand(interactionHand).is(ItemTags.PICKAXES)) {
+        if (player.getItemInHand(interactionHand).is(FoundationTags.FoundationItemTags.HAMMERS)) {
             if (blockState.getValue(FACING) == Direction.UP) {
                 if (blockHitResult.getLocation().y - blockPos.getY() < 0.25) {
                     blockState = blockState.cycle(LAYER_ONE);

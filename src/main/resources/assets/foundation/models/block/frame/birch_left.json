@@ -5,20 +5,20 @@
         32
     ],
     "textures": {
-        "particle": "minecraft:block/birch_planks",
-        "texture": "foundation:block/frame/birch_frame"
+        "texture": "foundation:block/frame/birch_frame",
+        "particle": "block/birch_planks"
     },
     "elements": [
         {
             "from": [
-                16,
-                0,
-                14
+                15.99,
+                -0.01,
+                13.99
             ],
             "to": [
-                19,
-                16,
-                16
+                19.01,
+                16.01,
+                16.01
             ],
             "rotation": {
                 "angle": 0,

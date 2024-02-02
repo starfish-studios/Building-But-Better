@@ -4,7 +4,8 @@
 
   "description.foundation.pencil": "✐ ",
 
-  "description.foundation.layer1": "Right-Click with a Pencil",
+  "description.foundation.layer1": "Can be stacked up to 4.",
+  "description.foundation.layer2": "Can be placed in all directions.",
 
   "description.foundation.frame1": "Automatically connects",
   "description.foundation.frame2": "to other Frames.",
@@ -18,12 +19,16 @@
   "description.foundation.column1": "Right-Click with a Pickaxe",
   "description.foundation.column2": "to add/remove outside layers.",
 
+  "item.foundation.hammer": "Hammer",
+
   "block.foundation.rope": "Rope",
   "block.foundation.stone_moulding": "Stone Moulding",
   "block.foundation.urn": "Urn",
   "block.foundation.brazier": "Brazier",
   "block.foundation.iron_fence": "Iron Fence",
   "block.foundation.tall_oak_door": "Tall Oak Door",
+  "block.foundation.oak_hedge": "Oak Hedge",
+  "block.foundation.stone_layer": "Stone Layer",
 
   "block.foundation.polished_stone": "Polished Stone",
   "block.foundation.polished_stone_stairs": "Polished Stone Stairs",
