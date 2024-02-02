@@ -35,7 +35,7 @@ public class FoundationCreativeModeTab {
 
         output.accept(IRON_FENCE);
 
-        output.accept(TALL_OAK_DOOR);
+        output.accept(BIG_DOOR);
 
 
         output.accept(OAK_TRIM);

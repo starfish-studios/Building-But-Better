@@ -1,0 +1,196 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_left_0_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_left_1_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_left_2_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_left_3_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_right_0_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_right_1_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_right_2_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_right_3_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_left_0_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_left_1_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_left_2_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_left_3_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_right_0_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_right_1_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_right_2_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "foundation:block/tall_door/big_door_right_3_open",
+        "uvlock": true
+      }
+    }
+  ]
+}

@@ -99,7 +99,10 @@ public class FoundationBlocks {
 
     public static final Block STONE_MOULDING = register("stone_moulding", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
 
-    public static final Block TALL_OAK_DOOR = register("tall_oak_door", new TallDoorBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion(), BlockSetType.OAK));
+    //public static final Block TALL_OAK_DOOR = register("tall_oak_door", new TallDoorBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion(), BlockSetType.OAK));
+
+    // big doors
+    public static final Block BIG_DOOR = register("big_door", new BigDoorBlock(FabricBlockSettings.copy((Blocks.OAK_DOOR)).noOcclusion()));
 
 
     private static Block register(String id, Block block) {

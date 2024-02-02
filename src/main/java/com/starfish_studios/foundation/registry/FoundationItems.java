@@ -101,8 +101,9 @@ public class FoundationItems {
 
     public static final Item WRENCH = register("wrench", new WrenchItem(new FabricItemSettings().maxCount(1)));
 
-    public static final Item TALL_OAK_DOOR = register("tall_oak_door", new TallDoorItem(FoundationBlocks.TALL_OAK_DOOR, new FabricItemSettings()));
+    //public static final Item TALL_OAK_DOOR = register("tall_oak_door", new TallDoorItem(FoundationBlocks.TALL_OAK_DOOR, new FabricItemSettings()));
 
+    public static final Item BIG_DOOR = register("big_door", new BlockItem(FoundationBlocks.BIG_DOOR, new FabricItemSettings()));
 
     private static Item register(String id, Item item) {
         return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Foundation.MOD_ID, id), item);
