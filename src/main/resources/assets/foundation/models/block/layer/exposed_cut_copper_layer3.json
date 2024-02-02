@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/snow_height12",
+    "textures": {
+        "particle": "minecraft:block/exposed_cut_copper",
+        "texture": "minecraft:block/exposed_cut_copper"
+    }
+}

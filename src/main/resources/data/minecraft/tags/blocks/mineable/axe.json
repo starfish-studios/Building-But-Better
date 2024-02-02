@@ -1,5 +1,7 @@
 {
   "values": [
+    "#foundation:wooden_layers",
+
     "foundation:oak_lantern",
     "foundation:spruce_lantern",
     "foundation:birch_lantern",

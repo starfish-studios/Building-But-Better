@@ -15,7 +15,65 @@ import static net.minecraft.world.level.block.Blocks.litBlockEmission;
 
 public class FoundationBlocks {
 
+
+    // region LAYERS
+    public static final Block OAK_LAYER = register("oak_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
+    public static final Block SPRUCE_LAYER = register("spruce_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS))));
+    public static final Block BIRCH_LAYER = register("birch_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS))));
+    public static final Block JUNGLE_LAYER = register("jungle_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS))));
+    public static final Block ACACIA_LAYER = register("acacia_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS))));
+    public static final Block DARK_OAK_LAYER = register("dark_oak_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS))));
+    public static final Block CRIMSON_LAYER = register("crimson_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS))));
+    public static final Block WARPED_LAYER = register("warped_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS))));
+    public static final Block MANGROVE_LAYER = register("mangrove_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS))));
+    public static final Block BAMBOO_LAYER = register("bamboo_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS))));
+    public static final Block BAMBOO_MOSAIC_LAYER = register("bamboo_mosaic_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.BAMBOO_MOSAIC))));
+    public static final Block CHERRY_LAYER = register("cherry_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS))));
     public static final Block STONE_LAYER = register("stone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.STONE))));
+    public static final Block COBBLESTONE_LAYER = register("cobblestone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.COBBLESTONE))));
+    public static final Block MOSSY_COBBLESTONE_LAYER = register("mossy_cobblestone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.MOSSY_COBBLESTONE))));
+    public static final Block SMOOTH_STONE_LAYER = register("smooth_stone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.SMOOTH_STONE))));
+    public static final Block POLISHED_STONE_LAYER = register("polished_stone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.SMOOTH_STONE))));
+    public static final Block STONE_TILE_LAYER = register("stone_tile_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS))));
+    public static final Block STONE_BRICK_LAYER = register("stone_brick_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS))));
+    public static final Block MOSSY_STONE_BRICK_LAYER = register("mossy_stone_brick_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.MOSSY_STONE_BRICKS))));
+    public static final Block GRANITE_LAYER = register("granite_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.GRANITE))));
+    public static final Block POLISHED_GRANITE_LAYER = register("polished_granite_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.POLISHED_GRANITE))));
+    public static final Block DIORITE_LAYER = register("diorite_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.DIORITE))));
+    public static final Block POLISHED_DIORITE_LAYER = register("polished_diorite_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.POLISHED_DIORITE))));
+    public static final Block ANDESITE_LAYER = register("andesite_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.ANDESITE))));
+    public static final Block POLISHED_ANDESITE_LAYER = register("polished_andesite_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.POLISHED_ANDESITE))));
+    public static final Block COBBLED_DEEPSLATE_LAYER = register("cobbled_deepslate_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.COBBLED_DEEPSLATE))));
+    public static final Block POLISHED_DEEPSLATE_LAYER = register("polished_deepslate_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.POLISHED_DEEPSLATE))));
+    public static final Block DEEPSLATE_BRICK_LAYER = register("deepslate_brick_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS))));
+    public static final Block DEEPSLATE_TILE_LAYER = register("deepslate_tile_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_TILES))));
+    public static final Block BRICK_LAYER = register("brick_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.BRICKS))));
+    public static final Block MUD_BRICK_LAYER = register("mud_brick_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.MUD_BRICKS))));
+    public static final Block SANDSTONE_LAYER = register("sandstone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.SANDSTONE))));
+    public static final Block SMOOTH_SANDSTONE_LAYER = register("smooth_sandstone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.SMOOTH_SANDSTONE))));
+    public static final Block RED_SANDSTONE_LAYER = register("red_sandstone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.RED_SANDSTONE))));
+    public static final Block SMOOTH_RED_SANDSTONE_LAYER = register("smooth_red_sandstone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.SMOOTH_RED_SANDSTONE))));
+    public static final Block PRISMARINE_LAYER = register("prismarine_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.PRISMARINE))));
+    public static final Block PRISMARINE_BRICK_LAYER = register("prismarine_brick_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.PRISMARINE_BRICKS))));
+    public static final Block DARK_PRISMARINE_LAYER = register("dark_prismarine_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.DARK_PRISMARINE))));
+    public static final Block NETHER_BRICK_LAYER = register("nether_brick_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.NETHER_BRICKS))));
+    public static final Block RED_NETHER_BRICK_LAYER = register("red_nether_brick_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.RED_NETHER_BRICKS))));
+    public static final Block BLACKSTONE_LAYER = register("blackstone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE))));
+    public static final Block POLISHED_BLACKSTONE_LAYER = register("polished_blackstone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.POLISHED_BLACKSTONE))));
+    public static final Block POLISHED_BLACKSTONE_BRICK_LAYER = register("polished_blackstone_brick_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.POLISHED_BLACKSTONE_BRICKS))));
+    public static final Block END_STONE_BRICK_LAYER = register("end_stone_brick_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.END_STONE_BRICKS))));
+    public static final Block PURPUR_LAYER = register("purpur_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.PURPUR_BLOCK))));
+    public static final Block QUARTZ_LAYER = register("quartz_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK))));
+    public static final Block CUT_COPPER_LAYER = register("cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.CUT_COPPER))));
+    public static final Block EXPOSED_CUT_COPPER_LAYER = register("exposed_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.EXPOSED_CUT_COPPER))));
+    public static final Block WEATHERED_CUT_COPPER_LAYER = register("weathered_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.WEATHERED_CUT_COPPER))));
+    public static final Block OXIDIZED_CUT_COPPER_LAYER = register("oxidized_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.OXIDIZED_CUT_COPPER))));
+    public static final Block WAXED_CUT_COPPER_LAYER = register("waxed_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.WAXED_CUT_COPPER))));
+    public static final Block WAXED_EXPOSED_CUT_COPPER_LAYER = register("waxed_exposed_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.WAXED_EXPOSED_CUT_COPPER))));
+    public static final Block WAXED_WEATHERED_CUT_COPPER_LAYER = register("waxed_weathered_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.WAXED_WEATHERED_CUT_COPPER))));
+    public static final Block WAXED_OXIDIZED_CUT_COPPER_LAYER = register("waxed_oxidized_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.WAXED_OXIDIZED_CUT_COPPER))));
+    // endregion
+
 
     public static final Block POLISHED_STONE = register("polished_stone", new Block(FabricBlockSettings.copy((Blocks.SMOOTH_STONE))));
     public static final Block POLISHED_STONE_STAIRS = register("polished_stone_stairs", new StairBlock((Blocks.SMOOTH_STONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)));

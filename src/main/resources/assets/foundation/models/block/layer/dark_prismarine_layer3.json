@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/snow_height12",
+    "textures": {
+        "particle": "minecraft:block/dark_prismarine",
+        "texture": "minecraft:block/dark_prismarine"
+    }
+}

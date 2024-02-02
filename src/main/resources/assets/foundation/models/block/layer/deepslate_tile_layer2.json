@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/snow_height8",
+    "textures": {
+        "particle": "minecraft:block/deepslate_tiles",
+        "texture": "minecraft:block/deepslate_tiles"
+    }
+}

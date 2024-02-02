@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/snow_height12",
+    "textures": {
+        "particle": "minecraft:block/end_stone_bricks",
+        "texture": "minecraft:block/end_stone_bricks"
+    }
+}

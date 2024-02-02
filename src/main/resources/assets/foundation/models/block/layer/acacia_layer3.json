@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/snow_height12",
+    "textures": {
+        "particle": "minecraft:block/acacia_planks",
+        "texture": "minecraft:block/acacia_planks"
+    }
+}

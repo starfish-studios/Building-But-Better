@@ -94,6 +94,65 @@ public class FoundationCreativeModeTab {
         output.accept(WARPED_FRAME);
         output.accept(WARPED_LANTERN);
 
+
+        // region LAYERS
+        output.accept(OAK_LAYER);
+        output.accept(SPRUCE_LAYER);
+        output.accept(BIRCH_LAYER);
+        output.accept(JUNGLE_LAYER);
+        output.accept(ACACIA_LAYER);
+        output.accept(DARK_OAK_LAYER);
+        output.accept(CRIMSON_LAYER);
+        output.accept(WARPED_LAYER);
+        output.accept(MANGROVE_LAYER);
+        output.accept(BAMBOO_LAYER);
+        output.accept(BAMBOO_MOSAIC_LAYER);
+        output.accept(CHERRY_LAYER);
+        output.accept(STONE_LAYER);
+        output.accept(COBBLESTONE_LAYER);
+        output.accept(MOSSY_COBBLESTONE_LAYER);
+        output.accept(SMOOTH_STONE_LAYER);
+        output.accept(POLISHED_STONE_LAYER);
+        output.accept(STONE_TILE_LAYER);
+        output.accept(STONE_BRICK_LAYER);
+        output.accept(MOSSY_STONE_BRICK_LAYER);
+        output.accept(GRANITE_LAYER);
+        output.accept(POLISHED_GRANITE_LAYER);
+        output.accept(DIORITE_LAYER);
+        output.accept(POLISHED_DIORITE_LAYER);
+        output.accept(ANDESITE_LAYER);
+        output.accept(POLISHED_ANDESITE_LAYER);
+        output.accept(COBBLED_DEEPSLATE_LAYER);
+        output.accept(POLISHED_DEEPSLATE_LAYER);
+        output.accept(DEEPSLATE_BRICK_LAYER);
+        output.accept(DEEPSLATE_TILE_LAYER);
+        output.accept(BRICK_LAYER);
+        output.accept(MUD_BRICK_LAYER);
+        output.accept(SANDSTONE_LAYER);
+        output.accept(SMOOTH_SANDSTONE_LAYER);
+        output.accept(RED_SANDSTONE_LAYER);
+        output.accept(SMOOTH_RED_SANDSTONE_LAYER);
+        output.accept(PRISMARINE_LAYER);
+        output.accept(PRISMARINE_BRICK_LAYER);
+        output.accept(DARK_PRISMARINE_LAYER);
+        output.accept(NETHER_BRICK_LAYER);
+        output.accept(RED_NETHER_BRICK_LAYER);
+        output.accept(BLACKSTONE_LAYER);
+        output.accept(POLISHED_BLACKSTONE_LAYER);
+        output.accept(POLISHED_BLACKSTONE_BRICK_LAYER);
+        output.accept(END_STONE_BRICK_LAYER);
+        output.accept(PURPUR_LAYER);
+        output.accept(QUARTZ_LAYER);
+        output.accept(CUT_COPPER_LAYER);
+        output.accept(EXPOSED_CUT_COPPER_LAYER);
+        output.accept(WEATHERED_CUT_COPPER_LAYER);
+        output.accept(OXIDIZED_CUT_COPPER_LAYER);
+        output.accept(WAXED_CUT_COPPER_LAYER);
+        output.accept(WAXED_EXPOSED_CUT_COPPER_LAYER);
+        output.accept(WAXED_WEATHERED_CUT_COPPER_LAYER);
+        output.accept(WAXED_OXIDIZED_CUT_COPPER_LAYER);
+        // endregion
+
         // output.accept(WRENCH);
 
         }).build()
