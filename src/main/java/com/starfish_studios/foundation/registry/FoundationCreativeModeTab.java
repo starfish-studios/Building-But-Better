@@ -19,6 +19,8 @@ public class FoundationCreativeModeTab {
         // output.accept(STONE_LAYER);
         output.accept(HAMMER);
 
+        output.accept(OAK_LADDER);
+
         output.accept(POLISHED_STONE);
         output.accept(POLISHED_STONE_STAIRS);
         output.accept(POLISHED_STONE_SLAB);

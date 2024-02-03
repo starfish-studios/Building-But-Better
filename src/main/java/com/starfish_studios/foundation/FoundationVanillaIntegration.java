@@ -29,7 +29,8 @@ public class FoundationVanillaIntegration {
                     FoundationBlocks.IRON_FENCE,
                     FoundationBlocks.ROPE,
                     FoundationBlocks.BRAZIER,
-                    FoundationBlocks.URN
+                    FoundationBlocks.URN,
+                    FoundationBlocks.OAK_LADDER
             );
         }
     }

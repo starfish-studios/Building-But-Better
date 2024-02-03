@@ -15,6 +15,8 @@ import static net.minecraft.world.level.block.Blocks.litBlockEmission;
 
 public class FoundationBlocks {
 
+    public static final Block OAK_LADDER = register("oak_ladder", new FoundationLadderBlock(1, BlockBehaviour.Properties.copy(Blocks.LADDER)));
+
 
     // region LAYERS
     public static final Block OAK_LAYER = register("oak_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));

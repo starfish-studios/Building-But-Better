@@ -2,6 +2,10 @@ package com.starfish_studios.foundation.block;
 
 import com.starfish_studios.foundation.registry.FoundationBlocks;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
@@ -18,6 +22,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.*;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
@@ -30,6 +35,11 @@ public class BigDoorBlock extends Block {
     public static final EnumProperty<DoorHingeSide> HINGE;
     public static final VoxelShape SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 14.0D, 16.0D);
 
+    protected static final VoxelShape NORTH_AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 3.0D);
+    protected static final VoxelShape SOUTH_AABB = Block.box(0.0D, 0.0D, 13.0D, 16.0D, 16.0D, 16.0D);
+    protected static final VoxelShape WEST_AABB = Block.box(13.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
+    protected static final VoxelShape EAST_AABB = Block.box(0.0D, 0.0D, 0.0D, 3.0D, 16.0D, 16.0D);
+
     //protected static final VoxelShape SOUTH_AABB;
     //protected static final VoxelShape NORTH_AABB;
     //protected static final VoxelShape WEST_AABB;
@@ -39,7 +49,44 @@ public class BigDoorBlock extends Block {
 
     @Override
     public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-        return SHAPE;
+        if (blockState.getValue(HINGE) == DoorHingeSide.LEFT) {
+            if (blockState.getValue(OPEN)) {
+                return switch (blockState.getValue(FACING)) {
+                    case NORTH -> WEST_AABB;
+                    case SOUTH -> EAST_AABB;
+                    case WEST -> NORTH_AABB;
+                    case EAST -> SOUTH_AABB;
+                    default -> { throw new IllegalStateException("Unexpected value: " + blockState.getValue(FACING)); }
+                };
+            } else {
+                return switch (blockState.getValue(FACING)) {
+                    case NORTH -> NORTH_AABB;
+                    case SOUTH -> SOUTH_AABB;
+                    case WEST -> EAST_AABB;
+                    case EAST -> WEST_AABB;
+                    default -> { throw new IllegalStateException("Unexpected value: " + blockState.getValue(FACING)); }
+                };
+            }
+        } else if (blockState.getValue(HINGE) == DoorHingeSide.RIGHT) {
+            if (blockState.getValue(OPEN)) {
+                return switch (blockState.getValue(FACING)) {
+                    case NORTH -> EAST_AABB;
+                    case SOUTH -> WEST_AABB;
+                    case WEST -> SOUTH_AABB;
+                    case EAST -> NORTH_AABB;
+                    default -> { throw new IllegalStateException("Unexpected value: " + blockState.getValue(FACING)); }
+                };
+            } else {
+                return switch (blockState.getValue(FACING)) {
+                    case NORTH -> NORTH_AABB;
+                    case SOUTH -> SOUTH_AABB;
+                    case WEST -> EAST_AABB;
+                    case EAST -> WEST_AABB;
+                    default -> { throw new IllegalStateException("Unexpected value: " + blockState.getValue(FACING)); }
+                };
+            }
+        }
+        return Shapes.block();
     }
 
     public BigDoorBlock(Properties properties) {
@@ -117,7 +164,7 @@ public class BigDoorBlock extends Block {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-       builder.add(new Property[]{X_POS, Y_POS, FACING, OPEN, HINGE, POWERED});
+       builder.add(X_POS, Y_POS, FACING, OPEN, HINGE, POWERED);
     }
 
     @Override
@@ -150,6 +197,7 @@ public class BigDoorBlock extends Block {
                 placeAirColumn(level, startPos.relative(blockState.getValue(FACING).getCounterClockWise()));
                 placeDoorColumn(blockState, level, startPos, 0, true);
                 placeDoorColumn(blockState, level, startPos.relative(blockState.getValue(FACING).getOpposite()), 1, true);
+                level.playSound(player, blockPos, this.getOpenSound(), SoundSource.BLOCKS, 1.0F, 0.6F);
                 return InteractionResult.SUCCESS;
             }
             else{
@@ -158,6 +206,7 @@ public class BigDoorBlock extends Block {
                 placeAirColumn(level, startPos.relative(blockState.getValue(FACING).getClockWise()));
                 placeDoorColumn(blockState, level, startPos, 0, true);
                 placeDoorColumn(blockState, level, startPos.relative(blockState.getValue(FACING).getOpposite()), 1, true);
+                level.playSound(player, blockPos, this.getOpenSound(), SoundSource.BLOCKS, 1.0F, 0.6F);
                 return InteractionResult.SUCCESS;
             }
         }
@@ -168,6 +217,7 @@ public class BigDoorBlock extends Block {
                 placeAirColumn(level, startPos.relative(blockState.getValue(FACING).getOpposite()));
                 placeDoorColumn(blockState, level, startPos, 0, false);
                 placeDoorColumn(blockState, level, startPos.relative(blockState.getValue(FACING).getCounterClockWise()), 1, false);
+                level.playSound(player, blockPos, this.getCloseSound(), SoundSource.BLOCKS, 1.0F, 0.6F);
                 return InteractionResult.SUCCESS;
             }
             else{
@@ -176,9 +226,18 @@ public class BigDoorBlock extends Block {
                 placeAirColumn(level, startPos.relative(blockState.getValue(FACING).getOpposite()));
                 placeDoorColumn(blockState, level, startPos, 1, false);
                 placeDoorColumn(blockState, level, startPos.relative(blockState.getValue(FACING).getClockWise()), 0, false);
+                level.playSound(player, blockPos, this.getCloseSound(), SoundSource.BLOCKS, 1.0F, 0.6F);
                 return InteractionResult.SUCCESS;
             }
         }
+    }
+
+    protected SoundEvent getOpenSound() {
+        return SoundEvents.WOODEN_DOOR_OPEN;
+    }
+
+    protected SoundEvent getCloseSound() {
+        return SoundEvents.WOODEN_DOOR_CLOSE;
     }
 
     private void placeDoorColumn(BlockState blockState, Level level, BlockPos pos, int xPos, boolean open){

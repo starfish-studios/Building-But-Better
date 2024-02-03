@@ -73,7 +73,9 @@ public class FoundationItems {
     public static final Item WAXED_OXIDIZED_CUT_COPPER_LAYER = register("waxed_oxidized_cut_copper_layer", new DescriptionBlockItem(FoundationBlocks.WAXED_OXIDIZED_CUT_COPPER_LAYER, new FabricItemSettings()));
 
     // endregion
-    
+
+
+    public static final Item OAK_LADDER = register("oak_ladder", new BlockItem(FoundationBlocks.OAK_LADDER, new FabricItemSettings()));
     
 
     public static final Item POLISHED_STONE = register("polished_stone", new BlockItem(FoundationBlocks.POLISHED_STONE, new FabricItemSettings()));
