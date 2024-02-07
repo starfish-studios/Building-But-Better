@@ -1,9 +1,8 @@
 package com.starfish_studios.foundation.block;
 
 import com.starfish_studios.foundation.block.properties.FoundationBlockStateProperties;
-import com.starfish_studios.foundation.block.properties.WoodStyle;
-import com.starfish_studios.foundation.registry.FoundationItems;
 import com.starfish_studios.foundation.registry.FoundationTags;
+import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
@@ -15,12 +14,14 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LadderBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.phys.BlockHitResult;
+import org.jetbrains.annotations.Nullable;
 
 public class FoundationLadderBlock extends LadderBlock {
     public static IntegerProperty STYLE = FoundationBlockStateProperties.STYLE;
+
     public FoundationLadderBlock(int defaultStyle, Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()

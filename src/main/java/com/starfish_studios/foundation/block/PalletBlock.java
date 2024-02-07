@@ -152,7 +152,7 @@ public class PalletBlock extends HorizontalDirectionalBlock implements SimpleWat
             level.playSound(player, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
             return InteractionResult.SUCCESS;
         }
-         else if (player.isCrouching()) {
+         else if (player.isShiftKeyDown()) {
             blockState = blockState.cycle(OPEN);
             level.setBlock(blockPos, blockState, 2);
             if (blockState.getValue(WATERLOGGED)) {

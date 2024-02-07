@@ -193,7 +193,10 @@ public class BigDoorBlock extends Block {
         if (!open) {
             if (blockState.getValue(HINGE).equals(DoorHingeSide.LEFT)) {
                 boolean openFlag = checkForAirColumn(level, startPos.relative(blockState.getValue(FACING).getOpposite())) && checkForAirColumn(level, startPos.relative(blockState.getValue(FACING).getOpposite()).relative(blockState.getValue(FACING).getCounterClockWise()));
-                if (!openFlag) return InteractionResult.FAIL;
+                if (!openFlag) {
+                    level.playSound(player, blockPos, SoundEvents.ZOMBIE_ATTACK_WOODEN_DOOR, SoundSource.BLOCKS, 0.3F, 0.5F);
+                    return InteractionResult.SUCCESS;
+                }
                 placeAirColumn(level, startPos.relative(blockState.getValue(FACING).getCounterClockWise()));
                 placeDoorColumn(blockState, level, startPos, 0, true);
                 placeDoorColumn(blockState, level, startPos.relative(blockState.getValue(FACING).getOpposite()), 1, true);
@@ -202,7 +205,11 @@ public class BigDoorBlock extends Block {
             }
             else{
                 boolean openFlag = checkForAirColumn(level, startPos.relative(blockState.getValue(FACING).getOpposite())) && checkForAirColumn(level, startPos.relative(blockState.getValue(FACING).getOpposite()).relative(blockState.getValue(FACING).getClockWise()));
-                if (!openFlag) return InteractionResult.FAIL;
+
+                if (!openFlag) {
+                    level.playSound(player, blockPos, SoundEvents.ZOMBIE_ATTACK_WOODEN_DOOR, SoundSource.BLOCKS, 0.3F, 0.5F);
+                    return InteractionResult.SUCCESS;
+                }
                 placeAirColumn(level, startPos.relative(blockState.getValue(FACING).getClockWise()));
                 placeDoorColumn(blockState, level, startPos, 0, true);
                 placeDoorColumn(blockState, level, startPos.relative(blockState.getValue(FACING).getOpposite()), 1, true);
