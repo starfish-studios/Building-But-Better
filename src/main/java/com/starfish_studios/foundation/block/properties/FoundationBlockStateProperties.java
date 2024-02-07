@@ -6,7 +6,7 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
 public class FoundationBlockStateProperties {
     // public static final EnumProperty<WoodStyle> STYLE = EnumProperty.create("style", WoodStyle.class);
-    public static final IntegerProperty STYLE = IntegerProperty.create("style", 1, 11);
+    public static final IntegerProperty STYLE = IntegerProperty.create("style", 1, 10);
     public static final EnumProperty<FrameStickDirection> FRAME_CENTER = EnumProperty.create("center", FrameStickDirection.class);
     public static final EnumProperty<ColumnType> COLUMN_TYPE = EnumProperty.create("type", ColumnType.class);
     public static final EnumProperty<TallDoorHalf> HALVES = EnumProperty.create("type", TallDoorHalf.class);

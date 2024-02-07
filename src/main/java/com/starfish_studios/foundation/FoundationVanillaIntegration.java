@@ -30,7 +30,17 @@ public class FoundationVanillaIntegration {
                     FoundationBlocks.ROPE,
                     FoundationBlocks.BRAZIER,
                     FoundationBlocks.URN,
-                    FoundationBlocks.OAK_LADDER
+                    FoundationBlocks.OAK_LADDER,
+                    FoundationBlocks.SPRUCE_LADDER,
+                    FoundationBlocks.BIRCH_LADDER,
+                    FoundationBlocks.JUNGLE_LADDER,
+                    FoundationBlocks.ACACIA_LADDER,
+                    FoundationBlocks.DARK_OAK_LADDER,
+                    FoundationBlocks.CRIMSON_LADDER,
+                    FoundationBlocks.WARPED_LADDER,
+                    FoundationBlocks.MANGROVE_LADDER,
+                    FoundationBlocks.BAMBOO_LADDER,
+                    FoundationBlocks.CHERRY_LADDER
             );
         }
     }

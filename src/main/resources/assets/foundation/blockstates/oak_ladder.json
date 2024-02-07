@@ -136,32 +136,17 @@
       "y": 270
     },
     "facing=north,style=10": {
-      "model": "foundation:block/ladder/oak/bamboo"
+      "model": "foundation:block/ladder/oak/cherry"
     },
     "facing=east,style=10": {
-      "model": "foundation:block/ladder/oak/bamboo",
+      "model": "foundation:block/ladder/oak/cherry",
       "y": 90
     },
     "facing=south,style=10": {
-      "model": "foundation:block/ladder/oak/bamboo",
+      "model": "foundation:block/ladder/oak/cherry",
       "y": 180
     },
     "facing=west,style=10": {
-      "model": "foundation:block/ladder/oak/bamboo",
-      "y": 270
-    },
-    "facing=north,style=11": {
-      "model": "foundation:block/ladder/oak/cherry"
-    },
-    "facing=east,style=11": {
-      "model": "foundation:block/ladder/oak/cherry",
-      "y": 90
-    },
-    "facing=south,style=11": {
-      "model": "foundation:block/ladder/oak/cherry",
-      "y": 180
-    },
-    "facing=west,style=11": {
       "model": "foundation:block/ladder/oak/cherry",
       "y": 270
     }

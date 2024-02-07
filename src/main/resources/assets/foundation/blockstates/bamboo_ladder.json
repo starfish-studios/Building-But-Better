@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=east": {
+            "model": "foundation:block/ladder/bamboo",
+            "y": 90
+        },
+        "facing=north": {
+            "model": "foundation:block/ladder/bamboo"
+        },
+        "facing=south": {
+            "model": "foundation:block/ladder/bamboo",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "foundation:block/ladder/bamboo",
+            "y": 270
+        }
+    }
+}

@@ -1,0 +1,154 @@
+{
+    "variants": {
+        "facing=north,style=1": {
+            "model": "foundation:block/ladder/acacia/oak"
+        },
+        "facing=east,style=1": {
+            "model": "foundation:block/ladder/acacia/oak",
+            "y": 90
+        },
+        "facing=south,style=1": {
+            "model": "foundation:block/ladder/acacia/oak",
+            "y": 180
+        },
+        "facing=west,style=1": {
+            "model": "foundation:block/ladder/acacia/oak",
+            "y": 270
+        },
+        "facing=north,style=2": {
+            "model": "foundation:block/ladder/acacia/spruce"
+        },
+        "facing=east,style=2": {
+            "model": "foundation:block/ladder/acacia/spruce",
+            "y": 90
+        },
+        "facing=south,style=2": {
+            "model": "foundation:block/ladder/acacia/spruce",
+            "y": 180
+        },
+        "facing=west,style=2": {
+            "model": "foundation:block/ladder/acacia/spruce",
+            "y": 270
+        },
+        "facing=north,style=3": {
+            "model": "foundation:block/ladder/acacia/birch"
+        },
+        "facing=east,style=3": {
+            "model": "foundation:block/ladder/acacia/birch",
+            "y": 90
+        },
+        "facing=south,style=3": {
+            "model": "foundation:block/ladder/acacia/birch",
+            "y": 180
+        },
+        "facing=west,style=3": {
+            "model": "foundation:block/ladder/acacia/birch",
+            "y": 270
+        },
+        "facing=north,style=4": {
+            "model": "foundation:block/ladder/acacia/jungle"
+        },
+        "facing=east,style=4": {
+            "model": "foundation:block/ladder/acacia/jungle",
+            "y": 90
+        },
+        "facing=south,style=4": {
+            "model": "foundation:block/ladder/acacia/jungle",
+            "y": 180
+        },
+        "facing=west,style=4": {
+            "model": "foundation:block/ladder/acacia/jungle",
+            "y": 270
+        },
+        "facing=north,style=5": {
+            "model": "foundation:block/ladder/acacia/acacia"
+        },
+        "facing=east,style=5": {
+            "model": "foundation:block/ladder/acacia/acacia",
+            "y": 90
+        },
+        "facing=south,style=5": {
+            "model": "foundation:block/ladder/acacia/acacia",
+            "y": 180
+        },
+        "facing=west,style=5": {
+            "model": "foundation:block/ladder/acacia/acacia",
+            "y": 270
+        },
+        "facing=north,style=6": {
+            "model": "foundation:block/ladder/acacia/dark_oak"
+        },
+        "facing=east,style=6": {
+            "model": "foundation:block/ladder/acacia/dark_oak",
+            "y": 90
+        },
+        "facing=south,style=6": {
+            "model": "foundation:block/ladder/acacia/dark_oak",
+            "y": 180
+        },
+        "facing=west,style=6": {
+            "model": "foundation:block/ladder/acacia/dark_oak",
+            "y": 270
+        },
+        "facing=north,style=7": {
+            "model": "foundation:block/ladder/acacia/crimson"
+        },
+        "facing=east,style=7": {
+            "model": "foundation:block/ladder/acacia/crimson",
+            "y": 90
+        },
+        "facing=south,style=7": {
+            "model": "foundation:block/ladder/acacia/crimson",
+            "y": 180
+        },
+        "facing=west,style=7": {
+            "model": "foundation:block/ladder/acacia/crimson",
+            "y": 270
+        },
+        "facing=north,style=8": {
+            "model": "foundation:block/ladder/acacia/warped"
+        },
+        "facing=east,style=8": {
+            "model": "foundation:block/ladder/acacia/warped",
+            "y": 90
+        },
+        "facing=south,style=8": {
+            "model": "foundation:block/ladder/acacia/warped",
+            "y": 180
+        },
+        "facing=west,style=8": {
+            "model": "foundation:block/ladder/acacia/warped",
+            "y": 270
+        },
+        "facing=north,style=9": {
+            "model": "foundation:block/ladder/acacia/mangrove"
+        },
+        "facing=east,style=9": {
+            "model": "foundation:block/ladder/acacia/mangrove",
+            "y": 90
+        },
+        "facing=south,style=9": {
+            "model": "foundation:block/ladder/acacia/mangrove",
+            "y": 180
+        },
+        "facing=west,style=9": {
+            "model": "foundation:block/ladder/acacia/mangrove",
+            "y": 270
+        },
+        "facing=north,style=10": {
+            "model": "foundation:block/ladder/acacia/cherry"
+        },
+        "facing=east,style=10": {
+            "model": "foundation:block/ladder/acacia/cherry",
+            "y": 90
+        },
+        "facing=south,style=10": {
+            "model": "foundation:block/ladder/acacia/cherry",
+            "y": 180
+        },
+        "facing=west,style=10": {
+            "model": "foundation:block/ladder/acacia/cherry",
+            "y": 270
+        }
+    }
+}

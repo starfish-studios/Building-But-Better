@@ -1,0 +1,21 @@
+{
+    "group": "foundation/ladders",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "#O#",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stick"
+        },
+        "O": {
+            "item": "minecraft:warped_planks"
+        }
+    },
+    "result": {
+        "item": "foundation:warped_ladder",
+        "count": 4
+    }
+}

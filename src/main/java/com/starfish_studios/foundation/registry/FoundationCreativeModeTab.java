@@ -20,6 +20,16 @@ public class FoundationCreativeModeTab {
         output.accept(HAMMER);
 
         output.accept(OAK_LADDER);
+        output.accept(SPRUCE_LADDER);
+        output.accept(BIRCH_LADDER);
+        output.accept(JUNGLE_LADDER);
+        output.accept(ACACIA_LADDER);
+        output.accept(DARK_OAK_LADDER);
+        output.accept(CRIMSON_LADDER);
+        output.accept(WARPED_LADDER);
+        output.accept(MANGROVE_LADDER);
+        output.accept(BAMBOO_LADDER);
+        output.accept(CHERRY_LADDER);
 
         output.accept(POLISHED_STONE);
         output.accept(POLISHED_STONE_STAIRS);

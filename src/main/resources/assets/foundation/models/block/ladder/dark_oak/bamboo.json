@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/ladder",
+    "textures": {
+        "particle": "foundation:block/ladder/bamboo/dark_oak",
+        "texture": "foundation:block/ladder/bamboo/dark_oak"
+    }
+}

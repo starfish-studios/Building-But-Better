@@ -10,7 +10,6 @@ public enum WoodStyle implements StringRepresentable {
     ACACIA("acacia"),
     DARK_OAK("dark_oak"),
     MANGROVE("mangrove"),
-    BAMBOO("bamboo"),
     CHERRY("cherry"),
     CRIMSON("crimson"),
     WARPED("warped");

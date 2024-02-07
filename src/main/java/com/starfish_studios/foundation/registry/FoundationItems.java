@@ -75,7 +75,17 @@ public class FoundationItems {
     // endregion
 
 
-    public static final Item OAK_LADDER = register("oak_ladder", new BlockItem(FoundationBlocks.OAK_LADDER, new FabricItemSettings()));
+    public static final Item OAK_LADDER = register("oak_ladder", new DescriptionBlockItem(FoundationBlocks.OAK_LADDER, new FabricItemSettings()));
+    public static final Item SPRUCE_LADDER = register("spruce_ladder", new DescriptionBlockItem(FoundationBlocks.SPRUCE_LADDER, new FabricItemSettings()));
+    public static final Item BIRCH_LADDER = register("birch_ladder", new DescriptionBlockItem(FoundationBlocks.BIRCH_LADDER, new FabricItemSettings()));
+    public static final Item JUNGLE_LADDER = register("jungle_ladder", new DescriptionBlockItem(FoundationBlocks.JUNGLE_LADDER, new FabricItemSettings()));
+    public static final Item ACACIA_LADDER = register("acacia_ladder", new DescriptionBlockItem(FoundationBlocks.ACACIA_LADDER, new FabricItemSettings()));
+    public static final Item DARK_OAK_LADDER = register("dark_oak_ladder", new DescriptionBlockItem(FoundationBlocks.DARK_OAK_LADDER, new FabricItemSettings()));
+    public static final Item CRIMSON_LADDER = register("crimson_ladder", new DescriptionBlockItem(FoundationBlocks.CRIMSON_LADDER, new FabricItemSettings()));
+    public static final Item WARPED_LADDER = register("warped_ladder", new DescriptionBlockItem(FoundationBlocks.WARPED_LADDER, new FabricItemSettings()));
+    public static final Item MANGROVE_LADDER = register("mangrove_ladder", new DescriptionBlockItem(FoundationBlocks.MANGROVE_LADDER, new FabricItemSettings()));
+    public static final Item BAMBOO_LADDER = register("bamboo_ladder", new DescriptionBlockItem(FoundationBlocks.BAMBOO_LADDER, new FabricItemSettings()));
+    public static final Item CHERRY_LADDER = register("cherry_ladder", new DescriptionBlockItem(FoundationBlocks.CHERRY_LADDER, new FabricItemSettings()));
     
 
     public static final Item POLISHED_STONE = register("polished_stone", new BlockItem(FoundationBlocks.POLISHED_STONE, new FabricItemSettings()));

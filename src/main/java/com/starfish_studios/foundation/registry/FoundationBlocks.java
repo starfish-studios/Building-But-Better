@@ -16,6 +16,16 @@ import static net.minecraft.world.level.block.Blocks.litBlockEmission;
 public class FoundationBlocks {
 
     public static final Block OAK_LADDER = register("oak_ladder", new FoundationLadderBlock(1, BlockBehaviour.Properties.copy(Blocks.LADDER)));
+    public static final Block SPRUCE_LADDER = register("spruce_ladder", new FoundationLadderBlock(2, BlockBehaviour.Properties.copy(Blocks.LADDER)));
+    public static final Block BIRCH_LADDER = register("birch_ladder", new FoundationLadderBlock(3, BlockBehaviour.Properties.copy(Blocks.LADDER)));
+    public static final Block JUNGLE_LADDER = register("jungle_ladder", new FoundationLadderBlock(4, BlockBehaviour.Properties.copy(Blocks.LADDER)));
+    public static final Block ACACIA_LADDER = register("acacia_ladder", new FoundationLadderBlock(5, BlockBehaviour.Properties.copy(Blocks.LADDER)));
+    public static final Block DARK_OAK_LADDER = register("dark_oak_ladder", new FoundationLadderBlock(6, BlockBehaviour.Properties.copy(Blocks.LADDER)));
+    public static final Block CRIMSON_LADDER = register("crimson_ladder", new FoundationLadderBlock(7, BlockBehaviour.Properties.copy(Blocks.LADDER)));
+    public static final Block WARPED_LADDER = register("warped_ladder", new FoundationLadderBlock(8, BlockBehaviour.Properties.copy(Blocks.LADDER)));
+    public static final Block MANGROVE_LADDER = register("mangrove_ladder", new FoundationLadderBlock(9, BlockBehaviour.Properties.copy(Blocks.LADDER)));
+    public static final Block BAMBOO_LADDER = register("bamboo_ladder", new LadderBlock(BlockBehaviour.Properties.copy(Blocks.LADDER)));
+    public static final Block CHERRY_LADDER = register("cherry_ladder", new FoundationLadderBlock(10, BlockBehaviour.Properties.copy(Blocks.LADDER)));
 
 
     // region LAYERS

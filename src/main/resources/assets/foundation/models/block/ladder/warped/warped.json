@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/ladder",
+    "textures": {
+        "particle": "foundation:block/ladder/warped/warped",
+        "texture": "foundation:block/ladder/warped/warped"
+    }
+}
