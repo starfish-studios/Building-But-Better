@@ -19,12 +19,4 @@ public class FoundationBlockStateProperties {
     public static final BooleanProperty LAYER_TWO = BooleanProperty.create("layer_two");
     public static final BooleanProperty LAYER_THREE = BooleanProperty.create("layer_three");
     public static final BooleanProperty LAYER_FOUR = BooleanProperty.create("layer_four");
-    public static final BooleanProperty NORTH_TOP_LEFT = BooleanProperty.create("north_top_left");
-    public static final BooleanProperty NORTH_TOP_RIGHT = BooleanProperty.create("north_top_right");
-    public static final BooleanProperty NORTH_BOTTOM_LEFT = BooleanProperty.create("north_bottom_left");
-    public static final BooleanProperty NORTH_BOTTOM_RIGHT = BooleanProperty.create("north_bottom_right");
-    public static final BooleanProperty SOUTH_TOP_LEFT = BooleanProperty.create("south_top_left");
-    public static final BooleanProperty SOUTH_TOP_RIGHT = BooleanProperty.create("south_top_right");
-    public static final BooleanProperty SOUTH_BOTTOM_LEFT = BooleanProperty.create("south_bottom_left");
-    public static final BooleanProperty SOUTH_BOTTOM_RIGHT = BooleanProperty.create("south_bottom_right");
 }

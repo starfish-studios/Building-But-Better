@@ -1,7 +1,7 @@
 {
     "parent": "minecraft:block/cube_column",
     "textures": {
-        "end": "minecraft:block/crimson_planks",
+        "end": "foundation:block/trim/crimson_top_face",
         "side": "foundation:block/trim/crimson_top"
     }
 }

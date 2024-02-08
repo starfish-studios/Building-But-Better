@@ -1,0 +1,17 @@
+{
+    "variants": {
+        "axis=x": {
+            "model": "foundation:block/beam/birch_beam",
+            "x": 90,
+            "y": 90
+        },
+        "axis=y": {
+            "model": "foundation:block/beam/birch_beam"
+        },
+        "axis=z": {
+            "model": "foundation:block/beam/birch_beam",
+            "x": 90,
+            "y": 180
+        }
+    }
+}

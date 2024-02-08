@@ -1,7 +1,7 @@
 {
     "parent": "minecraft:block/cube_column",
     "textures": {
-        "end": "minecraft:block/mangrove_planks",
+        "end": "foundation:block/trim/mangrove_top_face",
         "side": "foundation:block/trim/mangrove_bottom"
     }
 }

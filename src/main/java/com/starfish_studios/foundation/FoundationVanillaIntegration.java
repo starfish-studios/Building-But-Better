@@ -40,7 +40,8 @@ public class FoundationVanillaIntegration {
                     FoundationBlocks.WARPED_LADDER,
                     FoundationBlocks.MANGROVE_LADDER,
                     FoundationBlocks.BAMBOO_LADDER,
-                    FoundationBlocks.CHERRY_LADDER
+                    FoundationBlocks.CHERRY_LADDER,
+                    FoundationBlocks.OAK_WALL
             );
         }
     }

@@ -1,0 +1,78 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "foundation:block/plaster"
+      },
+      {
+        "model": "foundation:block/plaster",
+        "x": 90
+      },
+      {
+        "model": "foundation:block/plaster",
+        "x": 180
+      },
+      {
+        "model": "foundation:block/plaster",
+        "x": 270
+      },
+      {
+        "model": "foundation:block/plaster",
+        "y": 90
+      },
+      {
+        "model": "foundation:block/plaster",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "foundation:block/plaster",
+        "x": 180,
+        "y": 90
+      },
+      {
+        "model": "foundation:block/plaster",
+        "x": 270,
+        "y": 90
+      },
+      {
+        "model": "foundation:block/plaster",
+        "y": 180
+      },
+      {
+        "model": "foundation:block/plaster",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "foundation:block/plaster",
+        "x": 180,
+        "y": 180
+      },
+      {
+        "model": "foundation:block/plaster",
+        "x": 270,
+        "y": 180
+      },
+      {
+        "model": "foundation:block/plaster",
+        "y": 270
+      },
+      {
+        "model": "foundation:block/plaster",
+        "x": 90,
+        "y": 270
+      },
+      {
+        "model": "foundation:block/plaster",
+        "x": 180,
+        "y": 270
+      },
+      {
+        "model": "foundation:block/plaster",
+        "x": 270,
+        "y": 270
+      }
+    ]
+  }
+}
