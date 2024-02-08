@@ -90,8 +90,10 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
     @Override
     public void attack(BlockState blockState, Level level, BlockPos blockPos, Player player) {
         if (!level.isClientSide) {
-            level.setBlock(blockPos, blockState.setValue(FRAME_CENTER, FrameStickDirection.NONE), 3);
-            level.playSound(null, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getBreakSound(), player.getSoundSource(), 1.0F, 1.0F);
+            if (blockState.getValue(FRAME_CENTER) != FrameStickDirection.NONE) {
+                level.setBlock(blockPos, blockState.setValue(FRAME_CENTER, FrameStickDirection.NONE), 3);
+                level.playSound(null, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getBreakSound(), player.getSoundSource(), 1.0F, 1.0F);
+            }
         }
     }
 

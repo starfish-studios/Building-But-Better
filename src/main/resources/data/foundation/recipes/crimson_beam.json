@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stripped_crimson_log"
+        }
+    },
+    "result": {
+        "item": "foundation:crimson_beam",
+        "count": 6
+    }
+}

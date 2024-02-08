@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "foundation:crimson_beam"
+        }
+    ],
+    "result": {
+        "item": "minecraft:crimson_planks",
+        "count": 2
+    }
+}

@@ -2,31 +2,30 @@
   "itemGroup.foundation.tab": "Foundation",
   "item.foundation.foundation": "Foundation",
 
+  "subtitles.block.layer.remove_layer": "Layer removed",
+
   "description.foundation.pencil": "✐ ",
+  "description.foundation.hammer_right_click": "Right-Click with a Hammer",
 
-  "description.foundation.layer1": "Right-click with a Hammer",
-  "description.foundation.layer2": "or mine with a Pickaxe",
-  "description.foundation.layer3": "to remove layers.",
-  "description.foundation.layer4": "Up to 4 layers can be added.",
-  "description.foundation.layer5": "Can be placed on all sides.",
+  "description.foundation.layer2": "to remove layers.",
+  "description.foundation.layer3": "Up to 4 layers can be added.",
+  "description.foundation.layer4": "Can be placed on all sides.",
 
-  "description.foundation.frame1": "Right-click with a Hammer",
   "description.foundation.frame2": "to cycle through center supports.",
   "description.foundation.frame3": "Punch to remove center support.",
   "description.foundation.frame4": "Automatically connects",
   "description.foundation.frame5": "to other Frames.",
 
-  "description.foundation.pallet1": "Right-Click with a Hammer",
   "description.foundation.pallet2": "to add/remove layers.",
   "description.foundation.pallet3": "Crouch + Right-Click",
   "description.foundation.pallet4": "with an empty hand",
   "description.foundation.pallet5": "to open/close the block.",
 
-  "description.foundation.column1": "Right-Click with a Hammer",
   "description.foundation.column2": "to add/remove outside layers.",
 
-  "description.foundation.ladder1": "Right-Click with a Hammer",
   "description.foundation.ladder2": "to cycle through styles.",
+
+    "description.foundation.support2": "to toggle the support beam.",
 
   "item.foundation.hammer": "Hammer",
 
@@ -69,8 +68,32 @@
     "block.foundation.crimson_beam": "Crimson Beam",
     "block.foundation.warped_beam": "Warped Beam",
     "block.foundation.mangrove_beam": "Mangrove Beam",
-  "block.foundation.bamboo_beam": "Bamboo Beam",
+    "block.foundation.bamboo_beam": "Bamboo Beam",
     "block.foundation.cherry_beam": "Cherry Beam",
+
+  "block.foundation.oak_beam_stairs": "Oak Beam Stairs",
+    "block.foundation.spruce_beam_stairs": "Spruce Beam Stairs",
+    "block.foundation.birch_beam_stairs": "Birch Beam Stairs",
+    "block.foundation.jungle_beam_stairs": "Jungle Beam Stairs",
+    "block.foundation.acacia_beam_stairs": "Acacia Beam Stairs",
+    "block.foundation.dark_oak_beam_stairs": "Dark Oak Beam Stairs",
+    "block.foundation.crimson_beam_stairs": "Crimson Beam Stairs",
+    "block.foundation.warped_beam_stairs": "Warped Beam Stairs",
+    "block.foundation.mangrove_beam_stairs": "Mangrove Beam Stairs",
+    "block.foundation.bamboo_beam_stairs": "Bamboo Beam Stairs",
+    "block.foundation.cherry_beam_stairs": "Cherry Beam Stairs",
+
+  "block.foundation.oak_beam_slab": "Oak Beam Slab",
+    "block.foundation.spruce_beam_slab": "Spruce Beam Slab",
+    "block.foundation.birch_beam_slab": "Birch Beam Slab",
+    "block.foundation.jungle_beam_slab": "Jungle Beam Slab",
+    "block.foundation.acacia_beam_slab": "Acacia Beam Slab",
+    "block.foundation.dark_oak_beam_slab": "Dark Oak Beam Slab",
+    "block.foundation.crimson_beam_slab": "Crimson Beam Slab",
+    "block.foundation.warped_beam_slab": "Warped Beam Slab",
+    "block.foundation.mangrove_beam_slab": "Mangrove Beam Slab",
+    "block.foundation.bamboo_beam_slab": "Bamboo Beam Slab",
+    "block.foundation.cherry_beam_slab": "Cherry Beam Slab",
 
   "block.foundation.oak_ladder": "Oak Ladder",
     "block.foundation.spruce_ladder": "Spruce Ladder",

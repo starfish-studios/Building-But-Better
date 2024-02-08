@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "foundation/beam_stairs",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "foundation:dark_oak_beam"
+        }
+    },
+    "result": {
+        "item": "foundation:dark_oak_beam_stairs",
+        "count": 4
+    }
+}

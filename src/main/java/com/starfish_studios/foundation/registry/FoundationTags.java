@@ -18,6 +18,7 @@ public interface FoundationTags {
 
         TagKey<Block> STONE_FENCES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "stone_fences"));
         TagKey<Block> FRAMES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "frames"));
+        TagKey<Block> SUPPORTS = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "supports"));
         TagKey<Block> PALLETS = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "pallets"));
         TagKey<Block> COLUMNS = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "columns"));
         TagKey<Block> LAYERS = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "layers"));
@@ -27,6 +28,7 @@ public interface FoundationTags {
     // region ITEM TAGS
     interface FoundationItemTags {
         TagKey<Item> FRAMES = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "frames"));
+        TagKey<Item> SUPPORTS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "supports"));
         TagKey<Item> PALLETS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "pallets"));
         TagKey<Item> COLUMNS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "columns"));
         TagKey<Item> LAYERS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "layers"));

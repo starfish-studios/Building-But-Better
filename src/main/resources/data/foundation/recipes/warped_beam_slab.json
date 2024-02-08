@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "foundation/beam_slabs",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "foundation:warped_beam"
+        }
+    },
+    "result": {
+        "item": "foundation:warped_beam_slab",
+        "count": 6
+    }
+}

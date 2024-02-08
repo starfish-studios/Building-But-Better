@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "foundation:spruce_beam_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:spruce_planks",
+        "count": 1
+    }
+}

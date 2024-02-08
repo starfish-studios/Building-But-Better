@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "foundation:cherry_beam_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:cherry_planks",
+        "count": 1
+    }
+}

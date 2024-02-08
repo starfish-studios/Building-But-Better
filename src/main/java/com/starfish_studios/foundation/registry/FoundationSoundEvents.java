@@ -9,11 +9,7 @@ import net.minecraft.world.level.block.SoundType;
 
 public interface FoundationSoundEvents {
 
-
-    SoundEvent CHICKEN_CROW = register("entity.chicken.crow");
-    SoundEvent CHICK_AMBIENT = register("entity.chick.ambient");
-
-    SoundType STRAW = register("straw", 1, 1);
+    SoundEvent LAYER_HAMMER = register("block.layer.hammer");
 
     private static SoundType register(String name, float volume, float pitch) {
         return new SoundType(volume, pitch, register("block." + name + ".break"), register("block." + name + ".step"), register("block." + name + ".place"), register("block." + name + ".hit"), register("block." + name + ".fall"));

@@ -17,19 +17,47 @@ public class FoundationBlocks {
 
     public static final Block OAK_WALL = register("oak_wall", new WallBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
 
-    public static final Block OAK_BEAM = register("oak_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_OAK_LOG)).noOcclusion()));
-    public static final Block SPRUCE_BEAM = register("spruce_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_SPRUCE_LOG)).noOcclusion()));
-    public static final Block BIRCH_BEAM = register("birch_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_BIRCH_LOG)).noOcclusion()));
-    public static final Block JUNGLE_BEAM = register("jungle_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_JUNGLE_LOG)).noOcclusion()));
-    public static final Block ACACIA_BEAM = register("acacia_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_ACACIA_LOG)).noOcclusion()));
-    public static final Block DARK_OAK_BEAM = register("dark_oak_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_DARK_OAK_LOG)).noOcclusion()));
-    public static final Block CRIMSON_BEAM = register("crimson_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_CRIMSON_STEM)).noOcclusion()));
-    public static final Block WARPED_BEAM = register("warped_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_WARPED_STEM)).noOcclusion()));
-    public static final Block MANGROVE_BEAM = register("mangrove_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_MANGROVE_LOG)).noOcclusion()));
-    public static final Block BAMBOO_BEAM = register("bamboo_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.BAMBOO)).noOcclusion()));
-    public static final Block CHERRY_BEAM = register("cherry_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_CHERRY_LOG)).noOcclusion()));
+    
 
 
+    // region BEAMS
+    public static final Block OAK_BEAM = register("oak_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_OAK_LOG))));
+    public static final Block OAK_BEAM_STAIRS = register("oak_beam_stairs", new StairBlock((Blocks.OAK_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final Block OAK_BEAM_SLAB = register("oak_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
+    public static final Block SPRUCE_BEAM = register("spruce_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_SPRUCE_LOG))));
+    public static final Block SPRUCE_BEAM_STAIRS = register("spruce_beam_stairs", new StairBlock((Blocks.SPRUCE_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
+    public static final Block SPRUCE_BEAM_SLAB = register("spruce_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS))));
+    public static final Block BIRCH_BEAM = register("birch_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_BIRCH_LOG))));
+    public static final Block BIRCH_BEAM_STAIRS = register("birch_beam_stairs", new StairBlock((Blocks.BIRCH_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
+    public static final Block BIRCH_BEAM_SLAB = register("birch_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS))));
+    public static final Block JUNGLE_BEAM = register("jungle_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_JUNGLE_LOG))));
+    public static final Block JUNGLE_BEAM_STAIRS = register("jungle_beam_stairs", new StairBlock((Blocks.JUNGLE_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS)));
+    public static final Block JUNGLE_BEAM_SLAB = register("jungle_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS))));
+    public static final Block ACACIA_BEAM = register("acacia_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_ACACIA_LOG))));
+    public static final Block ACACIA_BEAM_STAIRS = register("acacia_beam_stairs", new StairBlock((Blocks.ACACIA_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+    public static final Block ACACIA_BEAM_SLAB = register("acacia_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS))));
+    public static final Block DARK_OAK_BEAM = register("dark_oak_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_DARK_OAK_LOG))));
+    public static final Block DARK_OAK_BEAM_STAIRS = register("dark_oak_beam_stairs", new StairBlock((Blocks.DARK_OAK_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+    public static final Block DARK_OAK_BEAM_SLAB = register("dark_oak_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS))));
+    public static final Block CRIMSON_BEAM = register("crimson_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_CRIMSON_STEM))));
+    public static final Block CRIMSON_BEAM_STAIRS = register("crimson_beam_stairs", new StairBlock((Blocks.CRIMSON_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
+    public static final Block CRIMSON_BEAM_SLAB = register("crimson_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS))));
+    public static final Block WARPED_BEAM = register("warped_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_WARPED_STEM))));
+    public static final Block WARPED_BEAM_STAIRS = register("warped_beam_stairs", new StairBlock((Blocks.WARPED_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
+    public static final Block WARPED_BEAM_SLAB = register("warped_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS))));
+    public static final Block MANGROVE_BEAM = register("mangrove_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_MANGROVE_LOG))));
+    public static final Block MANGROVE_BEAM_STAIRS = register("mangrove_beam_stairs", new StairBlock((Blocks.MANGROVE_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)));
+    public static final Block MANGROVE_BEAM_SLAB = register("mangrove_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS))));
+    public static final Block BAMBOO_BEAM = register("bamboo_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.BAMBOO))));
+    public static final Block BAMBOO_BEAM_STAIRS = register("bamboo_beam_stairs", new StairBlock((Blocks.BAMBOO_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS)));
+    public static final Block BAMBOO_BEAM_SLAB = register("bamboo_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS))));
+    public static final Block CHERRY_BEAM = register("cherry_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_CHERRY_LOG))));
+    public static final Block CHERRY_BEAM_STAIRS = register("cherry_beam_stairs", new StairBlock((Blocks.CHERRY_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.CHERRY_PLANKS)));
+    public static final Block CHERRY_BEAM_SLAB = register("cherry_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS))));
+    
+    // endregion
+
+    // region SUPPORTS
     public static final Block OAK_SUPPORT = register("oak_support", new SupportBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noCollission()));
     public static final Block SPRUCE_SUPPORT = register("spruce_support", new SupportBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noCollission()));
     public static final Block BIRCH_SUPPORT = register("birch_support", new SupportBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noCollission()));
@@ -41,8 +69,7 @@ public class FoundationBlocks {
     public static final Block MANGROVE_SUPPORT = register("mangrove_support", new SupportBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).noCollission()));
     public static final Block CHERRY_SUPPORT = register("cherry_support", new SupportBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).noCollission()));
     public static final Block BAMBOO_SUPPORT = register("bamboo_support", new SupportBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).noCollission()));
-
-
+    // endregion
 
     //region LADDERS
     public static final Block OAK_LADDER = register("oak_ladder", new FoundationLadderBlock(1, BlockBehaviour.Properties.copy(Blocks.LADDER)));

@@ -1,20 +1,32 @@
 package com.starfish_studios.foundation.block;
 
 import com.starfish_studios.foundation.block.properties.FoundationBlockStateProperties;
+import com.starfish_studios.foundation.block.properties.FrameStickDirection;
 import com.starfish_studios.foundation.block.properties.LayerNumber;
+import com.starfish_studios.foundation.registry.FoundationSoundEvents;
+import com.starfish_studios.foundation.registry.FoundationTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.*;
+import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
@@ -58,6 +70,24 @@ public class LayerBlock extends Block implements SimpleWaterloggedBlock {
                 .setValue(FACING, Direction.UP)
                 .setValue(LAYERS, 1)
         );
+    }
+
+    @Override
+    public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
+        if (player.getItemInHand(interactionHand).is(FoundationTags.FoundationItemTags.HAMMERS)) {
+            if (blockState.getValue(LAYERS) > 1) {
+                level.setBlock(blockPos, blockState.setValue(LAYERS, blockState.getValue(LAYERS) - 1), 3);
+                Block.popResource(level, blockPos, this.asItem().getDefaultInstance());
+                player.getItemInHand(interactionHand).hurtAndBreak(1, player, (playerEntity) -> {
+                    playerEntity.broadcastBreakEvent(interactionHand);
+                });
+                level.playSound(player, blockPos, FoundationSoundEvents.LAYER_HAMMER, SoundSource.BLOCKS, 1.0F, 1.0F);
+                return InteractionResult.SUCCESS;
+            } else if (blockState.getValue(LAYERS) == 1) {
+                return InteractionResult.FAIL;
+            }
+        }
+        return InteractionResult.PASS;
     }
 
     @Override
@@ -123,12 +153,26 @@ public class LayerBlock extends Block implements SimpleWaterloggedBlock {
             }
             return blockState;
         }
-        return blockState.setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
+        if (blockState.is(this)) {
+            return blockState.setValue(WATERLOGGED, false).setValue(LAYERS, 4);
+        } else {
+            return blockState.setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
+        }
     }
 
     @Override
     public FluidState getFluidState(BlockState blockState) {
         return blockState.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(blockState);
+    }
+
+    @Override
+    public boolean placeLiquid(LevelAccessor levelAccessor, BlockPos blockPos, BlockState blockState, FluidState fluidState) {
+        return blockState.getValue(LAYERS) != 4 && SimpleWaterloggedBlock.super.placeLiquid(levelAccessor, blockPos, blockState, fluidState);
+    }
+
+    @Override
+    public boolean canPlaceLiquid(BlockGetter blockGetter, BlockPos blockPos, BlockState blockState, Fluid fluid) {
+        return blockState.getValue(LAYERS) != 4 && SimpleWaterloggedBlock.super.canPlaceLiquid(blockGetter, blockPos, blockState, fluid);
     }
 
     @Override

@@ -14,37 +14,62 @@ import net.minecraft.world.item.Rarity;
 public class FoundationItems {
 
     public static final Item FOUNDATION = register("foundation", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON).fireproof()));
+    public static final Item HAMMER = register("hammer", new Item(new FabricItemSettings().maxCount(1).durability(256)));
 
 
     public static final Item PLASTER = register("plaster", new BlockItem(FoundationBlocks.PLASTER, new FabricItemSettings()));
     public static final Item OAK_WALL = register("oak_wall", new BlockItem(FoundationBlocks.OAK_WALL, new FabricItemSettings()));
 
+
+
     // region BEAMS
     public static final Item OAK_BEAM = register("oak_beam", new BlockItem(FoundationBlocks.OAK_BEAM, new FabricItemSettings()));
+    public static final Item OAK_BEAM_STAIRS = register("oak_beam_stairs", new BlockItem(FoundationBlocks.OAK_BEAM_STAIRS, new FabricItemSettings()));
+    public static final Item OAK_BEAM_SLAB = register("oak_beam_slab", new BlockItem(FoundationBlocks.OAK_BEAM_SLAB, new FabricItemSettings()));
     public static final Item SPRUCE_BEAM = register("spruce_beam", new BlockItem(FoundationBlocks.SPRUCE_BEAM, new FabricItemSettings()));
+    public static final Item SPRUCE_BEAM_STAIRS = register("spruce_beam_stairs", new BlockItem(FoundationBlocks.SPRUCE_BEAM_STAIRS, new FabricItemSettings()));
+    public static final Item SPRUCE_BEAM_SLAB = register("spruce_beam_slab", new BlockItem(FoundationBlocks.SPRUCE_BEAM_SLAB, new FabricItemSettings()));
     public static final Item BIRCH_BEAM = register("birch_beam", new BlockItem(FoundationBlocks.BIRCH_BEAM, new FabricItemSettings()));
+    public static final Item BIRCH_BEAM_STAIRS = register("birch_beam_stairs", new BlockItem(FoundationBlocks.BIRCH_BEAM_STAIRS, new FabricItemSettings()));
+    public static final Item BIRCH_BEAM_SLAB = register("birch_beam_slab", new BlockItem(FoundationBlocks.BIRCH_BEAM_SLAB, new FabricItemSettings()));
     public static final Item JUNGLE_BEAM = register("jungle_beam", new BlockItem(FoundationBlocks.JUNGLE_BEAM, new FabricItemSettings()));
+    public static final Item JUNGLE_BEAM_STAIRS = register("jungle_beam_stairs", new BlockItem(FoundationBlocks.JUNGLE_BEAM_STAIRS, new FabricItemSettings()));
+    public static final Item JUNGLE_BEAM_SLAB = register("jungle_beam_slab", new BlockItem(FoundationBlocks.JUNGLE_BEAM_SLAB, new FabricItemSettings()));
     public static final Item ACACIA_BEAM = register("acacia_beam", new BlockItem(FoundationBlocks.ACACIA_BEAM, new FabricItemSettings()));
+    public static final Item ACACIA_BEAM_STAIRS = register("acacia_beam_stairs", new BlockItem(FoundationBlocks.ACACIA_BEAM_STAIRS, new FabricItemSettings()));
+    public static final Item ACACIA_BEAM_SLAB = register("acacia_beam_slab", new BlockItem(FoundationBlocks.ACACIA_BEAM_SLAB, new FabricItemSettings()));
     public static final Item DARK_OAK_BEAM = register("dark_oak_beam", new BlockItem(FoundationBlocks.DARK_OAK_BEAM, new FabricItemSettings()));
+    public static final Item DARK_OAK_BEAM_STAIRS = register("dark_oak_beam_stairs", new BlockItem(FoundationBlocks.DARK_OAK_BEAM_STAIRS, new FabricItemSettings()));
+    public static final Item DARK_OAK_BEAM_SLAB = register("dark_oak_beam_slab", new BlockItem(FoundationBlocks.DARK_OAK_BEAM_SLAB, new FabricItemSettings()));
     public static final Item CRIMSON_BEAM = register("crimson_beam", new BlockItem(FoundationBlocks.CRIMSON_BEAM, new FabricItemSettings()));
+    public static final Item CRIMSON_BEAM_STAIRS = register("crimson_beam_stairs", new BlockItem(FoundationBlocks.CRIMSON_BEAM_STAIRS, new FabricItemSettings()));
+    public static final Item CRIMSON_BEAM_SLAB = register("crimson_beam_slab", new BlockItem(FoundationBlocks.CRIMSON_BEAM_SLAB, new FabricItemSettings()));
     public static final Item WARPED_BEAM = register("warped_beam", new BlockItem(FoundationBlocks.WARPED_BEAM, new FabricItemSettings()));
+    public static final Item WARPED_BEAM_STAIRS = register("warped_beam_stairs", new BlockItem(FoundationBlocks.WARPED_BEAM_STAIRS, new FabricItemSettings()));
+    public static final Item WARPED_BEAM_SLAB = register("warped_beam_slab", new BlockItem(FoundationBlocks.WARPED_BEAM_SLAB, new FabricItemSettings()));
     public static final Item MANGROVE_BEAM = register("mangrove_beam", new BlockItem(FoundationBlocks.MANGROVE_BEAM, new FabricItemSettings()));
+    public static final Item MANGROVE_BEAM_STAIRS = register("mangrove_beam_stairs", new BlockItem(FoundationBlocks.MANGROVE_BEAM_STAIRS, new FabricItemSettings()));
+    public static final Item MANGROVE_BEAM_SLAB = register("mangrove_beam_slab", new BlockItem(FoundationBlocks.MANGROVE_BEAM_SLAB, new FabricItemSettings()));
     public static final Item BAMBOO_BEAM = register("bamboo_beam", new BlockItem(FoundationBlocks.BAMBOO_BEAM, new FabricItemSettings()));
+    public static final Item BAMBOO_BEAM_STAIRS = register("bamboo_beam_stairs", new BlockItem(FoundationBlocks.BAMBOO_BEAM_STAIRS, new FabricItemSettings()));
+    public static final Item BAMBOO_BEAM_SLAB = register("bamboo_beam_slab", new BlockItem(FoundationBlocks.BAMBOO_BEAM_SLAB, new FabricItemSettings()));
     public static final Item CHERRY_BEAM = register("cherry_beam", new BlockItem(FoundationBlocks.CHERRY_BEAM, new FabricItemSettings()));
+    public static final Item CHERRY_BEAM_STAIRS = register("cherry_beam_stairs", new BlockItem(FoundationBlocks.CHERRY_BEAM_STAIRS, new FabricItemSettings()));
+    public static final Item CHERRY_BEAM_SLAB = register("cherry_beam_slab", new BlockItem(FoundationBlocks.CHERRY_BEAM_SLAB, new FabricItemSettings()));
     // endregion
 
     // region SUPPORTS
-    public static final Item OAK_SUPPORT = register("oak_support", new BlockItem(FoundationBlocks.OAK_SUPPORT, new FabricItemSettings()));
-    public static final Item SPRUCE_SUPPORT = register("spruce_support", new BlockItem(FoundationBlocks.SPRUCE_SUPPORT, new FabricItemSettings()));
-    public static final Item BIRCH_SUPPORT = register("birch_support", new BlockItem(FoundationBlocks.BIRCH_SUPPORT, new FabricItemSettings()));
-    public static final Item JUNGLE_SUPPORT = register("jungle_support", new BlockItem(FoundationBlocks.JUNGLE_SUPPORT, new FabricItemSettings()));
-    public static final Item ACACIA_SUPPORT = register("acacia_support", new BlockItem(FoundationBlocks.ACACIA_SUPPORT, new FabricItemSettings()));
-    public static final Item DARK_OAK_SUPPORT = register("dark_oak_support", new BlockItem(FoundationBlocks.DARK_OAK_SUPPORT, new FabricItemSettings()));
-    public static final Item CRIMSON_SUPPORT = register("crimson_support", new BlockItem(FoundationBlocks.CRIMSON_SUPPORT, new FabricItemSettings()));
-    public static final Item WARPED_SUPPORT = register("warped_support", new BlockItem(FoundationBlocks.WARPED_SUPPORT, new FabricItemSettings()));
-    public static final Item MANGROVE_SUPPORT = register("mangrove_support", new BlockItem(FoundationBlocks.MANGROVE_SUPPORT, new FabricItemSettings()));
-    public static final Item BAMBOO_SUPPORT = register("bamboo_support", new BlockItem(FoundationBlocks.BAMBOO_SUPPORT, new FabricItemSettings()));
-    public static final Item CHERRY_SUPPORT = register("cherry_support", new BlockItem(FoundationBlocks.CHERRY_SUPPORT, new FabricItemSettings()));
+    public static final Item OAK_SUPPORT = register("oak_support", new DescriptionBlockItem(FoundationBlocks.OAK_SUPPORT, new FabricItemSettings()));
+    public static final Item SPRUCE_SUPPORT = register("spruce_support", new DescriptionBlockItem(FoundationBlocks.SPRUCE_SUPPORT, new FabricItemSettings()));
+    public static final Item BIRCH_SUPPORT = register("birch_support", new DescriptionBlockItem(FoundationBlocks.BIRCH_SUPPORT, new FabricItemSettings()));
+    public static final Item JUNGLE_SUPPORT = register("jungle_support", new DescriptionBlockItem(FoundationBlocks.JUNGLE_SUPPORT, new FabricItemSettings()));
+    public static final Item ACACIA_SUPPORT = register("acacia_support", new DescriptionBlockItem(FoundationBlocks.ACACIA_SUPPORT, new FabricItemSettings()));
+    public static final Item DARK_OAK_SUPPORT = register("dark_oak_support", new DescriptionBlockItem(FoundationBlocks.DARK_OAK_SUPPORT, new FabricItemSettings()));
+    public static final Item CRIMSON_SUPPORT = register("crimson_support", new DescriptionBlockItem(FoundationBlocks.CRIMSON_SUPPORT, new FabricItemSettings()));
+    public static final Item WARPED_SUPPORT = register("warped_support", new DescriptionBlockItem(FoundationBlocks.WARPED_SUPPORT, new FabricItemSettings()));
+    public static final Item MANGROVE_SUPPORT = register("mangrove_support", new DescriptionBlockItem(FoundationBlocks.MANGROVE_SUPPORT, new FabricItemSettings()));
+    public static final Item BAMBOO_SUPPORT = register("bamboo_support", new DescriptionBlockItem(FoundationBlocks.BAMBOO_SUPPORT, new FabricItemSettings()));
+    public static final Item CHERRY_SUPPORT = register("cherry_support", new DescriptionBlockItem(FoundationBlocks.CHERRY_SUPPORT, new FabricItemSettings()));
     // endregion
 
 
@@ -203,7 +228,6 @@ public class FoundationItems {
 
     public static final Item STONE_MOULDING = register("stone_moulding", new BlockItem(FoundationBlocks.STONE_MOULDING, new FabricItemSettings()));
 
-    public static final Item HAMMER = register("hammer", new Item(new FabricItemSettings().maxCount(1)));
 
     //public static final Item TALL_OAK_DOOR = register("tall_oak_door", new TallDoorItem(FoundationBlocks.TALL_OAK_DOOR, new FabricItemSettings()));
 

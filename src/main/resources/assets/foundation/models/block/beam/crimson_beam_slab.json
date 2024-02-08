@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab",
+    "textures": {
+        "bottom": "foundation:block/beam/crimson_top",
+        "side": "foundation:block/beam/crimson",
+        "top": "foundation:block/beam/crimson_top"
+    }
+}

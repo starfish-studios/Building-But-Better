@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "foundation/beam_slabs",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "foundation:jungle_beam"
+        }
+    },
+    "result": {
+        "item": "foundation:jungle_beam_slab",
+        "count": 6
+    }
+}
