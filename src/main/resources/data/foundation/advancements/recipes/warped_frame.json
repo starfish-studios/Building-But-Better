@@ -5,9 +5,7 @@
             "conditions": {
                 "items": [
                     {
-                        "items": [
-                            "minecraft:warped_planks"
-                        ]
+                        "tag": "minecraft:warped_stems"
                     }
                 ]
             },

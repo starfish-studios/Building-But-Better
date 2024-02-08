@@ -5,9 +5,7 @@
             "conditions": {
                 "items": [
                     {
-                        "items": [
-                            "minecraft:dark_oak_planks"
-                        ]
+                        "tag": "minecraft:dark_oak_logs"
                     }
                 ]
             },
