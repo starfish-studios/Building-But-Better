@@ -81,7 +81,7 @@ public class LayerBlock extends Block implements SimpleWaterloggedBlock {
                 player.getItemInHand(interactionHand).hurtAndBreak(1, player, (playerEntity) -> {
                     playerEntity.broadcastBreakEvent(interactionHand);
                 });
-                level.playSound(player, blockPos, FoundationSoundEvents.LAYER_HAMMER, SoundSource.BLOCKS, 1.0F, 1.0F);
+                level.playSound(player, blockPos, level.getBlockState(blockPos).getBlock().getSoundType(level.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
                 return InteractionResult.SUCCESS;
             } else if (blockState.getValue(LAYERS) == 1) {
                 return InteractionResult.FAIL;

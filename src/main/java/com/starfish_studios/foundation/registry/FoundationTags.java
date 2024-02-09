@@ -34,6 +34,7 @@ public interface FoundationTags {
         TagKey<Item> LAYERS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "layers"));
         TagKey<Item> LADDERS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "ladders"));
         TagKey<Item> HAMMERS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "hammers"));
+        TagKey<Item> STONE_FENCES = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "stone_fences"));
     }
 
 }

@@ -24,14 +24,12 @@ public class BlockUseEvent implements UseBlockCallback {
         //TODO : HAMMER + STONE FENCES
         final boolean isStoneFence = world.getBlockState(hitResult.getBlockPos()).is(FoundationTags.FoundationBlockTags.STONE_FENCES);
         if (isHammer && isStoneFence) {
-            if (player.isShiftKeyDown()) {
-                // If north, south, east, and west are false, return InteractionResult.PASS
-                if (!world.getBlockState(blockPos).getValue(StoneFenceBlock.NORTH) &&
-                        !world.getBlockState(blockPos).getValue(StoneFenceBlock.EAST) &&
-                        !world.getBlockState(blockPos).getValue(StoneFenceBlock.SOUTH) &&
-                        !world.getBlockState(blockPos).getValue(StoneFenceBlock.WEST)) {
-                    return InteractionResult.PASS;
-                }
+            if (!world.getBlockState(blockPos).getValue(StoneFenceBlock.NORTH) &&
+                    !world.getBlockState(blockPos).getValue(StoneFenceBlock.EAST) &&
+                    !world.getBlockState(blockPos).getValue(StoneFenceBlock.SOUTH) &&
+                    !world.getBlockState(blockPos).getValue(StoneFenceBlock.WEST)) {
+                return InteractionResult.PASS;
+            } else if (player.isShiftKeyDown()) {
                 if (world.getBlockState(blockPos).getValue(StoneFenceBlock.PILLAR)) {
                     world.setBlock(blockPos, world.getBlockState(blockPos).setValue(StoneFenceBlock.PILLAR, false), 3);
                 } else {

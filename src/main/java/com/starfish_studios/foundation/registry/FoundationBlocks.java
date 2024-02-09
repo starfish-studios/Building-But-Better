@@ -96,7 +96,7 @@ public class FoundationBlocks {
     //endregion
 
     // region LAYERS
-    public static final Block OAK_LAYER = register("oak_layer.json", new LayerBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
+    public static final Block OAK_LAYER = register("oak_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
     public static final Block SPRUCE_LAYER = register("spruce_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS))));
     public static final Block BIRCH_LAYER = register("birch_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS))));
     public static final Block JUNGLE_LAYER = register("jungle_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS))));

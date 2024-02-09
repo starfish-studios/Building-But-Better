@@ -1,0 +1,11 @@
+{
+  "values": [
+    "foundation:stone_fence",
+    "foundation:blackstone_fence",
+    "foundation:sandstone_fence",
+    "foundation:red_sandstone_fence",
+    "foundation:quartz_fence",
+    "foundation:deepslate_fence",
+    "foundation:nether_brick_fence"
+  ]
+}

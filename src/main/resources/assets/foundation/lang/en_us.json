@@ -5,29 +5,48 @@
   "subtitles.block.layer.remove_layer": "Layer removed",
 
   "description.foundation.pencil": "✐ ",
-  "description.foundation.hammer_right_click": "Right-Click with a Hammer",
 
+  "description.foundation.stone_fence1": "Right-Click with a Hammer",
+  "description.foundation.stone_fence2": "to toggle solid sides.",
+  "description.foundation.stone_fence3": "Sneak + Right-Click with a Hammer",
+  "description.foundation.stone_fence4": "to toggle the main pillar.",
+
+  "description.foundation.layer1": "Right-Click with a Hammer",
   "description.foundation.layer2": "to remove layers.",
   "description.foundation.layer3": "Up to 4 layers can be added.",
   "description.foundation.layer4": "Can be placed on all sides.",
 
+  "description.foundation.frame1": "Right-Click with a Hammer",
   "description.foundation.frame2": "to cycle through center supports.",
   "description.foundation.frame3": "Punch to remove center support.",
   "description.foundation.frame4": "Automatically connects",
   "description.foundation.frame5": "to other Frames.",
 
+  "description.foundation.pallet1": "Right-Click with a Hammer",
   "description.foundation.pallet2": "to add/remove layers.",
-  "description.foundation.pallet3": "Crouch + Right-Click",
+  "description.foundation.pallet3": "Sneak + Right-Click",
   "description.foundation.pallet4": "with an empty hand",
   "description.foundation.pallet5": "to open/close the block.",
 
+  "description.foundation.column1": "Right-Click with a Hammer",
   "description.foundation.column2": "to add/remove outside layers.",
 
+  "description.foundation.ladder1": "Right-Click with a Hammer",
   "description.foundation.ladder2": "to cycle through styles.",
 
-    "description.foundation.support2": "to toggle the support beam.",
+  "description.foundation.support1": "Right-Click with a Hammer",
+  "description.foundation.support2": "to toggle the support beam.",
 
   "item.foundation.hammer": "Hammer",
+
+
+  "block.foundation.stone_fence": "Stone Fence",
+    "block.foundation.blackstone_fence": "Blackstone Fence",
+    "block.foundation.sandstone_fence": "Sandstone Fence",
+    "block.foundation.red_sandstone_fence": "Red Sandstone Fence",
+    "block.foundation.quartz_fence": "Quartz Fence",
+    "block.foundation.deepslate_fence": "Deepslate Fence",
+    "block.foundation.nether_brick_fence": "Nether Brick Fence",
 
   "block.foundation.rope": "Rope",
   "block.foundation.stone_moulding": "Stone Moulding",
@@ -36,6 +55,7 @@
   "block.foundation.iron_fence": "Iron Fence",
   "block.foundation.tall_oak_door": "Tall Oak Door",
   "block.foundation.oak_hedge": "Oak Hedge",
+  "block.foundation.plaster": "Plaster",
 
   "block.foundation.polished_stone": "Polished Stone",
   "block.foundation.polished_stone_stairs": "Polished Stone Stairs",
@@ -45,7 +65,6 @@
   "block.foundation.stone_tiles": "Stone Tiles",
   "block.foundation.stone_tile_stairs": "Stone Tile Stairs",
   "block.foundation.stone_tile_slab": "Stone Tile Slab",
-  "block.foundation.stone_fence": "Stone Fence",
 
   "block.foundation.oak_support": "Oak Support",
     "block.foundation.spruce_support": "Spruce Support",

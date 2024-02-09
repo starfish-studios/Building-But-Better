@@ -22,13 +22,13 @@ public class FoundationItems {
 
 
 
-    public static final Item STONE_FENCE = register("stone_fence", new BlockItem(FoundationBlocks.STONE_FENCE, new FabricItemSettings()));
-    public static final Item BLACKSTONE_FENCE = register("blackstone_fence", new BlockItem(FoundationBlocks.BLACKSTONE_FENCE, new FabricItemSettings()));
-    public static final Item DEEPSLATE_FENCE = register("deepslate_fence", new BlockItem(FoundationBlocks.DEEPSLATE_FENCE, new FabricItemSettings()));
-    public static final Item NETHER_BRICK_FENCE = register("nether_brick_fence", new BlockItem(FoundationBlocks.NETHER_BRICK_FENCE, new FabricItemSettings()));
-    public static final Item SANDSTONE_FENCE = register("sandstone_fence", new BlockItem(FoundationBlocks.SANDSTONE_FENCE, new FabricItemSettings()));
-    public static final Item RED_SANDSTONE_FENCE = register("red_sandstone_fence", new BlockItem(FoundationBlocks.RED_SANDSTONE_FENCE, new FabricItemSettings()));
-    public static final Item QUARTZ_FENCE = register("quartz_fence", new BlockItem(FoundationBlocks.QUARTZ_FENCE, new FabricItemSettings()));
+    public static final Item STONE_FENCE = register("stone_fence", new DescriptionBlockItem(FoundationBlocks.STONE_FENCE, new FabricItemSettings()));
+    public static final Item BLACKSTONE_FENCE = register("blackstone_fence", new DescriptionBlockItem(FoundationBlocks.BLACKSTONE_FENCE, new FabricItemSettings()));
+    public static final Item DEEPSLATE_FENCE = register("deepslate_fence", new DescriptionBlockItem(FoundationBlocks.DEEPSLATE_FENCE, new FabricItemSettings()));
+    public static final Item NETHER_BRICK_FENCE = register("nether_brick_fence", new DescriptionBlockItem(FoundationBlocks.NETHER_BRICK_FENCE, new FabricItemSettings()));
+    public static final Item SANDSTONE_FENCE = register("sandstone_fence", new DescriptionBlockItem(FoundationBlocks.SANDSTONE_FENCE, new FabricItemSettings()));
+    public static final Item RED_SANDSTONE_FENCE = register("red_sandstone_fence", new DescriptionBlockItem(FoundationBlocks.RED_SANDSTONE_FENCE, new FabricItemSettings()));
+    public static final Item QUARTZ_FENCE = register("quartz_fence", new DescriptionBlockItem(FoundationBlocks.QUARTZ_FENCE, new FabricItemSettings()));
 
 
 
@@ -98,7 +98,7 @@ public class FoundationItems {
     // endregion
 
     // region LAYERS
-    public static final Item OAK_LAYER = register("oak_layer.json", new DescriptionBlockItem(FoundationBlocks.OAK_LAYER, new FabricItemSettings()));
+    public static final Item OAK_LAYER = register("oak_layer", new DescriptionBlockItem(FoundationBlocks.OAK_LAYER, new FabricItemSettings()));
     public static final Item SPRUCE_LAYER = register("spruce_layer", new DescriptionBlockItem(FoundationBlocks.SPRUCE_LAYER, new FabricItemSettings()));
     public static final Item BIRCH_LAYER = register("birch_layer", new DescriptionBlockItem(FoundationBlocks.BIRCH_LAYER, new FabricItemSettings()));
     public static final Item JUNGLE_LAYER = register("jungle_layer", new DescriptionBlockItem(FoundationBlocks.JUNGLE_LAYER, new FabricItemSettings()));

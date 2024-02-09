@@ -3,13 +3,16 @@ package com.starfish_studios.foundation.block;
 import com.starfish_studios.foundation.registry.FoundationTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FenceBlock;
@@ -17,10 +20,14 @@ import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
+import java.util.Random;
 
 public class StoneFenceBlock extends FenceBlock {
     public static final BooleanProperty SIDE_FILL = BooleanProperty.create("side_fill");
@@ -34,6 +41,12 @@ public class StoneFenceBlock extends FenceBlock {
                 .setValue(WATERLOGGED, false)
                 .setValue(SIDE_FILL, false)
                 .setValue(PILLAR, true));
+    }
+
+    public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+        if (!state.getValue(NORTH) && !state.getValue(EAST) && !state.getValue(SOUTH) && !state.getValue(WEST)) {
+            level.setBlock(pos, state.setValue(PILLAR, true), 3);
+        }
     }
 
     @Override
@@ -67,6 +80,18 @@ public class StoneFenceBlock extends FenceBlock {
                 .setValue(WEST, this.connectsTo(blockState4, blockState4.isFaceSturdy(blockGetter, blockPos5, Direction.EAST), Direction.EAST))
                 .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
     }
+
+    @Override
+    public BlockState updateShape(BlockState blockState, Direction direction, BlockState blockState2, LevelAccessor levelAccessor, BlockPos blockPos, BlockPos blockPos2) {
+        if (blockState.getValue(WATERLOGGED)) {
+            levelAccessor.scheduleTick(blockPos, Fluids.WATER, Fluids.WATER.getTickDelay(levelAccessor));
+        }
+
+        return direction.getAxis().getPlane() == Direction.Plane.HORIZONTAL ? blockState.setValue(PROPERTY_BY_DIRECTION.get(direction),
+                this.connectsTo(blockState2, blockState2.isFaceSturdy(levelAccessor, blockPos2, direction.getOpposite()), direction.getOpposite()))
+                : super.updateShape(blockState, direction, blockState2, levelAccessor, blockPos, blockPos2);
+    }
+
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> stateDefinition) {

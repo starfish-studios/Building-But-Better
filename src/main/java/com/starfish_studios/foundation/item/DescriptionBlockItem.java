@@ -24,9 +24,18 @@ public class DescriptionBlockItem extends BlockItem {
     @Override
     public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag flagIn) {
 
+        if (stack.is(FoundationTags.FoundationItemTags.STONE_FENCES)) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.stone_fence1").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.foundation.stone_fence2").withStyle(ChatFormatting.GRAY));
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.stone_fence3").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.foundation.stone_fence4").withStyle(ChatFormatting.GRAY));
+            } else tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+        }
+
         if (stack.is(FoundationTags.FoundationItemTags.SUPPORTS)) {
             if (Screen.hasShiftDown()) {
-                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.hammer_right_click").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.support1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.foundation.support2").withStyle(ChatFormatting.GRAY));
             } else
                 tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
@@ -34,7 +43,7 @@ public class DescriptionBlockItem extends BlockItem {
 
         else if (stack.is(FoundationTags.FoundationItemTags.PALLETS)) {
             if (Screen.hasShiftDown()) {
-                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.hammer_right_click").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.pallet1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.foundation.pallet2").withStyle(ChatFormatting.GRAY));
                 tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.pallet3").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.foundation.pallet4").withStyle(ChatFormatting.GRAY));
@@ -45,7 +54,7 @@ public class DescriptionBlockItem extends BlockItem {
 
         else if (stack.is(FoundationTags.FoundationItemTags.LADDERS)) {
             if (Screen.hasShiftDown()) {
-                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.hammer_right_click").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.ladder1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.foundation.ladder2").withStyle(ChatFormatting.GRAY));
             } else
                 tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
@@ -53,7 +62,7 @@ public class DescriptionBlockItem extends BlockItem {
 
         else if (stack.is(FoundationTags.FoundationItemTags.COLUMNS)) {
             if (Screen.hasShiftDown()) {
-                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.hammer_right_click").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.column1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.foundation.column2").withStyle(ChatFormatting.GRAY));
             } else
                 tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
@@ -61,7 +70,7 @@ public class DescriptionBlockItem extends BlockItem {
 
         else if (stack.is(FoundationTags.FoundationItemTags.LAYERS)) {
             if (Screen.hasShiftDown()) {
-                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.hammer_right_click").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.layer1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.foundation.layer2").withStyle(ChatFormatting.GRAY));
                 tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.layer3").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.layer4").withStyle(ChatFormatting.GRAY)));
@@ -71,7 +80,7 @@ public class DescriptionBlockItem extends BlockItem {
 
         else if (stack.is(FoundationTags.FoundationItemTags.FRAMES)) {
             if (Screen.hasShiftDown()) {
-                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.hammer_right_click").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.frame1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.foundation.frame2").withStyle(ChatFormatting.GRAY));
                 tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.frame3").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.frame4").withStyle(ChatFormatting.GRAY)));
