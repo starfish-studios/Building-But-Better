@@ -1,6 +1,7 @@
 package com.starfish_studios.foundation;
 
 import com.google.common.reflect.Reflection;
+import com.starfish_studios.foundation.event.BlockUseEvent;
 import com.starfish_studios.foundation.registry.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -13,6 +14,7 @@ public class Foundation implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		BlockUseEvent.EVENT.register(new BlockUseEvent());
 		Reflection.initialize(
 				FoundationCreativeModeTab.class,
 				FoundationSoundEvents.class,

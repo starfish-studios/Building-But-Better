@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "foundation/layer",
+    "key": {
+        "#": {
+            "item": "minecraft:polished_diorite_slab"
+        }
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "item": "foundation:polished_diorite_layer"
+    },
+    "show_notification": true
+}

@@ -22,6 +22,15 @@ public class FoundationCreativeModeTab {
         output.accept(PLASTER);
 
 
+        output.accept(STONE_FENCE);
+        output.accept(BLACKSTONE_FENCE);
+        output.accept(SANDSTONE_FENCE);
+        output.accept(RED_SANDSTONE_FENCE);
+        output.accept(QUARTZ_FENCE);
+        output.accept(DEEPSLATE_FENCE);
+        output.accept(NETHER_BRICK_FENCE);
+
+
         // region LADDERS
         output.accept(OAK_LADDER);
         output.accept(SPRUCE_LADDER);
@@ -46,7 +55,6 @@ public class FoundationCreativeModeTab {
         output.accept(STONE_TILE_STAIRS);
         output.accept(STONE_TILE_SLAB);
 
-        output.accept(STONE_FENCE);
         output.accept(STONE_MOULDING);
         output.accept(URN);
 

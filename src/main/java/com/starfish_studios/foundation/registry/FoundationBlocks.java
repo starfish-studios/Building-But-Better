@@ -17,6 +17,16 @@ public class FoundationBlocks {
 
     public static final Block OAK_WALL = register("oak_wall", new WallBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
 
+
+    // Stone, Sandstone, Red Sandstone, Quartz, Blackstone, Deepslate, Nether Brick
+    public static final Block STONE_FENCE = register("stone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS)).noOcclusion()));
+    public static final Block BLACKSTONE_FENCE = register("blackstone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE)).noOcclusion()));
+    public static final Block DEEPSLATE_FENCE = register("deepslate_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS)).noOcclusion()));
+    public static final Block NETHER_BRICK_FENCE = register("nether_brick_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).noOcclusion()));
+    public static final Block SANDSTONE_FENCE = register("sandstone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.SANDSTONE)).noOcclusion()));
+    public static final Block RED_SANDSTONE_FENCE = register("red_sandstone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).noOcclusion()));
+    public static final Block QUARTZ_FENCE = register("quartz_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).noOcclusion()));
+
     
 
 
@@ -86,7 +96,7 @@ public class FoundationBlocks {
     //endregion
 
     // region LAYERS
-    public static final Block OAK_LAYER = register("oak_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
+    public static final Block OAK_LAYER = register("oak_layer.json", new LayerBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
     public static final Block SPRUCE_LAYER = register("spruce_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS))));
     public static final Block BIRCH_LAYER = register("birch_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS))));
     public static final Block JUNGLE_LAYER = register("jungle_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS))));
@@ -211,8 +221,6 @@ public class FoundationBlocks {
     public static final Block STONE_TILES = register("stone_tiles", new Block(FabricBlockSettings.copy((Blocks.STONE_BRICKS))));
     public static final Block STONE_TILE_STAIRS = register("stone_tile_stairs", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
     public static final Block STONE_TILE_SLAB = register("stone_tile_slab", new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
-
-    public static final Block STONE_FENCE = register("stone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS)).noOcclusion()));
 
 
 

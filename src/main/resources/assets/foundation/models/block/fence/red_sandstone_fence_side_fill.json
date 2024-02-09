@@ -1,0 +1,7 @@
+{
+    "parent": "foundation:block/fence/stone_fence_side_fill",
+    "textures": {
+        "texture": "foundation:block/fence/red_sandstone_fence",
+        "particle": "minecraft:block/red_sandstone"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "foundation/layer",
+    "key": {
+        "#": {
+            "item": "minecraft:jungle_slab"
+        }
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "item": "foundation:jungle_layer"
+    },
+    "show_notification": true
+}

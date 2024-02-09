@@ -22,6 +22,16 @@ public class FoundationItems {
 
 
 
+    public static final Item STONE_FENCE = register("stone_fence", new BlockItem(FoundationBlocks.STONE_FENCE, new FabricItemSettings()));
+    public static final Item BLACKSTONE_FENCE = register("blackstone_fence", new BlockItem(FoundationBlocks.BLACKSTONE_FENCE, new FabricItemSettings()));
+    public static final Item DEEPSLATE_FENCE = register("deepslate_fence", new BlockItem(FoundationBlocks.DEEPSLATE_FENCE, new FabricItemSettings()));
+    public static final Item NETHER_BRICK_FENCE = register("nether_brick_fence", new BlockItem(FoundationBlocks.NETHER_BRICK_FENCE, new FabricItemSettings()));
+    public static final Item SANDSTONE_FENCE = register("sandstone_fence", new BlockItem(FoundationBlocks.SANDSTONE_FENCE, new FabricItemSettings()));
+    public static final Item RED_SANDSTONE_FENCE = register("red_sandstone_fence", new BlockItem(FoundationBlocks.RED_SANDSTONE_FENCE, new FabricItemSettings()));
+    public static final Item QUARTZ_FENCE = register("quartz_fence", new BlockItem(FoundationBlocks.QUARTZ_FENCE, new FabricItemSettings()));
+
+
+
     // region BEAMS
     public static final Item OAK_BEAM = register("oak_beam", new BlockItem(FoundationBlocks.OAK_BEAM, new FabricItemSettings()));
     public static final Item OAK_BEAM_STAIRS = register("oak_beam_stairs", new BlockItem(FoundationBlocks.OAK_BEAM_STAIRS, new FabricItemSettings()));
@@ -88,7 +98,7 @@ public class FoundationItems {
     // endregion
 
     // region LAYERS
-    public static final Item OAK_LAYER = register("oak_layer", new DescriptionBlockItem(FoundationBlocks.OAK_LAYER, new FabricItemSettings()));
+    public static final Item OAK_LAYER = register("oak_layer.json", new DescriptionBlockItem(FoundationBlocks.OAK_LAYER, new FabricItemSettings()));
     public static final Item SPRUCE_LAYER = register("spruce_layer", new DescriptionBlockItem(FoundationBlocks.SPRUCE_LAYER, new FabricItemSettings()));
     public static final Item BIRCH_LAYER = register("birch_layer", new DescriptionBlockItem(FoundationBlocks.BIRCH_LAYER, new FabricItemSettings()));
     public static final Item JUNGLE_LAYER = register("jungle_layer", new DescriptionBlockItem(FoundationBlocks.JUNGLE_LAYER, new FabricItemSettings()));
@@ -155,7 +165,6 @@ public class FoundationItems {
     public static final Item STONE_TILES = register("stone_tiles", new BlockItem(FoundationBlocks.STONE_TILES, new FabricItemSettings()));
     public static final Item STONE_TILE_STAIRS = register("stone_tile_stairs", new BlockItem(FoundationBlocks.STONE_TILE_STAIRS, new FabricItemSettings()));
     public static final Item STONE_TILE_SLAB = register("stone_tile_slab", new BlockItem(FoundationBlocks.STONE_TILE_SLAB, new FabricItemSettings()));
-    public static final Item STONE_FENCE = register("stone_fence", new BlockItem(FoundationBlocks.STONE_FENCE, new FabricItemSettings()));
 
     public static final Item BRAZIER = register("brazier", new BlockItem(FoundationBlocks.BRAZIER, new FabricItemSettings()));
     public static final Item URN = register("urn", new BlockItem(FoundationBlocks.URN, new FabricItemSettings()));

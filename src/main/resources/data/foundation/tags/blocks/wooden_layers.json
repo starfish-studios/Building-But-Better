@@ -10,6 +10,7 @@
     "foundation:warped_layer",
     "foundation:mangrove_layer",
     "foundation:bamboo_layer",
+    "foundation:bamboo_mosaic_layer",
     "foundation:cherry_layer"
   ]
 }

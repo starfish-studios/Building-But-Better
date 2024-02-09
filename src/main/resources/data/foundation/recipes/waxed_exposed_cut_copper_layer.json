@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "foundation/layer",
+    "key": {
+        "#": {
+            "item": "minecraft:waxed_exposed_cut_copper_slab"
+        }
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "item": "foundation:waxed_exposed_cut_copper_layer"
+    },
+    "show_notification": true
+}

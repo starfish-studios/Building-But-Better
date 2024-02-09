@@ -1,0 +1,7 @@
+{
+    "parent": "foundation:block/fence/stone_fence_inventory",
+    "textures": {
+        "texture": "foundation:block/fence/deepslate_fence",
+        "particle": "minecraft:block/deepslate"
+    }
+}

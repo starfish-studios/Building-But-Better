@@ -1,0 +1,7 @@
+{
+    "parent": "foundation:block/fence/stone_fence_side",
+    "textures": {
+        "texture": "foundation:block/fence/quartz_fence",
+        "particle": "minecraft:block/quartz"
+    }
+}
