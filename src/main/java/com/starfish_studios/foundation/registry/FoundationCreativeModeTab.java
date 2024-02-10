@@ -50,7 +50,7 @@ public class FoundationCreativeModeTab {
         output.accept(POLISHED_STONE);
         output.accept(POLISHED_STONE_STAIRS);
         output.accept(POLISHED_STONE_SLAB);
-        output.accept(POLISHED_STONE_COLUMN);
+        output.accept(STONE_COLUMN);
 
         output.accept(STONE_TILES);
         output.accept(STONE_TILE_STAIRS);

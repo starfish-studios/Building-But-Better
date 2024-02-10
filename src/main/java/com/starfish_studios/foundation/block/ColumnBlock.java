@@ -1,6 +1,7 @@
 package com.starfish_studios.foundation.block;
 
 import com.starfish_studios.foundation.Foundation;
+import com.starfish_studios.foundation.block.properties.ColumnType;
 import com.starfish_studios.foundation.block.properties.FoundationBlockStateProperties;
 import com.starfish_studios.foundation.registry.FoundationTags;
 import net.minecraft.core.BlockPos;
@@ -29,12 +30,14 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
     public static final BooleanProperty LAYER_FOUR = FoundationBlockStateProperties.LAYER_FOUR;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final DirectionProperty FACING = DirectionalBlock.FACING;
+    public static final EnumProperty<ColumnType> TYPE = FoundationBlockStateProperties.COLUMN_TYPE;
 
     public ColumnBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(WATERLOGGED, false)
                 .setValue(FACING, Direction.UP)
+                .setValue(TYPE, ColumnType.NONE)
                 .setValue(LAYER_ONE, true)
                 .setValue(LAYER_TWO, false)
                 .setValue(LAYER_THREE, false)
@@ -42,19 +45,55 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     @Override
+    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
+        if (level.isClientSide) return;
+
+        Direction.Axis axis = state.getValue(FACING).getAxis();
+        ColumnType type = getType(state, getRelativeTop(level, pos, axis), getRelativeBottom(level, pos, axis));
+        if (state.getValue(TYPE) == type) return;
+
+        state = state.setValue(TYPE, type);
+        level.setBlock(pos, state, 3);
+    }
+
+    public BlockState getRelativeTop(Level level, BlockPos pos, Direction.Axis axis) {
+        return level.getBlockState(pos.relative(Direction.fromAxisAndDirection(axis, Direction.AxisDirection.POSITIVE)));
+    }
+
+    public BlockState getRelativeBottom(Level level, BlockPos pos, Direction.Axis axis) {
+        return level.getBlockState(pos.relative(Direction.fromAxisAndDirection(axis, Direction.AxisDirection.NEGATIVE)));
+    }
+
+    public ColumnType getType(BlockState state, BlockState above, BlockState below) {
+
+        boolean shape_above_same = above.is(state.getBlock()) && state.getValue(FACING) == above.getValue(FACING);
+        boolean shape_below_same = below.is(state.getBlock()) && state.getValue(FACING) == below.getValue(FACING);
+
+        if (shape_above_same && !shape_below_same) return ColumnType.BOTTOM;
+        else if (!shape_above_same && shape_below_same) return ColumnType.TOP;
+        else if (shape_above_same) return ColumnType.MIDDLE;
+
+        return ColumnType.NONE;
+    }
+
+    @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         Direction[] var2 = context.getNearestLookingDirections();
 
         for (Direction direction : var2) {
+            Level level = context.getLevel();
+            BlockPos pos = context.getClickedPos();
             BlockState blockState;
+
             if (direction.getAxis() == Direction.Axis.Y) {
                 blockState = this.defaultBlockState().setValue(FACING, context.getNearestLookingVerticalDirection().getOpposite());
             } else {
                 blockState = this.defaultBlockState().setValue(FACING, direction.getOpposite());
             }
+            blockState = blockState.setValue(TYPE, getType(blockState, getRelativeTop(level, pos, direction.getAxis()), getRelativeBottom(level, pos, direction.getAxis())));
             return blockState;
         }
-        return null;
+        return this.defaultBlockState().setValue(TYPE, ColumnType.NONE);
     }
 
     public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
@@ -129,7 +168,7 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(LAYER_ONE, LAYER_TWO, LAYER_THREE, LAYER_FOUR, WATERLOGGED, FACING);
+        builder.add(LAYER_ONE, LAYER_TWO, LAYER_THREE, LAYER_FOUR, WATERLOGGED, FACING, TYPE);
     }
 
 
