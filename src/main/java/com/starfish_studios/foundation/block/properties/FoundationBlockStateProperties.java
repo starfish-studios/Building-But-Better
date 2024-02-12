@@ -15,8 +15,8 @@ public class FoundationBlockStateProperties {
     public static final BooleanProperty RIGHT = BooleanProperty.create("right");
     public static final BooleanProperty TOP = BooleanProperty.create("top");
     public static final BooleanProperty BOTTOM = BooleanProperty.create("bottom");
-    public static final BooleanProperty LAYER_ONE = BooleanProperty.create("layer_one");
-    public static final BooleanProperty LAYER_TWO = BooleanProperty.create("layer_two");
-    public static final BooleanProperty LAYER_THREE = BooleanProperty.create("layer_three");
-    public static final BooleanProperty LAYER_FOUR = BooleanProperty.create("layer_four");
+    public static final BooleanProperty LAYER_1 = BooleanProperty.create("layer_1");
+    public static final BooleanProperty LAYER_2 = BooleanProperty.create("layer_2");
+    public static final BooleanProperty LAYER_3 = BooleanProperty.create("layer_3");
+    public static final BooleanProperty LAYER_4 = BooleanProperty.create("layer_4");
 }

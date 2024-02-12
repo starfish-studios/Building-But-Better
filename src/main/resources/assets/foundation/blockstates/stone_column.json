@@ -2,7 +2,19 @@
     "multipart": [
         {
             "when": {
-                "facing": "up",
+                "axis": "x",
+                "type": "none"
+            },
+            "apply": {
+                "model": "foundation:block/column/stone_column_none",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
                 "type": "none"
             },
             "apply": {
@@ -11,7 +23,7 @@
         },
         {
             "when": {
-                "facing": "north",
+                "axis": "z",
                 "type": "none"
             },
             "apply": {
@@ -22,66 +34,9 @@
         },
         {
             "when": {
-                "facing": "east",
-                "type": "none"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none",
-                "uvlock": false,
-                "x": 90,
-                "y": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "south",
-                "type": "none"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "type": "none"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "down",
-                "type": "none"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
+                "axis": "x",
                 "type": "none",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none_layer1",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "east",
-                "type": "none",
-                "layer_one": "true"
+                "layer_1": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_none_layer1",
@@ -92,34 +47,9 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "none",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none_layer1",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "type": "none",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none_layer1",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "none",
-                "layer_one": "true"
+                "layer_1": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_none_layer1",
@@ -128,32 +58,21 @@
         },
         {
             "when": {
-                "facing": "down",
+                "axis": "z",
                 "type": "none",
-                "layer_one": "true"
+                "layer_1": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_none_layer1",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "none",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none_layer2",
                 "uvlock": false,
                 "x": 90
             }
         },
         {
             "when": {
-                "facing": "east",
+                "axis": "x",
                 "type": "none",
-                "layer_two": "true"
+                "layer_2": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_none_layer2",
@@ -164,34 +83,9 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "none",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none_layer2",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "type": "none",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none_layer2",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "none",
-                "layer_two": "true"
+                "layer_2": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_none_layer2",
@@ -200,32 +94,21 @@
         },
         {
             "when": {
-                "facing": "down",
+                "axis": "z",
                 "type": "none",
-                "layer_two": "true"
+                "layer_2": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_none_layer2",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "none",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none_layer3",
                 "uvlock": false,
                 "x": 90
             }
         },
         {
             "when": {
-                "facing": "east",
+                "axis": "x",
                 "type": "none",
-                "layer_three": "true"
+                "layer_3": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_none_layer3",
@@ -236,34 +119,9 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "none",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none_layer3",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "type": "none",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none_layer3",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "none",
-                "layer_three": "true"
+                "layer_3": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_none_layer3",
@@ -272,32 +130,21 @@
         },
         {
             "when": {
-                "facing": "down",
+                "axis": "z",
                 "type": "none",
-                "layer_three": "true"
+                "layer_3": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_none_layer3",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "none",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none_layer4",
                 "uvlock": false,
                 "x": 90
             }
         },
         {
             "when": {
-                "facing": "east",
+                "axis": "x",
                 "type": "none",
-                "layer_four": "true"
+                "layer_4": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_none_layer4",
@@ -308,9 +155,20 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "none",
-                "layer_four": "true"
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/stone_column_none_layer4",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "none",
+                "layer_4": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_none_layer4",
@@ -320,42 +178,19 @@
         },
         {
             "when": {
-                "facing": "west",
-                "type": "none",
-                "layer_four": "true"
+                "axis": "x",
+                "type": "bottom"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer4",
+                "model": "foundation:block/column/stone_column_bottom",
                 "uvlock": false,
-                "y": 90,
-                "x": 90
+                "x": 90,
+                "y": 90
             }
         },
         {
             "when": {
-                "facing": "up",
-                "type": "none",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none_layer4",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "down",
-                "type": "none",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_none_layer4",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
+                "axis": "y",
                 "type": "bottom"
             },
             "apply": {
@@ -364,7 +199,7 @@
         },
         {
             "when": {
-                "facing": "north",
+                "axis": "z",
                 "type": "bottom"
             },
             "apply": {
@@ -375,11 +210,11 @@
         },
         {
             "when": {
-                "facing": "east",
-                "type": "bottom"
+                "axis": "x",
+                "type": "middle"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom",
+                "model": "foundation:block/column/stone_column_middle",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -387,40 +222,7 @@
         },
         {
             "when": {
-                "facing": "south",
-                "type": "bottom"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "type": "bottom"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "down",
-                "type": "bottom"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
+                "axis": "y",
                 "type": "middle"
             },
             "apply": {
@@ -429,7 +231,7 @@
         },
         {
             "when": {
-                "facing": "north",
+                "axis": "z",
                 "type": "middle"
             },
             "apply": {
@@ -440,11 +242,11 @@
         },
         {
             "when": {
-                "facing": "east",
-                "type": "middle"
+                "axis": "x",
+                "type": "top"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle",
+                "model": "foundation:block/column/stone_column_top",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -452,40 +254,7 @@
         },
         {
             "when": {
-                "facing": "south",
-                "type": "middle"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "type": "middle"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "down",
-                "type": "middle"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
+                "axis": "y",
                 "type": "top"
             },
             "apply": {
@@ -494,7 +263,7 @@
         },
         {
             "when": {
-                "facing": "north",
+                "axis": "z",
                 "type": "top"
             },
             "apply": {
@@ -505,66 +274,9 @@
         },
         {
             "when": {
-                "facing": "east",
-                "type": "top"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top",
-                "uvlock": false,
-                "x": 90,
-                "y": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "south",
-                "type": "top"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "type": "top"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "down",
-                "type": "top"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
+                "axis": "x",
                 "type": "bottom",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer1",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "east",
-                "type": "bottom",
-                "layer_one": "true"
+                "layer_1": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_bottom_layer1",
@@ -575,9 +287,20 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "bottom",
-                "layer_one": "true"
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/stone_column_bottom_layer1",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom",
+                "layer_1": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_bottom_layer1",
@@ -587,56 +310,9 @@
         },
         {
             "when": {
-                "facing": "west",
+                "axis": "x",
                 "type": "bottom",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer1",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "bottom",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer1",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "down",
-                "type": "bottom",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer1",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "bottom",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer2",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "east",
-                "type": "bottom",
-                "layer_two": "true"
+                "layer_2": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_bottom_layer2",
@@ -647,9 +323,20 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "bottom",
-                "layer_two": "true"
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/stone_column_bottom_layer2",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom",
+                "layer_2": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_bottom_layer2",
@@ -659,56 +346,9 @@
         },
         {
             "when": {
-                "facing": "west",
+                "axis": "x",
                 "type": "bottom",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer2",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "bottom",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer2",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "down",
-                "type": "bottom",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer2",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "bottom",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer3",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "east",
-                "type": "bottom",
-                "layer_three": "true"
+                "layer_3": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_bottom_layer3",
@@ -719,9 +359,20 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "bottom",
-                "layer_three": "true"
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/stone_column_bottom_layer3",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom",
+                "layer_3": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_bottom_layer3",
@@ -731,56 +382,9 @@
         },
         {
             "when": {
-                "facing": "west",
+                "axis": "x",
                 "type": "bottom",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer3",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "bottom",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer3",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "down",
-                "type": "bottom",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer3",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "bottom",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer4",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "east",
-                "type": "bottom",
-                "layer_four": "true"
+                "layer_4": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_bottom_layer4",
@@ -791,9 +395,20 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "bottom",
-                "layer_four": "true"
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/stone_column_bottom_layer4",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom",
+                "layer_4": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_bottom_layer4",
@@ -803,56 +418,9 @@
         },
         {
             "when": {
-                "facing": "west",
-                "type": "bottom",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer4",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "bottom",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer4",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "down",
-                "type": "bottom",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer4",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
+                "axis": "x",
                 "type": "top",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer1",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "east",
-                "type": "top",
-                "layer_one": "true"
+                "layer_1": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_top_layer1",
@@ -863,9 +431,20 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "top",
-                "layer_one": "true"
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/stone_column_top_layer1",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top",
+                "layer_1": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_top_layer1",
@@ -875,56 +454,9 @@
         },
         {
             "when": {
-                "facing": "west",
+                "axis": "x",
                 "type": "top",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer1",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "top",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer1",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "down",
-                "type": "top",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer1",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "top",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer2",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "east",
-                "type": "top",
-                "layer_two": "true"
+                "layer_2": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_top_layer2",
@@ -935,9 +467,20 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "top",
-                "layer_two": "true"
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/stone_column_top_layer2",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top",
+                "layer_2": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_top_layer2",
@@ -947,56 +490,9 @@
         },
         {
             "when": {
-                "facing": "west",
+                "axis": "x",
                 "type": "top",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer2",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "top",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer2",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "down",
-                "type": "top",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer2",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "top",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer3",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "east",
-                "type": "top",
-                "layer_three": "true"
+                "layer_3": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_top_layer3",
@@ -1007,9 +503,20 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "top",
-                "layer_three": "true"
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/stone_column_top_layer3",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top",
+                "layer_3": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_top_layer3",
@@ -1019,56 +526,9 @@
         },
         {
             "when": {
-                "facing": "west",
+                "axis": "x",
                 "type": "top",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer3",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "top",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer3",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "down",
-                "type": "top",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer3",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "top",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer4",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "east",
-                "type": "top",
-                "layer_four": "true"
+                "layer_4": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_top_layer4",
@@ -1079,34 +539,9 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "top",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer4",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "type": "top",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_top_layer4",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "top",
-                "layer_four": "true"
+                "layer_4": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_top_layer4",
@@ -1115,32 +550,21 @@
         },
         {
             "when": {
-                "facing": "down",
+                "axis": "z",
                 "type": "top",
-                "layer_four": "true"
+                "layer_4": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_top_layer4",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "middle",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer1",
                 "uvlock": false,
                 "x": 90
             }
         },
         {
             "when": {
-                "facing": "east",
+                "axis": "x",
                 "type": "middle",
-                "layer_one": "true"
+                "layer_1": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_middle_layer1",
@@ -1151,34 +575,9 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "middle",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer1",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "type": "middle",
-                "layer_one": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer1",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "middle",
-                "layer_one": "true"
+                "layer_1": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_middle_layer1",
@@ -1187,32 +586,21 @@
         },
         {
             "when": {
-                "facing": "down",
+                "axis": "z",
                 "type": "middle",
-                "layer_one": "true"
+                "layer_1": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_middle_layer1",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "middle",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer2",
                 "uvlock": false,
                 "x": 90
             }
         },
         {
             "when": {
-                "facing": "east",
+                "axis": "x",
                 "type": "middle",
-                "layer_two": "true"
+                "layer_2": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_middle_layer2",
@@ -1223,34 +611,9 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "middle",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer2",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "type": "middle",
-                "layer_two": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer2",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "middle",
-                "layer_two": "true"
+                "layer_2": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_middle_layer2",
@@ -1259,32 +622,21 @@
         },
         {
             "when": {
-                "facing": "down",
+                "axis": "z",
                 "type": "middle",
-                "layer_two": "true"
+                "layer_2": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_middle_layer2",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "middle",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer3",
                 "uvlock": false,
                 "x": 90
             }
         },
         {
             "when": {
-                "facing": "east",
+                "axis": "x",
                 "type": "middle",
-                "layer_three": "true"
+                "layer_3": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_middle_layer3",
@@ -1295,34 +647,9 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "middle",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer3",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "type": "middle",
-                "layer_three": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer3",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "middle",
-                "layer_three": "true"
+                "layer_3": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_middle_layer3",
@@ -1331,32 +658,21 @@
         },
         {
             "when": {
-                "facing": "down",
+                "axis": "z",
                 "type": "middle",
-                "layer_three": "true"
+                "layer_3": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_middle_layer3",
-                "uvlock": false
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "type": "middle",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer4",
                 "uvlock": false,
                 "x": 90
             }
         },
         {
             "when": {
-                "facing": "east",
+                "axis": "x",
                 "type": "middle",
-                "layer_four": "true"
+                "layer_4": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_middle_layer4",
@@ -1367,34 +683,9 @@
         },
         {
             "when": {
-                "facing": "south",
+                "axis": "y",
                 "type": "middle",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer4",
-                "uvlock": false,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "type": "middle",
-                "layer_four": "true"
-            },
-            "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer4",
-                "uvlock": false,
-                "y": 90,
-                "x": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "up",
-                "type": "middle",
-                "layer_four": "true"
+                "layer_4": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_middle_layer4",
@@ -1403,17 +694,15 @@
         },
         {
             "when": {
-                "facing": "down",
+                "axis": "z",
                 "type": "middle",
-                "layer_four": "true"
+                "layer_4": "true"
             },
             "apply": {
                 "model": "foundation:block/column/stone_column_middle_layer4",
-                "uvlock": false
+                "uvlock": false,
+                "x": 90
             }
         }
-
-
-
     ]
 }

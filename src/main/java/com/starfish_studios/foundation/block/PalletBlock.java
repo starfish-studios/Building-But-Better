@@ -44,17 +44,17 @@ public class PalletBlock extends HorizontalDirectionalBlock implements SimpleWat
     protected static final VoxelShape SOUTH_AABB = Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 6.0);
     protected static final VoxelShape WEST_AABB = Block.box(10.0, 0.0, 0.0, 16.0, 16.0, 16.0);
 
-    protected static final VoxelShape BOTTOM_AABB_LAYER_ONE = Block.box(0.0, 0.0, 0.0, 16.0, 3.0, 16.0);
-    protected static final VoxelShape BOTTOM_AABB_LAYER_TWO = Block.box(0.0, 0.3, 0.0, 16.0, 6.0, 16.0);
-    protected static final VoxelShape TOP_AABB_LAYER_ONE = Block.box(0.0, 10.0, 0.0, 16.0, 13.0, 16.0);
-    protected static final VoxelShape TOP_AABB_LAYER_TWO = Block.box(0.0, 13.0, 0.0, 16.0, 16.0, 16.0);
-    protected static final VoxelShape NORTH_AABB_LAYER_ONE = Block.box(0.0, 0.0, 13.0, 16.0, 16.0, 16.0);
-    protected static final VoxelShape NORTH_AABB_LAYER_TWO = Block.box(0.0, 0.0, 10.0, 16.0, 13.0, 16.0);
+    protected static final VoxelShape BOTTOM_AABB_LAYER_1 = Block.box(0.0, 0.0, 0.0, 16.0, 3.0, 16.0);
+    protected static final VoxelShape BOTTOM_AABB_LAYER_2 = Block.box(0.0, 0.3, 0.0, 16.0, 6.0, 16.0);
+    protected static final VoxelShape TOP_AABB_LAYER_1 = Block.box(0.0, 10.0, 0.0, 16.0, 13.0, 16.0);
+    protected static final VoxelShape TOP_AABB_LAYER_2 = Block.box(0.0, 13.0, 0.0, 16.0, 16.0, 16.0);
+    protected static final VoxelShape NORTH_AABB_LAYER_1 = Block.box(0.0, 0.0, 13.0, 16.0, 16.0, 16.0);
+    protected static final VoxelShape NORTH_AABB_LAYER_2 = Block.box(0.0, 0.0, 10.0, 16.0, 13.0, 16.0);
 
     public static final BooleanProperty OPEN = BooleanProperty.create("open");
     public static final EnumProperty<Half> HALF = BlockStateProperties.HALF;
-    public static final BooleanProperty LAYER_ONE = FoundationBlockStateProperties.LAYER_ONE;
-    public static final BooleanProperty LAYER_TWO = FoundationBlockStateProperties.LAYER_TWO;
+    public static final BooleanProperty LAYER_1 = FoundationBlockStateProperties.LAYER_1;
+    public static final BooleanProperty LAYER_2 = FoundationBlockStateProperties.LAYER_2;
 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
@@ -66,8 +66,8 @@ public class PalletBlock extends HorizontalDirectionalBlock implements SimpleWat
                 .setValue(HALF, Half.BOTTOM)
                 .setValue(FACING, Direction.NORTH)
                 .setValue(OPEN, false)
-                .setValue(LAYER_ONE, true)
-                .setValue(LAYER_TWO, true));
+                .setValue(LAYER_1, true)
+                .setValue(LAYER_2, true));
     }
 
     @Override
@@ -109,43 +109,43 @@ public class PalletBlock extends HorizontalDirectionalBlock implements SimpleWat
         if (player.getItemInHand(interactionHand).is(FoundationTags.FoundationItemTags.HAMMERS)) {
             if (blockHitResult.getLocation().z - (double)blockPos.getZ() > 0.5 && blockState.getValue(FACING) == Direction.NORTH) {
                 if (blockHitResult.getLocation().z - (double)blockPos.getZ() < 0.75) {
-                    blockState = blockState.cycle(LAYER_ONE);
+                    blockState = blockState.cycle(LAYER_1);
                 } else {
-                    blockState = blockState.cycle(LAYER_TWO);
+                    blockState = blockState.cycle(LAYER_2);
                 }
             } else if (blockHitResult.getLocation().z - (double)blockPos.getZ() < 0.5 && blockState.getValue(FACING) == Direction.SOUTH) {
                 if (blockHitResult.getLocation().z - (double)blockPos.getZ() > 0.25) {
-                    blockState = blockState.cycle(LAYER_ONE);
+                    blockState = blockState.cycle(LAYER_1);
                 } else {
-                    blockState = blockState.cycle(LAYER_TWO);
+                    blockState = blockState.cycle(LAYER_2);
                 }
             } else if (blockHitResult.getLocation().x - (double)blockPos.getX() > 0.5 && blockState.getValue(FACING) == Direction.WEST) {
                 if (blockHitResult.getLocation().x - (double) blockPos.getX() < 0.75) {
-                    blockState = blockState.cycle(LAYER_ONE);
+                    blockState = blockState.cycle(LAYER_1);
                 } else {
-                    blockState = blockState.cycle(LAYER_TWO);
+                    blockState = blockState.cycle(LAYER_2);
                 }
             } else if (blockHitResult.getLocation().x - (double)blockPos.getX() < 0.5 && blockState.getValue(FACING) == Direction.EAST) {
                 if (blockHitResult.getLocation().x - (double)blockPos.getX() > 0.25) {
-                    blockState = blockState.cycle(LAYER_ONE);
+                    blockState = blockState.cycle(LAYER_1);
                 } else {
-                    blockState = blockState.cycle(LAYER_TWO);
+                    blockState = blockState.cycle(LAYER_2);
                 }
             } else if (blockHitResult.getLocation().y - (double)blockPos.getY() < 0.5 && blockState.getValue(HALF) == Half.BOTTOM) {
                 if (blockHitResult.getLocation().y - (double)blockPos.getY() < 0.25) {
-                    blockState = blockState.cycle(LAYER_ONE);
+                    blockState = blockState.cycle(LAYER_1);
                 } else {
-                    blockState = blockState.cycle(LAYER_TWO);
+                    blockState = blockState.cycle(LAYER_2);
                 }
             } if (blockHitResult.getLocation().y - (double)blockPos.getY() > 0.5 && blockState.getValue(HALF) == Half.TOP) {
                 if (blockHitResult.getLocation().y - (double)blockPos.getY() < 0.75) {
-                    blockState = blockState.cycle(LAYER_ONE);
+                    blockState = blockState.cycle(LAYER_1);
                 } else {
-                    blockState = blockState.cycle(LAYER_TWO);
+                    blockState = blockState.cycle(LAYER_2);
                 }
             }
-            if (!blockState.getValue(LAYER_ONE) && !blockState.getValue(LAYER_TWO)) {
-                blockState = blockState.setValue(LAYER_ONE, true).setValue(LAYER_TWO, true);
+            if (!blockState.getValue(LAYER_1) && !blockState.getValue(LAYER_2)) {
+                blockState = blockState.setValue(LAYER_1, true).setValue(LAYER_2, true);
             }
 
             level.setBlock(blockPos, blockState, 2);
@@ -209,6 +209,6 @@ public class PalletBlock extends HorizontalDirectionalBlock implements SimpleWat
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(HALF, FACING, WATERLOGGED, OPEN, LAYER_ONE, LAYER_TWO);
+        builder.add(HALF, FACING, WATERLOGGED, OPEN, LAYER_1, LAYER_2);
     }
 }
