@@ -12,7 +12,6 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -51,8 +50,10 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
     public BlockState updateShape(BlockState state, Direction direction, BlockState neighbourState, LevelAccessor level, BlockPos pos, BlockPos neighbourPos) {
         Direction.Axis axis = state.getValue(AXIS);
         if (direction.getAxis() != axis) return state;
+        Direction.AxisDirection towards = Direction.AxisDirection.POSITIVE;
+        if (axis == Direction.Axis.Z) towards = towards.opposite();
 
-        ColumnType type = getType(state, getRelativeState(level, pos, axis, Direction.AxisDirection.POSITIVE), getRelativeState(level, pos, axis, Direction.AxisDirection.NEGATIVE));
+        ColumnType type = getType(state, getRelativeState(level, pos, axis, towards), getRelativeState(level, pos, axis, towards.opposite()));
         state = state.setValue(TYPE, type);
         return state;
     }
@@ -66,26 +67,25 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
         boolean belowConnects = false;
         boolean layer1 = state.getValue(LAYER_1);
         boolean layer4 = state.getValue(LAYER_4);
-        boolean stateFull = layer1 && layer4 && state.getValue(LAYER_2) && state.getValue(LAYER_3);
 
+        boolean stateFull = (layer1 == state.getValue(LAYER_2)) && (layer1 == state.getValue(LAYER_3)) && (layer1 == layer4);
         if (above.is(state.getBlock()) && state.getValue(AXIS) == above.getValue(AXIS)) {
             boolean layerAbove1 = above.getValue(LAYER_1);
             boolean layerAbove4 = above.getValue(LAYER_4);
-            boolean aboveFull = layerAbove1 && layerAbove4 && above.getValue(LAYER_2) && above.getValue(LAYER_3);
-            if ((stateFull && aboveFull) || !layerAbove4 && !layerAbove1) aboveConnects = true;
+            boolean aboveFull = (layerAbove1 == above.getValue(LAYER_2)) && (layerAbove1 == above.getValue(LAYER_3)) && (layerAbove1 == layerAbove4);
+            if ((stateFull && aboveFull) || (!layer4 && !layerAbove1)) aboveConnects = true;
         }
 
         if (below.is(state.getBlock()) && state.getValue(AXIS) == below.getValue(AXIS)) {
             boolean layerBelow1 = below.getValue(LAYER_1);
             boolean layerBelow4 = below.getValue(LAYER_4);
-            boolean belowFull = layerBelow1 && layerBelow4 && below.getValue(LAYER_2) && below.getValue(LAYER_3);
-            if ((stateFull && belowFull) || !layerBelow1 && !layerBelow4) belowConnects = true;
+            boolean belowFull = (layerBelow1 == below.getValue(LAYER_2)) && (layerBelow1 == below.getValue(LAYER_3)) && (layerBelow1 == layerBelow4);
+            if ((stateFull && belowFull) || (!layer1 && !layerBelow4)) belowConnects = true;
         }
 
         if (aboveConnects && !belowConnects) return ColumnType.BOTTOM;
         else if (!aboveConnects && belowConnects) return ColumnType.TOP;
         else if (aboveConnects) return ColumnType.MIDDLE;
-
         return ColumnType.NONE;
     }
 
@@ -93,9 +93,11 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
         if (!player.getItemInHand(interactionHand).is(FoundationTags.FoundationItemTags.HAMMERS)) return InteractionResult.PASS;
 
         Direction.Axis interactAxis = blockState.getValue(AXIS);
+
         double interactPosAxis = blockHitResult.getLocation().get(interactAxis);
         int blockPosAxis = blockPos.get(interactAxis);
         double finalHitLoc = interactPosAxis - blockPosAxis;
+        if (interactAxis == Direction.Axis.Z) finalHitLoc = 1 - finalHitLoc;
 
         if (finalHitLoc < 0.25) blockState = blockState.cycle(LAYER_1);
         else if (finalHitLoc < 0.5) blockState = blockState.cycle(LAYER_2);
