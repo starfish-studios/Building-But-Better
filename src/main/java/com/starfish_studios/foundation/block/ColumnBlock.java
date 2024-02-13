@@ -12,12 +12,15 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.ChestBlock;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
 
 public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
@@ -43,7 +46,10 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState().setValue(AXIS, context.getClickedFace().getAxis()).setValue(TYPE, ColumnType.NONE);
+        return this.defaultBlockState()
+                .setValue(AXIS, context.getClickedFace().getAxis())
+                .setValue(TYPE, ColumnType.NONE)
+                .setValue(WATERLOGGED, context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER);
     }
 
     @Override
@@ -104,9 +110,14 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
         else if (finalHitLoc < 0.75) blockState = blockState.cycle(LAYER_3);
         else blockState = blockState.cycle(LAYER_4);
 
+        if (blockState.getValue(WATERLOGGED) && blockState.isCollisionShapeFullBlock(level, blockPos)) blockState = blockState.setValue(WATERLOGGED, false);
         level.setBlock(blockPos, blockState, 3);
         level.playSound(player, blockPos, blockState.getSoundType().getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
         return InteractionResult.SUCCESS;
+    }
+
+    public FluidState getFluidState(BlockState blockState) {
+        return blockState.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(blockState);
     }
 
     @Override
