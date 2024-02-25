@@ -1,0 +1,7 @@
+{
+	"parent": "foundation:block/moulding/stone",
+	"textures": {
+		"particle": "foundation:block/moulding/nether_bricks",
+		"texture": "foundation:block/moulding/nether_bricks"
+	}
+}

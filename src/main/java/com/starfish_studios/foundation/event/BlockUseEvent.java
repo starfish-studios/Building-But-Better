@@ -30,7 +30,12 @@ public class BlockUseEvent implements UseBlockCallback {
                     !world.getBlockState(blockPos).getValue(StoneFenceBlock.WEST)) {
                 return InteractionResult.PASS;
             } else if (player.isShiftKeyDown()) {
-                if (world.getBlockState(blockPos).getValue(StoneFenceBlock.PILLAR)) {
+                if (!world.getBlockState(blockPos).getValue(StoneFenceBlock.NORTH) &&
+                        !world.getBlockState(blockPos).getValue(StoneFenceBlock.EAST) &&
+                        !world.getBlockState(blockPos).getValue(StoneFenceBlock.SOUTH) &&
+                        !world.getBlockState(blockPos).getValue(StoneFenceBlock.WEST)) {
+                    return InteractionResult.PASS;
+                } else if (world.getBlockState(blockPos).getValue(StoneFenceBlock.PILLAR)) {
                     world.setBlock(blockPos, world.getBlockState(blockPos).setValue(StoneFenceBlock.PILLAR, false), 3);
                 } else {
                     world.setBlock(blockPos, world.getBlockState(blockPos).setValue(StoneFenceBlock.PILLAR, true), 3);

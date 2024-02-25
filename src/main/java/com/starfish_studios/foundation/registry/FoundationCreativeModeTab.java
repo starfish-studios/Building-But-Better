@@ -16,52 +16,55 @@ public class FoundationCreativeModeTab {
     @SuppressWarnings("unused")
     public static final CreativeModeTab ITEM_GROUP = register("item_group", FabricItemGroup.builder().icon(FOUNDATION::getDefaultInstance).title(Component.translatable("itemGroup.foundation.tab")).displayItems((featureFlagSet, output) -> {
 
-        // output.accept(STONE_LAYER);
         output.accept(HAMMER);
 
-        output.accept(PLASTER);
+        // output.accept(PLASTER);
 
-
-        output.accept(STONE_FENCE);
-        output.accept(BLACKSTONE_FENCE);
-        output.accept(SANDSTONE_FENCE);
-        output.accept(RED_SANDSTONE_FENCE);
-        output.accept(QUARTZ_FENCE);
-        output.accept(DEEPSLATE_FENCE);
-        output.accept(NETHER_BRICK_FENCE);
-
-
-
-        // region LADDERS
-        output.accept(OAK_LADDER);
-        output.accept(SPRUCE_LADDER);
-        output.accept(BIRCH_LADDER);
-        output.accept(JUNGLE_LADDER);
-        output.accept(ACACIA_LADDER);
-        output.accept(DARK_OAK_LADDER);
-        output.accept(CRIMSON_LADDER);
-        output.accept(WARPED_LADDER);
-        output.accept(MANGROVE_LADDER);
-        output.accept(BAMBOO_LADDER);
-        output.accept(CHERRY_LADDER);
-        // endregion
-
+        output.accept(BRAZIER);
+        output.accept(SOUL_BRAZIER);
+        output.accept(IRON_FENCE);
 
         output.accept(POLISHED_STONE);
         output.accept(POLISHED_STONE_STAIRS);
         output.accept(POLISHED_STONE_SLAB);
-        output.accept(STONE_COLUMN);
-
         output.accept(STONE_TILES);
         output.accept(STONE_TILE_STAIRS);
         output.accept(STONE_TILE_SLAB);
-
+        output.accept(STONE_COLUMN);
+        output.accept(STONE_URN);
+        output.accept(STONE_FENCE);
         output.accept(STONE_MOULDING);
-        output.accept(URN);
 
-        output.accept(BRAZIER);
+        output.accept(BLACKSTONE_COLUMN);
+        output.accept(BLACKSTONE_URN);
+        output.accept(BLACKSTONE_FENCE);
+        output.accept(BLACKSTONE_MOULDING);
 
-        output.accept(IRON_FENCE);
+        output.accept(SANDSTONE_COLUMN);
+        output.accept(SANDSTONE_URN);
+        output.accept(SANDSTONE_FENCE);
+        output.accept(SANDSTONE_MOULDING);
+
+        output.accept(RED_SANDSTONE_COLUMN);
+        output.accept(RED_SANDSTONE_URN);
+        output.accept(RED_SANDSTONE_FENCE);
+        output.accept(RED_SANDSTONE_MOULDING);
+
+        output.accept(QUARTZ_COLUMN);
+        output.accept(QUARTZ_URN);
+        output.accept(QUARTZ_FENCE);
+        output.accept(QUARTZ_MOULDING);
+
+        output.accept(DEEPSLATE_COLUMN);
+        output.accept(DEEPSLATE_URN);
+        output.accept(DEEPSLATE_FENCE);
+        output.accept(DEEPSLATE_MOULDING);
+
+        output.accept(NETHER_BRICK_COLUMN);
+        output.accept(NETHER_BRICK_URN);
+        output.accept(NETHER_BRICK_FENCE);
+        output.accept(NETHER_BRICK_MOULDING);
+
 
         output.accept(BIG_DOOR);
 
@@ -72,9 +75,10 @@ public class FoundationCreativeModeTab {
         output.accept(OAK_BEAM_SLAB);
         output.accept(OAK_SUPPORT);
         output.accept(OAK_FRAME);
-        output.accept(OAK_WALL);
-        output.accept(OAK_LANTERN);
         output.accept(OAK_PALLET);
+        // output.accept(OAK_WALL);
+        output.accept(OAK_LANTERN);
+        output.accept(OAK_LADDER);
 
         output.accept(SPRUCE_TRIM);
         output.accept(SPRUCE_BEAM);
@@ -85,6 +89,7 @@ public class FoundationCreativeModeTab {
         // output.accept(SPRUCE_WALL);
         output.accept(SPRUCE_LANTERN);
         output.accept(SPRUCE_PALLET);
+        output.accept(SPRUCE_LADDER);
 
         output.accept(BIRCH_TRIM);
         output.accept(BIRCH_BEAM);
@@ -95,6 +100,7 @@ public class FoundationCreativeModeTab {
         // output.accept(BIRCH_WALL);
         output.accept(BIRCH_LANTERN);
         output.accept(BIRCH_PALLET);
+        output.accept(BIRCH_LADDER);
 
         output.accept(JUNGLE_TRIM);
         output.accept(JUNGLE_BEAM);
@@ -105,6 +111,7 @@ public class FoundationCreativeModeTab {
         // output.accept(JUNGLE_WALL);
         output.accept(JUNGLE_LANTERN);
         output.accept(JUNGLE_PALLET);
+        output.accept(JUNGLE_LADDER);
 
         output.accept(ACACIA_TRIM);
         output.accept(ACACIA_BEAM);
@@ -115,6 +122,7 @@ public class FoundationCreativeModeTab {
         // output.accept(ACACIA_WALL);
         output.accept(ACACIA_LANTERN);
         output.accept(ACACIA_PALLET);
+        output.accept(ACACIA_LADDER);
 
         output.accept(DARK_OAK_TRIM);
         output.accept(DARK_OAK_BEAM);
@@ -125,6 +133,7 @@ public class FoundationCreativeModeTab {
         // output.accept(DARK_OAK_WALL);
         output.accept(DARK_OAK_LANTERN);
         output.accept(DARK_OAK_PALLET);
+        output.accept(DARK_OAK_LADDER);
 
         output.accept(CRIMSON_TRIM);
         output.accept(CRIMSON_BEAM);
@@ -135,6 +144,7 @@ public class FoundationCreativeModeTab {
         // output.accept(CRIMSON_WALL);
         output.accept(CRIMSON_LANTERN);
         output.accept(CRIMSON_PALLET);
+        output.accept(CRIMSON_LADDER);
 
         output.accept(WARPED_TRIM);
         output.accept(WARPED_BEAM);
@@ -145,6 +155,7 @@ public class FoundationCreativeModeTab {
         // output.accept(WARPED_WALL);
         output.accept(WARPED_LANTERN);
         output.accept(WARPED_PALLET);
+        output.accept(WARPED_LADDER);
 
         output.accept(MANGROVE_TRIM);
         output.accept(MANGROVE_BEAM);
@@ -155,6 +166,7 @@ public class FoundationCreativeModeTab {
         // output.accept(MANGROVE_WALL);
         output.accept(MANGROVE_LANTERN);
         output.accept(MANGROVE_PALLET);
+        output.accept(MANGROVE_LADDER);
 
         output.accept(BAMBOO_TRIM);
         output.accept(BAMBOO_BEAM);
@@ -165,6 +177,7 @@ public class FoundationCreativeModeTab {
         // output.accept(BAMBOO_WALL);
         output.accept(BAMBOO_LANTERN);
         output.accept(BAMBOO_PALLET);
+        output.accept(BAMBOO_LADDER);
 
         output.accept(CHERRY_TRIM);
         output.accept(CHERRY_BEAM);
@@ -175,6 +188,7 @@ public class FoundationCreativeModeTab {
         // output.accept(CHERRY_WALL);
         output.accept(CHERRY_LANTERN);
         output.accept(CHERRY_PALLET);
+        output.accept(CHERRY_LADDER);
 
 
         // region LAYERS

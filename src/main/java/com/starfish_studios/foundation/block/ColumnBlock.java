@@ -9,6 +9,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
@@ -22,6 +23,9 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
     public static final BooleanProperty LAYER_1 = FoundationBlockStateProperties.LAYER_1;
@@ -32,6 +36,12 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
     public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
     public static final EnumProperty<ColumnType> TYPE = FoundationBlockStateProperties.COLUMN_TYPE;
 
+    public static VoxelShape LAYER_1_AABB = Block.box(0, 0, 0, 16, 4, 16);
+    public static VoxelShape LAYER_2_AABB = Block.box(0, 4, 0, 16, 8, 16);
+    public static VoxelShape LAYER_3_AABB = Block.box(0, 8, 0, 16, 12, 16);
+    public static VoxelShape LAYER_4_AABB = Block.box(0, 12, 0, 16, 16, 16);
+    public static VoxelShape CORE_AABB = Block.box(2, 0, 2, 14, 16, 14);
+
     public ColumnBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
@@ -39,9 +49,19 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
                 .setValue(AXIS, Direction.Axis.Y)
                 .setValue(TYPE, ColumnType.NONE)
                 .setValue(LAYER_1, true)
-                .setValue(LAYER_2, false)
-                .setValue(LAYER_3, false)
+                .setValue(LAYER_2, true)
+                .setValue(LAYER_3, true)
                 .setValue(LAYER_4, true));
+    }
+
+    @Override
+    public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
+        VoxelShape shape = CORE_AABB;
+        if (blockState.getValue(LAYER_1)) shape = Shapes.or(shape, LAYER_1_AABB);
+        if (blockState.getValue(LAYER_2)) shape = Shapes.or(shape, LAYER_2_AABB);
+        if (blockState.getValue(LAYER_3)) shape = Shapes.or(shape, LAYER_3_AABB);
+        if (blockState.getValue(LAYER_4)) shape = Shapes.or(shape, LAYER_4_AABB);
+        return shape;
     }
 
     @Override

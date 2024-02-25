@@ -6,7 +6,7 @@
                 "type": "none"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none",
+                "model": "foundation:block/column/stone/none",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -18,7 +18,7 @@
                 "type": "none"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none"
+                "model": "foundation:block/column/stone/none"
             }
         },
         {
@@ -27,7 +27,7 @@
                 "type": "none"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none",
+                "model": "foundation:block/column/stone/none",
                 "uvlock": false,
                 "x": 90
             }
@@ -39,7 +39,7 @@
                 "layer_1": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer1",
+                "model": "foundation:block/column/stone/none_layer1",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -52,7 +52,7 @@
                 "layer_1": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer1",
+                "model": "foundation:block/column/stone/none_layer1",
                 "uvlock": false
             }
         },
@@ -63,7 +63,7 @@
                 "layer_1": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer1",
+                "model": "foundation:block/column/stone/none_layer1",
                 "uvlock": false,
                 "x": 90
             }
@@ -75,7 +75,7 @@
                 "layer_2": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer2",
+                "model": "foundation:block/column/stone/none_layer2",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -88,7 +88,7 @@
                 "layer_2": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer2",
+                "model": "foundation:block/column/stone/none_layer2",
                 "uvlock": false
             }
         },
@@ -99,7 +99,7 @@
                 "layer_2": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer2",
+                "model": "foundation:block/column/stone/none_layer2",
                 "uvlock": false,
                 "x": 90
             }
@@ -111,7 +111,7 @@
                 "layer_3": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer3",
+                "model": "foundation:block/column/stone/none_layer3",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -124,7 +124,7 @@
                 "layer_3": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer3",
+                "model": "foundation:block/column/stone/none_layer3",
                 "uvlock": false
             }
         },
@@ -135,7 +135,7 @@
                 "layer_3": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer3",
+                "model": "foundation:block/column/stone/none_layer3",
                 "uvlock": false,
                 "x": 90
             }
@@ -147,7 +147,7 @@
                 "layer_4": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer4",
+                "model": "foundation:block/column/stone/none_layer4",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -160,7 +160,7 @@
                 "layer_4": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer4",
+                "model": "foundation:block/column/stone/none_layer4",
                 "uvlock": false
             }
         },
@@ -171,7 +171,7 @@
                 "layer_4": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_none_layer4",
+                "model": "foundation:block/column/stone/none_layer4",
                 "uvlock": false,
                 "x": 90
             }
@@ -182,7 +182,7 @@
                 "type": "bottom"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom",
+                "model": "foundation:block/column/stone/bottom",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -194,7 +194,7 @@
                 "type": "bottom"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom"
+                "model": "foundation:block/column/stone/bottom"
             }
         },
         {
@@ -203,7 +203,7 @@
                 "type": "bottom"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom",
+                "model": "foundation:block/column/stone/bottom",
                 "uvlock": false,
                 "x": 90
             }
@@ -214,7 +214,7 @@
                 "type": "middle"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle",
+                "model": "foundation:block/column/stone/middle",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -226,7 +226,7 @@
                 "type": "middle"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle"
+                "model": "foundation:block/column/stone/middle"
             }
         },
         {
@@ -235,7 +235,7 @@
                 "type": "middle"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle",
+                "model": "foundation:block/column/stone/middle",
                 "uvlock": false,
                 "x": 90
             }
@@ -246,7 +246,7 @@
                 "type": "top"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top",
+                "model": "foundation:block/column/stone/top",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -258,7 +258,7 @@
                 "type": "top"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top"
+                "model": "foundation:block/column/stone/top"
             }
         },
         {
@@ -267,7 +267,7 @@
                 "type": "top"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top",
+                "model": "foundation:block/column/stone/top",
                 "uvlock": false,
                 "x": 90
             }
@@ -279,7 +279,7 @@
                 "layer_1": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer1",
+                "model": "foundation:block/column/stone/bottom_layer1",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -292,7 +292,7 @@
                 "layer_1": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer1",
+                "model": "foundation:block/column/stone/bottom_layer1",
                 "uvlock": false
             }
         },
@@ -303,7 +303,7 @@
                 "layer_1": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer1",
+                "model": "foundation:block/column/stone/bottom_layer1",
                 "uvlock": false,
                 "x": 90
             }
@@ -315,7 +315,7 @@
                 "layer_2": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer2",
+                "model": "foundation:block/column/stone/bottom_layer2",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -328,7 +328,7 @@
                 "layer_2": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer2",
+                "model": "foundation:block/column/stone/bottom_layer2",
                 "uvlock": false
             }
         },
@@ -339,7 +339,7 @@
                 "layer_2": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer2",
+                "model": "foundation:block/column/stone/bottom_layer2",
                 "uvlock": false,
                 "x": 90
             }
@@ -351,7 +351,7 @@
                 "layer_3": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer3",
+                "model": "foundation:block/column/stone/bottom_layer3",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -364,7 +364,7 @@
                 "layer_3": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer3",
+                "model": "foundation:block/column/stone/bottom_layer3",
                 "uvlock": false
             }
         },
@@ -375,7 +375,7 @@
                 "layer_3": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer3",
+                "model": "foundation:block/column/stone/bottom_layer3",
                 "uvlock": false,
                 "x": 90
             }
@@ -387,7 +387,7 @@
                 "layer_4": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer4",
+                "model": "foundation:block/column/stone/bottom_layer4",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -400,7 +400,7 @@
                 "layer_4": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer4",
+                "model": "foundation:block/column/stone/bottom_layer4",
                 "uvlock": false
             }
         },
@@ -411,7 +411,7 @@
                 "layer_4": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_bottom_layer4",
+                "model": "foundation:block/column/stone/bottom_layer4",
                 "uvlock": false,
                 "x": 90
             }
@@ -423,7 +423,7 @@
                 "layer_1": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top_layer1",
+                "model": "foundation:block/column/stone/top_layer1",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -436,7 +436,7 @@
                 "layer_1": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top_layer1",
+                "model": "foundation:block/column/stone/top_layer1",
                 "uvlock": false
             }
         },
@@ -447,7 +447,7 @@
                 "layer_1": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top_layer1",
+                "model": "foundation:block/column/stone/top_layer1",
                 "uvlock": false,
                 "x": 90
             }
@@ -459,7 +459,7 @@
                 "layer_2": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top_layer2",
+                "model": "foundation:block/column/stone/top_layer2",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -472,7 +472,7 @@
                 "layer_2": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top_layer2",
+                "model": "foundation:block/column/stone/top_layer2",
                 "uvlock": false
             }
         },
@@ -483,7 +483,7 @@
                 "layer_2": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top_layer2",
+                "model": "foundation:block/column/stone/top_layer2",
                 "uvlock": false,
                 "x": 90
             }
@@ -495,7 +495,7 @@
                 "layer_3": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top_layer3",
+                "model": "foundation:block/column/stone/top_layer3",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -508,7 +508,7 @@
                 "layer_3": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top_layer3",
+                "model": "foundation:block/column/stone/top_layer3",
                 "uvlock": false
             }
         },
@@ -519,7 +519,7 @@
                 "layer_3": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top_layer3",
+                "model": "foundation:block/column/stone/top_layer3",
                 "uvlock": false,
                 "x": 90
             }
@@ -531,7 +531,7 @@
                 "layer_4": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top_layer4",
+                "model": "foundation:block/column/stone/top_layer4",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -544,7 +544,7 @@
                 "layer_4": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top_layer4",
+                "model": "foundation:block/column/stone/top_layer4",
                 "uvlock": false
             }
         },
@@ -555,7 +555,7 @@
                 "layer_4": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_top_layer4",
+                "model": "foundation:block/column/stone/top_layer4",
                 "uvlock": false,
                 "x": 90
             }
@@ -567,7 +567,7 @@
                 "layer_1": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer1",
+                "model": "foundation:block/column/stone/middle_layer1",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -580,7 +580,7 @@
                 "layer_1": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer1",
+                "model": "foundation:block/column/stone/middle_layer1",
                 "uvlock": false
             }
         },
@@ -591,7 +591,7 @@
                 "layer_1": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer1",
+                "model": "foundation:block/column/stone/middle_layer1",
                 "uvlock": false,
                 "x": 90
             }
@@ -603,7 +603,7 @@
                 "layer_2": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer2",
+                "model": "foundation:block/column/stone/middle_layer2",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -616,7 +616,7 @@
                 "layer_2": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer2",
+                "model": "foundation:block/column/stone/middle_layer2",
                 "uvlock": false
             }
         },
@@ -627,7 +627,7 @@
                 "layer_2": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer2",
+                "model": "foundation:block/column/stone/middle_layer2",
                 "uvlock": false,
                 "x": 90
             }
@@ -639,7 +639,7 @@
                 "layer_3": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer3",
+                "model": "foundation:block/column/stone/middle_layer3",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -652,7 +652,7 @@
                 "layer_3": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer3",
+                "model": "foundation:block/column/stone/middle_layer3",
                 "uvlock": false
             }
         },
@@ -663,7 +663,7 @@
                 "layer_3": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer3",
+                "model": "foundation:block/column/stone/middle_layer3",
                 "uvlock": false,
                 "x": 90
             }
@@ -675,7 +675,7 @@
                 "layer_4": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer4",
+                "model": "foundation:block/column/stone/middle_layer4",
                 "uvlock": false,
                 "x": 90,
                 "y": 90
@@ -688,7 +688,7 @@
                 "layer_4": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer4",
+                "model": "foundation:block/column/stone/middle_layer4",
                 "uvlock": false
             }
         },
@@ -699,7 +699,7 @@
                 "layer_4": "true"
             },
             "apply": {
-                "model": "foundation:block/column/stone_column_middle_layer4",
+                "model": "foundation:block/column/stone/middle_layer4",
                 "uvlock": false,
                 "x": 90
             }

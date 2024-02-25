@@ -21,6 +21,33 @@ public class FoundationItems {
     public static final Item OAK_WALL = register("oak_wall", new BlockItem(FoundationBlocks.OAK_WALL, new FabricItemSettings()));
 
 
+    public static final Item STONE_URN = register("stone_urn", new DescriptionBlockItem(FoundationBlocks.STONE_URN, new FabricItemSettings()));
+    public static final Item BLACKSTONE_URN = register("blackstone_urn", new DescriptionBlockItem(FoundationBlocks.BLACKSTONE_URN, new FabricItemSettings()));
+    public static final Item DEEPSLATE_URN = register("deepslate_urn", new DescriptionBlockItem(FoundationBlocks.DEEPSLATE_URN, new FabricItemSettings()));
+    public static final Item NETHER_BRICK_URN = register("nether_brick_urn", new DescriptionBlockItem(FoundationBlocks.NETHER_BRICK_URN, new FabricItemSettings()));
+    public static final Item SANDSTONE_URN = register("sandstone_urn", new DescriptionBlockItem(FoundationBlocks.SANDSTONE_URN, new FabricItemSettings()));
+    public static final Item RED_SANDSTONE_URN = register("red_sandstone_urn", new DescriptionBlockItem(FoundationBlocks.RED_SANDSTONE_URN, new FabricItemSettings()));
+    public static final Item QUARTZ_URN = register("quartz_urn", new DescriptionBlockItem(FoundationBlocks.QUARTZ_URN, new FabricItemSettings()));
+
+
+    public static final Item STONE_MOULDING = register("stone_moulding", new BlockItem(FoundationBlocks.STONE_MOULDING, new FabricItemSettings()));
+    public static final Item BLACKSTONE_MOULDING = register("blackstone_moulding", new BlockItem(FoundationBlocks.BLACKSTONE_MOULDING, new FabricItemSettings()));
+    public static final Item DEEPSLATE_MOULDING = register("deepslate_moulding", new BlockItem(FoundationBlocks.DEEPSLATE_MOULDING, new FabricItemSettings()));
+    public static final Item NETHER_BRICK_MOULDING = register("nether_brick_moulding", new BlockItem(FoundationBlocks.NETHER_BRICK_MOULDING, new FabricItemSettings()));
+    public static final Item SANDSTONE_MOULDING = register("sandstone_moulding", new BlockItem(FoundationBlocks.SANDSTONE_MOULDING, new FabricItemSettings()));
+    public static final Item RED_SANDSTONE_MOULDING = register("red_sandstone_moulding", new BlockItem(FoundationBlocks.RED_SANDSTONE_MOULDING, new FabricItemSettings()));
+    public static final Item QUARTZ_MOULDING = register("quartz_moulding", new BlockItem(FoundationBlocks.QUARTZ_MOULDING, new FabricItemSettings()));
+
+
+    public static final Item STONE_COLUMN = register("stone_column", new DescriptionBlockItem(FoundationBlocks.STONE_COLUMN, new FabricItemSettings()));
+    public static final Item DEEPSLATE_COLUMN = register("deepslate_column", new DescriptionBlockItem(FoundationBlocks.DEEPSLATE_COLUMN, new FabricItemSettings()));
+    public static final Item SANDSTONE_COLUMN = register("sandstone_column", new DescriptionBlockItem(FoundationBlocks.SANDSTONE_COLUMN, new FabricItemSettings()));
+    public static final Item RED_SANDSTONE_COLUMN = register("red_sandstone_column", new DescriptionBlockItem(FoundationBlocks.RED_SANDSTONE_COLUMN, new FabricItemSettings()));
+    public static final Item NETHER_BRICK_COLUMN = register("nether_brick_column", new DescriptionBlockItem(FoundationBlocks.NETHER_BRICK_COLUMN, new FabricItemSettings()));
+    public static final Item BLACKSTONE_COLUMN = register("blackstone_column", new DescriptionBlockItem(FoundationBlocks.BLACKSTONE_COLUMN, new FabricItemSettings()));
+    public static final Item QUARTZ_COLUMN = register("quartz_column", new DescriptionBlockItem(FoundationBlocks.QUARTZ_COLUMN, new FabricItemSettings()));
+
+
 
     public static final Item STONE_FENCE = register("stone_fence", new DescriptionBlockItem(FoundationBlocks.STONE_FENCE, new FabricItemSettings()));
     public static final Item BLACKSTONE_FENCE = register("blackstone_fence", new DescriptionBlockItem(FoundationBlocks.BLACKSTONE_FENCE, new FabricItemSettings()));
@@ -160,14 +187,15 @@ public class FoundationItems {
     public static final Item POLISHED_STONE = register("polished_stone", new BlockItem(FoundationBlocks.POLISHED_STONE, new FabricItemSettings()));
     public static final Item POLISHED_STONE_STAIRS = register("polished_stone_stairs", new BlockItem(FoundationBlocks.POLISHED_STONE_STAIRS, new FabricItemSettings()));
     public static final Item POLISHED_STONE_SLAB = register("polished_stone_slab", new BlockItem(FoundationBlocks.POLISHED_STONE_SLAB, new FabricItemSettings()));
-    public static final Item STONE_COLUMN = register("stone_column", new DescriptionBlockItem(FoundationBlocks.STONE_COLUMN, new FabricItemSettings()));
 
     public static final Item STONE_TILES = register("stone_tiles", new BlockItem(FoundationBlocks.STONE_TILES, new FabricItemSettings()));
     public static final Item STONE_TILE_STAIRS = register("stone_tile_stairs", new BlockItem(FoundationBlocks.STONE_TILE_STAIRS, new FabricItemSettings()));
     public static final Item STONE_TILE_SLAB = register("stone_tile_slab", new BlockItem(FoundationBlocks.STONE_TILE_SLAB, new FabricItemSettings()));
 
     public static final Item BRAZIER = register("brazier", new BlockItem(FoundationBlocks.BRAZIER, new FabricItemSettings()));
-    public static final Item URN = register("urn", new BlockItem(FoundationBlocks.URN, new FabricItemSettings()));
+    public static final Item SOUL_BRAZIER = register("soul_brazier", new BlockItem(FoundationBlocks.SOUL_BRAZIER, new FabricItemSettings()));
+
+
     public static final Item ROOFING = register("roofing", new BlockItem(FoundationBlocks.ROOFING, new FabricItemSettings()));
 
 
@@ -231,11 +259,7 @@ public class FoundationItems {
     public static final Item WARPED_TRIM = register("warped_trim", new BlockItem(FoundationBlocks.WARPED_TRIM, new FabricItemSettings()));
     // endregion
 
-    // public static final Item COBBLESTONE_LAYER = register("cobblestone_layer", new BlockItem(FoundationBlocks.COBBLESTONE_LAYER, new FabricItemSettings()));
-
     public static final Item IRON_FENCE = register("iron_fence", new BlockItem(FoundationBlocks.IRON_FENCE, new FabricItemSettings()));
-
-    public static final Item STONE_MOULDING = register("stone_moulding", new BlockItem(FoundationBlocks.STONE_MOULDING, new FabricItemSettings()));
 
 
     //public static final Item TALL_OAK_DOOR = register("tall_oak_door", new TallDoorItem(FoundationBlocks.TALL_OAK_DOOR, new FabricItemSettings()));

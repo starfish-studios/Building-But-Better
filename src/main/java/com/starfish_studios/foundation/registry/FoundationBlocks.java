@@ -19,9 +19,33 @@ public class FoundationBlocks {
 
 
     public static final Block STONE_COLUMN = register("stone_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS)).noOcclusion()));
+    public static final Block BLACKSTONE_COLUMN = register("blackstone_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE)).noOcclusion()));
+    public static final Block DEEPSLATE_COLUMN = register("deepslate_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS)).noOcclusion()));
+    public static final Block NETHER_BRICK_COLUMN = register("nether_brick_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).noOcclusion()));
+    public static final Block SANDSTONE_COLUMN = register("sandstone_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.SANDSTONE)).noOcclusion()));
+    public static final Block RED_SANDSTONE_COLUMN = register("red_sandstone_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).noOcclusion()));
+    public static final Block QUARTZ_COLUMN = register("quartz_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).noOcclusion()));
 
 
-    // Stone, Sandstone, Red Sandstone, Quartz, Blackstone, Deepslate, Nether Brick
+
+    public static final Block BLACKSTONE_URN = register("blackstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final Block DEEPSLATE_URN = register("deepslate_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS)).noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final Block NETHER_BRICK_URN = register("nether_brick_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final Block SANDSTONE_URN = register("sandstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.SANDSTONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final Block RED_SANDSTONE_URN = register("red_sandstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final Block QUARTZ_URN = register("quartz_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).noOcclusion().pushReaction(PushReaction.DESTROY)));
+
+
+    // Stone, Blackstone, Deepslate, Nether Brick, Sandstone, Red Sandstone, Quartz
+    public static final Block STONE_MOULDING = register("stone_moulding", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
+    public static final Block BLACKSTONE_MOULDING = register("blackstone_moulding", new StairBlock((Blocks.BLACKSTONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.BLACKSTONE).noOcclusion()));
+    public static final Block DEEPSLATE_MOULDING = register("deepslate_moulding", new StairBlock((Blocks.DEEPSLATE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).noOcclusion()));
+    public static final Block NETHER_BRICK_MOULDING = register("nether_brick_moulding", new StairBlock((Blocks.NETHER_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).noOcclusion()));
+    public static final Block SANDSTONE_MOULDING = register("sandstone_moulding", new StairBlock((Blocks.SANDSTONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion()));
+    public static final Block RED_SANDSTONE_MOULDING = register("red_sandstone_moulding", new StairBlock((Blocks.RED_SANDSTONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.RED_SANDSTONE).noOcclusion()));
+    public static final Block QUARTZ_MOULDING = register("quartz_moulding", new StairBlock((Blocks.QUARTZ_BLOCK.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).noOcclusion()));
+
+
     public static final Block STONE_FENCE = register("stone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS)).noOcclusion()));
     public static final Block BLACKSTONE_FENCE = register("blackstone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE)).noOcclusion()));
     public static final Block DEEPSLATE_FENCE = register("deepslate_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS)).noOcclusion()));
@@ -228,11 +252,11 @@ public class FoundationBlocks {
 
 
     public static final Block BRAZIER = register("brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(15)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
+    public static final Block SOUL_BRAZIER = register("soul_brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(10)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
 
     public static final Block ROOFING = register("roofing", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
 
 
-    public static final Block URN = register("urn", new Block(FabricBlockSettings.copy((Blocks.STONE)).noOcclusion().pushReaction(PushReaction.DESTROY).noOcclusion()));
     public static final Block ROPE = register("rope", new ChainBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).forceSolidOn().strength(0.1F).sound(SoundType.WOOL).noOcclusion()));
 
 
@@ -240,8 +264,6 @@ public class FoundationBlocks {
 
 
     public static final Block IRON_FENCE = register("iron_fence", new IronFenceBlock(FabricBlockSettings.copy((Blocks.IRON_BARS)).noOcclusion()));
-
-    public static final Block STONE_MOULDING = register("stone_moulding", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
 
     //public static final Block TALL_OAK_DOOR = register("tall_oak_door", new TallDoorBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion(), BlockSetType.OAK));
 

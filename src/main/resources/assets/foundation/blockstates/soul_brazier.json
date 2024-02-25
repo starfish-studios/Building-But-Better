@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "foundation:block/brazier_off"
+    },
+    "lit=true": {
+      "model": "foundation:block/soul_brazier_on"
+    }
+  }
+}

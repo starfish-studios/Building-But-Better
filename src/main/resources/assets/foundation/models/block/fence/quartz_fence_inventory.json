@@ -2,6 +2,6 @@
     "parent": "foundation:block/fence/stone_fence_inventory",
     "textures": {
         "texture": "foundation:block/fence/quartz_fence",
-        "particle": "minecraft:block/quartz"
+        "particle": "block/quartz_block_top"
     }
 }

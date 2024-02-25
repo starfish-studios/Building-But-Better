@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"side": "foundation:block/column/blackstone_none",
+		"top": "foundation:block/column/blackstone_top"
+	},
+	"elements": [
+		{
+			"from": [0, 4, 0],
+			"to": [16, 8, 16],
+			"faces": {
+				"north": {"uv": [0, 8, 16, 12], "texture": "#side"},
+				"east": {"uv": [0, 8, 16, 12], "texture": "#side"},
+				"south": {"uv": [0, 8, 16, 12], "texture": "#side"},
+				"west": {"uv": [0, 8, 16, 12], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#top"}
+			}
+		}
+	]
+}

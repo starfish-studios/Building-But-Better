@@ -1,0 +1,7 @@
+{
+	"parent": "foundation:block/moulding/stone",
+	"textures": {
+		"particle": "foundation:block/moulding/deepslate",
+		"texture": "foundation:block/moulding/deepslate"
+	}
+}

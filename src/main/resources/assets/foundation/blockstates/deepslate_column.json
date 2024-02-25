@@ -1,0 +1,708 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "axis": "x",
+                "type": "none"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "none"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none"
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "none"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "none",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none_layer1",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "none",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none_layer1",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "none",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none_layer1",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "none",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none_layer2",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "none",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none_layer2",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "none",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none_layer2",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "none",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none_layer3",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "none",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none_layer3",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "none",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none_layer3",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "none",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none_layer4",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "none",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none_layer4",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "none",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/none_layer4",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "bottom"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "bottom"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom"
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "middle"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "middle"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle"
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "middle"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "top"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "top"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top"
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "bottom",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom_layer1",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "bottom",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom_layer1",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom_layer1",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "bottom",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom_layer2",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "bottom",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom_layer2",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom_layer2",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "bottom",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom_layer3",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "bottom",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom_layer3",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom_layer3",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "bottom",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom_layer4",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "bottom",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom_layer4",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/bottom_layer4",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "top",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top_layer1",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "top",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top_layer1",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top_layer1",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "top",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top_layer2",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "top",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top_layer2",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top_layer2",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "top",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top_layer3",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "top",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top_layer3",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top_layer3",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "top",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top_layer4",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "top",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top_layer4",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/top_layer4",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "middle",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle_layer1",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "middle",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle_layer1",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "middle",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle_layer1",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "middle",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle_layer2",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "middle",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle_layer2",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "middle",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle_layer2",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "middle",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle_layer3",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "middle",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle_layer3",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "middle",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle_layer3",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "middle",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle_layer4",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "middle",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle_layer4",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "middle",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "foundation:block/column/deepslate/middle_layer4",
+                "uvlock": false,
+                "x": 90
+            }
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "foundation:block/urn/stone",
+	"textures": {
+		"1": "foundation:block/urn/sandstone",
+		"particle": "block/sandstone_bottom"
+	}
+}

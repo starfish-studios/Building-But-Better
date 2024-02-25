@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "foundation:block/urn/sandstone"
+    }
+  }
+}

@@ -3,7 +3,7 @@
     "group": "foundation/layer",
     "key": {
         "#": {
-            "item": "minecraft:polished_stone_slab"
+            "item": "foundation:polished_stone_slab"
         }
     },
     "pattern": [

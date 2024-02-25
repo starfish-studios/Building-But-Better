@@ -1,0 +1,7 @@
+{
+	"parent": "foundation:block/moulding/stone",
+	"textures": {
+		"particle": "block/sandstone_bottom",
+		"texture": "foundation:block/moulding/sandstone"
+	}
+}

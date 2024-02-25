@@ -13,10 +13,7 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FenceBlock;
-import net.minecraft.world.level.block.FenceGateBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
@@ -25,11 +22,13 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.Random;
 
 public class StoneFenceBlock extends FenceBlock {
+    private final VoxelShape[] occlusionByIndex;
     public static final BooleanProperty SIDE_FILL = BooleanProperty.create("side_fill");
     public static final BooleanProperty PILLAR = BooleanProperty.create("pillar");
 
@@ -41,6 +40,7 @@ public class StoneFenceBlock extends FenceBlock {
                 .setValue(WATERLOGGED, false)
                 .setValue(SIDE_FILL, false)
                 .setValue(PILLAR, true));
+        this.occlusionByIndex = this.makeShapes(2.0F, 1.0F, 16.0F, 6.0F, 15.0F);
     }
 
     public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
@@ -55,6 +55,11 @@ public class StoneFenceBlock extends FenceBlock {
         boolean bl2 = this.isSameFence(blockState);
         boolean bl3 = block instanceof FenceGateBlock && FenceGateBlock.connectsToDirection(blockState, direction);
         return !isExceptionForConnection(blockState) && bl || bl2 || bl3;
+    }
+
+    public static boolean isExceptionForConnection(BlockState blockState) {
+        return blockState.getBlock() instanceof LeavesBlock || blockState.is(Blocks.BARRIER) || blockState.is(Blocks.CARVED_PUMPKIN) || blockState.is(Blocks.JACK_O_LANTERN) || blockState.is(Blocks.MELON) || blockState.is(Blocks.PUMPKIN) || blockState.is(BlockTags.SHULKER_BOXES)
+                || blockState.getBlock() instanceof ColumnBlock;
     }
 
     private boolean isSameFence(BlockState blockState) {

@@ -3,7 +3,7 @@
     "group": "foundation/layer",
     "key": {
         "#": {
-            "item": "minecraft:stone_tile_slab"
+            "item": "foundation:stone_tile_slab"
         }
     },
     "pattern": [
