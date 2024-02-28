@@ -1,0 +1,18 @@
+{
+    "group": "foundation/mouldings",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:sandstone"
+        }
+    },
+    "result": {
+        "item": "foundation:sandstone_moulding",
+        "count": 8
+    }
+}

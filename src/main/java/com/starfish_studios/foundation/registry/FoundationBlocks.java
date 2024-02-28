@@ -28,6 +28,7 @@ public class FoundationBlocks {
 
 
 
+    public static final Block STONE_URN = register("stone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.STONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final Block BLACKSTONE_URN = register("blackstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final Block DEEPSLATE_URN = register("deepslate_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS)).noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final Block NETHER_BRICK_URN = register("nether_brick_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).noOcclusion().pushReaction(PushReaction.DESTROY)));

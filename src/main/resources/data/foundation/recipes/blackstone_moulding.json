@@ -1,0 +1,18 @@
+{
+    "group": "foundation/mouldings",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:blackstone"
+        }
+    },
+    "result": {
+        "item": "foundation:blackstone_moulding",
+        "count": 8
+    }
+}

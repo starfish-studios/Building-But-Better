@@ -1,0 +1,18 @@
+{
+    "group": "foundation/mouldings",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:nether_bricks"
+        }
+    },
+    "result": {
+        "item": "foundation:nether_brick_moulding",
+        "count": 8
+    }
+}

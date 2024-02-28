@@ -1,0 +1,18 @@
+{
+    "group": "foundation/mouldings",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:deepslate"
+        }
+    },
+    "result": {
+        "item": "foundation:deepslate_moulding",
+        "count": 8
+    }
+}

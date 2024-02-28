@@ -1,0 +1,18 @@
+{
+    "group": "foundation/mouldings",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:quartz_block"
+        }
+    },
+    "result": {
+        "item": "foundation:quartz_moulding",
+        "count": 8
+    }
+}
