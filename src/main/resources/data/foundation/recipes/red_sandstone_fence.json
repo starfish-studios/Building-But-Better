@@ -1,0 +1,17 @@
+{
+    "group": "foundation/stone_fences",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:red_sandstone"
+        }
+    },
+    "result": {
+        "item": "foundation:red_sandstone_fence",
+        "count": 6
+    }
+}

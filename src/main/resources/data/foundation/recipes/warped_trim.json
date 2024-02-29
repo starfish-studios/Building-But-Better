@@ -1,0 +1,18 @@
+{
+    "group": "foundation/trims",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:warped_planks"
+        }
+    },
+    "result": {
+        "item": "foundation:warped_trim",
+        "count": 3
+    }
+}

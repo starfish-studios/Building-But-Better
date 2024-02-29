@@ -1,0 +1,18 @@
+{
+    "group": "foundation/trims",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:spruce_planks"
+        }
+    },
+    "result": {
+        "item": "foundation:spruce_trim",
+        "count": 3
+    }
+}

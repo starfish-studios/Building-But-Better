@@ -1,0 +1,20 @@
+{
+    "group": "foundation/supports",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "#/"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:acacia_planks"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "foundation:acacia_support",
+        "count": 4
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "group": "foundation/trims",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:crimson_planks"
+        }
+    },
+    "result": {
+        "item": "foundation:crimson_trim",
+        "count": 3
+    }
+}

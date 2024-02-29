@@ -1,0 +1,18 @@
+{
+    "group": "foundation/columns",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:quartz_block"
+        }
+    },
+    "result": {
+        "item": "foundation:quartz_column",
+        "count": 3
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "group": "foundation/columns",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:nether_bricks"
+        }
+    },
+    "result": {
+        "item": "foundation:nether_brick_column",
+        "count": 3
+    }
+}

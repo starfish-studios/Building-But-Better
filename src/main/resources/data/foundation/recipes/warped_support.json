@@ -1,0 +1,20 @@
+{
+    "group": "foundation/supports",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "#/"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:warped_planks"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "foundation:warped_support",
+        "count": 4
+    }
+}

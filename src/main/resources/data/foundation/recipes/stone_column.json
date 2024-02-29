@@ -1,0 +1,18 @@
+{
+    "group": "foundation/columns",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "foundation:stone_column",
+        "count": 3
+    }
+}

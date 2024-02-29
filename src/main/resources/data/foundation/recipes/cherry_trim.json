@@ -1,0 +1,18 @@
+{
+    "group": "foundation/trims",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cherry_planks"
+        }
+    },
+    "result": {
+        "item": "foundation:cherry_trim",
+        "count": 3
+    }
+}
