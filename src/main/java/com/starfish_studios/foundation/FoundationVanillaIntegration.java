@@ -27,7 +27,7 @@ public class FoundationVanillaIntegration {
         private static void registerBlockRenderLayers() {
             BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(),
                     FoundationBlocks.IRON_FENCE,
-                    FoundationBlocks.ROPE,
+                    // FoundationBlocks.ROPE,
                     FoundationBlocks.BRAZIER,
                     FoundationBlocks.SOUL_BRAZIER,
                     FoundationBlocks.STONE_URN,
@@ -47,8 +47,8 @@ public class FoundationVanillaIntegration {
                     FoundationBlocks.WARPED_LADDER,
                     FoundationBlocks.MANGROVE_LADDER,
                     FoundationBlocks.BAMBOO_LADDER,
-                    FoundationBlocks.CHERRY_LADDER,
-                    FoundationBlocks.OAK_WALL
+                    FoundationBlocks.CHERRY_LADDER
+                    // FoundationBlocks.OAK_WALL
             );
         }
     }

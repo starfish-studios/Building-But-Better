@@ -1,0 +1,30 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"texture": "foundation:block/moulding/stone2",
+		"particle": "foundation:block/polished_stone"
+	},
+	"elements": [
+		{
+			"from": [6, 8, 4],
+			"to": [12, 14, 12],
+			"faces": {
+				"north": {"uv": [14, 10.125, 14.75, 10.875], "texture": "#texture"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#texture"},
+				"south": {"uv": [14.75, 10.125, 14, 10.875], "texture": "#texture"},
+				"west": {"uv": [14.75, 10.125, 15.75, 10.875], "texture": "#texture"},
+				"up": {"uv": [14.75, 10.125, 14, 9.125], "texture": "#texture"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#texture"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bone2",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"nbt": "{}",
+			"children": [0]
+		}
+	]
+}

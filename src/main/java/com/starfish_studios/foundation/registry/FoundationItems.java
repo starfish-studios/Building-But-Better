@@ -17,8 +17,8 @@ public class FoundationItems {
     public static final Item HAMMER = register("hammer", new Item(new FabricItemSettings().maxCount(1).durability(256)));
 
 
-    public static final Item PLASTER = register("plaster", new BlockItem(FoundationBlocks.PLASTER, new FabricItemSettings()));
-    public static final Item OAK_WALL = register("oak_wall", new BlockItem(FoundationBlocks.OAK_WALL, new FabricItemSettings()));
+    // public static final Item PLASTER = register("plaster", new BlockItem(FoundationBlocks.PLASTER, new FabricItemSettings()));
+    // public static final Item OAK_WALL = register("oak_wall", new BlockItem(FoundationBlocks.OAK_WALL, new FabricItemSettings()));
 
 
     public static final Item STONE_URN = register("stone_urn", new DescriptionBlockItem(FoundationBlocks.STONE_URN, new FabricItemSettings()));
@@ -196,7 +196,7 @@ public class FoundationItems {
     public static final Item SOUL_BRAZIER = register("soul_brazier", new BlockItem(FoundationBlocks.SOUL_BRAZIER, new FabricItemSettings()));
 
 
-    public static final Item ROOFING = register("roofing", new BlockItem(FoundationBlocks.ROOFING, new FabricItemSettings()));
+    // public static final Item ROOFING = register("roofing", new BlockItem(FoundationBlocks.ROOFING, new FabricItemSettings()));
 
 
     // region PALLETS
@@ -228,7 +228,7 @@ public class FoundationItems {
     // endregion
 
 
-    public static final Item ROPE = register("rope", new BlockItem(FoundationBlocks.ROPE, new FabricItemSettings()));
+    // public static final Item ROPE = register("rope", new BlockItem(FoundationBlocks.ROPE, new FabricItemSettings()));
 
     // region WOODEN LANTERNS
     public static final Item OAK_LANTERN = register("oak_lantern", new BlockItem(FoundationBlocks.OAK_LANTERN, new FabricItemSettings()));
@@ -264,7 +264,7 @@ public class FoundationItems {
 
     //public static final Item TALL_OAK_DOOR = register("tall_oak_door", new TallDoorItem(FoundationBlocks.TALL_OAK_DOOR, new FabricItemSettings()));
 
-    public static final Item BIG_DOOR = register("big_door", new BlockItem(FoundationBlocks.BIG_DOOR, new FabricItemSettings()));
+    // public static final Item BIG_DOOR = register("big_door", new BlockItem(FoundationBlocks.BIG_DOOR, new FabricItemSettings()));
 
     private static Item register(String id, Item item) {
         return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Foundation.MOD_ID, id), item);

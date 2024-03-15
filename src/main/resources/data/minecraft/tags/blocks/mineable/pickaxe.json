@@ -1,7 +1,8 @@
 {
   "values": [
     "#foundation:stone_layers",
-    "#foundation:stone_fences"
+    "#foundation:stone_fences",
+    "#foundation:stone_mouldings"
   ],
   "replace": false
 }

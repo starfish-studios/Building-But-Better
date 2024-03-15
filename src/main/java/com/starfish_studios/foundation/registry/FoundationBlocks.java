@@ -15,7 +15,7 @@ import static net.minecraft.world.level.block.Blocks.litBlockEmission;
 
 public class FoundationBlocks {
 
-    public static final Block OAK_WALL = register("oak_wall", new WallBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
+    // public static final Block OAK_WALL = register("oak_wall", new WallBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
 
 
     public static final Block STONE_COLUMN = register("stone_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS)).noOcclusion()));
@@ -38,13 +38,13 @@ public class FoundationBlocks {
 
 
     // Stone, Blackstone, Deepslate, Nether Brick, Sandstone, Red Sandstone, Quartz
-    public static final Block STONE_MOULDING = register("stone_moulding", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
-    public static final Block BLACKSTONE_MOULDING = register("blackstone_moulding", new StairBlock((Blocks.BLACKSTONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.BLACKSTONE).noOcclusion()));
-    public static final Block DEEPSLATE_MOULDING = register("deepslate_moulding", new StairBlock((Blocks.DEEPSLATE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).noOcclusion()));
-    public static final Block NETHER_BRICK_MOULDING = register("nether_brick_moulding", new StairBlock((Blocks.NETHER_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).noOcclusion()));
-    public static final Block SANDSTONE_MOULDING = register("sandstone_moulding", new StairBlock((Blocks.SANDSTONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion()));
-    public static final Block RED_SANDSTONE_MOULDING = register("red_sandstone_moulding", new StairBlock((Blocks.RED_SANDSTONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.RED_SANDSTONE).noOcclusion()));
-    public static final Block QUARTZ_MOULDING = register("quartz_moulding", new StairBlock((Blocks.QUARTZ_BLOCK.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).noOcclusion()));
+    public static final Block STONE_MOULDING = register("stone_moulding", new MouldingBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
+    public static final Block BLACKSTONE_MOULDING = register("blackstone_moulding", new MouldingBlock((Blocks.BLACKSTONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.BLACKSTONE).noOcclusion()));
+    public static final Block DEEPSLATE_MOULDING = register("deepslate_moulding", new MouldingBlock((Blocks.DEEPSLATE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).noOcclusion()));
+    public static final Block NETHER_BRICK_MOULDING = register("nether_brick_moulding", new MouldingBlock((Blocks.NETHER_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).noOcclusion()));
+    public static final Block SANDSTONE_MOULDING = register("sandstone_moulding", new MouldingBlock((Blocks.SANDSTONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion()));
+    public static final Block RED_SANDSTONE_MOULDING = register("red_sandstone_moulding", new MouldingBlock((Blocks.RED_SANDSTONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.RED_SANDSTONE).noOcclusion()));
+    public static final Block QUARTZ_MOULDING = register("quartz_moulding", new MouldingBlock((Blocks.QUARTZ_BLOCK.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).noOcclusion()));
 
 
     public static final Block STONE_FENCE = register("stone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS)).noOcclusion()));
@@ -96,17 +96,17 @@ public class FoundationBlocks {
     // endregion
 
     // region SUPPORTS
-    public static final Block OAK_SUPPORT = register("oak_support", new SupportBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noCollission()));
-    public static final Block SPRUCE_SUPPORT = register("spruce_support", new SupportBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noCollission()));
-    public static final Block BIRCH_SUPPORT = register("birch_support", new SupportBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noCollission()));
-    public static final Block JUNGLE_SUPPORT = register("jungle_support", new SupportBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).noCollission()));
-    public static final Block ACACIA_SUPPORT = register("acacia_support", new SupportBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).noCollission()));
-    public static final Block DARK_OAK_SUPPORT = register("dark_oak_support", new SupportBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).noCollission()));
-    public static final Block CRIMSON_SUPPORT = register("crimson_support", new SupportBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).noCollission()));
-    public static final Block WARPED_SUPPORT = register("warped_support", new SupportBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noCollission()));
-    public static final Block MANGROVE_SUPPORT = register("mangrove_support", new SupportBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).noCollission()));
-    public static final Block CHERRY_SUPPORT = register("cherry_support", new SupportBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).noCollission()));
-    public static final Block BAMBOO_SUPPORT = register("bamboo_support", new SupportBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).noCollission()));
+    public static final Block OAK_SUPPORT = register("oak_support", new SupportBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
+    public static final Block SPRUCE_SUPPORT = register("spruce_support", new SupportBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion()));
+    public static final Block BIRCH_SUPPORT = register("birch_support", new SupportBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noOcclusion()));
+    public static final Block JUNGLE_SUPPORT = register("jungle_support", new SupportBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).noOcclusion()));
+    public static final Block ACACIA_SUPPORT = register("acacia_support", new SupportBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).noOcclusion()));
+    public static final Block DARK_OAK_SUPPORT = register("dark_oak_support", new SupportBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion()));
+    public static final Block CRIMSON_SUPPORT = register("crimson_support", new SupportBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).noOcclusion()));
+    public static final Block WARPED_SUPPORT = register("warped_support", new SupportBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noOcclusion()));
+    public static final Block MANGROVE_SUPPORT = register("mangrove_support", new SupportBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).noOcclusion()));
+    public static final Block CHERRY_SUPPORT = register("cherry_support", new SupportBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).noOcclusion()));
+    public static final Block BAMBOO_SUPPORT = register("bamboo_support", new SupportBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).noOcclusion()));
     // endregion
 
     //region LADDERS
@@ -240,7 +240,7 @@ public class FoundationBlocks {
 
 
 
-    public static final Block PLASTER = register("plaster", new Block(FabricBlockSettings.copy((Blocks.GRAVEL))));
+    // public static final Block PLASTER = register("plaster", new Block(FabricBlockSettings.copy((Blocks.GRAVEL))));
 
     public static final Block POLISHED_STONE = register("polished_stone", new Block(FabricBlockSettings.copy((Blocks.SMOOTH_STONE))));
     public static final Block POLISHED_STONE_STAIRS = register("polished_stone_stairs", new StairBlock((Blocks.SMOOTH_STONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)));
@@ -255,10 +255,10 @@ public class FoundationBlocks {
     public static final Block BRAZIER = register("brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(15)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
     public static final Block SOUL_BRAZIER = register("soul_brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(10)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
 
-    public static final Block ROOFING = register("roofing", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
+    // public static final Block ROOFING = register("roofing", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
 
 
-    public static final Block ROPE = register("rope", new ChainBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).forceSolidOn().strength(0.1F).sound(SoundType.WOOL).noOcclusion()));
+    // public static final Block ROPE = register("rope", new ChainBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).forceSolidOn().strength(0.1F).sound(SoundType.WOOL).noOcclusion()));
 
 
 
@@ -268,8 +268,7 @@ public class FoundationBlocks {
 
     //public static final Block TALL_OAK_DOOR = register("tall_oak_door", new TallDoorBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion(), BlockSetType.OAK));
 
-    // big doors
-    public static final Block BIG_DOOR = register("big_door", new BigDoorBlock(FabricBlockSettings.copy((Blocks.OAK_DOOR)).noOcclusion()));
+    // public static final Block BIG_DOOR = register("big_door", new BigDoorBlock(FabricBlockSettings.copy((Blocks.OAK_DOOR)).noOcclusion()));
 
 
     private static Block register(String id, Block block) {

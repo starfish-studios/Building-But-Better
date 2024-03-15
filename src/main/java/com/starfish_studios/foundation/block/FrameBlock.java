@@ -106,20 +106,6 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
         };
     }
 
-    // TODO: For some reason, this is causing a crash when blocks are broken "too fast". It doesn't crash when the blocks are broken slowly.
-    /** "No bounds for empty shape" **/
-    /*
-    public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-        if (collisionContext.isHoldingItem(FoundationItems.OAK_FRAME.asItem())) {
-            return switch (blockState.getValue(FACING)) {
-                case EAST -> EAST;
-                case SOUTH -> SOUTH;
-                case WEST -> WEST;
-                default -> NORTH;
-            };
-        } else return Shapes.empty();
-    } */
-
     public VoxelShape getCollisionShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
         return switch (blockState.getValue(FACING)) {
             case NORTH -> Shapes.or(blockState.getValue(TOP) ? TOP_NORTH_AABB : Shapes.empty(), blockState.getValue(BOTTOM) ? BOTTOM_NORTH_AABB : Shapes.empty());

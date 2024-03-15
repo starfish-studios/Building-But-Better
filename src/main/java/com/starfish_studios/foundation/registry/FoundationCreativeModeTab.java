@@ -66,7 +66,7 @@ public class FoundationCreativeModeTab {
         output.accept(NETHER_BRICK_MOULDING);
 
 
-        output.accept(BIG_DOOR);
+        // output.accept(BIG_DOOR);
 
 
         output.accept(OAK_TRIM);

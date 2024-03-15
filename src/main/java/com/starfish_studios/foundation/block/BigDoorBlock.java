@@ -1,3 +1,4 @@
+/*
 package com.starfish_studios.foundation.block;
 
 import com.starfish_studios.foundation.registry.FoundationBlocks;
@@ -311,3 +312,4 @@ public class BigDoorBlock extends Block {
         //EAST_AABB = Block.box(0.0, 0.0, 0.0, 3.0, 16.0, 16.0);
     }
 }
+*/
