@@ -27,18 +27,15 @@ public class BlockUseEvent implements UseBlockCallback {
         //TODO : HAMMER + MOULDINGS
         final boolean isMoulding = world.getBlockState(hitResult.getBlockPos()).is(FoundationTags.FoundationBlockTags.STONE_MOULDINGS);
         if (isHammer && isMoulding) {
-            if (player.isShiftKeyDown()) {
                 if (world.getBlockState(blockPos).getValue(MouldingBlock.DENTIL)) {
                     world.setBlock(blockPos, world.getBlockState(blockPos).setValue(MouldingBlock.DENTIL, false), 3);
+                    world.playSound(player, blockPos, world.getBlockState(blockPos).getBlock().getSoundType(world.getBlockState(blockPos)).getBreakSound(), player.getSoundSource(), 1.0F, 1.0F);
                 } else {
                     world.setBlock(blockPos, world.getBlockState(blockPos).setValue(MouldingBlock.DENTIL, true), 3);
+                    world.playSound(player, blockPos, world.getBlockState(blockPos).getBlock().getSoundType(world.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
                 }
-                world.playSound(player, blockPos, world.getBlockState(blockPos).getBlock().getSoundType(world.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
                 return InteractionResult.SUCCESS;
-            }
-            return InteractionResult.PASS;
         }
-
 
         //TODO : HAMMER + STONE FENCES
         final boolean isStoneFence = world.getBlockState(hitResult.getBlockPos()).is(FoundationTags.FoundationBlockTags.STONE_FENCES);
