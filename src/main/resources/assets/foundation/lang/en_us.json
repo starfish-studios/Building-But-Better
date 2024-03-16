@@ -223,6 +223,9 @@
 
   "description.foundation.pencil": "✐ ",
 
+  "description.foundation.moulding1": "Right-Click with a Hammer",
+  "description.foundation.moulding2": "to toggle the dentil.",
+
   "description.foundation.stone_fence1": "Right-Click with a Hammer",
   "description.foundation.stone_fence2": "to toggle solid sides.",
   "description.foundation.stone_fence3": "Sneak + Right-Click with a Hammer",

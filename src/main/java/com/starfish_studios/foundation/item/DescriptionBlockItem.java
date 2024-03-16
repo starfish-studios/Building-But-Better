@@ -33,6 +33,14 @@ public class DescriptionBlockItem extends BlockItem {
             } else tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
         }
 
+        if (stack.is(FoundationTags.FoundationItemTags.MOULDINGS)) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.moulding1").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.foundation.moulding2").withStyle(ChatFormatting.GRAY));
+            } else
+                tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+        }
+
         if (stack.is(FoundationTags.FoundationItemTags.SUPPORTS)) {
             if (Screen.hasShiftDown()) {
                 tooltip.add(Component.translatable("description.foundation.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.foundation.support1").withStyle(ChatFormatting.GRAY)));

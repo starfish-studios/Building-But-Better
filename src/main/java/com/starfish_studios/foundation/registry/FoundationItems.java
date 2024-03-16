@@ -4,17 +4,28 @@ import com.starfish_studios.foundation.Foundation;
 import com.starfish_studios.foundation.item.DescriptionBlockItem;
 import com.starfish_studios.foundation.item.TallDoorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Blocks;
 
 public class FoundationItems {
 
     public static final Item FOUNDATION = register("foundation", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON).fireproof()));
     public static final Item HAMMER = register("hammer", new Item(new FabricItemSettings().maxCount(1).durability(256)));
+
+    // Stone, Blackstone, Deepslate, Nether Brick, Sandstone, Red Sandstone, Quartz
+    public static final Item STONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(FoundationBlocks.STONE_BLOCK, FoundationBlocks.WALL_STONE_BLOCK, new Item.Properties(), Direction.DOWN));
+    public static final Item BLACKSTONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(FoundationBlocks.BLACKSTONE_BLOCK, FoundationBlocks.WALL_BLACKSTONE_BLOCK, new Item.Properties(), Direction.DOWN));
+    public static final Item DEEPSLATE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(FoundationBlocks.DEEPSLATE_BLOCK, FoundationBlocks.WALL_DEEPSLATE_BLOCK, new Item.Properties(), Direction.DOWN));
+    public static final Item NETHER_BRICK_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(FoundationBlocks.NETHER_BRICK_BLOCK, FoundationBlocks.WALL_NETHER_BRICK_BLOCK, new Item.Properties(), Direction.DOWN));
+    public static final Item SANDSTONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(FoundationBlocks.SANDSTONE_BLOCK, FoundationBlocks.WALL_SANDSTONE_BLOCK, new Item.Properties(), Direction.DOWN));
+    public static final Item RED_SANDSTONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(FoundationBlocks.RED_SANDSTONE_BLOCK, FoundationBlocks.WALL_RED_SANDSTONE_BLOCK, new Item.Properties(), Direction.DOWN));
+    public static final Item QUARTZ_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(FoundationBlocks.QUARTZ_BLOCK, FoundationBlocks.WALL_QUARTZ_BLOCK, new Item.Properties(), Direction.DOWN));
+
+
 
 
     // public static final Item PLASTER = register("plaster", new BlockItem(FoundationBlocks.PLASTER, new FabricItemSettings()));
@@ -30,13 +41,13 @@ public class FoundationItems {
     public static final Item QUARTZ_URN = register("quartz_urn", new DescriptionBlockItem(FoundationBlocks.QUARTZ_URN, new FabricItemSettings()));
 
 
-    public static final Item STONE_MOULDING = register("stone_moulding", new BlockItem(FoundationBlocks.STONE_MOULDING, new FabricItemSettings()));
-    public static final Item BLACKSTONE_MOULDING = register("blackstone_moulding", new BlockItem(FoundationBlocks.BLACKSTONE_MOULDING, new FabricItemSettings()));
-    public static final Item DEEPSLATE_MOULDING = register("deepslate_moulding", new BlockItem(FoundationBlocks.DEEPSLATE_MOULDING, new FabricItemSettings()));
-    public static final Item NETHER_BRICK_MOULDING = register("nether_brick_moulding", new BlockItem(FoundationBlocks.NETHER_BRICK_MOULDING, new FabricItemSettings()));
-    public static final Item SANDSTONE_MOULDING = register("sandstone_moulding", new BlockItem(FoundationBlocks.SANDSTONE_MOULDING, new FabricItemSettings()));
-    public static final Item RED_SANDSTONE_MOULDING = register("red_sandstone_moulding", new BlockItem(FoundationBlocks.RED_SANDSTONE_MOULDING, new FabricItemSettings()));
-    public static final Item QUARTZ_MOULDING = register("quartz_moulding", new BlockItem(FoundationBlocks.QUARTZ_MOULDING, new FabricItemSettings()));
+    public static final Item STONE_MOULDING = register("stone_moulding", new DescriptionBlockItem(FoundationBlocks.STONE_MOULDING, new FabricItemSettings()));
+    public static final Item BLACKSTONE_MOULDING = register("blackstone_moulding", new DescriptionBlockItem(FoundationBlocks.BLACKSTONE_MOULDING, new FabricItemSettings()));
+    public static final Item DEEPSLATE_MOULDING = register("deepslate_moulding", new DescriptionBlockItem(FoundationBlocks.DEEPSLATE_MOULDING, new FabricItemSettings()));
+    public static final Item NETHER_BRICK_MOULDING = register("nether_brick_moulding", new DescriptionBlockItem(FoundationBlocks.NETHER_BRICK_MOULDING, new FabricItemSettings()));
+    public static final Item SANDSTONE_MOULDING = register("sandstone_moulding", new DescriptionBlockItem(FoundationBlocks.SANDSTONE_MOULDING, new FabricItemSettings()));
+    public static final Item RED_SANDSTONE_MOULDING = register("red_sandstone_moulding", new DescriptionBlockItem(FoundationBlocks.RED_SANDSTONE_MOULDING, new FabricItemSettings()));
+    public static final Item QUARTZ_MOULDING = register("quartz_moulding", new DescriptionBlockItem(FoundationBlocks.QUARTZ_MOULDING, new FabricItemSettings()));
 
 
     public static final Item STONE_COLUMN = register("stone_column", new DescriptionBlockItem(FoundationBlocks.STONE_COLUMN, new FabricItemSettings()));

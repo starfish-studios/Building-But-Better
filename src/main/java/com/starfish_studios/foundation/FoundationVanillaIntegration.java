@@ -1,9 +1,13 @@
 package com.starfish_studios.foundation;
 
+import com.starfish_studios.foundation.client.renderer.blockentity.BlockBlockRenderer;
+import com.starfish_studios.foundation.registry.FoundationBlockEntityType;
 import com.starfish_studios.foundation.registry.FoundationBlocks;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
+import net.fabricmc.fabric.impl.blockrenderlayer.BlockRenderLayerMapImpl;
 import net.minecraft.client.renderer.RenderType;
 
 public class FoundationVanillaIntegration {
@@ -15,6 +19,7 @@ public class FoundationVanillaIntegration {
             registerModelLayers();
             registerScreens();
             registerBlockRenderLayers();
+            registerBlockEntityRenderers();
         }
 
         //client methods
@@ -22,6 +27,11 @@ public class FoundationVanillaIntegration {
         }
 
         private static void registerScreens() {
+        }
+
+        private static void registerBlockEntityRenderers() {
+            BlockEntityRendererRegistry.register(FoundationBlockEntityType.BLOCK,
+                    context -> new BlockBlockRenderer());
         }
 
         private static void registerBlockRenderLayers() {

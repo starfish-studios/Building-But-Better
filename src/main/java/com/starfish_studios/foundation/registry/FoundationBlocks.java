@@ -18,6 +18,22 @@ public class FoundationBlocks {
     // public static final Block OAK_WALL = register("oak_wall", new WallBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
 
 
+    // Stone, Blackstone, Deepslate, Nether Brick, Sandstone, Red Sandstone, Quartz
+    public static final Block STONE_BLOCK = register("stone_block", new BlockBlock(BlockBlock.Types.STONE, FabricBlockSettings.copy((Blocks.STONE)).pushReaction(PushReaction.DESTROY)));
+    public static final Block WALL_STONE_BLOCK = register("wall_stone_block", new WallBlockBlock(BlockBlock.Types.STONE, FabricBlockSettings.copy((Blocks.STONE)).pushReaction(PushReaction.DESTROY).dropsLike(STONE_BLOCK)));
+    public static final Block BLACKSTONE_BLOCK = register("blackstone_block", new BlockBlock(BlockBlock.Types.BLACKSTONE, FabricBlockSettings.copy((Blocks.BLACKSTONE)).pushReaction(PushReaction.DESTROY)));
+    public static final Block WALL_BLACKSTONE_BLOCK = register("wall_blackstone_block", new WallBlockBlock(BlockBlock.Types.BLACKSTONE, FabricBlockSettings.copy((Blocks.BLACKSTONE)).pushReaction(PushReaction.DESTROY).dropsLike(BLACKSTONE_BLOCK)));
+    public static final Block DEEPSLATE_BLOCK = register("deepslate_block", new BlockBlock(BlockBlock.Types.DEEPSLATE, FabricBlockSettings.copy((Blocks.DEEPSLATE)).pushReaction(PushReaction.DESTROY)));
+    public static final Block WALL_DEEPSLATE_BLOCK = register("wall_deepslate_block", new WallBlockBlock(BlockBlock.Types.DEEPSLATE, FabricBlockSettings.copy((Blocks.DEEPSLATE)).pushReaction(PushReaction.DESTROY).dropsLike(DEEPSLATE_BLOCK)));
+    public static final Block NETHER_BRICK_BLOCK = register("nether_brick_block", new BlockBlock(BlockBlock.Types.NETHER_BRICK, FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).pushReaction(PushReaction.DESTROY)));
+    public static final Block WALL_NETHER_BRICK_BLOCK = register("wall_nether_brick_block", new WallBlockBlock(BlockBlock.Types.NETHER_BRICK, FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).pushReaction(PushReaction.DESTROY).dropsLike(NETHER_BRICK_BLOCK)));
+    public static final Block SANDSTONE_BLOCK = register("sandstone_block", new BlockBlock(BlockBlock.Types.SANDSTONE, FabricBlockSettings.copy((Blocks.SANDSTONE)).pushReaction(PushReaction.DESTROY)));
+    public static final Block WALL_SANDSTONE_BLOCK = register("wall_sandstone_block", new WallBlockBlock(BlockBlock.Types.SANDSTONE, FabricBlockSettings.copy((Blocks.SANDSTONE)).pushReaction(PushReaction.DESTROY).dropsLike(SANDSTONE_BLOCK)));
+    public static final Block RED_SANDSTONE_BLOCK = register("red_sandstone_block", new BlockBlock(BlockBlock.Types.RED_SANDSTONE, FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).pushReaction(PushReaction.DESTROY)));
+    public static final Block WALL_RED_SANDSTONE_BLOCK = register("wall_red_sandstone_block", new WallBlockBlock(BlockBlock.Types.RED_SANDSTONE, FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).pushReaction(PushReaction.DESTROY).dropsLike(RED_SANDSTONE_BLOCK)));
+    public static final Block QUARTZ_BLOCK = register("quartz_block", new BlockBlock(BlockBlock.Types.QUARTZ, FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).pushReaction(PushReaction.DESTROY)));
+    public static final Block WALL_QUARTZ_BLOCK = register("wall_quartz_block", new WallBlockBlock(BlockBlock.Types.QUARTZ, FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).pushReaction(PushReaction.DESTROY).dropsLike(QUARTZ_BLOCK)));
+
     public static final Block STONE_COLUMN = register("stone_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS)).noOcclusion()));
     public static final Block BLACKSTONE_COLUMN = register("blackstone_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE)).noOcclusion()));
     public static final Block DEEPSLATE_COLUMN = register("deepslate_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS)).noOcclusion()));

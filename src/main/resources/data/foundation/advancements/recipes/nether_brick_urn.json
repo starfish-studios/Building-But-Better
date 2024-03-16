@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "foundation:nether_bricks_urn"
+                "recipe": "foundation:nether_brick_urn"
             },
             "trigger": "minecraft:recipe_unlocked"
         }
@@ -28,7 +28,7 @@
     ],
     "rewards": {
         "recipes": [
-            "foundation:nether_bricks_urn"
+            "foundation:nether_brick_urn"
         ]
     }
 }

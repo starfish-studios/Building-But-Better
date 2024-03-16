@@ -25,7 +25,7 @@ public class BlockUseEvent implements UseBlockCallback {
         final boolean isHammer = player.getItemInHand(hand).is(FoundationTags.FoundationItemTags.HAMMERS);
 
         //TODO : HAMMER + MOULDINGS
-        final boolean isMoulding = world.getBlockState(hitResult.getBlockPos()).is(FoundationTags.FoundationBlockTags.STONE_MOULDINGS);
+        final boolean isMoulding = world.getBlockState(hitResult.getBlockPos()).is(FoundationTags.FoundationBlockTags.MOULDINGS);
         if (isHammer && isMoulding) {
                 if (world.getBlockState(blockPos).getValue(MouldingBlock.DENTIL)) {
                     world.setBlock(blockPos, world.getBlockState(blockPos).setValue(MouldingBlock.DENTIL, false), 3);

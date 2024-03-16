@@ -15,7 +15,7 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "foundation:nether_bricks_fence"
+                "recipe": "foundation:nether_brick_fence"
             },
             "trigger": "minecraft:recipe_unlocked"
         }

@@ -20,6 +20,15 @@ public class FoundationCreativeModeTab {
 
         // output.accept(PLASTER);
 
+        output.accept(STONE_BLOCK);
+        output.accept(BLACKSTONE_BLOCK);
+        output.accept(DEEPSLATE_BLOCK);
+        output.accept(NETHER_BRICK_BLOCK);
+        output.accept(SANDSTONE_BLOCK);
+        output.accept(RED_SANDSTONE_BLOCK);
+        output.accept(QUARTZ_BLOCK);
+
+
         output.accept(BRAZIER);
         output.accept(SOUL_BRAZIER);
         output.accept(IRON_FENCE);
