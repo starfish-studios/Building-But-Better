@@ -1,7 +1,7 @@
 {
-  "variants": {
-    "": {
-      "model": "foundation:block/block/stone"
+    "variants": {
+        "": {
+            "model": "foundation:block/block/stone"
+        }
     }
-  }
 }

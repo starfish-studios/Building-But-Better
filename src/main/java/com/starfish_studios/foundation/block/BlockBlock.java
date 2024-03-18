@@ -59,7 +59,7 @@ public class BlockBlock extends AbstractBlockBlock implements Equipable {
     public interface Type {
     }
 
-    public enum Types implements BlockBlock.Type
+    public enum Types implements Type
     {
         STONE,
         BLACKSTONE,

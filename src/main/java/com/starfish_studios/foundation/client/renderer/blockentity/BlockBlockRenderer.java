@@ -10,24 +10,19 @@ import com.starfish_studios.foundation.block.entity.BlockBlockEntity;
 import com.starfish_studios.foundation.client.model.BlockModel;
 import net.minecraft.Util;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.model.SkullModel;
-import net.minecraft.client.model.SkullModelBase;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
-import net.minecraft.client.renderer.blockentity.SkullBlockRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.RotationSegment;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
-import java.util.Objects;
 
 public class BlockBlockRenderer implements BlockEntityRenderer<BlockBlockEntity> {
     private final ImmutableMap<BlockBlock.Types, BlockModel> modelByType;
@@ -67,14 +62,14 @@ public class BlockBlockRenderer implements BlockEntityRenderer<BlockBlockEntity>
         float h = RotationSegment.convertToDegrees(k);
         BlockBlock.Type type = ((BlockBlock)blockState.getBlock()).getType();
         RenderType renderType = RenderType.entityCutout(this.getTextureLocation(blockBlockEntity));
-        SkullBlockRenderer.renderSkull(direction, h, g, poseStack, multiBufferSource, i, this.modelByType.get(type), renderType);
+        BlockBlockRenderer.renderBlock(direction, h, g, poseStack, multiBufferSource, i, this.modelByType.get(type), renderType);
     }
 
     private ResourceLocation getTextureLocation(BlockBlockEntity blockBlockEntity) {
         return TEXTURE_BY_TYPE.get(((BlockBlock)blockBlockEntity.getBlockState().getBlock()).getType());
     }
 
-    public static void renderBlock(@Nullable Direction direction, float f, float g, PoseStack poseStack, MultiBufferSource multiBufferSource, int i, SkullModel blockModel, RenderType renderType) {
+    public static void renderBlock(@Nullable Direction direction, float f, float g, PoseStack poseStack, MultiBufferSource multiBufferSource, int i, BlockModel blockModel, RenderType renderType) {
         poseStack.pushPose();
         if (direction == null) {
             poseStack.translate(0.5f, 0.0f, 0.5f);
