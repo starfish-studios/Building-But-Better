@@ -1,0 +1,11 @@
+{
+  "values": [
+    "foundation:stone_urn",
+    "foundation:blackstone_urn",
+    "foundation:sandstone_urn",
+    "foundation:red_sandstone_urn",
+    "foundation:quartz_urn",
+    "foundation:deepslate_urn",
+    "foundation:nether_brick_urn"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:dark_prismarine"
+    },
+    "result": "foundation:dark_prismarine_layer",
+    "count": 4
+}

@@ -11,7 +11,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "foundation:rope"
+                    "name": "foundation:quartz_block"
                 }
             ],
             "rolls": 1.0

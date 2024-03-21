@@ -11,7 +11,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "foundation:roofing"
+                    "name": "foundation:red_sandstone_moulding"
                 }
             ],
             "rolls": 1.0

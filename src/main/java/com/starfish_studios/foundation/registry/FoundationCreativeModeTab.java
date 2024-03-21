@@ -20,13 +20,6 @@ public class FoundationCreativeModeTab {
 
         // output.accept(PLASTER);
 
-        output.accept(STONE_BLOCK);
-        output.accept(BLACKSTONE_BLOCK);
-        output.accept(DEEPSLATE_BLOCK);
-        output.accept(NETHER_BRICK_BLOCK);
-        output.accept(SANDSTONE_BLOCK);
-        output.accept(RED_SANDSTONE_BLOCK);
-        output.accept(QUARTZ_BLOCK);
 
 
         output.accept(BRAZIER);
@@ -43,36 +36,43 @@ public class FoundationCreativeModeTab {
         output.accept(STONE_URN);
         output.accept(STONE_FENCE);
         output.accept(STONE_MOULDING);
+        output.accept(STONE_BLOCK);
 
         output.accept(BLACKSTONE_COLUMN);
         output.accept(BLACKSTONE_URN);
         output.accept(BLACKSTONE_FENCE);
         output.accept(BLACKSTONE_MOULDING);
+        output.accept(BLACKSTONE_BLOCK);
 
         output.accept(SANDSTONE_COLUMN);
         output.accept(SANDSTONE_URN);
         output.accept(SANDSTONE_FENCE);
         output.accept(SANDSTONE_MOULDING);
+        output.accept(SANDSTONE_BLOCK);
 
         output.accept(RED_SANDSTONE_COLUMN);
         output.accept(RED_SANDSTONE_URN);
         output.accept(RED_SANDSTONE_FENCE);
         output.accept(RED_SANDSTONE_MOULDING);
+        output.accept(RED_SANDSTONE_BLOCK);
 
         output.accept(QUARTZ_COLUMN);
         output.accept(QUARTZ_URN);
         output.accept(QUARTZ_FENCE);
         output.accept(QUARTZ_MOULDING);
+        output.accept(QUARTZ_BLOCK);
 
         output.accept(DEEPSLATE_COLUMN);
         output.accept(DEEPSLATE_URN);
         output.accept(DEEPSLATE_FENCE);
         output.accept(DEEPSLATE_MOULDING);
+        output.accept(DEEPSLATE_BLOCK);
 
         output.accept(NETHER_BRICK_COLUMN);
         output.accept(NETHER_BRICK_URN);
         output.accept(NETHER_BRICK_FENCE);
         output.accept(NETHER_BRICK_MOULDING);
+        output.accept(NETHER_BRICK_BLOCK);
 
 
         // output.accept(BIG_DOOR);

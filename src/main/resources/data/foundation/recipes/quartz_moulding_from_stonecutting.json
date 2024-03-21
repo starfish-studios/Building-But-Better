@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:quartz"
+    },
+    "result": "foundation:quartz_moulding",
+    "count": 1
+}

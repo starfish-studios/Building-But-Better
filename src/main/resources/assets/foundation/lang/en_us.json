@@ -14,6 +14,14 @@
     "block.foundation.deepslate_fence": "Deepslate Fence",
     "block.foundation.nether_brick_fence": "Nether Brick Fence",
 
+  "block.foundation.stone_block": "Stone Block",
+    "block.foundation.blackstone_block": "Blackstone Block",
+    "block.foundation.sandstone_block": "Sandstone Block",
+    "block.foundation.red_sandstone_block": "Red Sandstone Block",
+    "block.foundation.quartz_block": "Quartz Block",
+    "block.foundation.deepslate_block": "Deepslate Block",
+    "block.foundation.nether_brick_block": "Nether Brick Block",
+
   "block.foundation.stone_moulding": "Stone Moulding",
     "block.foundation.blackstone_moulding": "Blackstone Moulding",
     "block.foundation.sandstone_moulding": "Sandstone Moulding",
@@ -233,8 +241,8 @@
 
   "description.foundation.layer1": "Right-Click with a Hammer",
   "description.foundation.layer2": "to remove layers.",
-  "description.foundation.layer3": "Up to 4 layers can be added.",
-  "description.foundation.layer4": "Can be placed on all sides.",
+  "description.foundation.layer3": "Crouch while placing",
+  "description.foundation.layer4": "to place on block sides.",
 
   "description.foundation.frame1": "Right-Click with a Hammer",
   "description.foundation.frame2": "to cycle through center supports.",

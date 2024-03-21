@@ -332,7 +332,12 @@
         "gui": {
             "rotation": [
                 30,
-                225,
+                135,
+                0
+            ],
+            "translation": [
+                0,
+                0,
                 0
             ],
             "scale": [

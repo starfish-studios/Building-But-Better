@@ -1,11 +1,13 @@
 {
+    "credit": "Made with Blockbench",
     "parent": "foundation:block/moulding/blackstone",
     "texture_size": [
-        128,
-        128
+        80,
+        80
     ],
     "textures": {
-        "texture": "foundation:block/moulding/blackstone"
+        "texture": "foundation:block/moulding/blackstone",
+        "particle": "block/blackstone"
     },
     "elements": [
         {
@@ -77,11 +79,13 @@
                 "down": {
                     "uv": [
                         0,
-                        0,
-                        16,
-                        16
+                        6.4,
+                        3.2,
+                        9.6
                     ],
-                    "texture": "#bottom"
+                    "rotation": 270,
+                    "texture": "#texture",
+                    "cullface": "down"
                 }
             }
         },

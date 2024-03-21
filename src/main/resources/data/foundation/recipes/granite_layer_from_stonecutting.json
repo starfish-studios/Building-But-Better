@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:granite"
+    },
+    "result": "foundation:granite_layer",
+    "count": 4
+}

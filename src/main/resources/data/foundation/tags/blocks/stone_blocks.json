@@ -1,0 +1,17 @@
+{
+  "values": [
+    "#foundation:stone_layers",
+    "#foundation:stone_fences",
+    "#foundation:mouldings",
+    "#foundation:blocks",
+    "#foundation:urns",
+    "#foundation:stone_columns",
+
+    "foundation:polished_stone",
+    "foundation:polished_stone_stairs",
+    "foundation:polished_stone_slab",
+    "foundation:stone_tiles",
+    "foundation:stone_tile_stairs",
+    "foundation:stone_tile_slab"
+  ]
+}

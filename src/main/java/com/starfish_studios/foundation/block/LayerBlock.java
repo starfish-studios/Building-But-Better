@@ -81,7 +81,7 @@ public class LayerBlock extends Block implements SimpleWaterloggedBlock {
                 player.getItemInHand(interactionHand).hurtAndBreak(1, player, (playerEntity) -> {
                     playerEntity.broadcastBreakEvent(interactionHand);
                 });
-                level.playSound(player, blockPos, level.getBlockState(blockPos).getBlock().getSoundType(level.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
+                level.playSound(player, blockPos, level.getBlockState(blockPos).getBlock().getSoundType(level.getBlockState(blockPos)).getBreakSound(), player.getSoundSource(), 1.0F, 1.0F);
                 return InteractionResult.SUCCESS;
             } else if (blockState.getValue(LAYERS) == 1) {
                 return InteractionResult.FAIL;
@@ -137,26 +137,42 @@ public class LayerBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        BlockState blockState = context.getLevel().getBlockState(context.getClickedPos());
-        Direction[] var2 = context.getNearestLookingDirections();
-        FluidState fluidState = context.getLevel().getFluidState(context.getClickedPos());
+        // If the player is sneaking, place the block as if it were a full block
+        if (context.getPlayer() != null && context.getPlayer().isCrouching()) {
+            BlockState blockState = context.getLevel().getBlockState(context.getClickedPos());
+            Direction[] var2 = context.getNearestLookingDirections();
+            FluidState fluidState = context.getLevel().getFluidState(context.getClickedPos());
 
-        if (blockState.getBlock() == this) {
-            return blockState.setValue(LAYERS, Math.min(4, blockState.getValue(LAYERS) + 1));
-        }
-
-        for (Direction direction : var2) {
-            if (direction.getAxis() == Direction.Axis.Y) {
-                blockState = this.defaultBlockState().setValue(FACING, context.getNearestLookingVerticalDirection().getOpposite());
-            } else {
-                blockState = this.defaultBlockState().setValue(FACING, direction.getOpposite());
+            if (blockState.getBlock() == this) {
+                return blockState.setValue(LAYERS, Math.min(4, blockState.getValue(LAYERS) + 1));
             }
-            return blockState;
-        }
-        if (blockState.is(this)) {
-            return blockState.setValue(WATERLOGGED, false).setValue(LAYERS, 4);
+
+            for (Direction direction : var2) {
+                if (direction.getAxis() == Direction.Axis.Y) {
+                    blockState = this.defaultBlockState().setValue(FACING, context.getNearestLookingVerticalDirection().getOpposite());
+                } else {
+                    blockState = this.defaultBlockState().setValue(FACING, direction.getOpposite());
+                }
+                return blockState;
+            }
+            if (blockState.is(this)) {
+                return blockState.setValue(WATERLOGGED, false).setValue(LAYERS, 4);
+            } else {
+                return blockState.setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
+            }
         } else {
-            return blockState.setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
+            BlockPos blockPos = context.getClickedPos();
+            BlockState blockState = context.getLevel().getBlockState(blockPos);
+            if (blockState.is(this)) {
+                return blockState.setValue(LAYERS, Math.min(4, blockState.getValue(LAYERS) + 1));
+            }
+            FluidState fluidState = context.getLevel().getFluidState(blockPos);
+            BlockState blockState2 = this.defaultBlockState().setValue(FACING, Direction.UP).setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
+            Direction direction = context.getClickedFace();
+            if (direction == Direction.DOWN || direction != Direction.UP && context.getClickLocation().y - (double) blockPos.getY() > 0.5) {
+                return blockState2.setValue(FACING, Direction.DOWN);
+            }
+            return blockState2;
         }
     }
 

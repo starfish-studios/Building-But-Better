@@ -187,10 +187,10 @@ public class FoundationBlocks {
     public static final Block END_STONE_BRICK_LAYER = register("end_stone_brick_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.END_STONE_BRICKS))));
     public static final Block PURPUR_LAYER = register("purpur_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.PURPUR_BLOCK))));
     public static final Block QUARTZ_LAYER = register("quartz_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK))));
-    public static final Block CUT_COPPER_LAYER = register("cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.CUT_COPPER))));
-    public static final Block EXPOSED_CUT_COPPER_LAYER = register("exposed_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.EXPOSED_CUT_COPPER))));
-    public static final Block WEATHERED_CUT_COPPER_LAYER = register("weathered_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.WEATHERED_CUT_COPPER))));
-    public static final Block OXIDIZED_CUT_COPPER_LAYER = register("oxidized_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.OXIDIZED_CUT_COPPER))));
+    public static final Block CUT_COPPER_LAYER = register("cut_copper_layer", new WeatheringCopperLayerBlock(WeatheringCopperLayerBlock.WeatherState.UNAFFECTED, FabricBlockSettings.copy((Blocks.CUT_COPPER))));
+    public static final Block EXPOSED_CUT_COPPER_LAYER = register("exposed_cut_copper_layer", new WeatheringCopperLayerBlock(WeatheringCopperLayerBlock.WeatherState.EXPOSED, FabricBlockSettings.copy((Blocks.EXPOSED_CUT_COPPER))));
+    public static final Block WEATHERED_CUT_COPPER_LAYER = register("weathered_cut_copper_layer", new WeatheringCopperLayerBlock(WeatheringCopperLayerBlock.WeatherState.WEATHERED, FabricBlockSettings.copy((Blocks.WEATHERED_CUT_COPPER))));
+    public static final Block OXIDIZED_CUT_COPPER_LAYER = register("oxidized_cut_copper_layer", new WeatheringCopperLayerBlock(WeatheringCopperLayerBlock.WeatherState.OXIDIZED, FabricBlockSettings.copy((Blocks.OXIDIZED_CUT_COPPER))));
     public static final Block WAXED_CUT_COPPER_LAYER = register("waxed_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.WAXED_CUT_COPPER))));
     public static final Block WAXED_EXPOSED_CUT_COPPER_LAYER = register("waxed_exposed_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.WAXED_EXPOSED_CUT_COPPER))));
     public static final Block WAXED_WEATHERED_CUT_COPPER_LAYER = register("waxed_weathered_cut_copper_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.WAXED_WEATHERED_CUT_COPPER))));

@@ -1,7 +1,6 @@
 {
   "values": [
-    "#foundation:ladders",
-    "foundation:rope"
+    "#foundation:ladders"
   ],
   "replace": false
 }

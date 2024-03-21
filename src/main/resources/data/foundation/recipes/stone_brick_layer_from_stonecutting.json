@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:stone_bricks"
+    },
+    "result": "foundation:stone_brick_layer",
+    "count": 4
+}

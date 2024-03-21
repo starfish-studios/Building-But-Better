@@ -1,13 +1,6 @@
 {
   "values": [
-    "#foundation:wooden_layers",
-    "#foundation:wooden_lanterns",
-    "#foundation:beams",
-    "#foundation:ladders",
-    "#foundation:pallets",
-    "#foundation:frames",
-    "#foundation:supports",
-    "#foundation:trims"
+    "#foundation:wooden_blocks"
   ],
   "replace": false
 }

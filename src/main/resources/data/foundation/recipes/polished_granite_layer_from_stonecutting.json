@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:polished_granite"
+    },
+    "result": "foundation:polished_granite_layer",
+    "count": 4
+}

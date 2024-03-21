@@ -5,7 +5,7 @@
         80
     ],
     "textures": {
-        "texture": "foundation:block/moulding/nether_bricks"
+        "texture": "foundation:block/moulding/nether_brick"
     },
     "elements": [
         {

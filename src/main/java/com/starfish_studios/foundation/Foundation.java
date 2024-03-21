@@ -5,8 +5,14 @@ import com.starfish_studios.foundation.event.BlockUseEvent;
 import com.starfish_studios.foundation.registry.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
+import net.minecraft.Util;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Block;
+
+import java.util.LinkedHashMap;
+import java.util.List;
 
 import static com.starfish_studios.foundation.registry.FoundationItems.*;
 
@@ -41,36 +47,43 @@ public class Foundation implements ModInitializer {
 			entries.addAfter(STONE_COLUMN, STONE_URN);
 			entries.addAfter(STONE_URN, STONE_FENCE);
 			entries.addAfter(STONE_FENCE, STONE_MOULDING);
+			entries.addAfter(STONE_MOULDING, STONE_BLOCK);
 
 			entries.addAfter(Items.CHISELED_POLISHED_BLACKSTONE, BLACKSTONE_COLUMN);
 			entries.addAfter(BLACKSTONE_COLUMN, BLACKSTONE_URN);
 			entries.addAfter(BLACKSTONE_URN, BLACKSTONE_FENCE);
 			entries.addAfter(BLACKSTONE_FENCE, BLACKSTONE_MOULDING);
+			entries.addAfter(BLACKSTONE_MOULDING, BLACKSTONE_BLOCK);
 
 			entries.addAfter(Items.CHISELED_DEEPSLATE, DEEPSLATE_COLUMN);
 			entries.addAfter(DEEPSLATE_COLUMN, DEEPSLATE_URN);
 			entries.addAfter(DEEPSLATE_URN, DEEPSLATE_FENCE);
 			entries.addAfter(DEEPSLATE_FENCE, DEEPSLATE_MOULDING);
+			entries.addAfter(DEEPSLATE_MOULDING, DEEPSLATE_BLOCK);
 
 			entries.addAfter(Items.CHISELED_NETHER_BRICKS, NETHER_BRICK_COLUMN);
 			entries.addAfter(NETHER_BRICK_COLUMN, NETHER_BRICK_URN);
 			entries.addAfter(NETHER_BRICK_URN, NETHER_BRICK_FENCE);
 			entries.addAfter(NETHER_BRICK_FENCE, NETHER_BRICK_MOULDING);
+			entries.addAfter(NETHER_BRICK_MOULDING, NETHER_BRICK_BLOCK);
 
 			entries.addAfter(Items.CHISELED_SANDSTONE, SANDSTONE_COLUMN);
 			entries.addAfter(SANDSTONE_COLUMN, SANDSTONE_URN);
 			entries.addAfter(SANDSTONE_URN, SANDSTONE_FENCE);
 			entries.addAfter(SANDSTONE_FENCE, SANDSTONE_MOULDING);
+			entries.addAfter(SANDSTONE_MOULDING, SANDSTONE_BLOCK);
 
 			entries.addAfter(Items.CHISELED_RED_SANDSTONE, RED_SANDSTONE_COLUMN);
 			entries.addAfter(RED_SANDSTONE_COLUMN, RED_SANDSTONE_URN);
 			entries.addAfter(RED_SANDSTONE_URN, RED_SANDSTONE_FENCE);
 			entries.addAfter(RED_SANDSTONE_FENCE, RED_SANDSTONE_MOULDING);
+			entries.addAfter(RED_SANDSTONE_MOULDING, RED_SANDSTONE_BLOCK);
 
 			entries.addAfter(Items.CHISELED_QUARTZ_BLOCK, QUARTZ_COLUMN);
 			entries.addAfter(QUARTZ_COLUMN, QUARTZ_URN);
 			entries.addAfter(QUARTZ_URN, QUARTZ_FENCE);
 			entries.addAfter(QUARTZ_FENCE, QUARTZ_MOULDING);
+			entries.addAfter(QUARTZ_MOULDING, QUARTZ_BLOCK);
 
 			//region WOODEN INJECTIONS
 			entries.addAfter(Items.OAK_SLAB, OAK_LAYER);
@@ -245,6 +258,20 @@ public class Foundation implements ModInitializer {
 			entries.addAfter(Items.WAXED_OXIDIZED_CUT_COPPER_SLAB, WAXED_OXIDIZED_CUT_COPPER_LAYER);
 
 			//endregion
+		});
+
+		Util.make(new LinkedHashMap<Block, Block>(), pairs -> {
+			pairs.put(FoundationBlocks.CUT_COPPER_LAYER, FoundationBlocks.WAXED_CUT_COPPER_LAYER);
+			pairs.put(FoundationBlocks.EXPOSED_CUT_COPPER_LAYER, FoundationBlocks.WAXED_EXPOSED_CUT_COPPER_LAYER);
+			pairs.put(FoundationBlocks.WEATHERED_CUT_COPPER_LAYER, FoundationBlocks.WAXED_WEATHERED_CUT_COPPER_LAYER);
+			pairs.put(FoundationBlocks.OXIDIZED_CUT_COPPER_LAYER, FoundationBlocks.WAXED_OXIDIZED_CUT_COPPER_LAYER);
+
+			pairs.forEach(OxidizableBlocksRegistry::registerWaxableBlockPair);
+
+			List<Block> unwaxed = List.copyOf(pairs.keySet());
+			for (int i = 0, l = unwaxed.size(); i < l - 1; i++) {
+				OxidizableBlocksRegistry.registerOxidizableBlockPair(unwaxed.get(i), unwaxed.get(i + 1));
+			}
 		});
 	}
 }
