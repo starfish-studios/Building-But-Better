@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bbb/layer",
+    "key": {
+        "#": {
+            "item": "minecraft:polished_blackstone_brick_slab"
+        }
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "item": "bbb:polished_blackstone_brick_layer"
+    },
+    "show_notification": true
+}

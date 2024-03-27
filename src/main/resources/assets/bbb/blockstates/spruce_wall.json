@@ -1,0 +1,88 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "bbb:block/wall/wood/spruce",
+                "uvlock": true
+            }
+        },
+        {
+            "apply": {
+                "model": "bbb:block/wall/wood/spruce_side",
+                "uvlock": true
+            },
+            "when": {
+                "north": "low"
+            }
+        },
+        {
+            "apply": {
+                "model": "bbb:block/wall/wood/spruce_side",
+                "uvlock": true,
+                "y": 90
+            },
+            "when": {
+                "east": "low"
+            }
+        },
+        {
+            "apply": {
+                "model": "bbb:block/wall/wood/spruce_side",
+                "uvlock": true,
+                "y": 180
+            },
+            "when": {
+                "south": "low"
+            }
+        },
+        {
+            "apply": {
+                "model": "bbb:block/wall/wood/spruce_side",
+                "uvlock": true,
+                "y": 270
+            },
+            "when": {
+                "west": "low"
+            }
+        },
+        {
+            "apply": {
+                "model": "bbb:block/wall/wood/spruce_side",
+                "uvlock": true
+            },
+            "when": {
+                "north": "tall"
+            }
+        },
+        {
+            "apply": {
+                "model": "bbb:block/wall/wood/spruce_side",
+                "uvlock": true,
+                "y": 90
+            },
+            "when": {
+                "east": "tall"
+            }
+        },
+        {
+            "apply": {
+                "model": "bbb:block/wall/wood/spruce_side",
+                "uvlock": true,
+                "y": 180
+            },
+            "when": {
+                "south": "tall"
+            }
+        },
+        {
+            "apply": {
+                "model": "bbb:block/wall/wood/spruce_side",
+                "uvlock": true,
+                "y": 270
+            },
+            "when": {
+                "west": "tall"
+            }
+        }
+    ]
+}

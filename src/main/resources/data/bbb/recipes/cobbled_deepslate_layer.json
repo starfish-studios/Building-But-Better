@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bbb/layer",
+    "key": {
+        "#": {
+            "item": "minecraft:cobbled_deepslate_slab"
+        }
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "item": "bbb:cobbled_deepslate_layer"
+    },
+    "show_notification": true
+}

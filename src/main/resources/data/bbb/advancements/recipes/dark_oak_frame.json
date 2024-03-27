@@ -1,0 +1,33 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_planks": {
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "minecraft:dark_oak_logs"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+            "conditions": {
+                "recipe": "bbb:dark_oak_frame"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        }
+    },
+    "requirements": [
+        [
+            "has_planks",
+            "has_the_recipe"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "bbb:dark_oak_frame"
+        ]
+    },
+    "sends_telemetry_event": false
+}

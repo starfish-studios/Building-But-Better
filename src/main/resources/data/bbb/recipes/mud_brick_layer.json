@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bbb/layer",
+    "key": {
+        "#": {
+            "item": "minecraft:mud_brick_slab"
+        }
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "item": "bbb:mud_brick_layer"
+    },
+    "show_notification": true
+}

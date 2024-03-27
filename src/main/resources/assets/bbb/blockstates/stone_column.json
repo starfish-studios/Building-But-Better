@@ -1,0 +1,708 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "axis": "x",
+                "type": "none"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "none"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none"
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "none"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "none",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none_layer1",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "none",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none_layer1",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "none",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none_layer1",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "none",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none_layer2",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "none",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none_layer2",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "none",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none_layer2",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "none",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none_layer3",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "none",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none_layer3",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "none",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none_layer3",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "none",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none_layer4",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "none",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none_layer4",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "none",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/none_layer4",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "bottom"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "bottom"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom"
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "middle"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "middle"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle"
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "middle"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "top"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "top"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top"
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "bottom",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom_layer1",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "bottom",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom_layer1",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom_layer1",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "bottom",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom_layer2",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "bottom",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom_layer2",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom_layer2",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "bottom",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom_layer3",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "bottom",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom_layer3",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom_layer3",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "bottom",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom_layer4",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "bottom",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom_layer4",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "bottom",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/bottom_layer4",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "top",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top_layer1",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "top",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top_layer1",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top_layer1",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "top",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top_layer2",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "top",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top_layer2",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top_layer2",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "top",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top_layer3",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "top",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top_layer3",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top_layer3",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "top",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top_layer4",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "top",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top_layer4",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "top",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/top_layer4",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "middle",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle_layer1",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "middle",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle_layer1",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "middle",
+                "layer_1": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle_layer1",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "middle",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle_layer2",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "middle",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle_layer2",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "middle",
+                "layer_2": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle_layer2",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "middle",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle_layer3",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "middle",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle_layer3",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "middle",
+                "layer_3": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle_layer3",
+                "uvlock": false,
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "x",
+                "type": "middle",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle_layer4",
+                "uvlock": false,
+                "x": 90,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "axis": "y",
+                "type": "middle",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle_layer4",
+                "uvlock": false
+            }
+        },
+        {
+            "when": {
+                "axis": "z",
+                "type": "middle",
+                "layer_4": "true"
+            },
+            "apply": {
+                "model": "bbb:block/column/stone/middle_layer4",
+                "uvlock": false,
+                "x": 90
+            }
+        }
+    ]
+}

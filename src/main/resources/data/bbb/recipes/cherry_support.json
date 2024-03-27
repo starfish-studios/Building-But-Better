@@ -1,0 +1,20 @@
+{
+    "group": "bbb/supports",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "#/"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cherry_planks"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "bbb:cherry_support",
+        "count": 4
+    }
+}

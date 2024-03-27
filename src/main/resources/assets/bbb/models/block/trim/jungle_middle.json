@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+        "end": "bbb:block/trim/jungle_top_face",
+        "side": "bbb:block/trim/jungle_middle"
+    }
+}

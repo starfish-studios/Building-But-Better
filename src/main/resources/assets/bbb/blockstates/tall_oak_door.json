@@ -1,0 +1,184 @@
+{
+    "variants": {
+        "facing=east,type=lower,hinge=left,open=false": {
+            "model": "bbb:block/tall_door/oak/bottom_left"
+        },
+        "facing=east,type=lower,hinge=left,open=true": {
+            "model": "bbb:block/tall_door/oak/bottom_left_open",
+            "y": 90
+        },
+        "facing=east,type=lower,hinge=right,open=false": {
+            "model": "bbb:block/tall_door/oak/bottom_right"
+        },
+        "facing=east,type=lower,hinge=right,open=true": {
+            "model": "bbb:block/tall_door/oak/bottom_right_open",
+            "y": 270
+        },
+        "facing=east,type=upper,hinge=left,open=false": {
+            "model": "bbb:block/tall_door/oak/top_left"
+        },
+        "facing=east,type=upper,hinge=left,open=true": {
+            "model": "bbb:block/tall_door/oak/top_left_open",
+            "y": 90
+        },
+        "facing=east,type=upper,hinge=right,open=false": {
+            "model": "bbb:block/tall_door/oak/top_right"
+        },
+        "facing=east,type=upper,hinge=right,open=true": {
+            "model": "bbb:block/tall_door/oak/top_right_open",
+            "y": 270
+        },
+        "facing=east,type=middle,hinge=left,open=false": {
+            "model": "bbb:block/tall_door/oak/middle_left"
+        },
+        "facing=east,type=middle,hinge=left,open=true": {
+            "model": "bbb:block/tall_door/oak/middle_left_open",
+            "y": 90
+        },
+        "facing=east,type=middle,hinge=right,open=false": {
+            "model": "bbb:block/tall_door/oak/middle_right"
+        },
+        "facing=east,type=middle,hinge=right,open=true": {
+            "model": "bbb:block/tall_door/oak/middle_right_open",
+            "y": 270
+        },
+        "facing=north,type=lower,hinge=left,open=false": {
+            "model": "bbb:block/tall_door/oak/bottom_left",
+            "y": 270
+        },
+        "facing=north,type=lower,hinge=left,open=true": {
+            "model": "bbb:block/tall_door/oak/bottom_left_open"
+        },
+        "facing=north,type=lower,hinge=right,open=false": {
+            "model": "bbb:block/tall_door/oak/bottom_right",
+            "y": 270
+        },
+        "facing=north,type=lower,hinge=right,open=true": {
+            "model": "bbb:block/tall_door/oak/bottom_right_open",
+            "y": 180
+        },
+        "facing=north,type=upper,hinge=left,open=false": {
+            "model": "bbb:block/tall_door/oak/top_left",
+            "y": 270
+        },
+        "facing=north,type=upper,hinge=left,open=true": {
+            "model": "bbb:block/tall_door/oak/top_left_open"
+        },
+        "facing=north,type=upper,hinge=right,open=false": {
+            "model": "bbb:block/tall_door/oak/top_right",
+            "y": 270
+        },
+        "facing=north,type=upper,hinge=right,open=true": {
+            "model": "bbb:block/tall_door/oak/top_right_open",
+            "y": 180
+        },
+        "facing=north,type=middle,hinge=left,open=false": {
+            "model": "bbb:block/tall_door/oak/middle_left",
+            "y": 270
+        },
+        "facing=north,type=middle,hinge=left,open=true": {
+            "model": "bbb:block/tall_door/oak/middle_left_open"
+        },
+        "facing=north,type=middle,hinge=right,open=false": {
+            "model": "bbb:block/tall_door/oak/middle_right",
+            "y": 270
+        },
+        "facing=north,type=middle,hinge=right,open=true": {
+            "model": "bbb:block/tall_door/oak/middle_right_open",
+            "y": 180
+        },
+        "facing=south,type=lower,hinge=left,open=false": {
+            "model": "bbb:block/tall_door/oak/bottom_left",
+            "y": 90
+        },
+        "facing=south,type=lower,hinge=left,open=true": {
+            "model": "bbb:block/tall_door/oak/bottom_left_open",
+            "y": 180
+        },
+        "facing=south,type=lower,hinge=right,open=false": {
+            "model": "bbb:block/tall_door/oak/bottom_right",
+            "y": 90
+        },
+        "facing=south,type=lower,hinge=right,open=true": {
+            "model": "bbb:block/tall_door/oak/bottom_right_open"
+        },
+        "facing=south,type=upper,hinge=left,open=false": {
+            "model": "bbb:block/tall_door/oak/top_left",
+            "y": 90
+        },
+        "facing=south,type=upper,hinge=left,open=true": {
+            "model": "bbb:block/tall_door/oak/top_left_open",
+            "y": 180
+        },
+        "facing=south,type=upper,hinge=right,open=false": {
+            "model": "bbb:block/tall_door/oak/top_right",
+            "y": 90
+        },
+        "facing=south,type=upper,hinge=right,open=true": {
+            "model": "bbb:block/tall_door/oak/top_right_open"
+        },
+        "facing=south,type=middle,hinge=left,open=false": {
+            "model": "bbb:block/tall_door/oak/middle_left",
+            "y": 90
+        },
+        "facing=south,type=middle,hinge=left,open=true": {
+            "model": "bbb:block/tall_door/oak/middle_left_open",
+            "y": 180
+        },
+        "facing=south,type=middle,hinge=right,open=false": {
+            "model": "bbb:block/tall_door/oak/middle_right",
+            "y": 90
+        },
+        "facing=south,type=middle,hinge=right,open=true": {
+            "model": "bbb:block/tall_door/oak/middle_right_open"
+        },
+        "facing=west,type=lower,hinge=left,open=false": {
+            "model": "bbb:block/tall_door/oak/bottom_left",
+            "y": 180
+        },
+        "facing=west,type=lower,hinge=left,open=true": {
+            "model": "bbb:block/tall_door/oak/bottom_left_open",
+            "y": 270
+        },
+        "facing=west,type=lower,hinge=right,open=false": {
+            "model": "bbb:block/tall_door/oak/bottom_right",
+            "y": 180
+        },
+        "facing=west,type=lower,hinge=right,open=true": {
+            "model": "bbb:block/tall_door/oak/bottom_right_open",
+            "y": 90
+        },
+        "facing=west,type=upper,hinge=left,open=false": {
+            "model": "bbb:block/tall_door/oak/top_left",
+            "y": 180
+        },
+        "facing=west,type=upper,hinge=left,open=true": {
+            "model": "bbb:block/tall_door/oak/top_left_open",
+            "y": 270
+        },
+        "facing=west,type=upper,hinge=right,open=false": {
+            "model": "bbb:block/tall_door/oak/top_right",
+            "y": 180
+        },
+        "facing=west,type=upper,hinge=right,open=true": {
+            "model": "bbb:block/tall_door/oak/top_right_open",
+            "y": 90
+        },
+        "facing=west,type=middle,hinge=left,open=false": {
+            "model": "bbb:block/tall_door/oak/middle_left",
+            "y": 180
+        },
+        "facing=west,type=middle,hinge=left,open=true": {
+            "model": "bbb:block/tall_door/oak/middle_left_open",
+            "y": 270
+        },
+        "facing=west,type=middle,hinge=right,open=false": {
+            "model": "bbb:block/tall_door/oak/middle_right",
+            "y": 180
+        },
+        "facing=west,type=middle,hinge=right,open=true": {
+            "model": "bbb:block/tall_door/oak/middle_right_open",
+            "y": 90
+        }
+    }
+}

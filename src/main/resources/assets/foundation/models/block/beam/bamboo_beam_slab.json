@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/slab",
-    "textures": {
-        "bottom": "foundation:block/beam/bamboo_top",
-        "side": "foundation:block/beam/bamboo",
-        "top": "foundation:block/beam/bamboo_top"
-    }
-}

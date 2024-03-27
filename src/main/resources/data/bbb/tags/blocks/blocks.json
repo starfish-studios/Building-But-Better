@@ -1,0 +1,11 @@
+{
+  "values": [
+    "bbb:stone_block",
+    "bbb:blackstone_block",
+    "bbb:sandstone_block",
+    "bbb:red_sandstone_block",
+    "bbb:quartz_block",
+    "bbb:deepslate_block",
+    "bbb:nether_brick_block"
+  ]
+}

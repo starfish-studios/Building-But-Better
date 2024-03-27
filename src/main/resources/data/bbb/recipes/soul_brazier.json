@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "LLL"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:soul_campfire"
+    },
+    "L": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "bbb:soul_brazier"
+  }
+}

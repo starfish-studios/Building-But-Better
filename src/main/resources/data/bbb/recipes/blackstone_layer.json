@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bbb/layer",
+    "key": {
+        "#": {
+            "item": "minecraft:blackstone_slab"
+        }
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "item": "bbb:blackstone_layer"
+    },
+    "show_notification": true
+}

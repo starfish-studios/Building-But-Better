@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "bbb:stone_tiles"
+        }
+    },
+    "result": {
+        "item": "bbb:stone_tile_stairs",
+        "count": 6
+    }
+}

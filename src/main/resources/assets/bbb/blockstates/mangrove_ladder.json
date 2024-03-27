@@ -1,0 +1,154 @@
+{
+    "variants": {
+        "facing=north,style=1": {
+            "model": "bbb:block/ladder/mangrove/oak"
+        },
+        "facing=east,style=1": {
+            "model": "bbb:block/ladder/mangrove/oak",
+            "y": 90
+        },
+        "facing=south,style=1": {
+            "model": "bbb:block/ladder/mangrove/oak",
+            "y": 180
+        },
+        "facing=west,style=1": {
+            "model": "bbb:block/ladder/mangrove/oak",
+            "y": 270
+        },
+        "facing=north,style=2": {
+            "model": "bbb:block/ladder/mangrove/spruce"
+        },
+        "facing=east,style=2": {
+            "model": "bbb:block/ladder/mangrove/spruce",
+            "y": 90
+        },
+        "facing=south,style=2": {
+            "model": "bbb:block/ladder/mangrove/spruce",
+            "y": 180
+        },
+        "facing=west,style=2": {
+            "model": "bbb:block/ladder/mangrove/spruce",
+            "y": 270
+        },
+        "facing=north,style=3": {
+            "model": "bbb:block/ladder/mangrove/birch"
+        },
+        "facing=east,style=3": {
+            "model": "bbb:block/ladder/mangrove/birch",
+            "y": 90
+        },
+        "facing=south,style=3": {
+            "model": "bbb:block/ladder/mangrove/birch",
+            "y": 180
+        },
+        "facing=west,style=3": {
+            "model": "bbb:block/ladder/mangrove/birch",
+            "y": 270
+        },
+        "facing=north,style=4": {
+            "model": "bbb:block/ladder/mangrove/jungle"
+        },
+        "facing=east,style=4": {
+            "model": "bbb:block/ladder/mangrove/jungle",
+            "y": 90
+        },
+        "facing=south,style=4": {
+            "model": "bbb:block/ladder/mangrove/jungle",
+            "y": 180
+        },
+        "facing=west,style=4": {
+            "model": "bbb:block/ladder/mangrove/jungle",
+            "y": 270
+        },
+        "facing=north,style=5": {
+            "model": "bbb:block/ladder/mangrove/acacia"
+        },
+        "facing=east,style=5": {
+            "model": "bbb:block/ladder/mangrove/acacia",
+            "y": 90
+        },
+        "facing=south,style=5": {
+            "model": "bbb:block/ladder/mangrove/acacia",
+            "y": 180
+        },
+        "facing=west,style=5": {
+            "model": "bbb:block/ladder/mangrove/acacia",
+            "y": 270
+        },
+        "facing=north,style=6": {
+            "model": "bbb:block/ladder/mangrove/dark_oak"
+        },
+        "facing=east,style=6": {
+            "model": "bbb:block/ladder/mangrove/dark_oak",
+            "y": 90
+        },
+        "facing=south,style=6": {
+            "model": "bbb:block/ladder/mangrove/dark_oak",
+            "y": 180
+        },
+        "facing=west,style=6": {
+            "model": "bbb:block/ladder/mangrove/dark_oak",
+            "y": 270
+        },
+        "facing=north,style=7": {
+            "model": "bbb:block/ladder/mangrove/crimson"
+        },
+        "facing=east,style=7": {
+            "model": "bbb:block/ladder/mangrove/crimson",
+            "y": 90
+        },
+        "facing=south,style=7": {
+            "model": "bbb:block/ladder/mangrove/crimson",
+            "y": 180
+        },
+        "facing=west,style=7": {
+            "model": "bbb:block/ladder/mangrove/crimson",
+            "y": 270
+        },
+        "facing=north,style=8": {
+            "model": "bbb:block/ladder/mangrove/warped"
+        },
+        "facing=east,style=8": {
+            "model": "bbb:block/ladder/mangrove/warped",
+            "y": 90
+        },
+        "facing=south,style=8": {
+            "model": "bbb:block/ladder/mangrove/warped",
+            "y": 180
+        },
+        "facing=west,style=8": {
+            "model": "bbb:block/ladder/mangrove/warped",
+            "y": 270
+        },
+        "facing=north,style=9": {
+            "model": "bbb:block/ladder/mangrove/mangrove"
+        },
+        "facing=east,style=9": {
+            "model": "bbb:block/ladder/mangrove/mangrove",
+            "y": 90
+        },
+        "facing=south,style=9": {
+            "model": "bbb:block/ladder/mangrove/mangrove",
+            "y": 180
+        },
+        "facing=west,style=9": {
+            "model": "bbb:block/ladder/mangrove/mangrove",
+            "y": 270
+        },
+        "facing=north,style=10": {
+            "model": "bbb:block/ladder/mangrove/cherry"
+        },
+        "facing=east,style=10": {
+            "model": "bbb:block/ladder/mangrove/cherry",
+            "y": 90
+        },
+        "facing=south,style=10": {
+            "model": "bbb:block/ladder/mangrove/cherry",
+            "y": 180
+        },
+        "facing=west,style=10": {
+            "model": "bbb:block/ladder/mangrove/cherry",
+            "y": 270
+        }
+    }
+}

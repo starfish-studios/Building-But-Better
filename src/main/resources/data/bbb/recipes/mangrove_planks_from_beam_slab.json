@@ -1,0 +1,13 @@
+{
+    "group": "planks",
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "bbb:mangrove_beam_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:mangrove_planks",
+        "count": 1
+    }
+}

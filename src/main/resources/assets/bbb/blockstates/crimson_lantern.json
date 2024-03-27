@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "hanging=false": {
+            "model": "bbb:block/lantern/crimson"
+        },
+        "hanging=true": {
+            "model": "bbb:block/lantern/crimson"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "group": "bbb/frames",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "___",
+        "/ /",
+        "___"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:bamboo_slab"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "bbb:bamboo_frame",
+        "count": 12
+    }
+}

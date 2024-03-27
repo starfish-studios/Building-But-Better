@@ -1,0 +1,294 @@
+{
+    "credit": "Made with Blockbench",
+    "texture_size": [
+        32,
+        32
+    ],
+    "textures": {
+        "particle": "minecraft:block/bamboo_planks",
+        "texture": "bbb:block/frame/bamboo_frame"
+    },
+    "elements": [
+        {
+            "from": [
+                -5,
+                16,
+                -3
+            ],
+            "to": [
+                21,
+                20,
+                0
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "z",
+                "origin": [
+                    8,
+                    18,
+                    -1.5
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        0,
+                        13,
+                        2
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        5,
+                        7,
+                        6.5,
+                        9
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        2,
+                        13,
+                        4
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        6.5,
+                        7,
+                        8,
+                        9
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        13,
+                        5.5,
+                        0,
+                        4
+                    ],
+                    "texture": "#texture"
+                },
+                "down": {
+                    "uv": [
+                        13,
+                        5.5,
+                        0,
+                        7
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "from": [
+                -5,
+                -4,
+                -3
+            ],
+            "to": [
+                21,
+                0,
+                0
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "z",
+                "origin": [
+                    8,
+                    -2,
+                    -1.5
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        2,
+                        13,
+                        0
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        5,
+                        9,
+                        6.5,
+                        7
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        0,
+                        4,
+                        13,
+                        2
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        6.5,
+                        9,
+                        8,
+                        7
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        13,
+                        7,
+                        0,
+                        5.5
+                    ],
+                    "texture": "#texture"
+                },
+                "down": {
+                    "uv": [
+                        13,
+                        4,
+                        0,
+                        5.5
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "from": [
+                -3,
+                0,
+                -2
+            ],
+            "to": [
+                0,
+                16,
+                0
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    16,
+                    0,
+                    0
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        0,
+                        7,
+                        1.5,
+                        15
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        3,
+                        7,
+                        4,
+                        15
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        1.5,
+                        7,
+                        3,
+                        15
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        4,
+                        7,
+                        5,
+                        15
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        },
+        {
+            "from": [
+                16,
+                0,
+                -2
+            ],
+            "to": [
+                19,
+                16,
+                0
+            ],
+            "faces": {
+                "north": {
+                    "uv": [
+                        1.5,
+                        7,
+                        0,
+                        15
+                    ],
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        5,
+                        7,
+                        4,
+                        15
+                    ],
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        3,
+                        7,
+                        1.5,
+                        15
+                    ],
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        4,
+                        7,
+                        3,
+                        15
+                    ],
+                    "texture": "#texture"
+                }
+            }
+        }
+    ],
+    "groups": [
+        {
+            "name": "group",
+            "origin": [
+                0,
+                0,
+                0
+            ],
+            "color": 0,
+            "nbt": "{}",
+            "children": [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ]
+}

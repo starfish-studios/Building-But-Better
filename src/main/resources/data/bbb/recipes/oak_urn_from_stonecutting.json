@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:oak"
+    },
+    "result": "bbb:oak_urn",
+    "count": 1
+}

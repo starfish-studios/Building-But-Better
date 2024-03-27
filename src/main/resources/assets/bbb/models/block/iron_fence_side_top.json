@@ -1,0 +1,17 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"4": "bbb:block/iron_fence_bars",
+		"particle": "bbb:block/iron_fence"
+	},
+	"elements": [
+		{
+			"from": [8, 0, 0],
+			"to": [8, 16, 8],
+			"faces": {
+				"east": {"uv": [0, 0, 8, 16], "texture": "#4"},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#4"}
+			}
+		}
+	]
+}

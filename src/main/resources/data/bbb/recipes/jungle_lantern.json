@@ -1,0 +1,21 @@
+{
+    "group": "bbb/lanterns",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "_",
+        "T",
+        "_"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:jungle_slab"
+        },
+        "T": {
+            "item": "minecraft:torch"
+        }
+    },
+    "result": {
+        "item": "bbb:jungle_lantern",
+        "count": 1
+    }
+}

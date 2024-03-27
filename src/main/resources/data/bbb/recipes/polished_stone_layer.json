@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bbb/layer",
+    "key": {
+        "#": {
+            "item": "bbb:polished_stone_slab"
+        }
+    },
+    "pattern": [
+        "###"
+    ],
+    "result": {
+        "count": 6,
+        "item": "bbb:polished_stone_layer"
+    },
+    "show_notification": true
+}

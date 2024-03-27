@@ -1,0 +1,6 @@
+{
+  "parent": "bbb:block/template/door_middle_left_open",
+  "textures": {
+    "middle": "bbb:block/big_door/oak_middle"
+  }
+}

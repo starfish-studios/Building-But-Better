@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:nether_brick"
+    },
+    "result": "bbb:nether_brick_column",
+    "count": 1
+}

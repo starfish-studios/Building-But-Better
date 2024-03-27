@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:prismarine"
+    },
+    "result": "bbb:prismarine_layer",
+    "count": 4
+}

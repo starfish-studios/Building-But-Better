@@ -1,0 +1,52 @@
+{
+    "variants": {
+        "type=none,axis=x": {
+            "model": "bbb:block/trim/crimson_none",
+            "x": 90,
+            "y": 90
+        },
+        "type=none,axis=y": {
+            "model": "bbb:block/trim/crimson_none"
+        },
+        "type=none,axis=z": {
+            "model": "bbb:block/trim/crimson_none",
+            "x": 90
+        },
+        "type=top,axis=x": {
+            "model": "bbb:block/trim/crimson_top",
+            "x": 90,
+            "y": 90
+        },
+        "type=top,axis=y": {
+            "model": "bbb:block/trim/crimson_top"
+        },
+        "type=top,axis=z": {
+            "model": "bbb:block/trim/crimson_top",
+            "x": 270
+        },
+        "type=middle,axis=x": {
+            "model": "bbb:block/trim/crimson_middle",
+            "x": 90,
+            "y": 90
+        },
+        "type=middle,axis=y": {
+            "model": "bbb:block/trim/crimson_middle"
+        },
+        "type=middle,axis=z": {
+            "model": "bbb:block/trim/crimson_middle",
+            "x": 270
+        },
+        "type=bottom,axis=x": {
+            "model": "bbb:block/trim/crimson_bottom",
+            "x": 90,
+            "y": 90
+        },
+        "type=bottom,axis=y": {
+            "model": "bbb:block/trim/crimson_bottom"
+        },
+        "type=bottom,axis=z": {
+            "model": "bbb:block/trim/crimson_bottom",
+            "x": 270
+        }
+    }
+}

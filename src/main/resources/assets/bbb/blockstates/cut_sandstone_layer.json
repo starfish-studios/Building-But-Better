@@ -1,0 +1,124 @@
+{
+    "variants": {
+        "facing=up,layers=1": {
+            "model": "bbb:block/layer/cut_sandstone_layer1",
+            "uvlock": true
+        },
+        "facing=up,layers=2": {
+            "model": "bbb:block/layer/cut_sandstone_layer2",
+            "uvlock": true
+        },
+        "facing=up,layers=3": {
+            "model": "bbb:block/layer/cut_sandstone_layer3",
+            "uvlock": true
+        },
+        "facing=up,layers=4": {
+            "model": "minecraft:block/cut_sandstone",
+            "uvlock": true
+        },
+        "facing=north,layers=1": {
+            "model": "bbb:block/layer/cut_sandstone_layer1",
+            "x": 90,
+            "uvlock": true
+        },
+        "facing=north,layers=2": {
+            "model": "bbb:block/layer/cut_sandstone_layer2",
+            "x": 90,
+            "uvlock": true
+        },
+        "facing=north,layers=3": {
+            "model": "bbb:block/layer/cut_sandstone_layer3",
+            "x": 90,
+            "uvlock": true
+        },
+        "facing=north,layers=4": {
+            "model": "minecraft:block/cut_sandstone",
+            "uvlock": true
+        },
+        "facing=south,layers=1": {
+            "model": "bbb:block/layer/cut_sandstone_layer1",
+            "x": 90,
+            "y": 180,
+            "uvlock": true
+        },
+        "facing=south,layers=2": {
+            "model": "bbb:block/layer/cut_sandstone_layer2",
+            "x": 90,
+            "y": 180,
+            "uvlock": true
+        },
+        "facing=south,layers=3": {
+            "model": "bbb:block/layer/cut_sandstone_layer3",
+            "x": 90,
+            "y": 180,
+            "uvlock": true
+        },
+        "facing=south,layers=4": {
+            "model": "minecraft:block/cut_sandstone",
+            "uvlock": true
+        },
+        "facing=west,layers=1": {
+            "model": "bbb:block/layer/cut_sandstone_layer1",
+            "x": 90,
+            "y": 270,
+            "uvlock": true
+        },
+        "facing=west,layers=2": {
+            "model": "bbb:block/layer/cut_sandstone_layer2",
+            "x": 90,
+            "y": 270,
+            "uvlock": true
+        },
+        "facing=west,layers=3": {
+            "model": "bbb:block/layer/cut_sandstone_layer3",
+            "x": 90,
+            "y": 270,
+            "uvlock": true
+        },
+        "facing=west,layers=4": {
+            "model": "minecraft:block/cut_sandstone",
+            "uvlock": true
+        },
+        "facing=east,layers=1": {
+            "model": "bbb:block/layer/cut_sandstone_layer1",
+            "y": 90,
+            "x": 90,
+            "uvlock": true
+        },
+        "facing=east,layers=2": {
+            "model": "bbb:block/layer/cut_sandstone_layer2",
+            "y": 90,
+            "x": 90,
+            "uvlock": true
+        },
+        "facing=east,layers=3": {
+            "model": "bbb:block/layer/cut_sandstone_layer3",
+            "y": 90,
+            "x": 90,
+            "uvlock": true
+        },
+        "facing=east,layers=4": {
+            "model": "minecraft:block/cut_sandstone",
+            "uvlock": true
+        },
+        "facing=down,layers=1": {
+            "model": "bbb:block/layer/cut_sandstone_layer1",
+            "x": 180,
+            "uvlock": true
+        },
+        "facing=down,layers=2": {
+            "model": "bbb:block/layer/cut_sandstone_layer2",
+            "x": 180,
+            "uvlock": true
+        },
+        "facing=down,layers=3": {
+            "model": "bbb:block/layer/cut_sandstone_layer3",
+            "x": 180,
+            "uvlock": true
+        },
+        "facing=down,layers=4": {
+            "model": "minecraft:block/cut_sandstone",
+            "uvlock": true
+        }
+    }
+}

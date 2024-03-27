@@ -1,0 +1,11 @@
+{
+  "values": [
+    "bbb:stone_column",
+    "bbb:blackstone_column",
+    "bbb:sandstone_column",
+    "bbb:red_sandstone_column",
+    "bbb:quartz_column",
+    "bbb:deepslate_column",
+    "bbb:nether_brick_column"
+  ]
+}

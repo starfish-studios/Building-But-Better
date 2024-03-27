@@ -1,0 +1,20 @@
+{
+    "group": "bbb/pallets",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "///",
+        "OOO"
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "O": {
+            "item": "minecraft:dark_oak_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:dark_oak_pallet",
+        "count": 8
+    }
+}

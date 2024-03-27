@@ -1,0 +1,17 @@
+{
+    "variants": {
+        "axis=x": {
+            "model": "bbb:block/beam/cherry_beam",
+            "x": 90,
+            "y": 90
+        },
+        "axis=y": {
+            "model": "bbb:block/beam/cherry_beam"
+        },
+        "axis=z": {
+            "model": "bbb:block/beam/cherry_beam",
+            "x": 90,
+            "y": 180
+        }
+    }
+}

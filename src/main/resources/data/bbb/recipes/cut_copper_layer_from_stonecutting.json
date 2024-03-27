@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:cut_copper"
+    },
+    "result": "bbb:cut_copper_layer",
+    "count": 4
+}

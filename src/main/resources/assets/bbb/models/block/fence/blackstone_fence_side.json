@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/fence/stone_fence_side",
+    "textures": {
+        "texture": "bbb:block/fence/blackstone_fence",
+        "particle": "minecraft:block/blackstone"
+    }
+}

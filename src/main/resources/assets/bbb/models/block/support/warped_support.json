@@ -1,0 +1,68 @@
+{
+    "credit": "Made with Blockbench",
+    "textures": {
+        "particle": "bbb:block/beam/warped_top",
+        "side": "bbb:block/beam/warped"
+    },
+    "elements": [
+        {
+            "from": [
+                6,
+                -0.15355,
+                5.99619
+            ],
+            "to": [
+                10,
+                15.84645,
+                9.99619
+            ],
+            "rotation": {
+                "angle": -45,
+                "axis": "x",
+                "origin": [
+                    8,
+                    7.84645,
+                    7.99619
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        8,
+                        0,
+                        4,
+                        16
+                    ],
+                    "texture": "#side"
+                },
+                "east": {
+                    "uv": [
+                        16,
+                        0,
+                        12,
+                        16
+                    ],
+                    "texture": "#side"
+                },
+                "south": {
+                    "uv": [
+                        2,
+                        0,
+                        6,
+                        16
+                    ],
+                    "texture": "#side"
+                },
+                "west": {
+                    "uv": [
+                        12,
+                        0,
+                        16,
+                        16
+                    ],
+                    "texture": "#side"
+                }
+            }
+        }
+    ]
+}

@@ -1,30 +1,30 @@
 {
 	"schemaVersion": 1,
-	"id": "foundation",
+	"id": "bbb",
 	"version": "${version}",
-	"name": "Foundation",
+	"name": "Building But Better",
 	"description": "This is an example description! Tell everyone what your mod is about!",
-	"accessWidener" : "foundation.accesswidener",
+	"accessWidener" : "bbb.accesswidener",
 	"authors": [
 		"Starfish Studios"
 	],
 	"contact": {
 		"homepage": "https://www.curseforge.com/minecraft/mc-mods/nomad",
-		"issues": "https://github.com/starfish-studios/Foundation/issues"
+		"issues": "https://github.com/starfish-studios/BBB/issues"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/foundation/icon.png",
+	"icon": "assets/bbb/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.starfish_studios.foundation.Foundation"
+          "com.starfish_studios.bbb.BuildingButBetter"
 		],
 		"client": [
-			"com.starfish_studios.foundation.FoundationClient"
+			"com.starfish_studios.bbb.BBBClient"
 		]
 	},
 	"mixins": [
-		"foundation.mixins.json"
+		"bbb.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.24",

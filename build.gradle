@@ -29,7 +29,7 @@ sourceSets {
 
 
 loom {
-	accessWidenerPath.set(file("src/main/resources/foundation.accesswidener"))
+	accessWidenerPath.set(file("src/main/resources/bbb.accesswidener"))
 }
 
 

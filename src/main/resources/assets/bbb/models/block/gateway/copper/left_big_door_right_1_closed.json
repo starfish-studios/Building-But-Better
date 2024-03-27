@@ -1,0 +1,18 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 64],
+	"textures": {
+		"texture": "bbb:block/gateway/copper"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 3],
+			"faces": {
+				"north": {"uv": [8, 8, 16, 12], "texture": "#texture"},
+				"south": {"uv": [16, 8, 8, 12], "texture": "#texture"},
+				"west": {"uv": [16, 8, 14.5, 12], "texture": "#texture"}
+			}
+		}
+	]
+}

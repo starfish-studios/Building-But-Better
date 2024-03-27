@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bbb/beam_slabs",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "bbb:dark_oak_beam"
+        }
+    },
+    "result": {
+        "item": "bbb:dark_oak_beam_slab",
+        "count": 6
+    }
+}

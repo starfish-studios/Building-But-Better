@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "bbb:block/ladder/dark_oak/dark_oak"
+    }
+}

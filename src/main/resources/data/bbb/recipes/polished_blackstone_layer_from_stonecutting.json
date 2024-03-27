@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:polished_blackstone"
+    },
+    "result": "bbb:polished_blackstone_layer",
+    "count": 4
+}

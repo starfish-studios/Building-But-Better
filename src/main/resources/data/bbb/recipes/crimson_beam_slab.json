@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bbb/beam_slabs",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "bbb:crimson_beam"
+        }
+    },
+    "result": {
+        "item": "bbb:crimson_beam_slab",
+        "count": 6
+    }
+}

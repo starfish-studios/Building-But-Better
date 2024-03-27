@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:exposed_cut_copper"
-    },
-    "result": "foundation:exposed_cut_copper_layer",
-    "count": 4
-}

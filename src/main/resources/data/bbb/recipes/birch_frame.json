@@ -1,0 +1,21 @@
+{
+    "group": "bbb/frames",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "___",
+        "/ /",
+        "___"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:birch_slab"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "bbb:birch_frame",
+        "count": 12
+    }
+}

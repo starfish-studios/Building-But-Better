@@ -1,0 +1,7 @@
+{
+	"parent": "bbb:block/fence/stone_fence_side_fill",
+	"textures": {
+		"texture": "bbb:block/fence/oak_fence",
+		"particle": "minecraft:block/oak"
+	}
+}

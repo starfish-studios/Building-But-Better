@@ -1,0 +1,17 @@
+{
+  "values": [
+    "#bbb:stone_layers",
+    "#bbb:stone_fences",
+    "#bbb:mouldings",
+    "#bbb:blocks",
+    "#bbb:urns",
+    "#bbb:stone_columns",
+
+    "bbb:polished_stone",
+    "bbb:polished_stone_stairs",
+    "bbb:polished_stone_slab",
+    "bbb:stone_tiles",
+    "bbb:stone_tile_stairs",
+    "bbb:stone_tile_slab"
+  ]
+}

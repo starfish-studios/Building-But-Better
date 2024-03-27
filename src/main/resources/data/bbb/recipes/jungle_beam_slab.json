@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bbb/beam_slabs",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "bbb:jungle_beam"
+        }
+    },
+    "result": {
+        "item": "bbb:jungle_beam_slab",
+        "count": 6
+    }
+}

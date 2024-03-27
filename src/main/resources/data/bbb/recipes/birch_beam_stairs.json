@@ -1,0 +1,18 @@
+{
+    "group": "bbb/beam_stairs",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "bbb:birch_beam"
+        }
+    },
+    "result": {
+        "item": "bbb:birch_beam_stairs",
+        "count": 4
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/ladder",
+    "textures": {
+        "particle": "bbb:block/ladder/mangrove/warped",
+        "texture": "bbb:block/ladder/mangrove/warped"
+    }
+}

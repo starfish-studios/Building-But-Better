@@ -1,0 +1,20 @@
+{
+    "group": "bbb/pallets",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "///",
+        "OOO"
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "O": {
+            "item": "minecraft:warped_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:warped_pallet",
+        "count": 8
+    }
+}

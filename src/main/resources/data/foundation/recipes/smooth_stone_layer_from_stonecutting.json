@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:smooth_stone"
-    },
-    "result": "foundation:smooth_stone_layer",
-    "count": 4
-}

@@ -1,0 +1,18 @@
+{
+    "group": "bbb/columns",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:red_sandstone"
+        }
+    },
+    "result": {
+        "item": "bbb:red_sandstone_column",
+        "count": 3
+    }
+}

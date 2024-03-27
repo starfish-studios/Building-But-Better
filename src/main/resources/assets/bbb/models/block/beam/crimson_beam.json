@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column",
+    "textures": {
+        "end": "bbb:block/beam/crimson_top",
+        "side": "bbb:block/beam/crimson"
+    }
+}

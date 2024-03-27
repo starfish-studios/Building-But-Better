@@ -1,0 +1,21 @@
+{
+    "group": "bbb/ladders",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "#O#",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stick"
+        },
+        "O": {
+            "item": "minecraft:dark_oak_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:dark_oak_ladder",
+        "count": 4
+    }
+}

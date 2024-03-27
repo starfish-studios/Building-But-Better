@@ -1,0 +1,21 @@
+{
+    "group": "bbb/ladders",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "#O#",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stick"
+        },
+        "O": {
+            "item": "minecraft:crimson_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:crimson_ladder",
+        "count": 4
+    }
+}

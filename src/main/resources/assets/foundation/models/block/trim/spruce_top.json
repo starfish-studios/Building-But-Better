@@ -1,7 +1,0 @@
-{
-    "parent": "minecraft:block/cube_column",
-    "textures": {
-        "end": "foundation:block/trim/spruce_top_face",
-        "side": "foundation:block/trim/spruce_top"
-    }
-}

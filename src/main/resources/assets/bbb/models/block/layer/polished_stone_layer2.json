@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/snow_height8",
+    "textures": {
+        "particle": "bbb:block/polished_stone",
+        "texture": "bbb:block/polished_stone"
+    }
+}

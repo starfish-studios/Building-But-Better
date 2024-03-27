@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "bbb:stone_tiles"
+    },
+    "result": "bbb:stone_tile_layer",
+    "count": 4
+}

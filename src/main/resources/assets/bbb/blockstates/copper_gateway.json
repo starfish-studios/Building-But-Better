@@ -1,0 +1,1762 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_0_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_1_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_2_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_3_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_0_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_1_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_2_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_3_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_0_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_1_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_2_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_3_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_0_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_1_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_2_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_3_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_0_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_1_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_2_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_3_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_0_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_1_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_2_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_3_closed",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_0_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_1_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_2_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_3_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_0_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_1_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_2_open",
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "north",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_3_open",
+        "uvlock": true
+      }
+    }
+    ,{
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_0_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_1_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_2_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_3_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_0_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_1_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_2_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_3_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_0_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_1_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_2_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_3_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_0_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_1_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_2_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_3_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_0_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_1_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_2_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_3_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_0_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_1_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_2_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_3_closed",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_0_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_1_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_2_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_3_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_0_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_1_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_2_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "east",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_3_open",
+        "uvlock": true,
+        "y": 90
+      }
+    },  {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_0_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_1_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_2_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_3_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_0_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_1_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_2_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_3_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_0_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_1_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_2_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_3_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_0_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_1_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_2_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_3_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_0_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_1_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_2_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_3_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_0_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_1_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_2_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_3_closed",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_0_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_1_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_2_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_3_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_0_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_1_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_2_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "west",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_3_open",
+        "uvlock": true,
+        "y": -90
+      }
+    },  {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_0_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_1_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_2_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_3_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_0_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_1_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_2_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_3_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_0_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_1_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_2_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_left_3_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_0_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_1_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_2_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "left",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/left_big_door_right_3_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_0_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_1_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_2_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_3_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_0_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_1_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_2_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "false",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_3_closed",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_0_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_1_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_2_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 0,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_left_3_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 0
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_0_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 1
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_1_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 2
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_2_open",
+        "uvlock": true,
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "open": "true",
+        "facing": "south",
+        "hinge": "right",
+        "x_pos" : 1,
+        "y_pos" : 3
+      },
+      "apply": {
+        "model": "bbb:block/gateway/copper/right_big_door_right_3_open",
+        "uvlock": true,
+        "y": 180
+      }
+    }
+  ]
+}

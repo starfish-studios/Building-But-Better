@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "bbb:polished_stone"
+  },
+  "result": "bbb:polished_stone_stairs"
+}

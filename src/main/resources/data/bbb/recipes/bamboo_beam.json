@@ -1,0 +1,18 @@
+{
+    "group": "bbb/beams",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stripped_bamboo_block"
+        }
+    },
+    "result": {
+        "item": "bbb:bamboo_beam",
+        "count": 6
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "group": "bbb/beams",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stripped_mangrove_log"
+        }
+    },
+    "result": {
+        "item": "bbb:mangrove_beam",
+        "count": 6
+    }
+}

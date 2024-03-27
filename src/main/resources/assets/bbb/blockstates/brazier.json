@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "bbb:block/brazier_off"
+    },
+    "lit=true": {
+      "model": "bbb:block/brazier_on"
+    }
+  }
+}

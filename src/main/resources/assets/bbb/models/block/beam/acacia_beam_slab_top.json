@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab_top",
+    "textures": {
+        "bottom": "bbb:block/beam/acacia_top",
+        "side": "bbb:block/beam/acacia",
+        "top": "bbb:block/beam/acacia_top"
+    }
+}

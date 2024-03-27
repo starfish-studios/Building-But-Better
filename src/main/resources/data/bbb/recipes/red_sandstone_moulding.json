@@ -1,0 +1,18 @@
+{
+    "group": "bbb/mouldings",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:red_sandstone"
+        }
+    },
+    "result": {
+        "item": "bbb:red_sandstone_moulding",
+        "count": 8
+    }
+}

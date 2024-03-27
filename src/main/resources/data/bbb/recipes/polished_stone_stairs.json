@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bbb:polished_stone"
+    }
+  },
+  "result": {
+    "item": "bbb:polished_stone_stairs",
+    "count": 4
+  }
+}

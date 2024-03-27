@@ -1,0 +1,18 @@
+{
+    "group": "bbb/trims",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cherry_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:cherry_trim",
+        "count": 3
+    }
+}

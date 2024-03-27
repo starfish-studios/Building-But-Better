@@ -1,6 +1,0 @@
-{
-  "parent": "foundation:block/template/door_middle_right_open",
-  "textures": {
-    "middle": "foundation:block/big_door/oak_middle"
-  }
-}

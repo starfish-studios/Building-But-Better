@@ -1,0 +1,20 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"texture": "bbb:block/fence/stone_fence"
+	},
+	"elements": [
+		{
+			"from": [5, 3, 0],
+			"to": [11, 11, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 13.75, 0]},
+			"faces": {
+				"north": {"uv": [5, 7, 8, 11], "texture": "#texture"},
+				"east": {"uv": [4, 7, 8, 11], "texture": "#texture"},
+				"south": {"uv": [5, 7, 8, 11], "texture": "#texture"},
+				"west": {"uv": [4, 7, 8, 11], "texture": "#texture"}
+			}
+		}
+	]
+}

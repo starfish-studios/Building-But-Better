@@ -1,0 +1,18 @@
+{
+    "group": "bbb/trims",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:spruce_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:spruce_trim",
+        "count": 3
+    }
+}

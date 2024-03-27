@@ -1,7 +1,0 @@
-{
-    "parent": "minecraft:block/cube_column",
-    "textures": {
-        "end": "foundation:block/beam/acacia_top",
-        "side": "foundation:block/beam/acacia"
-    }
-}

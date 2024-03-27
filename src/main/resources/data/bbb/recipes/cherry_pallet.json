@@ -1,0 +1,20 @@
+{
+    "group": "bbb/pallets",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "///",
+        "OOO"
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "O": {
+            "item": "minecraft:cherry_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:cherry_pallet",
+        "count": 8
+    }
+}

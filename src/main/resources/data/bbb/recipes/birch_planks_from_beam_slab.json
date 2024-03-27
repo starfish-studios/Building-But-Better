@@ -1,0 +1,13 @@
+{
+    "group": "planks",
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "bbb:birch_beam_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:birch_planks",
+        "count": 1
+    }
+}

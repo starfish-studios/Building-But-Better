@@ -1,0 +1,18 @@
+{
+    "group": "bbb/columns",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:blackstone"
+        }
+    },
+    "result": {
+        "item": "bbb:blackstone_column",
+        "count": 3
+    }
+}

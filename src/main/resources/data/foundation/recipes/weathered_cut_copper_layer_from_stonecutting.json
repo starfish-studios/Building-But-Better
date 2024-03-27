@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "minecraft:weathered_cut_copper"
-    },
-    "result": "foundation:weathered_cut_copper_layer",
-    "count": 4
-}

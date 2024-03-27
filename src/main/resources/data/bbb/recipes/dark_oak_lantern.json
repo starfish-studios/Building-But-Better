@@ -1,0 +1,21 @@
+{
+    "group": "bbb/lanterns",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "_",
+        "T",
+        "_"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:dark_oak_slab"
+        },
+        "T": {
+            "item": "minecraft:torch"
+        }
+    },
+    "result": {
+        "item": "bbb:dark_oak_lantern",
+        "count": 1
+    }
+}

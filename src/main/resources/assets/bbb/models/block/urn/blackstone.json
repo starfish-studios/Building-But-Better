@@ -1,0 +1,7 @@
+{
+	"parent": "bbb:block/urn/stone",
+	"textures": {
+		"1": "bbb:block/urn/blackstone",
+		"particle": "block/blackstone"
+	}
+}

@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "foundation:polished_stone"
-    },
-    "result": "foundation:polished_stone_layer",
-    "count": 4
-}

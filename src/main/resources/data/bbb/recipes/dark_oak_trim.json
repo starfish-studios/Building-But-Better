@@ -1,0 +1,18 @@
+{
+    "group": "bbb/trims",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:dark_oak_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:dark_oak_trim",
+        "count": 3
+    }
+}

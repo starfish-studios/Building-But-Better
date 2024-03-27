@@ -1,7 +1,0 @@
-{
-	"parent": "foundation:block/urn/stone",
-	"textures": {
-		"1": "foundation:block/urn/deepslate",
-		"particle": "block/deepslate"
-	}
-}

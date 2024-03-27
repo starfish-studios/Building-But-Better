@@ -1,0 +1,7 @@
+{
+  "parent": "bbb:block/template/wooden_lantern",
+  "textures": {
+    "particle": "minecraft:block/oak_planks",
+    "texture": "bbb:block/lantern/oak"
+  }
+}

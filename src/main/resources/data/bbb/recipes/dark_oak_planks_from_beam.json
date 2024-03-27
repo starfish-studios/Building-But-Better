@@ -1,0 +1,13 @@
+{
+    "group": "planks",
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "bbb:dark_oak_beam"
+        }
+    ],
+    "result": {
+        "item": "minecraft:dark_oak_planks",
+        "count": 2
+    }
+}

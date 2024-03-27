@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "minecraft:purpur_block"
+    },
+    "result": "bbb:purpur_layer",
+    "count": 4
+}

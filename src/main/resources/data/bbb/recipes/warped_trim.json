@@ -1,0 +1,18 @@
+{
+    "group": "bbb/trims",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:warped_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:warped_trim",
+        "count": 3
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "group": "bbb/beam_stairs",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "bbb:warped_beam"
+        }
+    },
+    "result": {
+        "item": "bbb:warped_beam_stairs",
+        "count": 4
+    }
+}

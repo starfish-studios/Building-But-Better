@@ -1,0 +1,17 @@
+{
+    "group": "bbb/stone_fences",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:nether_bricks"
+        }
+    },
+    "result": {
+        "item": "bbb:nether_brick_fence",
+        "count": 5
+    }
+}

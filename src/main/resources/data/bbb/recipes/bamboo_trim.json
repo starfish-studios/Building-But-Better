@@ -1,0 +1,18 @@
+{
+    "group": "bbb/trims",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:bamboo_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:bamboo_trim",
+        "count": 3
+    }
+}

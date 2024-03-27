@@ -1,0 +1,33 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_planks": {
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "minecraft:cherry_logs"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+            "conditions": {
+                "recipe": "bbb:cherry_frame"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        }
+    },
+    "requirements": [
+        [
+            "has_planks",
+            "has_the_recipe"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "bbb:cherry_frame"
+        ]
+    },
+    "sends_telemetry_event": false
+}

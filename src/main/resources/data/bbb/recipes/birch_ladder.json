@@ -1,0 +1,21 @@
+{
+    "group": "bbb/ladders",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "#O#",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stick"
+        },
+        "O": {
+            "item": "minecraft:birch_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:birch_ladder",
+        "count": 4
+    }
+}

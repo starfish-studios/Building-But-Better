@@ -1,0 +1,19 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 64],
+	"textures": {
+		"texture": "bbb:block/gateway/oak"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [3, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 1.5, 4], "texture": "#texture"},
+				"east": {"uv": [8, 0, 0, 4], "texture": "#texture"},
+				"west": {"uv": [0, 0, 8, 4], "texture": "#texture"},
+				"up": {"uv": [0, 0, 8, 0.75], "rotation": 90, "texture": "#texture"}
+			}
+		}
+	]
+}

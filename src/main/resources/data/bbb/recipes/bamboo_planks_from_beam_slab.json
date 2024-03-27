@@ -1,0 +1,13 @@
+{
+    "group": "planks",
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "bbb:bamboo_beam_slab"
+        }
+    ],
+    "result": {
+        "item": "minecraft:bamboo_planks",
+        "count": 1
+    }
+}

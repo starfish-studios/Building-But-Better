@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=east": {
+            "model": "bbb:block/ladder/bamboo",
+            "y": 90
+        },
+        "facing=north": {
+            "model": "bbb:block/ladder/bamboo"
+        },
+        "facing=south": {
+            "model": "bbb:block/ladder/bamboo",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "bbb:block/ladder/bamboo",
+            "y": 270
+        }
+    }
+}

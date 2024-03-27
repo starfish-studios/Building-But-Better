@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "foundation:block/beam/oak_top",
-    "side": "foundation:block/beam/oak",
-    "top": "foundation:block/beam/oak_top"
-  }
-}

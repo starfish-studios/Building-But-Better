@@ -1,0 +1,18 @@
+{
+    "group": "bbb/trims",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:crimson_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:crimson_trim",
+        "count": 3
+    }
+}

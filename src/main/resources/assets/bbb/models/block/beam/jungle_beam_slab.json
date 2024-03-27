@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab",
+    "textures": {
+        "bottom": "bbb:block/beam/jungle_top",
+        "side": "bbb:block/beam/jungle",
+        "top": "bbb:block/beam/jungle_top"
+    }
+}

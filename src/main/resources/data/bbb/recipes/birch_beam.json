@@ -1,0 +1,18 @@
+{
+    "group": "bbb/beams",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stripped_birch_log"
+        }
+    },
+    "result": {
+        "item": "bbb:birch_beam",
+        "count": 6
+    }
+}

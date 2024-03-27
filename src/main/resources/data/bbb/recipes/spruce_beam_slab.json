@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bbb/beam_slabs",
+    "pattern": [
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "bbb:spruce_beam"
+        }
+    },
+    "result": {
+        "item": "bbb:spruce_beam_slab",
+        "count": 6
+    }
+}

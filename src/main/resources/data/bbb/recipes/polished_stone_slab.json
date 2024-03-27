@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bbb:polished_stone"
+    }
+  },
+  "result": {
+    "item": "bbb:polished_stone_slab",
+    "count": 6
+  }
+}

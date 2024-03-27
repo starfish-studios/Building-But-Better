@@ -1,0 +1,21 @@
+{
+    "group": "bbb/ladders",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "#O#",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stick"
+        },
+        "O": {
+            "item": "minecraft:acacia_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:acacia_ladder",
+        "count": 4
+    }
+}

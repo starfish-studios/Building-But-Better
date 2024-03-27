@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/fence/stone_fence_post",
+    "textures": {
+        "texture": "bbb:block/fence/deepslate_fence",
+        "particle": "minecraft:block/deepslate"
+    }
+}
