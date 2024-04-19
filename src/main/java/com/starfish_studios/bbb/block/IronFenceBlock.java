@@ -5,15 +5,30 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.WallSide;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class IronFenceBlock extends WallBlock {
+    public static final EnumProperty<WallSide> EAST = BlockStateProperties.EAST_WALL;
+    public static final EnumProperty<WallSide> NORTH = BlockStateProperties.NORTH_WALL;
+    public static final EnumProperty<WallSide> SOUTH = BlockStateProperties.SOUTH_WALL;
+    public static final EnumProperty<WallSide> WEST = BlockStateProperties.WEST_WALL;
+    private static final VoxelShape POST_TEST = Block.box(6, 0, 6, 10, 16, 10);
+    private static final VoxelShape NORTH_TEST = Block.box(7, 0, 0, 9, 16, 8);
+    private static final VoxelShape SOUTH_TEST = Block.box(7, 0, 8, 9, 16, 16);
+    private static final VoxelShape WEST_TEST = Block.box(0, 0, 7, 8, 16, 9);
+    private static final VoxelShape EAST_TEST = Block.box(8, 0, 7, 16, 16, 9);
 
     public IronFenceBlock(Properties properties) {
         super(properties);
@@ -23,6 +38,21 @@ public class IronFenceBlock extends WallBlock {
         Block block = blockState.getBlock();
         boolean bl2 = block instanceof FenceGateBlock && FenceGateBlock.connectsToDirection(blockState, direction);
         return blockState.is(BBBTags.BBBBlockTags.METAL_FENCES) || !isExceptionForConnection(blockState) && bl || bl2;
+    }
+
+    public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
+        VoxelShape shape = POST_TEST;
+
+        if (state.getValue(NORTH) != WallSide.NONE && state.getValue(SOUTH) != WallSide.NONE && state.getValue(EAST) == WallSide.NONE && state.getValue(WEST) == WallSide.NONE) shape = Shapes.empty();
+        if (state.getValue(NORTH) == WallSide.NONE && state.getValue(SOUTH) == WallSide.NONE && state.getValue(EAST) != WallSide.NONE && state.getValue(WEST) != WallSide.NONE) shape = Shapes.empty();
+        if (state.getValue(NORTH) != WallSide.NONE && state.getValue(SOUTH) != WallSide.NONE && state.getValue(EAST) != WallSide.NONE && state.getValue(WEST) != WallSide.NONE) shape = Shapes.empty();
+        if (blockGetter.getBlockState(blockPos.above()).getBlock() instanceof WallBlock && blockGetter.getBlockState(blockPos.above()).getValue(WallBlock.UP) && state.getValue(WallBlock.UP)) shape = POST_TEST;
+
+        if (state.getValue(NORTH) != WallSide.NONE) shape = Shapes.or(shape, NORTH_TEST);
+        if (state.getValue(EAST) != WallSide.NONE) shape = Shapes.or(shape, EAST_TEST);
+        if (state.getValue(SOUTH) != WallSide.NONE) shape = Shapes.or(shape, SOUTH_TEST);
+        if (state.getValue(WEST) != WallSide.NONE) shape = Shapes.or(shape, WEST_TEST);
+        return shape;
     }
 
     @Override
