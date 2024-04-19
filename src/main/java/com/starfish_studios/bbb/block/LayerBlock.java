@@ -1,14 +1,8 @@
 package com.starfish_studios.bbb.block;
 
-import com.starfish_studios.bbb.block.properties.BBBBlockStateProperties;
-import com.starfish_studios.bbb.block.properties.FrameStickDirection;
-import com.starfish_studios.bbb.block.properties.LayerNumber;
-import com.starfish_studios.bbb.registry.BBBSoundEvents;
 import com.starfish_studios.bbb.registry.BBBTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -17,7 +11,6 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -131,14 +124,13 @@ public class LayerBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public boolean canBeReplaced(BlockState blockState, BlockPlaceContext blockPlaceContext) {
-        return !blockPlaceContext.isSecondaryUseActive() && blockPlaceContext.getItemInHand().is(this.asItem()) && blockState.getValue(LAYERS) < 4 ||
-                super.canBeReplaced(blockState, blockPlaceContext);
+        if (blockState.getValue(FACING) != blockPlaceContext.getClickedFace()) return false;
+        return blockPlaceContext.getItemInHand().is(this.asItem()) && blockState.getValue(LAYERS) < 4 || super.canBeReplaced(blockState, blockPlaceContext);
     }
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        // If the player is sneaking, place the block as if it were a full block
-        if (context.getPlayer() != null && context.getPlayer().isCrouching()) {
+        if (context.getPlayer() != null && context.getPlayer().isShiftKeyDown()) {
             BlockState blockState = context.getLevel().getBlockState(context.getClickedPos());
             Direction[] var2 = context.getNearestLookingDirections();
             FluidState fluidState = context.getLevel().getFluidState(context.getClickedPos());
