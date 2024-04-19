@@ -67,6 +67,11 @@ public class StoneFenceBlock extends Block implements SimpleWaterloggedBlock {
         }
     }
 
+    @Override
+    public FluidState getFluidState(BlockState blockState) {
+        return blockState.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(blockState);
+    }
+
     public VoxelShape getVisualShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
         return this.getShape(blockState, blockGetter, blockPos, collisionContext);
     }

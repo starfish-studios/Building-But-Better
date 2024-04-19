@@ -42,6 +42,18 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
     public static VoxelShape LAYER_4_AABB = Block.box(0, 12, 0, 16, 16, 16);
     public static VoxelShape CORE_AABB = Block.box(2, 0, 2, 14, 16, 14);
 
+    public static VoxelShape LAYER_1_AABB_Z = Block.box(0, 0, 12, 16, 16, 16);
+    public static VoxelShape LAYER_2_AABB_Z = Block.box(0, 0, 8, 16, 16, 12);
+    public static VoxelShape LAYER_3_AABB_Z = Block.box(0, 0, 4, 16, 16, 8);
+    public static VoxelShape LAYER_4_AABB_Z = Block.box(0, 0, 0, 16, 16, 4);
+    public static VoxelShape CORE_AABB_Z = Block.box(2, 2, 0, 14, 14, 16);
+
+    public static VoxelShape LAYER_1_AABB_X = Block.box(0, 0, 0, 4, 16, 16);
+    public static VoxelShape LAYER_2_AABB_X = Block.box(4, 0, 0, 8, 16, 16);
+    public static VoxelShape LAYER_3_AABB_X = Block.box(8, 0, 0, 12, 16, 16);
+    public static VoxelShape LAYER_4_AABB_X = Block.box(12, 0, 0, 16, 16, 16);
+    public static VoxelShape CORE_AABB_X = Block.box(0, 2, 2, 16, 14, 14);
+
     public ColumnBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
@@ -56,11 +68,11 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-        VoxelShape shape = CORE_AABB;
-        if (blockState.getValue(LAYER_1)) shape = Shapes.or(shape, LAYER_1_AABB);
-        if (blockState.getValue(LAYER_2)) shape = Shapes.or(shape, LAYER_2_AABB);
-        if (blockState.getValue(LAYER_3)) shape = Shapes.or(shape, LAYER_3_AABB);
-        if (blockState.getValue(LAYER_4)) shape = Shapes.or(shape, LAYER_4_AABB);
+        VoxelShape shape = blockState.getValue(AXIS) == Direction.Axis.X ? CORE_AABB_X : blockState.getValue(AXIS) == Direction.Axis.Z ? CORE_AABB_Z : CORE_AABB;
+        if (blockState.getValue(LAYER_1)) shape = blockState.getValue(AXIS) == Direction.Axis.X ? Shapes.or(shape, LAYER_1_AABB_X) : blockState.getValue(AXIS) == Direction.Axis.Z ? Shapes.or(shape, LAYER_1_AABB_Z) : Shapes.or(shape, LAYER_1_AABB);
+        if (blockState.getValue(LAYER_2)) shape = blockState.getValue(AXIS) == Direction.Axis.X ? Shapes.or(shape, LAYER_2_AABB_X) : blockState.getValue(AXIS) == Direction.Axis.Z ? Shapes.or(shape, LAYER_2_AABB_Z) : Shapes.or(shape, LAYER_2_AABB);
+        if (blockState.getValue(LAYER_3)) shape = blockState.getValue(AXIS) == Direction.Axis.X ? Shapes.or(shape, LAYER_3_AABB_X) : blockState.getValue(AXIS) == Direction.Axis.Z ? Shapes.or(shape, LAYER_3_AABB_Z) : Shapes.or(shape, LAYER_3_AABB);
+        if (blockState.getValue(LAYER_4)) shape = blockState.getValue(AXIS) == Direction.Axis.X ? Shapes.or(shape, LAYER_4_AABB_X) : blockState.getValue(AXIS) == Direction.Axis.Z ? Shapes.or(shape, LAYER_4_AABB_Z) : Shapes.or(shape, LAYER_4_AABB);
         return shape;
     }
 
