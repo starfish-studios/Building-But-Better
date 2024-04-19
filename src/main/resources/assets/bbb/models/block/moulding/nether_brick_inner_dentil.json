@@ -1,5 +1,5 @@
 {
-    "parent": "bbb:block/template/moulding",
+    "parent": "bbb:block/template/moulding_inner_dentil",
     "textures": {
         "texture": "bbb:block/moulding/nether_brick",
         "particle": "block/nether_bricks"
