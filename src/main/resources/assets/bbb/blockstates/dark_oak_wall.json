@@ -2,13 +2,13 @@
     "multipart": [
         {
             "apply": {
-                "model": "bbb:block/wall/wood/dark_oak",
+                "model": "bbb:block/wall/dark_oak",
                 "uvlock": true
             }
         },
         {
             "apply": {
-                "model": "bbb:block/wall/wood/dark_oak_side",
+                "model": "bbb:block/wall/dark_oak_side",
                 "uvlock": true
             },
             "when": {
@@ -17,7 +17,7 @@
         },
         {
             "apply": {
-                "model": "bbb:block/wall/wood/dark_oak_side",
+                "model": "bbb:block/wall/dark_oak_side",
                 "uvlock": true,
                 "y": 90
             },
@@ -27,7 +27,7 @@
         },
         {
             "apply": {
-                "model": "bbb:block/wall/wood/dark_oak_side",
+                "model": "bbb:block/wall/dark_oak_side",
                 "uvlock": true,
                 "y": 180
             },
@@ -37,7 +37,7 @@
         },
         {
             "apply": {
-                "model": "bbb:block/wall/wood/dark_oak_side",
+                "model": "bbb:block/wall/dark_oak_side",
                 "uvlock": true,
                 "y": 270
             },
@@ -47,7 +47,7 @@
         },
         {
             "apply": {
-                "model": "bbb:block/wall/wood/dark_oak_side",
+                "model": "bbb:block/wall/dark_oak_side",
                 "uvlock": true
             },
             "when": {
@@ -56,7 +56,7 @@
         },
         {
             "apply": {
-                "model": "bbb:block/wall/wood/dark_oak_side",
+                "model": "bbb:block/wall/dark_oak_side",
                 "uvlock": true,
                 "y": 90
             },
@@ -66,7 +66,7 @@
         },
         {
             "apply": {
-                "model": "bbb:block/wall/wood/dark_oak_side",
+                "model": "bbb:block/wall/dark_oak_side",
                 "uvlock": true,
                 "y": 180
             },
@@ -76,7 +76,7 @@
         },
         {
             "apply": {
-                "model": "bbb:block/wall/wood/dark_oak_side",
+                "model": "bbb:block/wall/dark_oak_side",
                 "uvlock": true,
                 "y": 270
             },

@@ -13,11 +13,23 @@ import net.minecraft.world.level.material.PushReaction;
 import static net.minecraft.world.level.block.Blocks.litBlockEmission;
 
 public class BBBBlocks {
-
-    // public static final Block OAK_WALL = register("oak_wall", new WallBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
-
-
     // Stone, Blackstone, Deepslate, Nether Brick, Sandstone, Red Sandstone, Quartz
+
+    // region WALLS
+    public static final Block OAK_WALL = register("oak_wall", new WallBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
+    public static final Block SPRUCE_WALL = register("spruce_wall", new WallBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS))));
+    public static final Block BIRCH_WALL = register("birch_wall", new WallBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS))));
+    public static final Block JUNGLE_WALL = register("jungle_wall", new WallBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS))));
+    public static final Block ACACIA_WALL = register("acacia_wall", new WallBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS))));
+    public static final Block DARK_OAK_WALL = register("dark_oak_wall", new WallBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS))));
+    public static final Block CRIMSON_WALL = register("crimson_wall", new WallBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS))));
+    public static final Block WARPED_WALL = register("warped_wall", new WallBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS))));
+    public static final Block MANGROVE_WALL = register("mangrove_wall", new WallBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS))));
+    public static final Block BAMBOO_WALL = register("bamboo_wall", new WallBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS))));
+    public static final Block CHERRY_WALL = register("cherry_wall", new WallBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS))));
+    // endregion
+
+    // region BLOCKS
     public static final Block STONE_BLOCK = register("stone_block", new BlockBlock(BlockBlock.Types.STONE, FabricBlockSettings.copy((Blocks.STONE)).pushReaction(PushReaction.DESTROY)));
     public static final Block WALL_STONE_BLOCK = register("wall_stone_block", new WallBlockBlock(BlockBlock.Types.STONE, FabricBlockSettings.copy((Blocks.STONE)).pushReaction(PushReaction.DESTROY).dropsLike(STONE_BLOCK)));
     public static final Block BLACKSTONE_BLOCK = register("blackstone_block", new BlockBlock(BlockBlock.Types.BLACKSTONE, FabricBlockSettings.copy((Blocks.BLACKSTONE)).pushReaction(PushReaction.DESTROY)));
@@ -32,7 +44,9 @@ public class BBBBlocks {
     public static final Block WALL_RED_SANDSTONE_BLOCK = register("wall_red_sandstone_block", new WallBlockBlock(BlockBlock.Types.RED_SANDSTONE, FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).pushReaction(PushReaction.DESTROY).dropsLike(RED_SANDSTONE_BLOCK)));
     public static final Block QUARTZ_BLOCK = register("quartz_block", new BlockBlock(BlockBlock.Types.QUARTZ, FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).pushReaction(PushReaction.DESTROY)));
     public static final Block WALL_QUARTZ_BLOCK = register("wall_quartz_block", new WallBlockBlock(BlockBlock.Types.QUARTZ, FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).pushReaction(PushReaction.DESTROY).dropsLike(QUARTZ_BLOCK)));
+    // endregion
 
+    // region COLUMNS
     public static final Block STONE_COLUMN = register("stone_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS)).noOcclusion()));
     public static final Block BLACKSTONE_COLUMN = register("blackstone_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE)).noOcclusion()));
     public static final Block DEEPSLATE_COLUMN = register("deepslate_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS)).noOcclusion()));
@@ -40,9 +54,9 @@ public class BBBBlocks {
     public static final Block SANDSTONE_COLUMN = register("sandstone_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.SANDSTONE)).noOcclusion()));
     public static final Block RED_SANDSTONE_COLUMN = register("red_sandstone_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).noOcclusion()));
     public static final Block QUARTZ_COLUMN = register("quartz_column", new ColumnBlock(FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).noOcclusion()));
+    // endregion
 
-
-
+    // region URNS
     public static final Block STONE_URN = register("stone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.STONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final Block BLACKSTONE_URN = register("blackstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final Block DEEPSLATE_URN = register("deepslate_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS)).noOcclusion().pushReaction(PushReaction.DESTROY)));
@@ -50,9 +64,9 @@ public class BBBBlocks {
     public static final Block SANDSTONE_URN = register("sandstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.SANDSTONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final Block RED_SANDSTONE_URN = register("red_sandstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
     public static final Block QUARTZ_URN = register("quartz_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).noOcclusion().pushReaction(PushReaction.DESTROY)));
+    // endregion
 
-
-    // Stone, Blackstone, Deepslate, Nether Brick, Sandstone, Red Sandstone, Quartz
+    // region MOULDINGS
     public static final Block STONE_MOULDING = register("stone_moulding", new MouldingBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
     public static final Block BLACKSTONE_MOULDING = register("blackstone_moulding", new MouldingBlock((Blocks.BLACKSTONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.BLACKSTONE).noOcclusion()));
     public static final Block DEEPSLATE_MOULDING = register("deepslate_moulding", new MouldingBlock((Blocks.DEEPSLATE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).noOcclusion()));
@@ -60,8 +74,9 @@ public class BBBBlocks {
     public static final Block SANDSTONE_MOULDING = register("sandstone_moulding", new MouldingBlock((Blocks.SANDSTONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion()));
     public static final Block RED_SANDSTONE_MOULDING = register("red_sandstone_moulding", new MouldingBlock((Blocks.RED_SANDSTONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.RED_SANDSTONE).noOcclusion()));
     public static final Block QUARTZ_MOULDING = register("quartz_moulding", new MouldingBlock((Blocks.QUARTZ_BLOCK.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).noOcclusion()));
+    // endregion
 
-
+    // region STONE FENCES
     public static final Block STONE_FENCE = register("stone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.STONE_BRICKS)).noOcclusion()));
     public static final Block BLACKSTONE_FENCE = register("blackstone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE)).noOcclusion()));
     public static final Block DEEPSLATE_FENCE = register("deepslate_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS)).noOcclusion()));
@@ -69,9 +84,7 @@ public class BBBBlocks {
     public static final Block SANDSTONE_FENCE = register("sandstone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.SANDSTONE)).noOcclusion()));
     public static final Block RED_SANDSTONE_FENCE = register("red_sandstone_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).noOcclusion()));
     public static final Block QUARTZ_FENCE = register("quartz_fence", new StoneFenceBlock(FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).noOcclusion()));
-
-    
-
+    // endregion
 
     // region BEAMS
     public static final Block OAK_BEAM = register("oak_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_OAK_LOG))));
@@ -252,11 +265,6 @@ public class BBBBlocks {
     public static final Block WARPED_TRIM = register("warped_trim", new FacingConnectingBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS))));
     // endregion
 
-
-
-
-    // public static final Block PLASTER = register("plaster", new Block(FabricBlockSettings.copy((Blocks.GRAVEL))));
-
     public static final Block POLISHED_STONE = register("polished_stone", new Block(FabricBlockSettings.copy((Blocks.SMOOTH_STONE))));
     public static final Block POLISHED_STONE_STAIRS = register("polished_stone_stairs", new StairBlock((Blocks.SMOOTH_STONE.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)));
     public static final Block POLISHED_STONE_SLAB = register("polished_stone_slab", new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)));
@@ -265,19 +273,11 @@ public class BBBBlocks {
     public static final Block STONE_TILE_SLAB = register("stone_tile_slab", new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
 
-
-
     public static final Block BRAZIER = register("brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(15)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
     public static final Block SOUL_BRAZIER = register("soul_brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(10)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
 
-    // public static final Block ROOFING = register("roofing", new StairBlock((Blocks.STONE_BRICKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noOcclusion()));
-
 
     // public static final Block ROPE = register("rope", new ChainBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).forceSolidOn().strength(0.1F).sound(SoundType.WOOL).noOcclusion()));
-
-
-
-
 
     public static final Block IRON_FENCE = register("iron_fence", new IronFenceBlock(FabricBlockSettings.copy((Blocks.IRON_BARS)).noOcclusion()));
 

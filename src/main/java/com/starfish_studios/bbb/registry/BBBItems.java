@@ -14,7 +14,6 @@ public class BBBItems {
     public static final Item CORNERSTONE = register("bbb", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON).fireproof()));
     public static final Item HAMMER = register("hammer", new Item(new FabricItemSettings().maxCount(1).durability(256)));
 
-    // Stone, Blackstone, Deepslate, Nether Brick, Sandstone, Red Sandstone, Quartz
     public static final Item STONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.STONE_BLOCK, BBBBlocks.WALL_STONE_BLOCK, new Item.Properties(), Direction.DOWN));
     public static final Item BLACKSTONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.BLACKSTONE_BLOCK, BBBBlocks.WALL_BLACKSTONE_BLOCK, new Item.Properties(), Direction.DOWN));
     public static final Item DEEPSLATE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.DEEPSLATE_BLOCK, BBBBlocks.WALL_DEEPSLATE_BLOCK, new Item.Properties(), Direction.DOWN));
@@ -24,10 +23,18 @@ public class BBBItems {
     public static final Item QUARTZ_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.QUARTZ_BLOCK, BBBBlocks.WALL_QUARTZ_BLOCK, new Item.Properties(), Direction.DOWN));
 
 
+    public static final Item OAK_WALL = register("oak_wall", new BlockItem(BBBBlocks.OAK_WALL, new FabricItemSettings()));
+    public static final Item SPRUCE_WALL = register("spruce_wall", new BlockItem(BBBBlocks.SPRUCE_WALL, new FabricItemSettings()));
+    public static final Item BIRCH_WALL = register("birch_wall", new BlockItem(BBBBlocks.BIRCH_WALL, new FabricItemSettings()));
+    public static final Item JUNGLE_WALL = register("jungle_wall", new BlockItem(BBBBlocks.JUNGLE_WALL, new FabricItemSettings()));
+    public static final Item ACACIA_WALL = register("acacia_wall", new BlockItem(BBBBlocks.ACACIA_WALL, new FabricItemSettings()));
+    public static final Item DARK_OAK_WALL = register("dark_oak_wall", new BlockItem(BBBBlocks.DARK_OAK_WALL, new FabricItemSettings()));
+    public static final Item CRIMSON_WALL = register("crimson_wall", new BlockItem(BBBBlocks.CRIMSON_WALL, new FabricItemSettings()));
+    public static final Item WARPED_WALL = register("warped_wall", new BlockItem(BBBBlocks.WARPED_WALL, new FabricItemSettings()));
+    public static final Item MANGROVE_WALL = register("mangrove_wall", new BlockItem(BBBBlocks.MANGROVE_WALL, new FabricItemSettings()));
+    public static final Item BAMBOO_WALL = register("bamboo_wall", new BlockItem(BBBBlocks.BAMBOO_WALL, new FabricItemSettings()));
+    public static final Item CHERRY_WALL = register("cherry_wall", new BlockItem(BBBBlocks.CHERRY_WALL, new FabricItemSettings()));
 
-
-    // public static final Item PLASTER = register("plaster", new BlockItem(BBBBlocks.PLASTER, new FabricItemSettings()));
-    // public static final Item OAK_WALL = register("oak_wall", new BlockItem(BBBBlocks.OAK_WALL, new FabricItemSettings()));
 
 
     public static final Item STONE_URN = register("stone_urn", new DescriptionBlockItem(BBBBlocks.STONE_URN, new FabricItemSettings()));
