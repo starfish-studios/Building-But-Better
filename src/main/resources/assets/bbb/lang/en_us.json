@@ -75,6 +75,18 @@
     "block.bbb.bamboo_support": "Bamboo Support",
     "block.bbb.cherry_support": "Cherry Support",
 
+  "block.bbb.oak_wall": "Oak Wall",
+    "block.bbb.spruce_wall": "Spruce Wall",
+    "block.bbb.birch_wall": "Birch Wall",
+    "block.bbb.jungle_wall": "Jungle Wall",
+    "block.bbb.acacia_wall": "Acacia Wall",
+    "block.bbb.dark_oak_wall": "Dark Oak Wall",
+    "block.bbb.crimson_wall": "Crimson Wall",
+    "block.bbb.warped_wall": "Warped Wall",
+    "block.bbb.mangrove_wall": "Mangrove Wall",
+    "block.bbb.bamboo_wall": "Bamboo Wall",
+    "block.bbb.cherry_wall": "Cherry Wall",
+
   "block.bbb.oak_beam": "Oak Beam",
     "block.bbb.spruce_beam": "Spruce Beam",
     "block.bbb.birch_beam": "Birch Beam",
