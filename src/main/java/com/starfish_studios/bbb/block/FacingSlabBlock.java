@@ -75,7 +75,8 @@ public class FacingSlabBlock extends Block implements SimpleWaterloggedBlock {
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         Direction direction = context.getClickedFace();
         BlockState blockState = context.getLevel().getBlockState(context.getClickedPos());
-        if (blockState.is(this)) {
+
+        if (blockState.is(this) && blockState.getValue(TYPE) != SlabType.DOUBLE) {
             return blockState.setValue(TYPE, SlabType.DOUBLE).setValue(WATERLOGGED, false);
         } else {
             FluidState fluidState = context.getLevel().getFluidState(context.getClickedPos());
@@ -85,23 +86,8 @@ public class FacingSlabBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public boolean canBeReplaced(BlockState blockState, BlockPlaceContext blockPlaceContext) {
-        ItemStack itemStack = blockPlaceContext.getItemInHand();
-        SlabType slabType = blockState.getValue(TYPE);
-        if (slabType != SlabType.DOUBLE && itemStack.is(this.asItem())) {
-            if (blockPlaceContext.replacingClickedOnBlock()) {
-                boolean bl = blockPlaceContext.getClickLocation().y - (double)blockPlaceContext.getClickedPos().getY() > 0.5;
-                Direction direction = blockPlaceContext.getClickedFace();
-                if (slabType == SlabType.BOTTOM) {
-                    return direction == Direction.UP || bl && direction.getAxis().isHorizontal();
-                } else {
-                    return direction == Direction.DOWN || !bl && direction.getAxis().isHorizontal();
-                }
-            } else {
-                return true;
-            }
-        } else {
-            return false;
-        }
+        if (blockState.getValue(FACING) != blockPlaceContext.getClickedFace()) return false;
+        return blockPlaceContext.getItemInHand().is(this.asItem()) && blockState.getValue(TYPE) != SlabType.DOUBLE || super.canBeReplaced(blockState, blockPlaceContext);
     }
 
     @Override
