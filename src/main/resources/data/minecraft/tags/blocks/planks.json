@@ -1,0 +1,16 @@
+{
+  "values": [
+    "bbb:oak_beam",
+    "bbb:spruce_beam",
+    "bbb:birch_beam",
+    "bbb:jungle_beam",
+    "bbb:acacia_beam",
+    "bbb:dark_oak_beam",
+    "bbb:mangrove_beam",
+    "bbb:cherry_beam",
+    "bbb:bamboo_beam",
+    "bbb:crimson_beam",
+    "bbb:warped_beam"
+  ],
+  "replace": false
+}

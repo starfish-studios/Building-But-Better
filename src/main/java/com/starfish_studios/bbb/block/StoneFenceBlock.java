@@ -42,6 +42,12 @@ public class StoneFenceBlock extends Block implements SimpleWaterloggedBlock {
     public VoxelShape SOUTH_AABB = Block.box(4.0D, 0.0D, 12.0D, 12.0D, 16.0D, 16.0D);
     public VoxelShape WEST_AABB = Block.box(0.0D, 0.0D, 4.0D, 4.0D, 16.0D, 12.0D);
 
+    public VoxelShape PILLAR_COLLISION = Block.box(4.0D, 0.0D, 4.0D, 12.0D, 24.0D, 12.0D);
+    public VoxelShape NORTH_COLLISION = Block.box(4.0D, 0.0D, 0.0D, 12.0D, 24.0D, 4.0D);
+    public VoxelShape EAST_COLLISION = Block.box(12.0D, 0.0D, 4.0D, 16.0D, 24.0D, 12.0D);
+    public VoxelShape SOUTH_COLLISION = Block.box(4.0D, 0.0D, 12.0D, 12.0D, 24.0D, 16.0D);
+    public VoxelShape WEST_COLLISION = Block.box(0.0D, 0.0D, 4.0D, 4.0D, 24.0D, 12.0D);
+
     public StoneFenceBlock(Properties properties) {
         super(properties);
         this.registerDefaultState((this.stateDefinition.any()
@@ -58,6 +64,15 @@ public class StoneFenceBlock extends Block implements SimpleWaterloggedBlock {
         if (state.getValue(EAST)) shape = Shapes.or(shape, EAST_AABB);
         if (state.getValue(SOUTH)) shape = Shapes.or(shape, SOUTH_AABB);
         if (state.getValue(WEST)) shape = Shapes.or(shape, WEST_AABB);
+        return shape;
+    }
+
+    public VoxelShape getCollisionShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
+        VoxelShape shape = PILLAR_COLLISION;
+        if (blockState.getValue(NORTH)) shape = Shapes.or(shape, NORTH_COLLISION);
+        if (blockState.getValue(EAST)) shape = Shapes.or(shape, EAST_COLLISION);
+        if (blockState.getValue(SOUTH)) shape = Shapes.or(shape, SOUTH_COLLISION);
+        if (blockState.getValue(WEST)) shape = Shapes.or(shape, WEST_COLLISION);
         return shape;
     }
 

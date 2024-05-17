@@ -1,8 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"4": "bbb:block/iron_fence_bars",
-		"particle": "bbb:block/iron_fence"
+		"4": "bbb:block/iron_fence_bars"
 	},
 	"elements": [
 		{

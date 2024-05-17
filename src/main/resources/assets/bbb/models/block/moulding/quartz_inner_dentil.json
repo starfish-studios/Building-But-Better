@@ -2,6 +2,6 @@
     "parent": "bbb:block/template/moulding_inner_dentil",
     "textures": {
         "texture": "bbb:block/moulding/quartz",
-        "particle": "block/quartz_block"
+        "particle": "block/quartz_block_top"
     }
 }

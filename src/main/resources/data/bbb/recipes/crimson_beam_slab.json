@@ -1,6 +1,7 @@
 {
-    "type": "minecraft:crafting_shaped",
+    "category": "building",
     "group": "bbb/beam_slabs",
+    "type": "minecraft:crafting_shaped",
     "pattern": [
         "###"
     ],
