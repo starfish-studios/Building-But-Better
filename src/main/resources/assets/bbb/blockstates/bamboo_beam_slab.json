@@ -13,8 +13,8 @@
             "uvlock": false
         },
         "facing=north,type=bottom": {
-            "model": "bbb:block/beam/bamboo_beam_slab",
-            "x": 90,
+            "model": "bbb:block/beam/bamboo_beam_slab_top",
+            "x": -90,
             "uvlock": false
         },
         "facing=north,type=top": {
@@ -44,8 +44,8 @@
             "uvlock": false
         },
         "facing=west,type=bottom": {
-            "model": "bbb:block/beam/bamboo_beam_slab",
-            "x": 90,
+            "model": "bbb:block/beam/bamboo_beam_slab_top",
+            "x": -90,
             "y": 270,
             "uvlock": false
         },
@@ -76,12 +76,11 @@
             "uvlock": false
         },
         "facing=down,type=bottom": {
-            "model": "bbb:block/beam/bamboo_beam_slab",
-            "x": 180,
+            "model": "bbb:block/beam/bamboo_beam_slab_top",
             "uvlock": false
         },
         "facing=down,type=top": {
-            "model": "bbb:block/beam/bamboo_beam_slab_top",
+            "model": "bbb:block/beam/bamboo_beam_slab",
             "uvlock": false
         },
         "facing=down,type=double": {
