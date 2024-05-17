@@ -1,18 +1,19 @@
 {
-  "group": "bbb/mouldings",
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#  ",
-    "###",
-    "###"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:stone"
+    "category": "building",
+    "group": "bbb/mouldings",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "bbb:stone_moulding",
+        "count": 8
     }
-  },
-  "result": {
-    "item": "bbb:stone_moulding",
-    "count": 8
-  }
 }

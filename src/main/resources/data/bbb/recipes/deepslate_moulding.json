@@ -1,4 +1,5 @@
 {
+    "category": "building",
     "group": "bbb/mouldings",
     "type": "minecraft:crafting_shaped",
     "pattern": [
@@ -8,7 +9,7 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:cobbled_deepslate"
+            "item": "minecraft:deepslate"
         }
     },
     "result": {

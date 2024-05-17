@@ -1,4 +1,5 @@
 {
+    "category": "building",
     "type": "minecraft:crafting_shaped",
     "group": "bbb/layer",
     "key": {
@@ -12,6 +13,5 @@
     "result": {
         "count": 6,
         "item": "bbb:bamboo_mosaic_layer"
-    },
-    "show_notification": true
+    }
 }

@@ -1,0 +1,18 @@
+{
+    "category": "building",
+    "group": "bbb/urns",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:oak"
+        }
+    },
+    "result": {
+        "item": "bbb:oak_urn",
+        "count": 2
+    }
+}
