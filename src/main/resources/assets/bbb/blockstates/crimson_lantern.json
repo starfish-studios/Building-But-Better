@@ -4,7 +4,7 @@
             "model": "bbb:block/lantern/crimson"
         },
         "hanging=true": {
-            "model": "bbb:block/lantern/crimson"
+            "model": "bbb:block/lantern/crimson_hanging"
         }
     }
 }

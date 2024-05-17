@@ -4,7 +4,7 @@
             "model": "bbb:block/lantern/jungle"
         },
         "hanging=true": {
-            "model": "bbb:block/lantern/jungle"
+            "model": "bbb:block/lantern/jungle_hanging"
         }
     }
 }

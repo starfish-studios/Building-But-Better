@@ -4,7 +4,7 @@
       "model": "bbb:block/lantern/oak"
     },
     "hanging=true": {
-      "model": "bbb:block/lantern/oak"
+      "model": "bbb:block/lantern/oak_hanging"
     }
   }
 }

@@ -4,7 +4,7 @@
             "model": "bbb:block/lantern/birch"
         },
         "hanging=true": {
-            "model": "bbb:block/lantern/birch"
+            "model": "bbb:block/lantern/birch_hanging"
         }
     }
 }

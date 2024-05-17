@@ -2,6 +2,7 @@ package com.starfish_studios.bbb.registry;
 
 import com.starfish_studios.bbb.BuildingButBetter;
 import com.starfish_studios.bbb.item.DescriptionBlockItem;
+import com.starfish_studios.bbb.item.HammerItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
@@ -12,7 +13,7 @@ import net.minecraft.world.item.*;
 public class BBBItems {
 
     public static final Item CORNERSTONE = register("bbb", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON).fireproof()));
-    public static final Item HAMMER = register("hammer", new Item(new FabricItemSettings().maxCount(1).durability(256)));
+    public static final Item HAMMER = register("hammer", new HammerItem(new FabricItemSettings().maxCount(1).durability(256)));
 
     public static final Item STONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.STONE_BLOCK, BBBBlocks.WALL_STONE_BLOCK, new Item.Properties(), Direction.DOWN));
     public static final Item BLACKSTONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.BLACKSTONE_BLOCK, BBBBlocks.WALL_BLACKSTONE_BLOCK, new Item.Properties(), Direction.DOWN));
@@ -153,6 +154,7 @@ public class BBBItems {
     public static final Item BAMBOO_LAYER = register("bamboo_layer", new DescriptionBlockItem(BBBBlocks.BAMBOO_LAYER, new FabricItemSettings()));
     public static final Item BAMBOO_MOSAIC_LAYER = register("bamboo_mosaic_layer", new DescriptionBlockItem(BBBBlocks.BAMBOO_MOSAIC_LAYER, new FabricItemSettings()));
     public static final Item CHERRY_LAYER = register("cherry_layer", new DescriptionBlockItem(BBBBlocks.CHERRY_LAYER, new FabricItemSettings()));
+    public static final Item MOSS_LAYER = register("moss_layer", new DescriptionBlockItem(BBBBlocks.MOSS_LAYER, new FabricItemSettings()));
     public static final Item STONE_LAYER = register("stone_layer", new DescriptionBlockItem(BBBBlocks.STONE_LAYER, new FabricItemSettings()));
     public static final Item COBBLESTONE_LAYER = register("cobblestone_layer", new DescriptionBlockItem(BBBBlocks.COBBLESTONE_LAYER, new FabricItemSettings()));
     public static final Item MOSSY_COBBLESTONE_LAYER = register("mossy_cobblestone_layer", new DescriptionBlockItem(BBBBlocks.MOSSY_COBBLESTONE_LAYER, new FabricItemSettings()));
@@ -244,7 +246,7 @@ public class BBBItems {
     // endregion
 
 
-    // public static final Item ROPE = register("rope", new BlockItem(BBBBlocks.ROPE, new FabricItemSettings()));
+     public static final Item ROPE = register("rope", new BlockItem(BBBBlocks.ROPE, new FabricItemSettings()));
 
     // region WOODEN LANTERNS
     public static final Item OAK_LANTERN = register("oak_lantern", new BlockItem(BBBBlocks.OAK_LANTERN, new FabricItemSettings()));

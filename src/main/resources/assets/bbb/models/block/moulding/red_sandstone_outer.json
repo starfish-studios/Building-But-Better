@@ -1,7 +1,7 @@
 {
     "parent": "bbb:block/template/moulding_outer",
     "textures": {
-        "texture": "bbb:block/moulding/sandstone",
-        "particle": "block/sandstone"
+        "texture": "bbb:block/moulding/red_sandstone",
+        "particle": "block/red_sandstone"
     }
 }

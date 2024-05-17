@@ -30,7 +30,7 @@ public class BBBVanillaIntegration {
         private static void registerBlockRenderLayers() {
             BlockRenderLayerMap.INSTANCE.putBlocks(RenderType.cutout(),
                     BBBBlocks.IRON_FENCE,
-                    // BBBBlocks.ROPE,
+                    BBBBlocks.ROPE,
                     BBBBlocks.BRAZIER,
                     BBBBlocks.SOUL_BRAZIER,
                     BBBBlocks.STONE_URN,
@@ -51,7 +51,6 @@ public class BBBVanillaIntegration {
                     BBBBlocks.MANGROVE_LADDER,
                     BBBBlocks.BAMBOO_LADDER,
                     BBBBlocks.CHERRY_LADDER
-                    // BBBBlocks.OAK_WALL
             );
         }
     }

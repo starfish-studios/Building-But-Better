@@ -4,7 +4,7 @@
             "model": "bbb:block/lantern/mangrove"
         },
         "hanging=true": {
-            "model": "bbb:block/lantern/mangrove"
+            "model": "bbb:block/lantern/mangrove_hanging"
         }
     }
 }

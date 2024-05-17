@@ -197,7 +197,8 @@
       "block.bbb.bamboo_layer": "Bamboo Layer",
       "block.bbb.bamboo_mosaic_layer": "Bamboo Mosaic Layer",
 
-  "block.bbb.stone_layer": "Stone Layer",
+  "block.bbb.moss_layer": "Moss Layer",
+    "block.bbb.stone_layer": "Stone Layer",
       "block.bbb.smooth_stone_layer": "Smooth Stone Layer",
       "block.bbb.stone_brick_layer": "Stone Brick Layer",
       "block.bbb.sandstone_layer": "Sandstone Layer",

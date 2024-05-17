@@ -4,7 +4,7 @@
             "model": "bbb:block/lantern/warped"
         },
         "hanging=true": {
-            "model": "bbb:block/lantern/warped"
+            "model": "bbb:block/lantern/warped_hanging"
         }
     }
 }

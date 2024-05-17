@@ -1,76 +1,77 @@
 {
     "credit": "Made with Blockbench",
+    "parent": "minecraft:block/snow_height4",
     "textures": {
-        "top": "bbb:block/beam/warped_top",
-        "particle": "bbb:block/beam/warped",
-        "sides": "bbb:block/beam/warped"
+        "particle": "minecraft:block/moss_block",
+        "texture": "minecraft:block/moss_block"
     },
     "elements": [
         {
             "from": [
-                4,
                 0,
-                4
+                0,
+                0
             ],
             "to": [
-                12,
                 16,
-                12
+                4,
+                16
             ],
+            "color": 1,
             "faces": {
                 "north": {
                     "uv": [
-                        8,
                         0,
+                        12,
                         16,
                         16
                     ],
-                    "texture": "#sides"
+                    "texture": "#texture"
                 },
                 "east": {
                     "uv": [
-                        8,
                         0,
+                        12,
                         16,
                         16
                     ],
-                    "texture": "#sides"
+                    "texture": "#texture"
                 },
                 "south": {
                     "uv": [
-                        8,
                         0,
+                        12,
                         16,
                         16
                     ],
-                    "texture": "#sides"
+                    "texture": "#texture"
                 },
                 "west": {
                     "uv": [
-                        8,
+                        0,
+                        12,
+                        16,
+                        16
+                    ],
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        0,
                         0,
                         16,
                         16
                     ],
-                    "texture": "#sides"
-                },
-                "up": {
-                    "uv": [
-                        8,
-                        8,
-                        16,
-                        16
-                    ],
-                    "texture": "#top"
+                    "texture": "#texture"
                 },
                 "down": {
                     "uv": [
+                        0,
+                        0,
                         16,
-                        16,
-                        8,
-                        8
+                        16
                     ],
-                    "texture": "#top"
+                    "texture": "#texture"
                 }
             }
         }

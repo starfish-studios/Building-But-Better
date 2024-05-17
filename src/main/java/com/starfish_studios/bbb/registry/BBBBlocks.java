@@ -16,17 +16,17 @@ public class BBBBlocks {
     // Stone, Blackstone, Deepslate, Nether Brick, Sandstone, Red Sandstone, Quartz
 
     // region WALLS
-    public static final Block OAK_WALL = register("oak_wall", new WallBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
-    public static final Block SPRUCE_WALL = register("spruce_wall", new WallBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS))));
-    public static final Block BIRCH_WALL = register("birch_wall", new WallBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS))));
-    public static final Block JUNGLE_WALL = register("jungle_wall", new WallBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS))));
-    public static final Block ACACIA_WALL = register("acacia_wall", new WallBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS))));
-    public static final Block DARK_OAK_WALL = register("dark_oak_wall", new WallBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS))));
-    public static final Block CRIMSON_WALL = register("crimson_wall", new WallBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS))));
-    public static final Block WARPED_WALL = register("warped_wall", new WallBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS))));
-    public static final Block MANGROVE_WALL = register("mangrove_wall", new WallBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS))));
-    public static final Block BAMBOO_WALL = register("bamboo_wall", new WallBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS))));
-    public static final Block CHERRY_WALL = register("cherry_wall", new WallBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS))));
+    public static final Block OAK_WALL = register("oak_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
+    public static final Block SPRUCE_WALL = register("spruce_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS))));
+    public static final Block BIRCH_WALL = register("birch_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS))));
+    public static final Block JUNGLE_WALL = register("jungle_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS))));
+    public static final Block ACACIA_WALL = register("acacia_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS))));
+    public static final Block DARK_OAK_WALL = register("dark_oak_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS))));
+    public static final Block CRIMSON_WALL = register("crimson_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS))));
+    public static final Block WARPED_WALL = register("warped_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS))));
+    public static final Block MANGROVE_WALL = register("mangrove_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS))));
+    public static final Block BAMBOO_WALL = register("bamboo_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS))));
+    public static final Block CHERRY_WALL = register("cherry_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS))));
     // endregion
 
     // region BLOCKS
@@ -164,6 +164,7 @@ public class BBBBlocks {
     public static final Block BAMBOO_LAYER = register("bamboo_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS))));
     public static final Block BAMBOO_MOSAIC_LAYER = register("bamboo_mosaic_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.BAMBOO_MOSAIC))));
     public static final Block CHERRY_LAYER = register("cherry_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS))));
+    public static final Block MOSS_LAYER = register("moss_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.MOSS_BLOCK))));
     public static final Block STONE_LAYER = register("stone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.STONE))));
     public static final Block COBBLESTONE_LAYER = register("cobblestone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.COBBLESTONE))));
     public static final Block MOSSY_COBBLESTONE_LAYER = register("mossy_cobblestone_layer", new LayerBlock(FabricBlockSettings.copy((Blocks.MOSSY_COBBLESTONE))));
@@ -277,7 +278,7 @@ public class BBBBlocks {
     public static final Block SOUL_BRAZIER = register("soul_brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(10)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
 
 
-    // public static final Block ROPE = register("rope", new ChainBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).forceSolidOn().strength(0.1F).sound(SoundType.WOOL).noOcclusion()));
+     public static final Block ROPE = register("rope", new ChainBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).forceSolidOn().strength(0.1F).sound(SoundType.WOOL).noOcclusion()));
 
     public static final Block IRON_FENCE = register("iron_fence", new IronFenceBlock(FabricBlockSettings.copy((Blocks.IRON_BARS)).noOcclusion()));
 
@@ -287,7 +288,7 @@ public class BBBBlocks {
 
 
     private static Block register(String id, Block block) {
-        // System.out.println(BBB.MOD_ID + ":" + id);
+
         return Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(BuildingButBetter.MOD_ID, id), block);
     }
 }

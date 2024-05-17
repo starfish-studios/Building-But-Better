@@ -30,6 +30,8 @@ public class BuildingButBetter implements ModInitializer {
 				BBBBlocks.class
 		);
 
+		// region CREATIVE TAB INJECTIONS
+
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> {
 			entries.addAfter(Items.SOUL_CAMPFIRE, BRAZIER);
 			entries.addAfter(BRAZIER, SOUL_BRAZIER);
@@ -259,6 +261,8 @@ public class BuildingButBetter implements ModInitializer {
 
 			//endregion
 		});
+
+		// endregion
 
 		Util.make(new LinkedHashMap<Block, Block>(), pairs -> {
 			pairs.put(BBBBlocks.CUT_COPPER_LAYER, BBBBlocks.WAXED_CUT_COPPER_LAYER);

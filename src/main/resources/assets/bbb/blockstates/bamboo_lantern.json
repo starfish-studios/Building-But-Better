@@ -4,7 +4,7 @@
             "model": "bbb:block/lantern/bamboo"
         },
         "hanging=true": {
-            "model": "bbb:block/lantern/bamboo"
+            "model": "bbb:block/lantern/bamboo_hanging"
         }
     }
 }

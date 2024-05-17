@@ -23,7 +23,7 @@ public class IronFenceBlock extends WallBlock {
     public static final EnumProperty<WallSide> NORTH = BlockStateProperties.NORTH_WALL;
     public static final EnumProperty<WallSide> SOUTH = BlockStateProperties.SOUTH_WALL;
     public static final EnumProperty<WallSide> WEST = BlockStateProperties.WEST_WALL;
-    private static final VoxelShape POST_TEST = Block.box(6, 0, 6, 10, 16, 10);
+    private static final VoxelShape POST_TEST = Block.box(4, 0, 4, 12, 16, 12);
     private static final VoxelShape NORTH_TEST = Block.box(7, 0, 0, 9, 16, 8);
     private static final VoxelShape SOUTH_TEST = Block.box(7, 0, 8, 9, 16, 16);
     private static final VoxelShape WEST_TEST = Block.box(0, 0, 7, 8, 16, 9);
@@ -46,7 +46,6 @@ public class IronFenceBlock extends WallBlock {
         if (state.getValue(NORTH) == WallSide.NONE && state.getValue(SOUTH) == WallSide.NONE && state.getValue(EAST) != WallSide.NONE && state.getValue(WEST) != WallSide.NONE) shape = Shapes.empty();
         if (state.getValue(NORTH) != WallSide.NONE && state.getValue(SOUTH) != WallSide.NONE && state.getValue(EAST) != WallSide.NONE && state.getValue(WEST) != WallSide.NONE) shape = Shapes.empty();
         if (blockGetter.getBlockState(blockPos.above()).getBlock() instanceof WallBlock && blockGetter.getBlockState(blockPos.above()).getValue(WallBlock.UP) && state.getValue(WallBlock.UP)) shape = POST_TEST;
-
         if (state.getValue(NORTH) != WallSide.NONE) shape = Shapes.or(shape, NORTH_TEST);
         if (state.getValue(EAST) != WallSide.NONE) shape = Shapes.or(shape, EAST_TEST);
         if (state.getValue(SOUTH) != WallSide.NONE) shape = Shapes.or(shape, SOUTH_TEST);

@@ -17,6 +17,7 @@ public class BBBCreativeModeTab {
     public static final CreativeModeTab ITEM_GROUP = register("item_group", FabricItemGroup.builder().icon(CORNERSTONE::getDefaultInstance).title(Component.translatable("itemGroup.bbb.tab")).displayItems((featureFlagSet, output) -> {
 
         output.accept(HAMMER);
+        output.accept(ROPE);
 
         // output.accept(PLASTER);
 
@@ -213,6 +214,7 @@ public class BBBCreativeModeTab {
         output.accept(BAMBOO_LAYER);
         output.accept(BAMBOO_MOSAIC_LAYER);
         output.accept(CHERRY_LAYER);
+        output.accept(MOSS_LAYER);
         output.accept(STONE_LAYER);
         output.accept(COBBLESTONE_LAYER);
         output.accept(MOSSY_COBBLESTONE_LAYER);

@@ -4,7 +4,7 @@
             "model": "bbb:block/lantern/acacia"
         },
         "hanging=true": {
-            "model": "bbb:block/lantern/acacia"
+            "model": "bbb:block/lantern/acacia_hanging"
         }
     }
 }
