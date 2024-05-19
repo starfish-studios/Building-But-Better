@@ -1,0 +1,18 @@
+{
+  "category": "building",
+  "group": "bbb/walls",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stripped_oak_log"
+    }
+  },
+  "result": {
+    "item": "bbb:oak_wall",
+    "count": 6
+  }
+}

@@ -1,12 +1,12 @@
 {
     "parent": "minecraft:recipes/root",
     "criteria": {
-        "has_log": {
+        "has_ingot": {
             "conditions": {
                 "items": [
                     {
                         "items": [
-                            "minecraft:stripped_crimson_stem"
+                            "minecraft:iron_ingot"
                         ]
                     }
                 ]
@@ -15,20 +15,20 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "bbb:crimson_beam"
+                "recipe": "bbb:iron_fence"
             },
             "trigger": "minecraft:recipe_unlocked"
         }
     },
     "requirements": [
         [
-            "has_log",
+            "has_ingot",
             "has_the_recipe"
         ]
     ],
     "rewards": {
         "recipes": [
-            "bbb:crimson_beam"
+            "bbb:iron_fence"
         ]
     }
 }

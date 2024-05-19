@@ -1,12 +1,12 @@
 {
     "parent": "minecraft:recipes/root",
     "criteria": {
-        "has_block": {
+        "has_logs": {
             "conditions": {
                 "items": [
                     {
                         "items": [
-                            "minecraft:oak"
+                            "minecraft:stripped_warped_stem"
                         ]
                     }
                 ]
@@ -15,20 +15,21 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "bbb:oak_column"
+                "recipe": "bbb:warped_wall"
             },
             "trigger": "minecraft:recipe_unlocked"
         }
     },
     "requirements": [
         [
-            "has_block",
+            "has_logs",
             "has_the_recipe"
         ]
     ],
     "rewards": {
         "recipes": [
-            "bbb:oak_column"
+            "bbb:warped_wall"
         ]
-    }
+    },
+    "sends_telemetry_event": false
 }
