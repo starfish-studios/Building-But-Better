@@ -2,8 +2,10 @@
   "required": true,
   "package": "com.starfish_studios.bbb.mixin",
   "compatibilityLevel": "JAVA_17",
+  "refmap": "bbb.refmap.json",
   "mixins": [
-    "PaintingMixin"
+    "PaintingMixin",
+    "WallBlockAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

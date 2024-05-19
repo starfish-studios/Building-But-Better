@@ -3,288 +3,290 @@ package com.starfish_studios.bbb.registry;
 import com.starfish_studios.bbb.BuildingButBetter;
 import com.starfish_studios.bbb.item.DescriptionBlockItem;
 import com.starfish_studios.bbb.item.HammerItem;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.StandingAndWallBlockItem;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
+@Mod.EventBusSubscriber(modid = BuildingButBetter.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BBBItems {
 
-    public static final Item CORNERSTONE = register("bbb", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON).fireproof()));
-    public static final Item HAMMER = register("hammer", new HammerItem(new FabricItemSettings().maxCount(1).durability(256)));
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BuildingButBetter.MOD_ID);
 
-    public static final Item STONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.STONE_BLOCK, BBBBlocks.WALL_STONE_BLOCK, new Item.Properties(), Direction.DOWN));
-    public static final Item BLACKSTONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.BLACKSTONE_BLOCK, BBBBlocks.WALL_BLACKSTONE_BLOCK, new Item.Properties(), Direction.DOWN));
-    public static final Item DEEPSLATE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.DEEPSLATE_BLOCK, BBBBlocks.WALL_DEEPSLATE_BLOCK, new Item.Properties(), Direction.DOWN));
-    public static final Item NETHER_BRICK_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.NETHER_BRICK_BLOCK, BBBBlocks.WALL_NETHER_BRICK_BLOCK, new Item.Properties(), Direction.DOWN));
-    public static final Item SANDSTONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.SANDSTONE_BLOCK, BBBBlocks.WALL_SANDSTONE_BLOCK, new Item.Properties(), Direction.DOWN));
-    public static final Item RED_SANDSTONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.RED_SANDSTONE_BLOCK, BBBBlocks.WALL_RED_SANDSTONE_BLOCK, new Item.Properties(), Direction.DOWN));
-    public static final Item QUARTZ_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.QUARTZ_BLOCK, BBBBlocks.WALL_QUARTZ_BLOCK, new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> CORNERSTONE = ITEMS.register("bbb", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON).fireResistant()));
+    public static final RegistryObject<Item> HAMMER = ITEMS.register("hammer", () -> new HammerItem(new Item.Properties().stacksTo(1).durability(256)));
 
-
-    public static final Item OAK_WALL = register("oak_wall", new BlockItem(BBBBlocks.OAK_WALL, new FabricItemSettings()));
-    public static final Item SPRUCE_WALL = register("spruce_wall", new BlockItem(BBBBlocks.SPRUCE_WALL, new FabricItemSettings()));
-    public static final Item BIRCH_WALL = register("birch_wall", new BlockItem(BBBBlocks.BIRCH_WALL, new FabricItemSettings()));
-    public static final Item JUNGLE_WALL = register("jungle_wall", new BlockItem(BBBBlocks.JUNGLE_WALL, new FabricItemSettings()));
-    public static final Item ACACIA_WALL = register("acacia_wall", new BlockItem(BBBBlocks.ACACIA_WALL, new FabricItemSettings()));
-    public static final Item DARK_OAK_WALL = register("dark_oak_wall", new BlockItem(BBBBlocks.DARK_OAK_WALL, new FabricItemSettings()));
-    public static final Item CRIMSON_WALL = register("crimson_wall", new BlockItem(BBBBlocks.CRIMSON_WALL, new FabricItemSettings()));
-    public static final Item WARPED_WALL = register("warped_wall", new BlockItem(BBBBlocks.WARPED_WALL, new FabricItemSettings()));
-    public static final Item MANGROVE_WALL = register("mangrove_wall", new BlockItem(BBBBlocks.MANGROVE_WALL, new FabricItemSettings()));
-    public static final Item BAMBOO_WALL = register("bamboo_wall", new BlockItem(BBBBlocks.BAMBOO_WALL, new FabricItemSettings()));
-    public static final Item CHERRY_WALL = register("cherry_wall", new BlockItem(BBBBlocks.CHERRY_WALL, new FabricItemSettings()));
+    public static final RegistryObject<Item> STONE_BLOCK = ITEMS.register("stone_block", () -> new StandingAndWallBlockItem(BBBBlocks.STONE_BLOCK.get(), BBBBlocks.WALL_STONE_BLOCK.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> BLACKSTONE_BLOCK = ITEMS.register("blackstone_block", () -> new StandingAndWallBlockItem(BBBBlocks.BLACKSTONE_BLOCK.get(), BBBBlocks.WALL_BLACKSTONE_BLOCK.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> DEEPSLATE_BLOCK = ITEMS.register("deepslate_block", () -> new StandingAndWallBlockItem(BBBBlocks.DEEPSLATE_BLOCK.get(), BBBBlocks.WALL_DEEPSLATE_BLOCK.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> NETHER_BRICK_BLOCK = ITEMS.register("nether_brick_block", () -> new StandingAndWallBlockItem(BBBBlocks.NETHER_BRICK_BLOCK.get(), BBBBlocks.WALL_NETHER_BRICK_BLOCK.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> SANDSTONE_BLOCK = ITEMS.register("sandstone_block", () -> new StandingAndWallBlockItem(BBBBlocks.SANDSTONE_BLOCK.get(), BBBBlocks.WALL_SANDSTONE_BLOCK.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> RED_SANDSTONE_BLOCK = ITEMS.register("red_sandstone_block", () -> new StandingAndWallBlockItem(BBBBlocks.RED_SANDSTONE_BLOCK.get(), BBBBlocks.WALL_RED_SANDSTONE_BLOCK.get(), new Item.Properties(), Direction.DOWN));
+    public static final RegistryObject<Item> QUARTZ_BLOCK = ITEMS.register("quartz_block", () -> new StandingAndWallBlockItem(BBBBlocks.QUARTZ_BLOCK.get(), BBBBlocks.WALL_QUARTZ_BLOCK.get(), new Item.Properties(), Direction.DOWN));
 
 
-
-    public static final Item STONE_URN = register("stone_urn", new DescriptionBlockItem(BBBBlocks.STONE_URN, new FabricItemSettings()));
-    public static final Item BLACKSTONE_URN = register("blackstone_urn", new DescriptionBlockItem(BBBBlocks.BLACKSTONE_URN, new FabricItemSettings()));
-    public static final Item DEEPSLATE_URN = register("deepslate_urn", new DescriptionBlockItem(BBBBlocks.DEEPSLATE_URN, new FabricItemSettings()));
-    public static final Item NETHER_BRICK_URN = register("nether_brick_urn", new DescriptionBlockItem(BBBBlocks.NETHER_BRICK_URN, new FabricItemSettings()));
-    public static final Item SANDSTONE_URN = register("sandstone_urn", new DescriptionBlockItem(BBBBlocks.SANDSTONE_URN, new FabricItemSettings()));
-    public static final Item RED_SANDSTONE_URN = register("red_sandstone_urn", new DescriptionBlockItem(BBBBlocks.RED_SANDSTONE_URN, new FabricItemSettings()));
-    public static final Item QUARTZ_URN = register("quartz_urn", new DescriptionBlockItem(BBBBlocks.QUARTZ_URN, new FabricItemSettings()));
-
-
-    public static final Item STONE_MOULDING = register("stone_moulding", new DescriptionBlockItem(BBBBlocks.STONE_MOULDING, new FabricItemSettings()));
-    public static final Item BLACKSTONE_MOULDING = register("blackstone_moulding", new DescriptionBlockItem(BBBBlocks.BLACKSTONE_MOULDING, new FabricItemSettings()));
-    public static final Item DEEPSLATE_MOULDING = register("deepslate_moulding", new DescriptionBlockItem(BBBBlocks.DEEPSLATE_MOULDING, new FabricItemSettings()));
-    public static final Item NETHER_BRICK_MOULDING = register("nether_brick_moulding", new DescriptionBlockItem(BBBBlocks.NETHER_BRICK_MOULDING, new FabricItemSettings()));
-    public static final Item SANDSTONE_MOULDING = register("sandstone_moulding", new DescriptionBlockItem(BBBBlocks.SANDSTONE_MOULDING, new FabricItemSettings()));
-    public static final Item RED_SANDSTONE_MOULDING = register("red_sandstone_moulding", new DescriptionBlockItem(BBBBlocks.RED_SANDSTONE_MOULDING, new FabricItemSettings()));
-    public static final Item QUARTZ_MOULDING = register("quartz_moulding", new DescriptionBlockItem(BBBBlocks.QUARTZ_MOULDING, new FabricItemSettings()));
+    public static final RegistryObject<Item> OAK_WALL = ITEMS.register("oak_wall", () -> new BlockItem(BBBBlocks.OAK_WALL.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPRUCE_WALL = ITEMS.register("spruce_wall", () -> new BlockItem(BBBBlocks.SPRUCE_WALL.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BIRCH_WALL = ITEMS.register("birch_wall", () -> new BlockItem(BBBBlocks.BIRCH_WALL.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JUNGLE_WALL = ITEMS.register("jungle_wall", () -> new BlockItem(BBBBlocks.JUNGLE_WALL.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ACACIA_WALL = ITEMS.register("acacia_wall", () -> new BlockItem(BBBBlocks.ACACIA_WALL.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_OAK_WALL = ITEMS.register("dark_oak_wall", () -> new BlockItem(BBBBlocks.DARK_OAK_WALL.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRIMSON_WALL = ITEMS.register("crimson_wall", () -> new BlockItem(BBBBlocks.CRIMSON_WALL.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WARPED_WALL = ITEMS.register("warped_wall", () -> new BlockItem(BBBBlocks.WARPED_WALL.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MANGROVE_WALL = ITEMS.register("mangrove_wall", () -> new BlockItem(BBBBlocks.MANGROVE_WALL.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_WALL = ITEMS.register("bamboo_wall", () -> new BlockItem(BBBBlocks.BAMBOO_WALL.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHERRY_WALL = ITEMS.register("cherry_wall", () -> new BlockItem(BBBBlocks.CHERRY_WALL.get(), new Item.Properties()));
 
 
-    public static final Item STONE_COLUMN = register("stone_column", new DescriptionBlockItem(BBBBlocks.STONE_COLUMN, new FabricItemSettings()));
-    public static final Item DEEPSLATE_COLUMN = register("deepslate_column", new DescriptionBlockItem(BBBBlocks.DEEPSLATE_COLUMN, new FabricItemSettings()));
-    public static final Item SANDSTONE_COLUMN = register("sandstone_column", new DescriptionBlockItem(BBBBlocks.SANDSTONE_COLUMN, new FabricItemSettings()));
-    public static final Item RED_SANDSTONE_COLUMN = register("red_sandstone_column", new DescriptionBlockItem(BBBBlocks.RED_SANDSTONE_COLUMN, new FabricItemSettings()));
-    public static final Item NETHER_BRICK_COLUMN = register("nether_brick_column", new DescriptionBlockItem(BBBBlocks.NETHER_BRICK_COLUMN, new FabricItemSettings()));
-    public static final Item BLACKSTONE_COLUMN = register("blackstone_column", new DescriptionBlockItem(BBBBlocks.BLACKSTONE_COLUMN, new FabricItemSettings()));
-    public static final Item QUARTZ_COLUMN = register("quartz_column", new DescriptionBlockItem(BBBBlocks.QUARTZ_COLUMN, new FabricItemSettings()));
+    public static final RegistryObject<Item> STONE_URN = ITEMS.register("stone_urn", () -> new DescriptionBlockItem(BBBBlocks.STONE_URN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BLACKSTONE_URN = ITEMS.register("blackstone_urn", () -> new DescriptionBlockItem(BBBBlocks.BLACKSTONE_URN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DEEPSLATE_URN = ITEMS.register("deepslate_urn", () -> new DescriptionBlockItem(BBBBlocks.DEEPSLATE_URN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> NETHER_BRICK_URN = ITEMS.register("nether_brick_urn", () -> new DescriptionBlockItem(BBBBlocks.NETHER_BRICK_URN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SANDSTONE_URN = ITEMS.register("sandstone_urn", () -> new DescriptionBlockItem(BBBBlocks.SANDSTONE_URN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RED_SANDSTONE_URN = ITEMS.register("red_sandstone_urn", () -> new DescriptionBlockItem(BBBBlocks.RED_SANDSTONE_URN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> QUARTZ_URN = ITEMS.register("quartz_urn", () -> new DescriptionBlockItem(BBBBlocks.QUARTZ_URN.get(), new Item.Properties()));
+
+
+    public static final RegistryObject<Item> STONE_MOULDING = ITEMS.register("stone_moulding", () -> new DescriptionBlockItem(BBBBlocks.STONE_MOULDING.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BLACKSTONE_MOULDING = ITEMS.register("blackstone_moulding", () -> new DescriptionBlockItem(BBBBlocks.BLACKSTONE_MOULDING.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DEEPSLATE_MOULDING = ITEMS.register("deepslate_moulding", () -> new DescriptionBlockItem(BBBBlocks.DEEPSLATE_MOULDING.get(), new Item.Properties()));
+    public static final RegistryObject<Item> NETHER_BRICK_MOULDING = ITEMS.register("nether_brick_moulding", () -> new DescriptionBlockItem(BBBBlocks.NETHER_BRICK_MOULDING.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SANDSTONE_MOULDING = ITEMS.register("sandstone_moulding", () -> new DescriptionBlockItem(BBBBlocks.SANDSTONE_MOULDING.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RED_SANDSTONE_MOULDING = ITEMS.register("red_sandstone_moulding", () -> new DescriptionBlockItem(BBBBlocks.RED_SANDSTONE_MOULDING.get(), new Item.Properties()));
+    public static final RegistryObject<Item> QUARTZ_MOULDING = ITEMS.register("quartz_moulding", () -> new DescriptionBlockItem(BBBBlocks.QUARTZ_MOULDING.get(), new Item.Properties()));
+
+
+    public static final RegistryObject<Item> STONE_COLUMN = ITEMS.register("stone_column", () -> new DescriptionBlockItem(BBBBlocks.STONE_COLUMN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DEEPSLATE_COLUMN = ITEMS.register("deepslate_column", () -> new DescriptionBlockItem(BBBBlocks.DEEPSLATE_COLUMN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SANDSTONE_COLUMN = ITEMS.register("sandstone_column", () -> new DescriptionBlockItem(BBBBlocks.SANDSTONE_COLUMN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RED_SANDSTONE_COLUMN = ITEMS.register("red_sandstone_column", () -> new DescriptionBlockItem(BBBBlocks.RED_SANDSTONE_COLUMN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> NETHER_BRICK_COLUMN = ITEMS.register("nether_brick_column", () -> new DescriptionBlockItem(BBBBlocks.NETHER_BRICK_COLUMN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BLACKSTONE_COLUMN = ITEMS.register("blackstone_column", () -> new DescriptionBlockItem(BBBBlocks.BLACKSTONE_COLUMN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> QUARTZ_COLUMN = ITEMS.register("quartz_column", () -> new DescriptionBlockItem(BBBBlocks.QUARTZ_COLUMN.get(), new Item.Properties()));
 
 
 
-    public static final Item STONE_FENCE = register("stone_fence", new DescriptionBlockItem(BBBBlocks.STONE_FENCE, new FabricItemSettings()));
-    public static final Item BLACKSTONE_FENCE = register("blackstone_fence", new DescriptionBlockItem(BBBBlocks.BLACKSTONE_FENCE, new FabricItemSettings()));
-    public static final Item DEEPSLATE_FENCE = register("deepslate_fence", new DescriptionBlockItem(BBBBlocks.DEEPSLATE_FENCE, new FabricItemSettings()));
-    public static final Item NETHER_BRICK_FENCE = register("nether_brick_fence", new DescriptionBlockItem(BBBBlocks.NETHER_BRICK_FENCE, new FabricItemSettings()));
-    public static final Item SANDSTONE_FENCE = register("sandstone_fence", new DescriptionBlockItem(BBBBlocks.SANDSTONE_FENCE, new FabricItemSettings()));
-    public static final Item RED_SANDSTONE_FENCE = register("red_sandstone_fence", new DescriptionBlockItem(BBBBlocks.RED_SANDSTONE_FENCE, new FabricItemSettings()));
-    public static final Item QUARTZ_FENCE = register("quartz_fence", new DescriptionBlockItem(BBBBlocks.QUARTZ_FENCE, new FabricItemSettings()));
+    public static final RegistryObject<Item> STONE_FENCE = ITEMS.register("stone_fence", () -> new DescriptionBlockItem(BBBBlocks.STONE_FENCE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BLACKSTONE_FENCE = ITEMS.register("blackstone_fence", () -> new DescriptionBlockItem(BBBBlocks.BLACKSTONE_FENCE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DEEPSLATE_FENCE = ITEMS.register("deepslate_fence", () -> new DescriptionBlockItem(BBBBlocks.DEEPSLATE_FENCE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> NETHER_BRICK_FENCE = ITEMS.register("nether_brick_fence", () -> new DescriptionBlockItem(BBBBlocks.NETHER_BRICK_FENCE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SANDSTONE_FENCE = ITEMS.register("sandstone_fence", () -> new DescriptionBlockItem(BBBBlocks.SANDSTONE_FENCE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RED_SANDSTONE_FENCE = ITEMS.register("red_sandstone_fence", () -> new DescriptionBlockItem(BBBBlocks.RED_SANDSTONE_FENCE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> QUARTZ_FENCE = ITEMS.register("quartz_fence", () -> new DescriptionBlockItem(BBBBlocks.QUARTZ_FENCE.get(), new Item.Properties()));
 
 
 
     // region BEAMS
-    public static final Item OAK_BEAM = register("oak_beam", new BlockItem(BBBBlocks.OAK_BEAM, new FabricItemSettings()));
-    public static final Item OAK_BEAM_STAIRS = register("oak_beam_stairs", new BlockItem(BBBBlocks.OAK_BEAM_STAIRS, new FabricItemSettings()));
-    public static final Item OAK_BEAM_SLAB = register("oak_beam_slab", new BlockItem(BBBBlocks.OAK_BEAM_SLAB, new FabricItemSettings()));
-    public static final Item SPRUCE_BEAM = register("spruce_beam", new BlockItem(BBBBlocks.SPRUCE_BEAM, new FabricItemSettings()));
-    public static final Item SPRUCE_BEAM_STAIRS = register("spruce_beam_stairs", new BlockItem(BBBBlocks.SPRUCE_BEAM_STAIRS, new FabricItemSettings()));
-    public static final Item SPRUCE_BEAM_SLAB = register("spruce_beam_slab", new BlockItem(BBBBlocks.SPRUCE_BEAM_SLAB, new FabricItemSettings()));
-    public static final Item BIRCH_BEAM = register("birch_beam", new BlockItem(BBBBlocks.BIRCH_BEAM, new FabricItemSettings()));
-    public static final Item BIRCH_BEAM_STAIRS = register("birch_beam_stairs", new BlockItem(BBBBlocks.BIRCH_BEAM_STAIRS, new FabricItemSettings()));
-    public static final Item BIRCH_BEAM_SLAB = register("birch_beam_slab", new BlockItem(BBBBlocks.BIRCH_BEAM_SLAB, new FabricItemSettings()));
-    public static final Item JUNGLE_BEAM = register("jungle_beam", new BlockItem(BBBBlocks.JUNGLE_BEAM, new FabricItemSettings()));
-    public static final Item JUNGLE_BEAM_STAIRS = register("jungle_beam_stairs", new BlockItem(BBBBlocks.JUNGLE_BEAM_STAIRS, new FabricItemSettings()));
-    public static final Item JUNGLE_BEAM_SLAB = register("jungle_beam_slab", new BlockItem(BBBBlocks.JUNGLE_BEAM_SLAB, new FabricItemSettings()));
-    public static final Item ACACIA_BEAM = register("acacia_beam", new BlockItem(BBBBlocks.ACACIA_BEAM, new FabricItemSettings()));
-    public static final Item ACACIA_BEAM_STAIRS = register("acacia_beam_stairs", new BlockItem(BBBBlocks.ACACIA_BEAM_STAIRS, new FabricItemSettings()));
-    public static final Item ACACIA_BEAM_SLAB = register("acacia_beam_slab", new BlockItem(BBBBlocks.ACACIA_BEAM_SLAB, new FabricItemSettings()));
-    public static final Item DARK_OAK_BEAM = register("dark_oak_beam", new BlockItem(BBBBlocks.DARK_OAK_BEAM, new FabricItemSettings()));
-    public static final Item DARK_OAK_BEAM_STAIRS = register("dark_oak_beam_stairs", new BlockItem(BBBBlocks.DARK_OAK_BEAM_STAIRS, new FabricItemSettings()));
-    public static final Item DARK_OAK_BEAM_SLAB = register("dark_oak_beam_slab", new BlockItem(BBBBlocks.DARK_OAK_BEAM_SLAB, new FabricItemSettings()));
-    public static final Item CRIMSON_BEAM = register("crimson_beam", new BlockItem(BBBBlocks.CRIMSON_BEAM, new FabricItemSettings()));
-    public static final Item CRIMSON_BEAM_STAIRS = register("crimson_beam_stairs", new BlockItem(BBBBlocks.CRIMSON_BEAM_STAIRS, new FabricItemSettings()));
-    public static final Item CRIMSON_BEAM_SLAB = register("crimson_beam_slab", new BlockItem(BBBBlocks.CRIMSON_BEAM_SLAB, new FabricItemSettings()));
-    public static final Item WARPED_BEAM = register("warped_beam", new BlockItem(BBBBlocks.WARPED_BEAM, new FabricItemSettings()));
-    public static final Item WARPED_BEAM_STAIRS = register("warped_beam_stairs", new BlockItem(BBBBlocks.WARPED_BEAM_STAIRS, new FabricItemSettings()));
-    public static final Item WARPED_BEAM_SLAB = register("warped_beam_slab", new BlockItem(BBBBlocks.WARPED_BEAM_SLAB, new FabricItemSettings()));
-    public static final Item MANGROVE_BEAM = register("mangrove_beam", new BlockItem(BBBBlocks.MANGROVE_BEAM, new FabricItemSettings()));
-    public static final Item MANGROVE_BEAM_STAIRS = register("mangrove_beam_stairs", new BlockItem(BBBBlocks.MANGROVE_BEAM_STAIRS, new FabricItemSettings()));
-    public static final Item MANGROVE_BEAM_SLAB = register("mangrove_beam_slab", new BlockItem(BBBBlocks.MANGROVE_BEAM_SLAB, new FabricItemSettings()));
-    public static final Item BAMBOO_BEAM = register("bamboo_beam", new BlockItem(BBBBlocks.BAMBOO_BEAM, new FabricItemSettings()));
-    public static final Item BAMBOO_BEAM_STAIRS = register("bamboo_beam_stairs", new BlockItem(BBBBlocks.BAMBOO_BEAM_STAIRS, new FabricItemSettings()));
-    public static final Item BAMBOO_BEAM_SLAB = register("bamboo_beam_slab", new BlockItem(BBBBlocks.BAMBOO_BEAM_SLAB, new FabricItemSettings()));
-    public static final Item CHERRY_BEAM = register("cherry_beam", new BlockItem(BBBBlocks.CHERRY_BEAM, new FabricItemSettings()));
-    public static final Item CHERRY_BEAM_STAIRS = register("cherry_beam_stairs", new BlockItem(BBBBlocks.CHERRY_BEAM_STAIRS, new FabricItemSettings()));
-    public static final Item CHERRY_BEAM_SLAB = register("cherry_beam_slab", new BlockItem(BBBBlocks.CHERRY_BEAM_SLAB, new FabricItemSettings()));
+    public static final RegistryObject<Item> OAK_BEAM = ITEMS.register("oak_beam", () -> new BlockItem(BBBBlocks.OAK_BEAM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> OAK_BEAM_STAIRS = ITEMS.register("oak_beam_stairs", () -> new BlockItem(BBBBlocks.OAK_BEAM_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> OAK_BEAM_SLAB = ITEMS.register("oak_beam_slab", () -> new BlockItem(BBBBlocks.OAK_BEAM_SLAB.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPRUCE_BEAM = ITEMS.register("spruce_beam", () -> new BlockItem(BBBBlocks.SPRUCE_BEAM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPRUCE_BEAM_STAIRS = ITEMS.register("spruce_beam_stairs", () -> new BlockItem(BBBBlocks.SPRUCE_BEAM_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPRUCE_BEAM_SLAB = ITEMS.register("spruce_beam_slab", () -> new BlockItem(BBBBlocks.SPRUCE_BEAM_SLAB.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BIRCH_BEAM = ITEMS.register("birch_beam", () -> new BlockItem(BBBBlocks.BIRCH_BEAM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BIRCH_BEAM_STAIRS = ITEMS.register("birch_beam_stairs", () -> new BlockItem(BBBBlocks.BIRCH_BEAM_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BIRCH_BEAM_SLAB = ITEMS.register("birch_beam_slab", () -> new BlockItem(BBBBlocks.BIRCH_BEAM_SLAB.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JUNGLE_BEAM = ITEMS.register("jungle_beam", () -> new BlockItem(BBBBlocks.JUNGLE_BEAM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JUNGLE_BEAM_STAIRS = ITEMS.register("jungle_beam_stairs", () -> new BlockItem(BBBBlocks.JUNGLE_BEAM_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JUNGLE_BEAM_SLAB = ITEMS.register("jungle_beam_slab", () -> new BlockItem(BBBBlocks.JUNGLE_BEAM_SLAB.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ACACIA_BEAM = ITEMS.register("acacia_beam", () -> new BlockItem(BBBBlocks.ACACIA_BEAM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ACACIA_BEAM_STAIRS = ITEMS.register("acacia_beam_stairs", () -> new BlockItem(BBBBlocks.ACACIA_BEAM_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ACACIA_BEAM_SLAB = ITEMS.register("acacia_beam_slab", () -> new BlockItem(BBBBlocks.ACACIA_BEAM_SLAB.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_OAK_BEAM = ITEMS.register("dark_oak_beam", () -> new BlockItem(BBBBlocks.DARK_OAK_BEAM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_OAK_BEAM_STAIRS = ITEMS.register("dark_oak_beam_stairs", () -> new BlockItem(BBBBlocks.DARK_OAK_BEAM_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_OAK_BEAM_SLAB = ITEMS.register("dark_oak_beam_slab", () -> new BlockItem(BBBBlocks.DARK_OAK_BEAM_SLAB.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRIMSON_BEAM = ITEMS.register("crimson_beam", () -> new BlockItem(BBBBlocks.CRIMSON_BEAM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRIMSON_BEAM_STAIRS = ITEMS.register("crimson_beam_stairs", () -> new BlockItem(BBBBlocks.CRIMSON_BEAM_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRIMSON_BEAM_SLAB = ITEMS.register("crimson_beam_slab", () -> new BlockItem(BBBBlocks.CRIMSON_BEAM_SLAB.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WARPED_BEAM = ITEMS.register("warped_beam", () -> new BlockItem(BBBBlocks.WARPED_BEAM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WARPED_BEAM_STAIRS = ITEMS.register("warped_beam_stairs", () -> new BlockItem(BBBBlocks.WARPED_BEAM_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WARPED_BEAM_SLAB = ITEMS.register("warped_beam_slab", () -> new BlockItem(BBBBlocks.WARPED_BEAM_SLAB.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MANGROVE_BEAM = ITEMS.register("mangrove_beam", () -> new BlockItem(BBBBlocks.MANGROVE_BEAM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MANGROVE_BEAM_STAIRS = ITEMS.register("mangrove_beam_stairs", () -> new BlockItem(BBBBlocks.MANGROVE_BEAM_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MANGROVE_BEAM_SLAB = ITEMS.register("mangrove_beam_slab", () -> new BlockItem(BBBBlocks.MANGROVE_BEAM_SLAB.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_BEAM = ITEMS.register("bamboo_beam", () -> new BlockItem(BBBBlocks.BAMBOO_BEAM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_BEAM_STAIRS = ITEMS.register("bamboo_beam_stairs", () -> new BlockItem(BBBBlocks.BAMBOO_BEAM_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_BEAM_SLAB = ITEMS.register("bamboo_beam_slab", () -> new BlockItem(BBBBlocks.BAMBOO_BEAM_SLAB.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHERRY_BEAM = ITEMS.register("cherry_beam", () -> new BlockItem(BBBBlocks.CHERRY_BEAM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHERRY_BEAM_STAIRS = ITEMS.register("cherry_beam_stairs", () -> new BlockItem(BBBBlocks.CHERRY_BEAM_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHERRY_BEAM_SLAB = ITEMS.register("cherry_beam_slab", () -> new BlockItem(BBBBlocks.CHERRY_BEAM_SLAB.get(), new Item.Properties()));
     // endregion
 
     // region SUPPORTS
-    public static final Item OAK_SUPPORT = register("oak_support", new DescriptionBlockItem(BBBBlocks.OAK_SUPPORT, new FabricItemSettings()));
-    public static final Item SPRUCE_SUPPORT = register("spruce_support", new DescriptionBlockItem(BBBBlocks.SPRUCE_SUPPORT, new FabricItemSettings()));
-    public static final Item BIRCH_SUPPORT = register("birch_support", new DescriptionBlockItem(BBBBlocks.BIRCH_SUPPORT, new FabricItemSettings()));
-    public static final Item JUNGLE_SUPPORT = register("jungle_support", new DescriptionBlockItem(BBBBlocks.JUNGLE_SUPPORT, new FabricItemSettings()));
-    public static final Item ACACIA_SUPPORT = register("acacia_support", new DescriptionBlockItem(BBBBlocks.ACACIA_SUPPORT, new FabricItemSettings()));
-    public static final Item DARK_OAK_SUPPORT = register("dark_oak_support", new DescriptionBlockItem(BBBBlocks.DARK_OAK_SUPPORT, new FabricItemSettings()));
-    public static final Item CRIMSON_SUPPORT = register("crimson_support", new DescriptionBlockItem(BBBBlocks.CRIMSON_SUPPORT, new FabricItemSettings()));
-    public static final Item WARPED_SUPPORT = register("warped_support", new DescriptionBlockItem(BBBBlocks.WARPED_SUPPORT, new FabricItemSettings()));
-    public static final Item MANGROVE_SUPPORT = register("mangrove_support", new DescriptionBlockItem(BBBBlocks.MANGROVE_SUPPORT, new FabricItemSettings()));
-    public static final Item BAMBOO_SUPPORT = register("bamboo_support", new DescriptionBlockItem(BBBBlocks.BAMBOO_SUPPORT, new FabricItemSettings()));
-    public static final Item CHERRY_SUPPORT = register("cherry_support", new DescriptionBlockItem(BBBBlocks.CHERRY_SUPPORT, new FabricItemSettings()));
+    public static final RegistryObject<Item> OAK_SUPPORT = ITEMS.register("oak_support", () -> new DescriptionBlockItem(BBBBlocks.OAK_SUPPORT.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPRUCE_SUPPORT = ITEMS.register("spruce_support", () -> new DescriptionBlockItem(BBBBlocks.SPRUCE_SUPPORT.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BIRCH_SUPPORT = ITEMS.register("birch_support", () -> new DescriptionBlockItem(BBBBlocks.BIRCH_SUPPORT.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JUNGLE_SUPPORT = ITEMS.register("jungle_support", () -> new DescriptionBlockItem(BBBBlocks.JUNGLE_SUPPORT.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ACACIA_SUPPORT = ITEMS.register("acacia_support", () -> new DescriptionBlockItem(BBBBlocks.ACACIA_SUPPORT.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_OAK_SUPPORT = ITEMS.register("dark_oak_support", () -> new DescriptionBlockItem(BBBBlocks.DARK_OAK_SUPPORT.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRIMSON_SUPPORT = ITEMS.register("crimson_support", () -> new DescriptionBlockItem(BBBBlocks.CRIMSON_SUPPORT.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WARPED_SUPPORT = ITEMS.register("warped_support", () -> new DescriptionBlockItem(BBBBlocks.WARPED_SUPPORT.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MANGROVE_SUPPORT = ITEMS.register("mangrove_support", () -> new DescriptionBlockItem(BBBBlocks.MANGROVE_SUPPORT.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_SUPPORT = ITEMS.register("bamboo_support", () -> new DescriptionBlockItem(BBBBlocks.BAMBOO_SUPPORT.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHERRY_SUPPORT = ITEMS.register("cherry_support", () -> new DescriptionBlockItem(BBBBlocks.CHERRY_SUPPORT.get(), new Item.Properties()));
     // endregion
 
 
     // region LADDERS
-    public static final Item OAK_LADDER = register("oak_ladder", new DescriptionBlockItem(BBBBlocks.OAK_LADDER, new FabricItemSettings()));
-    public static final Item SPRUCE_LADDER = register("spruce_ladder", new DescriptionBlockItem(BBBBlocks.SPRUCE_LADDER, new FabricItemSettings()));
-    public static final Item BIRCH_LADDER = register("birch_ladder", new DescriptionBlockItem(BBBBlocks.BIRCH_LADDER, new FabricItemSettings()));
-    public static final Item JUNGLE_LADDER = register("jungle_ladder", new DescriptionBlockItem(BBBBlocks.JUNGLE_LADDER, new FabricItemSettings()));
-    public static final Item ACACIA_LADDER = register("acacia_ladder", new DescriptionBlockItem(BBBBlocks.ACACIA_LADDER, new FabricItemSettings()));
-    public static final Item DARK_OAK_LADDER = register("dark_oak_ladder", new DescriptionBlockItem(BBBBlocks.DARK_OAK_LADDER, new FabricItemSettings()));
-    public static final Item CRIMSON_LADDER = register("crimson_ladder", new DescriptionBlockItem(BBBBlocks.CRIMSON_LADDER, new FabricItemSettings()));
-    public static final Item WARPED_LADDER = register("warped_ladder", new DescriptionBlockItem(BBBBlocks.WARPED_LADDER, new FabricItemSettings()));
-    public static final Item MANGROVE_LADDER = register("mangrove_ladder", new DescriptionBlockItem(BBBBlocks.MANGROVE_LADDER, new FabricItemSettings()));
-    public static final Item BAMBOO_LADDER = register("bamboo_ladder", new DescriptionBlockItem(BBBBlocks.BAMBOO_LADDER, new FabricItemSettings()));
-    public static final Item CHERRY_LADDER = register("cherry_ladder", new DescriptionBlockItem(BBBBlocks.CHERRY_LADDER, new FabricItemSettings()));
+    public static final RegistryObject<Item> OAK_LADDER = ITEMS.register("oak_ladder", () -> new DescriptionBlockItem(BBBBlocks.OAK_LADDER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPRUCE_LADDER = ITEMS.register("spruce_ladder", () -> new DescriptionBlockItem(BBBBlocks.SPRUCE_LADDER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BIRCH_LADDER = ITEMS.register("birch_ladder", () -> new DescriptionBlockItem(BBBBlocks.BIRCH_LADDER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JUNGLE_LADDER = ITEMS.register("jungle_ladder", () -> new DescriptionBlockItem(BBBBlocks.JUNGLE_LADDER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ACACIA_LADDER = ITEMS.register("acacia_ladder", () -> new DescriptionBlockItem(BBBBlocks.ACACIA_LADDER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_OAK_LADDER = ITEMS.register("dark_oak_ladder", () -> new DescriptionBlockItem(BBBBlocks.DARK_OAK_LADDER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRIMSON_LADDER = ITEMS.register("crimson_ladder", () -> new DescriptionBlockItem(BBBBlocks.CRIMSON_LADDER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WARPED_LADDER = ITEMS.register("warped_ladder", () -> new DescriptionBlockItem(BBBBlocks.WARPED_LADDER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MANGROVE_LADDER = ITEMS.register("mangrove_ladder", () -> new DescriptionBlockItem(BBBBlocks.MANGROVE_LADDER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_LADDER = ITEMS.register("bamboo_ladder", () -> new DescriptionBlockItem(BBBBlocks.BAMBOO_LADDER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHERRY_LADDER = ITEMS.register("cherry_ladder", () -> new DescriptionBlockItem(BBBBlocks.CHERRY_LADDER.get(), new Item.Properties()));
     // endregion
 
     // region LAYERS
-    public static final Item OAK_LAYER = register("oak_layer", new DescriptionBlockItem(BBBBlocks.OAK_LAYER, new FabricItemSettings()));
-    public static final Item SPRUCE_LAYER = register("spruce_layer", new DescriptionBlockItem(BBBBlocks.SPRUCE_LAYER, new FabricItemSettings()));
-    public static final Item BIRCH_LAYER = register("birch_layer", new DescriptionBlockItem(BBBBlocks.BIRCH_LAYER, new FabricItemSettings()));
-    public static final Item JUNGLE_LAYER = register("jungle_layer", new DescriptionBlockItem(BBBBlocks.JUNGLE_LAYER, new FabricItemSettings()));
-    public static final Item ACACIA_LAYER = register("acacia_layer", new DescriptionBlockItem(BBBBlocks.ACACIA_LAYER, new FabricItemSettings()));
-    public static final Item DARK_OAK_LAYER = register("dark_oak_layer", new DescriptionBlockItem(BBBBlocks.DARK_OAK_LAYER, new FabricItemSettings()));
-    public static final Item CRIMSON_LAYER = register("crimson_layer", new DescriptionBlockItem(BBBBlocks.CRIMSON_LAYER, new FabricItemSettings()));
-    public static final Item WARPED_LAYER = register("warped_layer", new DescriptionBlockItem(BBBBlocks.WARPED_LAYER, new FabricItemSettings()));
-    public static final Item MANGROVE_LAYER = register("mangrove_layer", new DescriptionBlockItem(BBBBlocks.MANGROVE_LAYER, new FabricItemSettings()));
-    public static final Item BAMBOO_LAYER = register("bamboo_layer", new DescriptionBlockItem(BBBBlocks.BAMBOO_LAYER, new FabricItemSettings()));
-    public static final Item BAMBOO_MOSAIC_LAYER = register("bamboo_mosaic_layer", new DescriptionBlockItem(BBBBlocks.BAMBOO_MOSAIC_LAYER, new FabricItemSettings()));
-    public static final Item CHERRY_LAYER = register("cherry_layer", new DescriptionBlockItem(BBBBlocks.CHERRY_LAYER, new FabricItemSettings()));
-    public static final Item MOSS_LAYER = register("moss_layer", new DescriptionBlockItem(BBBBlocks.MOSS_LAYER, new FabricItemSettings()));
-    public static final Item STONE_LAYER = register("stone_layer", new DescriptionBlockItem(BBBBlocks.STONE_LAYER, new FabricItemSettings()));
-    public static final Item COBBLESTONE_LAYER = register("cobblestone_layer", new DescriptionBlockItem(BBBBlocks.COBBLESTONE_LAYER, new FabricItemSettings()));
-    public static final Item MOSSY_COBBLESTONE_LAYER = register("mossy_cobblestone_layer", new DescriptionBlockItem(BBBBlocks.MOSSY_COBBLESTONE_LAYER, new FabricItemSettings()));
-    public static final Item SMOOTH_STONE_LAYER = register("smooth_stone_layer", new DescriptionBlockItem(BBBBlocks.SMOOTH_STONE_LAYER, new FabricItemSettings()));
-    public static final Item POLISHED_STONE_LAYER = register("polished_stone_layer", new DescriptionBlockItem(BBBBlocks.POLISHED_STONE_LAYER, new FabricItemSettings()));
-    public static final Item STONE_TILE_LAYER = register("stone_tile_layer", new DescriptionBlockItem(BBBBlocks.STONE_TILE_LAYER, new FabricItemSettings()));
-    public static final Item STONE_BRICK_LAYER = register("stone_brick_layer", new DescriptionBlockItem(BBBBlocks.STONE_BRICK_LAYER, new FabricItemSettings()));
-    public static final Item MOSSY_STONE_BRICK_LAYER = register("mossy_stone_brick_layer", new DescriptionBlockItem(BBBBlocks.MOSSY_STONE_BRICK_LAYER, new FabricItemSettings()));
-    public static final Item GRANITE_LAYER = register("granite_layer", new DescriptionBlockItem(BBBBlocks.GRANITE_LAYER, new FabricItemSettings()));
-    public static final Item POLISHED_GRANITE_LAYER = register("polished_granite_layer", new DescriptionBlockItem(BBBBlocks.POLISHED_GRANITE_LAYER, new FabricItemSettings()));
-    public static final Item DIORITE_LAYER = register("diorite_layer", new DescriptionBlockItem(BBBBlocks.DIORITE_LAYER, new FabricItemSettings()));
-    public static final Item POLISHED_DIORITE_LAYER = register("polished_diorite_layer", new DescriptionBlockItem(BBBBlocks.POLISHED_DIORITE_LAYER, new FabricItemSettings()));
-    public static final Item ANDESITE_LAYER = register("andesite_layer", new DescriptionBlockItem(BBBBlocks.ANDESITE_LAYER, new FabricItemSettings()));
-    public static final Item POLISHED_ANDESITE_LAYER = register("polished_andesite_layer", new DescriptionBlockItem(BBBBlocks.POLISHED_ANDESITE_LAYER, new FabricItemSettings()));
-    public static final Item COBBLED_DEEPSLATE_LAYER = register("cobbled_deepslate_layer", new DescriptionBlockItem(BBBBlocks.COBBLED_DEEPSLATE_LAYER, new FabricItemSettings()));
-    public static final Item POLISHED_DEEPSLATE_LAYER = register("polished_deepslate_layer", new DescriptionBlockItem(BBBBlocks.POLISHED_DEEPSLATE_LAYER, new FabricItemSettings()));
-    public static final Item DEEPSLATE_BRICK_LAYER = register("deepslate_brick_layer", new DescriptionBlockItem(BBBBlocks.DEEPSLATE_BRICK_LAYER, new FabricItemSettings()));
-    public static final Item DEEPSLATE_TILE_LAYER = register("deepslate_tile_layer", new DescriptionBlockItem(BBBBlocks.DEEPSLATE_TILE_LAYER, new FabricItemSettings()));
-    public static final Item BRICK_LAYER = register("brick_layer", new DescriptionBlockItem(BBBBlocks.BRICK_LAYER, new FabricItemSettings()));
-    public static final Item MUD_BRICK_LAYER = register("mud_brick_layer", new DescriptionBlockItem(BBBBlocks.MUD_BRICK_LAYER, new FabricItemSettings()));
-    public static final Item SANDSTONE_LAYER = register("sandstone_layer", new DescriptionBlockItem(BBBBlocks.SANDSTONE_LAYER, new FabricItemSettings()));
-    public static final Item SMOOTH_SANDSTONE_LAYER = register("smooth_sandstone_layer", new DescriptionBlockItem(BBBBlocks.SMOOTH_SANDSTONE_LAYER, new FabricItemSettings()));
-    public static final Item RED_SANDSTONE_LAYER = register("red_sandstone_layer", new DescriptionBlockItem(BBBBlocks.RED_SANDSTONE_LAYER, new FabricItemSettings()));
-    public static final Item SMOOTH_RED_SANDSTONE_LAYER = register("smooth_red_sandstone_layer", new DescriptionBlockItem(BBBBlocks.SMOOTH_RED_SANDSTONE_LAYER, new FabricItemSettings()));
-    public static final Item PRISMARINE_LAYER = register("prismarine_layer", new DescriptionBlockItem(BBBBlocks.PRISMARINE_LAYER, new FabricItemSettings()));
-    public static final Item PRISMARINE_BRICK_LAYER = register("prismarine_brick_layer", new DescriptionBlockItem(BBBBlocks.PRISMARINE_BRICK_LAYER, new FabricItemSettings()));
-    public static final Item DARK_PRISMARINE_LAYER = register("dark_prismarine_layer", new DescriptionBlockItem(BBBBlocks.DARK_PRISMARINE_LAYER, new FabricItemSettings()));
-    public static final Item NETHER_BRICK_LAYER = register("nether_brick_layer", new DescriptionBlockItem(BBBBlocks.NETHER_BRICK_LAYER, new FabricItemSettings()));
-    public static final Item RED_NETHER_BRICK_LAYER = register("red_nether_brick_layer", new DescriptionBlockItem(BBBBlocks.RED_NETHER_BRICK_LAYER, new FabricItemSettings()));
-    public static final Item BLACKSTONE_LAYER = register("blackstone_layer", new DescriptionBlockItem(BBBBlocks.BLACKSTONE_LAYER, new FabricItemSettings()));
-    public static final Item POLISHED_BLACKSTONE_LAYER = register("polished_blackstone_layer", new DescriptionBlockItem(BBBBlocks.POLISHED_BLACKSTONE_LAYER, new FabricItemSettings()));
-    public static final Item POLISHED_BLACKSTONE_BRICK_LAYER = register("polished_blackstone_brick_layer", new DescriptionBlockItem(BBBBlocks.POLISHED_BLACKSTONE_BRICK_LAYER, new FabricItemSettings()));
-    public static final Item END_STONE_BRICK_LAYER = register("end_stone_brick_layer", new DescriptionBlockItem(BBBBlocks.END_STONE_BRICK_LAYER, new FabricItemSettings()));
-    public static final Item PURPUR_LAYER = register("purpur_layer", new DescriptionBlockItem(BBBBlocks.PURPUR_LAYER, new FabricItemSettings()));
-    public static final Item QUARTZ_LAYER = register("quartz_layer", new DescriptionBlockItem(BBBBlocks.QUARTZ_LAYER, new FabricItemSettings()));
-    public static final Item CUT_COPPER_LAYER = register("cut_copper_layer", new DescriptionBlockItem(BBBBlocks.CUT_COPPER_LAYER, new FabricItemSettings()));
-    public static final Item EXPOSED_CUT_COPPER_LAYER = register("exposed_cut_copper_layer", new DescriptionBlockItem(BBBBlocks.EXPOSED_CUT_COPPER_LAYER, new FabricItemSettings()));
-    public static final Item WEATHERED_CUT_COPPER_LAYER = register("weathered_cut_copper_layer", new DescriptionBlockItem(BBBBlocks.WEATHERED_CUT_COPPER_LAYER, new FabricItemSettings()));
-    public static final Item OXIDIZED_CUT_COPPER_LAYER = register("oxidized_cut_copper_layer", new DescriptionBlockItem(BBBBlocks.OXIDIZED_CUT_COPPER_LAYER, new FabricItemSettings()));
-    public static final Item WAXED_CUT_COPPER_LAYER = register("waxed_cut_copper_layer", new DescriptionBlockItem(BBBBlocks.WAXED_CUT_COPPER_LAYER, new FabricItemSettings()));
-    public static final Item WAXED_EXPOSED_CUT_COPPER_LAYER = register("waxed_exposed_cut_copper_layer", new DescriptionBlockItem(BBBBlocks.WAXED_EXPOSED_CUT_COPPER_LAYER, new FabricItemSettings()));
-    public static final Item WAXED_WEATHERED_CUT_COPPER_LAYER = register("waxed_weathered_cut_copper_layer", new DescriptionBlockItem(BBBBlocks.WAXED_WEATHERED_CUT_COPPER_LAYER, new FabricItemSettings()));
-    public static final Item WAXED_OXIDIZED_CUT_COPPER_LAYER = register("waxed_oxidized_cut_copper_layer", new DescriptionBlockItem(BBBBlocks.WAXED_OXIDIZED_CUT_COPPER_LAYER, new FabricItemSettings()));
+    public static final RegistryObject<Item> OAK_LAYER = ITEMS.register("oak_layer", () -> new DescriptionBlockItem(BBBBlocks.OAK_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPRUCE_LAYER = ITEMS.register("spruce_layer", () -> new DescriptionBlockItem(BBBBlocks.SPRUCE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BIRCH_LAYER = ITEMS.register("birch_layer", () -> new DescriptionBlockItem(BBBBlocks.BIRCH_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JUNGLE_LAYER = ITEMS.register("jungle_layer", () -> new DescriptionBlockItem(BBBBlocks.JUNGLE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ACACIA_LAYER = ITEMS.register("acacia_layer", () -> new DescriptionBlockItem(BBBBlocks.ACACIA_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_OAK_LAYER = ITEMS.register("dark_oak_layer", () -> new DescriptionBlockItem(BBBBlocks.DARK_OAK_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRIMSON_LAYER = ITEMS.register("crimson_layer", () -> new DescriptionBlockItem(BBBBlocks.CRIMSON_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WARPED_LAYER = ITEMS.register("warped_layer", () -> new DescriptionBlockItem(BBBBlocks.WARPED_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MANGROVE_LAYER = ITEMS.register("mangrove_layer", () -> new DescriptionBlockItem(BBBBlocks.MANGROVE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_LAYER = ITEMS.register("bamboo_layer", () -> new DescriptionBlockItem(BBBBlocks.BAMBOO_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_MOSAIC_LAYER = ITEMS.register("bamboo_mosaic_layer", () -> new DescriptionBlockItem(BBBBlocks.BAMBOO_MOSAIC_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHERRY_LAYER = ITEMS.register("cherry_layer", () -> new DescriptionBlockItem(BBBBlocks.CHERRY_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MOSS_LAYER = ITEMS.register("moss_layer", () -> new DescriptionBlockItem(BBBBlocks.MOSS_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STONE_LAYER = ITEMS.register("stone_layer", () -> new DescriptionBlockItem(BBBBlocks.STONE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> COBBLESTONE_LAYER = ITEMS.register("cobblestone_layer", () -> new DescriptionBlockItem(BBBBlocks.COBBLESTONE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MOSSY_COBBLESTONE_LAYER = ITEMS.register("mossy_cobblestone_layer", () -> new DescriptionBlockItem(BBBBlocks.MOSSY_COBBLESTONE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SMOOTH_STONE_LAYER = ITEMS.register("smooth_stone_layer", () -> new DescriptionBlockItem(BBBBlocks.SMOOTH_STONE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> POLISHED_STONE_LAYER = ITEMS.register("polished_stone_layer", () -> new DescriptionBlockItem(BBBBlocks.POLISHED_STONE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STONE_TILE_LAYER = ITEMS.register("stone_tile_layer", () -> new DescriptionBlockItem(BBBBlocks.STONE_TILE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STONE_BRICK_LAYER = ITEMS.register("stone_brick_layer", () -> new DescriptionBlockItem(BBBBlocks.STONE_BRICK_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MOSSY_STONE_BRICK_LAYER = ITEMS.register("mossy_stone_brick_layer", () -> new DescriptionBlockItem(BBBBlocks.MOSSY_STONE_BRICK_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> GRANITE_LAYER = ITEMS.register("granite_layer", () -> new DescriptionBlockItem(BBBBlocks.GRANITE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> POLISHED_GRANITE_LAYER = ITEMS.register("polished_granite_layer", () -> new DescriptionBlockItem(BBBBlocks.POLISHED_GRANITE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DIORITE_LAYER = ITEMS.register("diorite_layer", () -> new DescriptionBlockItem(BBBBlocks.DIORITE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> POLISHED_DIORITE_LAYER = ITEMS.register("polished_diorite_layer", () -> new DescriptionBlockItem(BBBBlocks.POLISHED_DIORITE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ANDESITE_LAYER = ITEMS.register("andesite_layer", () -> new DescriptionBlockItem(BBBBlocks.ANDESITE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> POLISHED_ANDESITE_LAYER = ITEMS.register("polished_andesite_layer", () -> new DescriptionBlockItem(BBBBlocks.POLISHED_ANDESITE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> COBBLED_DEEPSLATE_LAYER = ITEMS.register("cobbled_deepslate_layer", () -> new DescriptionBlockItem(BBBBlocks.COBBLED_DEEPSLATE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> POLISHED_DEEPSLATE_LAYER = ITEMS.register("polished_deepslate_layer", () -> new DescriptionBlockItem(BBBBlocks.POLISHED_DEEPSLATE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DEEPSLATE_BRICK_LAYER = ITEMS.register("deepslate_brick_layer", () -> new DescriptionBlockItem(BBBBlocks.DEEPSLATE_BRICK_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DEEPSLATE_TILE_LAYER = ITEMS.register("deepslate_tile_layer", () -> new DescriptionBlockItem(BBBBlocks.DEEPSLATE_TILE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BRICK_LAYER = ITEMS.register("brick_layer", () -> new DescriptionBlockItem(BBBBlocks.BRICK_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MUD_BRICK_LAYER = ITEMS.register("mud_brick_layer", () -> new DescriptionBlockItem(BBBBlocks.MUD_BRICK_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SANDSTONE_LAYER = ITEMS.register("sandstone_layer", () -> new DescriptionBlockItem(BBBBlocks.SANDSTONE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SMOOTH_SANDSTONE_LAYER = ITEMS.register("smooth_sandstone_layer", () -> new DescriptionBlockItem(BBBBlocks.SMOOTH_SANDSTONE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RED_SANDSTONE_LAYER = ITEMS.register("red_sandstone_layer", () -> new DescriptionBlockItem(BBBBlocks.RED_SANDSTONE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SMOOTH_RED_SANDSTONE_LAYER = ITEMS.register("smooth_red_sandstone_layer", () -> new DescriptionBlockItem(BBBBlocks.SMOOTH_RED_SANDSTONE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PRISMARINE_LAYER = ITEMS.register("prismarine_layer", () -> new DescriptionBlockItem(BBBBlocks.PRISMARINE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PRISMARINE_BRICK_LAYER = ITEMS.register("prismarine_brick_layer", () -> new DescriptionBlockItem(BBBBlocks.PRISMARINE_BRICK_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_PRISMARINE_LAYER = ITEMS.register("dark_prismarine_layer", () -> new DescriptionBlockItem(BBBBlocks.DARK_PRISMARINE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> NETHER_BRICK_LAYER = ITEMS.register("nether_brick_layer", () -> new DescriptionBlockItem(BBBBlocks.NETHER_BRICK_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RED_NETHER_BRICK_LAYER = ITEMS.register("red_nether_brick_layer", () -> new DescriptionBlockItem(BBBBlocks.RED_NETHER_BRICK_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BLACKSTONE_LAYER = ITEMS.register("blackstone_layer", () -> new DescriptionBlockItem(BBBBlocks.BLACKSTONE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> POLISHED_BLACKSTONE_LAYER = ITEMS.register("polished_blackstone_layer", () -> new DescriptionBlockItem(BBBBlocks.POLISHED_BLACKSTONE_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> POLISHED_BLACKSTONE_BRICK_LAYER = ITEMS.register("polished_blackstone_brick_layer", () -> new DescriptionBlockItem(BBBBlocks.POLISHED_BLACKSTONE_BRICK_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> END_STONE_BRICK_LAYER = ITEMS.register("end_stone_brick_layer", () -> new DescriptionBlockItem(BBBBlocks.END_STONE_BRICK_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PURPUR_LAYER = ITEMS.register("purpur_layer", () -> new DescriptionBlockItem(BBBBlocks.PURPUR_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> QUARTZ_LAYER = ITEMS.register("quartz_layer", () -> new DescriptionBlockItem(BBBBlocks.QUARTZ_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CUT_COPPER_LAYER = ITEMS.register("cut_copper_layer", () -> new DescriptionBlockItem(BBBBlocks.CUT_COPPER_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> EXPOSED_CUT_COPPER_LAYER = ITEMS.register("exposed_cut_copper_layer", () -> new DescriptionBlockItem(BBBBlocks.EXPOSED_CUT_COPPER_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WEATHERED_CUT_COPPER_LAYER = ITEMS.register("weathered_cut_copper_layer", () -> new DescriptionBlockItem(BBBBlocks.WEATHERED_CUT_COPPER_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> OXIDIZED_CUT_COPPER_LAYER = ITEMS.register("oxidized_cut_copper_layer", () -> new DescriptionBlockItem(BBBBlocks.OXIDIZED_CUT_COPPER_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_CUT_COPPER_LAYER = ITEMS.register("waxed_cut_copper_layer", () -> new DescriptionBlockItem(BBBBlocks.WAXED_CUT_COPPER_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_EXPOSED_CUT_COPPER_LAYER = ITEMS.register("waxed_exposed_cut_copper_layer", () -> new DescriptionBlockItem(BBBBlocks.WAXED_EXPOSED_CUT_COPPER_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_WEATHERED_CUT_COPPER_LAYER = ITEMS.register("waxed_weathered_cut_copper_layer", () -> new DescriptionBlockItem(BBBBlocks.WAXED_WEATHERED_CUT_COPPER_LAYER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_OXIDIZED_CUT_COPPER_LAYER = ITEMS.register("waxed_oxidized_cut_copper_layer", () -> new DescriptionBlockItem(BBBBlocks.WAXED_OXIDIZED_CUT_COPPER_LAYER.get(), new Item.Properties()));
 
     // endregion
     
 
-    public static final Item POLISHED_STONE = register("polished_stone", new BlockItem(BBBBlocks.POLISHED_STONE, new FabricItemSettings()));
-    public static final Item POLISHED_STONE_STAIRS = register("polished_stone_stairs", new BlockItem(BBBBlocks.POLISHED_STONE_STAIRS, new FabricItemSettings()));
-    public static final Item POLISHED_STONE_SLAB = register("polished_stone_slab", new BlockItem(BBBBlocks.POLISHED_STONE_SLAB, new FabricItemSettings()));
+    public static final RegistryObject<Item> POLISHED_STONE = ITEMS.register("polished_stone", () -> new BlockItem(BBBBlocks.POLISHED_STONE.get(), new Item.Properties()));
+    public static final RegistryObject<Item> POLISHED_STONE_STAIRS = ITEMS.register("polished_stone_stairs", () -> new BlockItem(BBBBlocks.POLISHED_STONE_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> POLISHED_STONE_SLAB = ITEMS.register("polished_stone_slab", () -> new BlockItem(BBBBlocks.POLISHED_STONE_SLAB.get(), new Item.Properties()));
 
-    public static final Item STONE_TILES = register("stone_tiles", new BlockItem(BBBBlocks.STONE_TILES, new FabricItemSettings()));
-    public static final Item STONE_TILE_STAIRS = register("stone_tile_stairs", new BlockItem(BBBBlocks.STONE_TILE_STAIRS, new FabricItemSettings()));
-    public static final Item STONE_TILE_SLAB = register("stone_tile_slab", new BlockItem(BBBBlocks.STONE_TILE_SLAB, new FabricItemSettings()));
+    public static final RegistryObject<Item> STONE_TILES = ITEMS.register("stone_tiles", () -> new BlockItem(BBBBlocks.STONE_TILES.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STONE_TILE_STAIRS = ITEMS.register("stone_tile_stairs", () -> new BlockItem(BBBBlocks.STONE_TILE_STAIRS.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STONE_TILE_SLAB = ITEMS.register("stone_tile_slab", () -> new BlockItem(BBBBlocks.STONE_TILE_SLAB.get(), new Item.Properties()));
 
-    public static final Item BRAZIER = register("brazier", new BlockItem(BBBBlocks.BRAZIER, new FabricItemSettings()));
-    public static final Item SOUL_BRAZIER = register("soul_brazier", new BlockItem(BBBBlocks.SOUL_BRAZIER, new FabricItemSettings()));
+    public static final RegistryObject<Item> BRAZIER = ITEMS.register("brazier", () -> new BlockItem(BBBBlocks.BRAZIER.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SOUL_BRAZIER = ITEMS.register("soul_brazier", () -> new BlockItem(BBBBlocks.SOUL_BRAZIER.get(), new Item.Properties()));
 
 
-    // public static final Item ROOFING = register("roofing", new BlockItem(BBBBlocks.ROOFING, new FabricItemSettings()));
+    // public static final RegistryObject<Item> ROOFING = ITEMS.register("roofing", () -> new BlockItem(BBBBlocks.ROOFING.get(), new Item.Properties()));
 
 
     // region PALLETS
-    public static final Item OAK_PALLET = register("oak_pallet", new DescriptionBlockItem(BBBBlocks.OAK_PALLET, new FabricItemSettings()));
-    public static final Item SPRUCE_PALLET = register("spruce_pallet", new DescriptionBlockItem(BBBBlocks.SPRUCE_PALLET, new FabricItemSettings()));
-    public static final Item BIRCH_PALLET = register("birch_pallet", new DescriptionBlockItem(BBBBlocks.BIRCH_PALLET, new FabricItemSettings()));
-    public static final Item JUNGLE_PALLET = register("jungle_pallet", new DescriptionBlockItem(BBBBlocks.JUNGLE_PALLET, new FabricItemSettings()));
-    public static final Item ACACIA_PALLET = register("acacia_pallet", new DescriptionBlockItem(BBBBlocks.ACACIA_PALLET, new FabricItemSettings()));
-    public static final Item DARK_OAK_PALLET = register("dark_oak_pallet", new DescriptionBlockItem(BBBBlocks.DARK_OAK_PALLET, new FabricItemSettings()));
-    public static final Item MANGROVE_PALLET = register("mangrove_pallet", new DescriptionBlockItem(BBBBlocks.MANGROVE_PALLET, new FabricItemSettings()));
-    public static final Item CHERRY_PALLET = register("cherry_pallet", new DescriptionBlockItem(BBBBlocks.CHERRY_PALLET, new FabricItemSettings()));
-    public static final Item BAMBOO_PALLET = register("bamboo_pallet", new DescriptionBlockItem(BBBBlocks.BAMBOO_PALLET, new FabricItemSettings()));
-    public static final Item CRIMSON_PALLET = register("crimson_pallet", new DescriptionBlockItem(BBBBlocks.CRIMSON_PALLET, new FabricItemSettings()));
-    public static final Item WARPED_PALLET = register("warped_pallet", new DescriptionBlockItem(BBBBlocks.WARPED_PALLET, new FabricItemSettings()));
+    public static final RegistryObject<Item> OAK_PALLET = ITEMS.register("oak_pallet", () -> new DescriptionBlockItem(BBBBlocks.OAK_PALLET.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPRUCE_PALLET = ITEMS.register("spruce_pallet", () -> new DescriptionBlockItem(BBBBlocks.SPRUCE_PALLET.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BIRCH_PALLET = ITEMS.register("birch_pallet", () -> new DescriptionBlockItem(BBBBlocks.BIRCH_PALLET.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JUNGLE_PALLET = ITEMS.register("jungle_pallet", () -> new DescriptionBlockItem(BBBBlocks.JUNGLE_PALLET.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ACACIA_PALLET = ITEMS.register("acacia_pallet", () -> new DescriptionBlockItem(BBBBlocks.ACACIA_PALLET.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_OAK_PALLET = ITEMS.register("dark_oak_pallet", () -> new DescriptionBlockItem(BBBBlocks.DARK_OAK_PALLET.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MANGROVE_PALLET = ITEMS.register("mangrove_pallet", () -> new DescriptionBlockItem(BBBBlocks.MANGROVE_PALLET.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHERRY_PALLET = ITEMS.register("cherry_pallet", () -> new DescriptionBlockItem(BBBBlocks.CHERRY_PALLET.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_PALLET = ITEMS.register("bamboo_pallet", () -> new DescriptionBlockItem(BBBBlocks.BAMBOO_PALLET.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRIMSON_PALLET = ITEMS.register("crimson_pallet", () -> new DescriptionBlockItem(BBBBlocks.CRIMSON_PALLET.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WARPED_PALLET = ITEMS.register("warped_pallet", () -> new DescriptionBlockItem(BBBBlocks.WARPED_PALLET.get(), new Item.Properties()));
     // endregion
 
     // region FRAMES
-    public static final Item OAK_FRAME = register("oak_frame", new DescriptionBlockItem(BBBBlocks.OAK_FRAME, new FabricItemSettings()));
-    public static final Item SPRUCE_FRAME = register("spruce_frame", new DescriptionBlockItem(BBBBlocks.SPRUCE_FRAME, new FabricItemSettings()));
-    public static final Item BIRCH_FRAME = register("birch_frame", new DescriptionBlockItem(BBBBlocks.BIRCH_FRAME, new FabricItemSettings()));
-    public static final Item JUNGLE_FRAME = register("jungle_frame", new DescriptionBlockItem(BBBBlocks.JUNGLE_FRAME, new FabricItemSettings()));
-    public static final Item ACACIA_FRAME = register("acacia_frame", new DescriptionBlockItem(BBBBlocks.ACACIA_FRAME, new FabricItemSettings()));
-    public static final Item DARK_OAK_FRAME = register("dark_oak_frame", new DescriptionBlockItem(BBBBlocks.DARK_OAK_FRAME, new FabricItemSettings()));
-    public static final Item MANGROVE_FRAME = register("mangrove_frame", new DescriptionBlockItem(BBBBlocks.MANGROVE_FRAME, new FabricItemSettings()));
-    public static final Item CHERRY_FRAME = register("cherry_frame", new DescriptionBlockItem(BBBBlocks.CHERRY_FRAME, new FabricItemSettings()));
-    public static final Item BAMBOO_FRAME = register("bamboo_frame", new DescriptionBlockItem(BBBBlocks.BAMBOO_FRAME, new FabricItemSettings()));
-    public static final Item CRIMSON_FRAME = register("crimson_frame", new DescriptionBlockItem(BBBBlocks.CRIMSON_FRAME, new FabricItemSettings()));
-    public static final Item WARPED_FRAME = register("warped_frame", new DescriptionBlockItem(BBBBlocks.WARPED_FRAME, new FabricItemSettings()));
+    public static final RegistryObject<Item> OAK_FRAME = ITEMS.register("oak_frame", () -> new DescriptionBlockItem(BBBBlocks.OAK_FRAME.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPRUCE_FRAME = ITEMS.register("spruce_frame", () -> new DescriptionBlockItem(BBBBlocks.SPRUCE_FRAME.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BIRCH_FRAME = ITEMS.register("birch_frame", () -> new DescriptionBlockItem(BBBBlocks.BIRCH_FRAME.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JUNGLE_FRAME = ITEMS.register("jungle_frame", () -> new DescriptionBlockItem(BBBBlocks.JUNGLE_FRAME.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ACACIA_FRAME = ITEMS.register("acacia_frame", () -> new DescriptionBlockItem(BBBBlocks.ACACIA_FRAME.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_OAK_FRAME = ITEMS.register("dark_oak_frame", () -> new DescriptionBlockItem(BBBBlocks.DARK_OAK_FRAME.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MANGROVE_FRAME = ITEMS.register("mangrove_frame", () -> new DescriptionBlockItem(BBBBlocks.MANGROVE_FRAME.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHERRY_FRAME = ITEMS.register("cherry_frame", () -> new DescriptionBlockItem(BBBBlocks.CHERRY_FRAME.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_FRAME = ITEMS.register("bamboo_frame", () -> new DescriptionBlockItem(BBBBlocks.BAMBOO_FRAME.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRIMSON_FRAME = ITEMS.register("crimson_frame", () -> new DescriptionBlockItem(BBBBlocks.CRIMSON_FRAME.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WARPED_FRAME = ITEMS.register("warped_frame", () -> new DescriptionBlockItem(BBBBlocks.WARPED_FRAME.get(), new Item.Properties()));
     // endregion
 
 
-     public static final Item ROPE = register("rope", new BlockItem(BBBBlocks.ROPE, new FabricItemSettings()));
+     public static final RegistryObject<Item> ROPE = ITEMS.register("rope", () -> new BlockItem(BBBBlocks.ROPE.get(), new Item.Properties()));
 
     // region WOODEN LANTERNS
-    public static final Item OAK_LANTERN = register("oak_lantern", new BlockItem(BBBBlocks.OAK_LANTERN, new FabricItemSettings()));
-    public static final Item SPRUCE_LANTERN = register("spruce_lantern", new BlockItem(BBBBlocks.SPRUCE_LANTERN, new FabricItemSettings()));
-    public static final Item BIRCH_LANTERN = register("birch_lantern", new BlockItem(BBBBlocks.BIRCH_LANTERN, new FabricItemSettings()));
-    public static final Item JUNGLE_LANTERN = register("jungle_lantern", new BlockItem(BBBBlocks.JUNGLE_LANTERN, new FabricItemSettings()));
-    public static final Item ACACIA_LANTERN = register("acacia_lantern", new BlockItem(BBBBlocks.ACACIA_LANTERN, new FabricItemSettings()));
-    public static final Item DARK_OAK_LANTERN = register("dark_oak_lantern", new BlockItem(BBBBlocks.DARK_OAK_LANTERN, new FabricItemSettings()));
-    public static final Item MANGROVE_LANTERN = register("mangrove_lantern", new BlockItem(BBBBlocks.MANGROVE_LANTERN, new FabricItemSettings()));
-    public static final Item CHERRY_LANTERN = register("cherry_lantern", new BlockItem(BBBBlocks.CHERRY_LANTERN, new FabricItemSettings()));
-    public static final Item BAMBOO_LANTERN = register("bamboo_lantern", new BlockItem(BBBBlocks.BAMBOO_LANTERN, new FabricItemSettings()));
-    public static final Item CRIMSON_LANTERN = register("crimson_lantern", new BlockItem(BBBBlocks.CRIMSON_LANTERN, new FabricItemSettings()));
-    public static final Item WARPED_LANTERN = register("warped_lantern", new BlockItem(BBBBlocks.WARPED_LANTERN, new FabricItemSettings()));
+    public static final RegistryObject<Item> OAK_LANTERN = ITEMS.register("oak_lantern", () -> new BlockItem(BBBBlocks.OAK_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPRUCE_LANTERN = ITEMS.register("spruce_lantern", () -> new BlockItem(BBBBlocks.SPRUCE_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BIRCH_LANTERN = ITEMS.register("birch_lantern", () -> new BlockItem(BBBBlocks.BIRCH_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JUNGLE_LANTERN = ITEMS.register("jungle_lantern", () -> new BlockItem(BBBBlocks.JUNGLE_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ACACIA_LANTERN = ITEMS.register("acacia_lantern", () -> new BlockItem(BBBBlocks.ACACIA_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_OAK_LANTERN = ITEMS.register("dark_oak_lantern", () -> new BlockItem(BBBBlocks.DARK_OAK_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MANGROVE_LANTERN = ITEMS.register("mangrove_lantern", () -> new BlockItem(BBBBlocks.MANGROVE_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHERRY_LANTERN = ITEMS.register("cherry_lantern", () -> new BlockItem(BBBBlocks.CHERRY_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_LANTERN = ITEMS.register("bamboo_lantern", () -> new BlockItem(BBBBlocks.BAMBOO_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRIMSON_LANTERN = ITEMS.register("crimson_lantern", () -> new BlockItem(BBBBlocks.CRIMSON_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WARPED_LANTERN = ITEMS.register("warped_lantern", () -> new BlockItem(BBBBlocks.WARPED_LANTERN.get(), new Item.Properties()));
     // endregion
 
     // region TRIMS
 
-    public static final Item OAK_TRIM = register("oak_trim", new BlockItem(BBBBlocks.OAK_TRIM, new FabricItemSettings()));
-    public static final Item SPRUCE_TRIM = register("spruce_trim", new BlockItem(BBBBlocks.SPRUCE_TRIM, new FabricItemSettings()));
-    public static final Item BIRCH_TRIM = register("birch_trim", new BlockItem(BBBBlocks.BIRCH_TRIM, new FabricItemSettings()));
-    public static final Item JUNGLE_TRIM = register("jungle_trim", new BlockItem(BBBBlocks.JUNGLE_TRIM, new FabricItemSettings()));
-    public static final Item ACACIA_TRIM = register("acacia_trim", new BlockItem(BBBBlocks.ACACIA_TRIM, new FabricItemSettings()));
-    public static final Item DARK_OAK_TRIM = register("dark_oak_trim", new BlockItem(BBBBlocks.DARK_OAK_TRIM, new FabricItemSettings()));
-    public static final Item MANGROVE_TRIM = register("mangrove_trim", new BlockItem(BBBBlocks.MANGROVE_TRIM, new FabricItemSettings()));
-    public static final Item CHERRY_TRIM = register("cherry_trim", new BlockItem(BBBBlocks.CHERRY_TRIM, new FabricItemSettings()));
-    public static final Item BAMBOO_TRIM = register("bamboo_trim", new BlockItem(BBBBlocks.BAMBOO_TRIM, new FabricItemSettings()));
-    public static final Item CRIMSON_TRIM = register("crimson_trim", new BlockItem(BBBBlocks.CRIMSON_TRIM, new FabricItemSettings()));
-    public static final Item WARPED_TRIM = register("warped_trim", new BlockItem(BBBBlocks.WARPED_TRIM, new FabricItemSettings()));
+    public static final RegistryObject<Item> OAK_TRIM = ITEMS.register("oak_trim", () -> new BlockItem(BBBBlocks.OAK_TRIM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPRUCE_TRIM = ITEMS.register("spruce_trim", () -> new BlockItem(BBBBlocks.SPRUCE_TRIM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BIRCH_TRIM = ITEMS.register("birch_trim", () -> new BlockItem(BBBBlocks.BIRCH_TRIM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JUNGLE_TRIM = ITEMS.register("jungle_trim", () -> new BlockItem(BBBBlocks.JUNGLE_TRIM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ACACIA_TRIM = ITEMS.register("acacia_trim", () -> new BlockItem(BBBBlocks.ACACIA_TRIM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_OAK_TRIM = ITEMS.register("dark_oak_trim", () -> new BlockItem(BBBBlocks.DARK_OAK_TRIM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MANGROVE_TRIM = ITEMS.register("mangrove_trim", () -> new BlockItem(BBBBlocks.MANGROVE_TRIM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHERRY_TRIM = ITEMS.register("cherry_trim", () -> new BlockItem(BBBBlocks.CHERRY_TRIM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_TRIM = ITEMS.register("bamboo_trim", () -> new BlockItem(BBBBlocks.BAMBOO_TRIM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRIMSON_TRIM = ITEMS.register("crimson_trim", () -> new BlockItem(BBBBlocks.CRIMSON_TRIM.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WARPED_TRIM = ITEMS.register("warped_trim", () -> new BlockItem(BBBBlocks.WARPED_TRIM.get(), new Item.Properties()));
     // endregion
 
-    public static final Item IRON_FENCE = register("iron_fence", new BlockItem(BBBBlocks.IRON_FENCE, new FabricItemSettings()));
+    public static final RegistryObject<Item> IRON_FENCE = ITEMS.register("iron_fence", () -> new BlockItem(BBBBlocks.IRON_FENCE.get(), new Item.Properties()));
 
 
-    //public static final Item TALL_OAK_DOOR = register("tall_oak_door", new TallDoorItem(BBBBlocks.TALL_OAK_DOOR, new FabricItemSettings()));
+    //public static final RegistryObject<Item> TALL_OAK_DOOR = ITEMS.register("tall_oak_door", () -> new TallDoorItem(BBBBlocks.TALL_OAK_DOOR.get(), new Item.Properties()));
 
-//    public static final Item COPPER_GATEWAY = register("copper_gateway", new BlockItem(BBBBlocks.COPPER_GATEWAY, new FabricItemSettings()));
+//    public static final RegistryObject<Item> COPPER_GATEWAY = ITEMS.register("copper_gateway", () -> new BlockItem(BBBBlocks.COPPER_GATEWAY.get(), new Item.Properties()));
 
-    private static Item register(String id, Item item) {
-        return Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(BuildingButBetter.MOD_ID, id), item);
-    }
 }

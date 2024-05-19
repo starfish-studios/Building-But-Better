@@ -1,5 +1,6 @@
 package com.starfish_studios.bbb.block;
 
+import com.starfish_studios.bbb.mixin.WallBlockAccessor;
 import com.starfish_studios.bbb.registry.BBBTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -73,7 +74,7 @@ public class IronFenceBlock extends WallBlock {
         boolean bl3 = this.connectsTo(blockState3, blockState3.isFaceSturdy(levelReader, blockPos4, Direction.NORTH), Direction.NORTH);
         boolean bl4 = this.connectsTo(blockState4, blockState4.isFaceSturdy(levelReader, blockPos5, Direction.EAST), Direction.EAST);
         BlockState blockState6 = this.defaultBlockState().setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
-        return this.updateShape(levelReader, blockState6, blockPos6, blockState5, bl, bl2, bl3, bl4);
+        return ((WallBlockAccessor)this).callUpdateShape(levelReader, blockState6, blockPos6, blockState5, bl, bl2, bl3, bl4);
     }
 
     public BlockState updateShape(BlockState blockState, Direction direction, BlockState blockState2, LevelAccessor levelAccessor, BlockPos blockPos, BlockPos blockPos2) {
@@ -84,18 +85,18 @@ public class IronFenceBlock extends WallBlock {
         if (direction == Direction.DOWN) {
             return super.updateShape(blockState, direction, blockState2, levelAccessor, blockPos, blockPos2);
         } else {
-            return direction == Direction.UP ? this.topUpdate(levelAccessor, blockState, blockPos2, blockState2) : this.sideUpdate(levelAccessor, blockPos, blockState, blockPos2, blockState2, direction);
+            return direction == Direction.UP ? ((WallBlockAccessor)this).callTopUpdate(levelAccessor, blockState, blockPos2, blockState2) : this.sideUpdate(levelAccessor, blockPos, blockState, blockPos2, blockState2, direction);
         }
     }
 
     private BlockState sideUpdate(LevelReader levelReader, BlockPos blockPos, BlockState blockState, BlockPos blockPos2, BlockState blockState2, Direction direction) {
         Direction direction2 = direction.getOpposite();
-        boolean bl = direction == Direction.NORTH ? this.connectsTo(blockState2, blockState2.isFaceSturdy(levelReader, blockPos2, direction2), direction2) : isConnected(blockState, NORTH_WALL);
-        boolean bl2 = direction == Direction.EAST ? this.connectsTo(blockState2, blockState2.isFaceSturdy(levelReader, blockPos2, direction2), direction2) : isConnected(blockState, EAST_WALL);
-        boolean bl3 = direction == Direction.SOUTH ? this.connectsTo(blockState2, blockState2.isFaceSturdy(levelReader, blockPos2, direction2), direction2) : isConnected(blockState, SOUTH_WALL);
-        boolean bl4 = direction == Direction.WEST ? this.connectsTo(blockState2, blockState2.isFaceSturdy(levelReader, blockPos2, direction2), direction2) : isConnected(blockState, WEST_WALL);
+        boolean bl = direction == Direction.NORTH ? this.connectsTo(blockState2, blockState2.isFaceSturdy(levelReader, blockPos2, direction2), direction2) : WallBlockAccessor.callIsConnected(blockState, NORTH_WALL);
+        boolean bl2 = direction == Direction.EAST ? this.connectsTo(blockState2, blockState2.isFaceSturdy(levelReader, blockPos2, direction2), direction2) : WallBlockAccessor.callIsConnected(blockState, EAST_WALL);
+        boolean bl3 = direction == Direction.SOUTH ? this.connectsTo(blockState2, blockState2.isFaceSturdy(levelReader, blockPos2, direction2), direction2) : WallBlockAccessor.callIsConnected(blockState, SOUTH_WALL);
+        boolean bl4 = direction == Direction.WEST ? this.connectsTo(blockState2, blockState2.isFaceSturdy(levelReader, blockPos2, direction2), direction2) : WallBlockAccessor.callIsConnected(blockState, WEST_WALL);
         BlockPos blockPos3 = blockPos.above();
         BlockState blockState3 = levelReader.getBlockState(blockPos3);
-        return this.updateShape(levelReader, blockState, blockPos3, blockState3, bl, bl2, bl3, bl4);
+        return ((WallBlockAccessor)this).callUpdateShape(levelReader, blockState, blockPos3, blockState3, bl, bl2, bl3, bl4);
     }
 }
