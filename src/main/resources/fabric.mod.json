@@ -3,16 +3,16 @@
 	"id": "bbb",
 	"version": "${version}",
 	"name": "Building But Better",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod focused on adding new building blocks with customizability and interactions!",
 	"accessWidener" : "bbb.accesswidener",
 	"authors": [
 		"Starfish Studios"
 	],
 	"contact": {
-		"homepage": "https://www.curseforge.com/minecraft/mc-mods/nomad",
-		"issues": "https://github.com/starfish-studios/BBB/issues"
+		"homepage": "https://github.com/starfish-studios/Building-But-Better/",
+		"issues": "https://github.com/starfish-studios/Building-But-Better/issues"
 	},
-	"license": "CC0-1.0",
+	"license":"https://github.com/starfish-studios/Building-But-Better/blob/main/LICENSE",
 	"icon": "assets/bbb/icon.png",
 	"environment": "*",
 	"entrypoints": {

@@ -276,5 +276,8 @@
   "description.bbb.ladder2": "to cycle through styles.",
 
   "description.bbb.support1": "Right-Click with a Hammer",
-  "description.bbb.support2": "to toggle the support beam."
+  "description.bbb.support2": "to toggle the support beam.",
+
+  "description.bbb.lantern1": "Right-Click with a Hammer",
+  "description.bbb.lantern2": "to toggle the top hook."
 }

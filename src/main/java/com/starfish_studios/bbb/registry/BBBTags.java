@@ -29,6 +29,7 @@ public interface BBBTags {
     // region ITEM TAGS
     interface BBBItemTags {
 
+        TagKey<Item> LANTERNS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "lanterns"));
         TagKey<Item> MOULDINGS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "mouldings"));
         TagKey<Item> FRAMES = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "frames"));
         TagKey<Item> SUPPORTS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "supports"));

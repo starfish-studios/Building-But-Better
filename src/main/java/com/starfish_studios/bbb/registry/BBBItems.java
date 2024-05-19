@@ -249,17 +249,17 @@ public class BBBItems {
      public static final Item ROPE = register("rope", new BlockItem(BBBBlocks.ROPE, new FabricItemSettings()));
 
     // region WOODEN LANTERNS
-    public static final Item OAK_LANTERN = register("oak_lantern", new BlockItem(BBBBlocks.OAK_LANTERN, new FabricItemSettings()));
-    public static final Item SPRUCE_LANTERN = register("spruce_lantern", new BlockItem(BBBBlocks.SPRUCE_LANTERN, new FabricItemSettings()));
-    public static final Item BIRCH_LANTERN = register("birch_lantern", new BlockItem(BBBBlocks.BIRCH_LANTERN, new FabricItemSettings()));
-    public static final Item JUNGLE_LANTERN = register("jungle_lantern", new BlockItem(BBBBlocks.JUNGLE_LANTERN, new FabricItemSettings()));
-    public static final Item ACACIA_LANTERN = register("acacia_lantern", new BlockItem(BBBBlocks.ACACIA_LANTERN, new FabricItemSettings()));
-    public static final Item DARK_OAK_LANTERN = register("dark_oak_lantern", new BlockItem(BBBBlocks.DARK_OAK_LANTERN, new FabricItemSettings()));
-    public static final Item MANGROVE_LANTERN = register("mangrove_lantern", new BlockItem(BBBBlocks.MANGROVE_LANTERN, new FabricItemSettings()));
-    public static final Item CHERRY_LANTERN = register("cherry_lantern", new BlockItem(BBBBlocks.CHERRY_LANTERN, new FabricItemSettings()));
-    public static final Item BAMBOO_LANTERN = register("bamboo_lantern", new BlockItem(BBBBlocks.BAMBOO_LANTERN, new FabricItemSettings()));
-    public static final Item CRIMSON_LANTERN = register("crimson_lantern", new BlockItem(BBBBlocks.CRIMSON_LANTERN, new FabricItemSettings()));
-    public static final Item WARPED_LANTERN = register("warped_lantern", new BlockItem(BBBBlocks.WARPED_LANTERN, new FabricItemSettings()));
+    public static final Item OAK_LANTERN = register("oak_lantern", new DescriptionBlockItem(BBBBlocks.OAK_LANTERN, new FabricItemSettings()));
+    public static final Item SPRUCE_LANTERN = register("spruce_lantern", new DescriptionBlockItem(BBBBlocks.SPRUCE_LANTERN, new FabricItemSettings()));
+    public static final Item BIRCH_LANTERN = register("birch_lantern", new DescriptionBlockItem(BBBBlocks.BIRCH_LANTERN, new FabricItemSettings()));
+    public static final Item JUNGLE_LANTERN = register("jungle_lantern", new DescriptionBlockItem(BBBBlocks.JUNGLE_LANTERN, new FabricItemSettings()));
+    public static final Item ACACIA_LANTERN = register("acacia_lantern", new DescriptionBlockItem(BBBBlocks.ACACIA_LANTERN, new FabricItemSettings()));
+    public static final Item DARK_OAK_LANTERN = register("dark_oak_lantern", new DescriptionBlockItem(BBBBlocks.DARK_OAK_LANTERN, new FabricItemSettings()));
+    public static final Item MANGROVE_LANTERN = register("mangrove_lantern", new DescriptionBlockItem(BBBBlocks.MANGROVE_LANTERN, new FabricItemSettings()));
+    public static final Item CHERRY_LANTERN = register("cherry_lantern", new DescriptionBlockItem(BBBBlocks.CHERRY_LANTERN, new FabricItemSettings()));
+    public static final Item BAMBOO_LANTERN = register("bamboo_lantern", new DescriptionBlockItem(BBBBlocks.BAMBOO_LANTERN, new FabricItemSettings()));
+    public static final Item CRIMSON_LANTERN = register("crimson_lantern", new DescriptionBlockItem(BBBBlocks.CRIMSON_LANTERN, new FabricItemSettings()));
+    public static final Item WARPED_LANTERN = register("warped_lantern", new DescriptionBlockItem(BBBBlocks.WARPED_LANTERN, new FabricItemSettings()));
     // endregion
 
     // region TRIMS
