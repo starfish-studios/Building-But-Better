@@ -1,22 +1,22 @@
 package com.starfish_studios.bbb.registry;
 
 import com.starfish_studios.bbb.BuildingButBetter;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
-public interface BBBSoundEvents {
+@Mod.EventBusSubscriber(modid = BuildingButBetter.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+public class BBBSoundEvents {
 
-    SoundEvent LAYER_HAMMER = register("block.layer.hammer");
+    public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, BuildingButBetter.MOD_ID);
 
-    private static SoundType register(String name, float volume, float pitch) {
-        return new SoundType(volume, pitch, register("block." + name + ".break"), register("block." + name + ".step"), register("block." + name + ".place"), register("block." + name + ".hit"), register("block." + name + ".fall"));
-    }
+    public static final RegistryObject<SoundEvent> LAYER_HAMMER = register("block.layer.hammer");
 
-    static SoundEvent register(String name) {
+    private static RegistryObject<SoundEvent> register(String name) {
         ResourceLocation id = new ResourceLocation(BuildingButBetter.MOD_ID, name);
-        return Registry.register(BuiltInRegistries.SOUND_EVENT, id, SoundEvent.createVariableRangeEvent(id));
+        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(id));
     }
 }

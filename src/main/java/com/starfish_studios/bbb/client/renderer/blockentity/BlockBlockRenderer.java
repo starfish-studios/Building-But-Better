@@ -8,31 +8,26 @@ import com.starfish_studios.bbb.block.AbstractBlockBlock;
 import com.starfish_studios.bbb.block.BlockBlock;
 import com.starfish_studios.bbb.block.WallBlockBlock;
 import com.starfish_studios.bbb.block.entity.BlockBlockEntity;
-import com.starfish_studios.bbb.client.model.BlockModel;
 import com.starfish_studios.bbb.client.model.BBBModelLayers;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
+import com.starfish_studios.bbb.client.model.BlockModel;
 import net.minecraft.Util;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.model.SkullModelBase;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
-import net.minecraft.client.renderer.blockentity.SkullBlockRenderer;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.AbstractSkullBlock;
-import net.minecraft.world.level.block.SkullBlock;
-import net.minecraft.world.level.block.WallSkullBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.RotationSegment;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
 
-@Environment(value= EnvType.CLIENT)
+@OnlyIn(Dist.CLIENT)
 public class BlockBlockRenderer implements BlockEntityRenderer<BlockBlockEntity> {
     private final ImmutableMap<BlockBlock.Types, BlockModel> modelByType;
     private static final Map<BlockBlock.Type, ResourceLocation> TEXTURE_BY_TYPE = Util.make(Maps.newHashMap(), hashMap -> {
@@ -45,7 +40,7 @@ public class BlockBlockRenderer implements BlockEntityRenderer<BlockBlockEntity>
         hashMap.put(BlockBlock.Types.QUARTZ, new ResourceLocation("bbb:textures/block/block/quartz.png"));
     });
 
-    public static ImmutableMap<BlockBlock.Types, BlockModel> createBlockRenderers(EntityModelSet entityModelSet) {
+        public static ImmutableMap<BlockBlock.Types, BlockModel> createBlockRenderers(EntityModelSet entityModelSet) {
         ImmutableMap.Builder<BlockBlock.Types, BlockModel> builder = ImmutableMap.builder();
         builder.put(BlockBlock.Types.STONE, new BlockModel(entityModelSet.bakeLayer(BBBModelLayers.STONE_BLOCK)));
         builder.put(BlockBlock.Types.BLACKSTONE, new BlockModel(entityModelSet.bakeLayer(BBBModelLayers.BLACKSTONE_BLOCK)));

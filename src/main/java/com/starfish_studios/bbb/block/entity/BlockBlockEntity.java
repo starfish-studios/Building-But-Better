@@ -11,7 +11,7 @@ public class BlockBlockEntity extends BlockEntity {
     private int animationTickCount;
     private boolean isAnimating;
     public BlockBlockEntity(BlockPos blockPos, BlockState blockState) {
-        super(BBBBlockEntityType.BLOCK, blockPos, blockState);
+        super(BBBBlockEntityType.BLOCK.get(), blockPos, blockState);
     }
 
     public static void animation(Level level, BlockPos blockPos, BlockState blockState, BlockBlockEntity blockBlockEntity) {
