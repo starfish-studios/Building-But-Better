@@ -196,7 +196,7 @@ public class BBBBlocks {
     public static final RegistryObject<Block> BAMBOO_LAYER = BLOCKS.register("bamboo_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.BAMBOO_PLANKS))));
     public static final RegistryObject<Block> BAMBOO_MOSAIC_LAYER = BLOCKS.register("bamboo_mosaic_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.BAMBOO_MOSAIC))));
     public static final RegistryObject<Block> CHERRY_LAYER = BLOCKS.register("cherry_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.CHERRY_PLANKS))));
-    public static final RegistryObject<Block> MOSS_LAYER = BLOCKS.register("moss_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.MOSS_BLOCK))));
+//    public static final RegistryObject<Block> MOSS_LAYER = BLOCKS.register("moss_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.MOSS_BLOCK))));
     public static final RegistryObject<Block> STONE_LAYER = BLOCKS.register("stone_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.STONE))));
     public static final RegistryObject<Block> COBBLESTONE_LAYER = BLOCKS.register("cobblestone_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.COBBLESTONE))));
     public static final RegistryObject<Block> MOSSY_COBBLESTONE_LAYER = BLOCKS.register("mossy_cobblestone_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.MOSSY_COBBLESTONE))));

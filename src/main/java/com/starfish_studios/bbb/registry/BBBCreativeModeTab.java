@@ -129,7 +129,7 @@ import static com.starfish_studios.bbb.registry.BBBItems.MANGROVE_TRIM;
 import static com.starfish_studios.bbb.registry.BBBItems.MANGROVE_WALL;
 import static com.starfish_studios.bbb.registry.BBBItems.MOSSY_COBBLESTONE_LAYER;
 import static com.starfish_studios.bbb.registry.BBBItems.MOSSY_STONE_BRICK_LAYER;
-import static com.starfish_studios.bbb.registry.BBBItems.MOSS_LAYER;
+//import static com.starfish_studios.bbb.registry.BBBItems.MOSS_LAYER;
 import static com.starfish_studios.bbb.registry.BBBItems.MUD_BRICK_LAYER;
 import static com.starfish_studios.bbb.registry.BBBItems.NETHER_BRICK_BLOCK;
 import static com.starfish_studios.bbb.registry.BBBItems.NETHER_BRICK_COLUMN;
@@ -431,7 +431,7 @@ public class BBBCreativeModeTab {
         output.accept(BAMBOO_LAYER.get());
         output.accept(BAMBOO_MOSAIC_LAYER.get());
         output.accept(CHERRY_LAYER.get());
-        output.accept(MOSS_LAYER.get());
+//        output.accept(MOSS_LAYER.get());
         output.accept(STONE_LAYER.get());
         output.accept(COBBLESTONE_LAYER.get());
         output.accept(MOSSY_COBBLESTONE_LAYER.get());

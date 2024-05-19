@@ -1,7 +1,7 @@
 {
     "parent": "minecraft:recipes/root",
     "criteria": {
-        "has_log": {
+        "has_logs": {
             "conditions": {
                 "items": [
                     {
@@ -15,20 +15,21 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "bbb:crimson_beam"
+                "recipe": "bbb:crimson_wall"
             },
             "trigger": "minecraft:recipe_unlocked"
         }
     },
     "requirements": [
         [
-            "has_log",
+            "has_logs",
             "has_the_recipe"
         ]
     ],
     "rewards": {
         "recipes": [
-            "bbb:crimson_beam"
+            "bbb:crimson_wall"
         ]
-    }
+    },
+    "sends_telemetry_event": false
 }

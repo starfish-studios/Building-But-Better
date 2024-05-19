@@ -1,34 +1,33 @@
 {
     "parent": "minecraft:recipes/root",
     "criteria": {
-        "has_log": {
-            "conditions": {
-                "items": [
-                    {
-                        "items": [
-                            "minecraft:stripped_crimson_stem"
-                        ]
-                    }
-                ]
-            },
+        "has_logs": {
+            "items": [
+                {
+                    "items": [
+                        "minecraft:stripped_bamboo_block"
+                    ]
+                }
+            ],
             "trigger": "minecraft:inventory_changed"
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "bbb:crimson_beam"
+                "recipe": "bbb:bamboo_wall"
             },
             "trigger": "minecraft:recipe_unlocked"
         }
     },
     "requirements": [
         [
-            "has_log",
+            "has_logs",
             "has_the_recipe"
         ]
     ],
     "rewards": {
         "recipes": [
-            "bbb:crimson_beam"
+            "bbb:bamboo_wall"
         ]
-    }
+    },
+    "sends_telemetry_event": false
 }

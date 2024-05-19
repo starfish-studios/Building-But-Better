@@ -1,0 +1,18 @@
+{
+    "category": "building",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:string"
+        }
+    },
+    "result": {
+        "item": "bbb:rope",
+        "count": 8
+    }
+}

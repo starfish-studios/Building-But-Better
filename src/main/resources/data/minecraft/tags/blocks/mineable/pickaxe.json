@@ -1,6 +1,9 @@
 {
   "values": [
-    "#bbb:stone_blocks"
+    "#bbb:stone_blocks",
+    "bbb:brazier",
+    "bbb:soul_brazier",
+    "bbb:iron_fence"
   ],
   "replace": false
 }

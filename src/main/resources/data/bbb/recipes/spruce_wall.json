@@ -1,0 +1,18 @@
+{
+    "category": "building",
+    "group": "bbb/walls",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stripped_spruce_log"
+        }
+    },
+    "result": {
+        "item": "bbb:spruce_wall",
+        "count": 6
+    }
+}

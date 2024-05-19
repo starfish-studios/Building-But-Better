@@ -1,0 +1,18 @@
+{
+    "category": "building",
+    "group": "bbb/walls",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stripped_mangrove_log"
+        }
+    },
+    "result": {
+        "item": "bbb:mangrove_wall",
+        "count": 6
+    }
+}

@@ -159,7 +159,7 @@ public class BBBItems {
     public static final RegistryObject<Item> BAMBOO_LAYER = ITEMS.register("bamboo_layer", () -> new DescriptionBlockItem(BBBBlocks.BAMBOO_LAYER.get(), new Item.Properties()));
     public static final RegistryObject<Item> BAMBOO_MOSAIC_LAYER = ITEMS.register("bamboo_mosaic_layer", () -> new DescriptionBlockItem(BBBBlocks.BAMBOO_MOSAIC_LAYER.get(), new Item.Properties()));
     public static final RegistryObject<Item> CHERRY_LAYER = ITEMS.register("cherry_layer", () -> new DescriptionBlockItem(BBBBlocks.CHERRY_LAYER.get(), new Item.Properties()));
-    public static final RegistryObject<Item> MOSS_LAYER = ITEMS.register("moss_layer", () -> new DescriptionBlockItem(BBBBlocks.MOSS_LAYER.get(), new Item.Properties()));
+//    public static final RegistryObject<Item> MOSS_LAYER = ITEMS.register("moss_layer", () -> new DescriptionBlockItem(BBBBlocks.MOSS_LAYER.get(), new Item.Properties()));
     public static final RegistryObject<Item> STONE_LAYER = ITEMS.register("stone_layer", () -> new DescriptionBlockItem(BBBBlocks.STONE_LAYER.get(), new Item.Properties()));
     public static final RegistryObject<Item> COBBLESTONE_LAYER = ITEMS.register("cobblestone_layer", () -> new DescriptionBlockItem(BBBBlocks.COBBLESTONE_LAYER.get(), new Item.Properties()));
     public static final RegistryObject<Item> MOSSY_COBBLESTONE_LAYER = ITEMS.register("mossy_cobblestone_layer", () -> new DescriptionBlockItem(BBBBlocks.MOSSY_COBBLESTONE_LAYER.get(), new Item.Properties()));

@@ -1,0 +1,18 @@
+{
+    "category": "building",
+    "group": "bbb/walls",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stripped_jungle_log"
+        }
+    },
+    "result": {
+        "item": "bbb:jungle_wall",
+        "count": 6
+    }
+}

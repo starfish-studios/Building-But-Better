@@ -4,9 +4,7 @@
         "has_log": {
             "conditions": {
                 "items": [
-                    {
-                        "tag": "minecraft:crimson_logs"
-                    }
+                    "minecraft:stripped_crimson_stem"
                 ]
             },
             "trigger": "minecraft:inventory_changed"

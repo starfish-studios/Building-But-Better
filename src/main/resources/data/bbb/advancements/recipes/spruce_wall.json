@@ -1,13 +1,11 @@
 {
     "parent": "minecraft:recipes/root",
     "criteria": {
-        "has_log": {
+        "has_logs": {
             "conditions": {
                 "items": [
                     {
-                        "items": [
-                            "minecraft:stripped_crimson_stem"
-                        ]
+                        "tag": "minecraft:spruce_logs"
                     }
                 ]
             },
@@ -15,20 +13,21 @@
         },
         "has_the_recipe": {
             "conditions": {
-                "recipe": "bbb:crimson_beam"
+                "recipe": "bbb:spruce_wall"
             },
             "trigger": "minecraft:recipe_unlocked"
         }
     },
     "requirements": [
         [
-            "has_log",
+            "has_logs",
             "has_the_recipe"
         ]
     ],
     "rewards": {
         "recipes": [
-            "bbb:crimson_beam"
+            "bbb:spruce_wall"
         ]
-    }
+    },
+    "sends_telemetry_event": false
 }

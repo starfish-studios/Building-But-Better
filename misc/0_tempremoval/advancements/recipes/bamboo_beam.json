@@ -4,9 +4,7 @@
         "has_log": {
             "conditions": {
                 "items": [
-                    {
-                        "tag": "minecraft:bamboo_logs"
-                    }
+                    "minecraft:stripped_bamboo_block"
                 ]
             },
             "trigger": "minecraft:inventory_changed"

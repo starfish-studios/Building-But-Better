@@ -1,0 +1,18 @@
+{
+    "category": "building",
+    "group": "bbb/walls",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stripped_crimson_stem"
+        }
+    },
+    "result": {
+        "item": "bbb:crimson_wall",
+        "count": 6
+    }
+}
