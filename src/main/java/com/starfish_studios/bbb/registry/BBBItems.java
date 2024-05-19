@@ -254,17 +254,17 @@ public class BBBItems {
      public static final RegistryObject<Item> ROPE = ITEMS.register("rope", () -> new BlockItem(BBBBlocks.ROPE.get(), new Item.Properties()));
 
     // region WOODEN LANTERNS
-    public static final RegistryObject<Item> OAK_LANTERN = ITEMS.register("oak_lantern", () -> new BlockItem(BBBBlocks.OAK_LANTERN.get(), new Item.Properties()));
-    public static final RegistryObject<Item> SPRUCE_LANTERN = ITEMS.register("spruce_lantern", () -> new BlockItem(BBBBlocks.SPRUCE_LANTERN.get(), new Item.Properties()));
-    public static final RegistryObject<Item> BIRCH_LANTERN = ITEMS.register("birch_lantern", () -> new BlockItem(BBBBlocks.BIRCH_LANTERN.get(), new Item.Properties()));
-    public static final RegistryObject<Item> JUNGLE_LANTERN = ITEMS.register("jungle_lantern", () -> new BlockItem(BBBBlocks.JUNGLE_LANTERN.get(), new Item.Properties()));
-    public static final RegistryObject<Item> ACACIA_LANTERN = ITEMS.register("acacia_lantern", () -> new BlockItem(BBBBlocks.ACACIA_LANTERN.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DARK_OAK_LANTERN = ITEMS.register("dark_oak_lantern", () -> new BlockItem(BBBBlocks.DARK_OAK_LANTERN.get(), new Item.Properties()));
-    public static final RegistryObject<Item> MANGROVE_LANTERN = ITEMS.register("mangrove_lantern", () -> new BlockItem(BBBBlocks.MANGROVE_LANTERN.get(), new Item.Properties()));
-    public static final RegistryObject<Item> CHERRY_LANTERN = ITEMS.register("cherry_lantern", () -> new BlockItem(BBBBlocks.CHERRY_LANTERN.get(), new Item.Properties()));
-    public static final RegistryObject<Item> BAMBOO_LANTERN = ITEMS.register("bamboo_lantern", () -> new BlockItem(BBBBlocks.BAMBOO_LANTERN.get(), new Item.Properties()));
-    public static final RegistryObject<Item> CRIMSON_LANTERN = ITEMS.register("crimson_lantern", () -> new BlockItem(BBBBlocks.CRIMSON_LANTERN.get(), new Item.Properties()));
-    public static final RegistryObject<Item> WARPED_LANTERN = ITEMS.register("warped_lantern", () -> new BlockItem(BBBBlocks.WARPED_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> OAK_LANTERN = ITEMS.register("oak_lantern", () -> new DescriptionBlockItem(BBBBlocks.OAK_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SPRUCE_LANTERN = ITEMS.register("spruce_lantern", () -> new DescriptionBlockItem(BBBBlocks.SPRUCE_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BIRCH_LANTERN = ITEMS.register("birch_lantern", () -> new DescriptionBlockItem(BBBBlocks.BIRCH_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> JUNGLE_LANTERN = ITEMS.register("jungle_lantern", () -> new DescriptionBlockItem(BBBBlocks.JUNGLE_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ACACIA_LANTERN = ITEMS.register("acacia_lantern", () -> new DescriptionBlockItem(BBBBlocks.ACACIA_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> DARK_OAK_LANTERN = ITEMS.register("dark_oak_lantern", () -> new DescriptionBlockItem(BBBBlocks.DARK_OAK_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> MANGROVE_LANTERN = ITEMS.register("mangrove_lantern", () -> new DescriptionBlockItem(BBBBlocks.MANGROVE_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHERRY_LANTERN = ITEMS.register("cherry_lantern", () -> new DescriptionBlockItem(BBBBlocks.CHERRY_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BAMBOO_LANTERN = ITEMS.register("bamboo_lantern", () -> new DescriptionBlockItem(BBBBlocks.BAMBOO_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CRIMSON_LANTERN = ITEMS.register("crimson_lantern", () -> new DescriptionBlockItem(BBBBlocks.CRIMSON_LANTERN.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WARPED_LANTERN = ITEMS.register("warped_lantern", () -> new DescriptionBlockItem(BBBBlocks.WARPED_LANTERN.get(), new Item.Properties()));
     // endregion
 
     // region TRIMS

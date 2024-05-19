@@ -1,5 +1,9 @@
 modLoader="javafml"
 loaderVersion="${loader_version_range}"
+
+logoFile="bbb_logo.png"
+
+issueTrackerURL="https://github.com/starfish-studios/Building-But-Better/issues"
 license="${mod_license}"
 [[mods]]
 modId="${mod_id}"

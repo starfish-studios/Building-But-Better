@@ -20,29 +20,35 @@ public class DescriptionBlockItem extends BlockItem {
     @Override
     public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag flagIn) {
 
+        if (stack.is(BBBTags.BBBItemTags.LANTERNS)) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE)
+                        .append(Component.translatable("description.bbb.lantern1").withStyle(ChatFormatting.GRAY)));
+                tooltip.add(Component.translatable("description.bbb.lantern2").withStyle(ChatFormatting.GRAY));
+            } else tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
+        }
+
         if (stack.is(BBBTags.BBBItemTags.STONE_FENCES)) {
             if (Screen.hasShiftDown()) {
                 tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.bbb.stone_fence1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.bbb.stone_fence2").withStyle(ChatFormatting.GRAY));
                 tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.bbb.stone_fence3").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.bbb.stone_fence4").withStyle(ChatFormatting.GRAY));
-            } else tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+            } else tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
         }
 
         if (stack.is(BBBTags.BBBItemTags.MOULDINGS)) {
             if (Screen.hasShiftDown()) {
                 tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.bbb.moulding1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.bbb.moulding2").withStyle(ChatFormatting.GRAY));
-            } else
-                tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+            } else tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
         }
 
         if (stack.is(BBBTags.BBBItemTags.SUPPORTS)) {
             if (Screen.hasShiftDown()) {
                 tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.bbb.support1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.bbb.support2").withStyle(ChatFormatting.GRAY));
-            } else
-                tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+            } else tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
         }
 
         else if (stack.is(BBBTags.BBBItemTags.PALLETS)) {
@@ -52,24 +58,21 @@ public class DescriptionBlockItem extends BlockItem {
                 tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.bbb.pallet3").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.bbb.pallet4").withStyle(ChatFormatting.GRAY));
                 tooltip.add(Component.translatable("description.bbb.pallet5").withStyle(ChatFormatting.GRAY));
-            } else
-                tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+            } else tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
         }
 
         else if (stack.is(BBBTags.BBBItemTags.LADDERS)) {
             if (Screen.hasShiftDown()) {
                 tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.bbb.ladder1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.bbb.ladder2").withStyle(ChatFormatting.GRAY));
-            } else
-                tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+            } else tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
         }
 
         else if (stack.is(BBBTags.BBBItemTags.COLUMNS)) {
             if (Screen.hasShiftDown()) {
                 tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.bbb.column1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.bbb.column2").withStyle(ChatFormatting.GRAY));
-            } else
-                tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+            } else tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
         }
 
         else if (stack.is(BBBTags.BBBItemTags.LAYERS)) {
@@ -78,8 +81,7 @@ public class DescriptionBlockItem extends BlockItem {
                 tooltip.add(Component.translatable("description.bbb.layer2").withStyle(ChatFormatting.GRAY));
                 tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.bbb.layer3").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.bbb.layer4").withStyle(ChatFormatting.GRAY));
-            } else
-                tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+            } else tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
         }
 
         else if (stack.is(BBBTags.BBBItemTags.FRAMES)) {
@@ -89,8 +91,7 @@ public class DescriptionBlockItem extends BlockItem {
                 tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.bbb.frame3").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.bbb.frame4").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.bbb.frame5").withStyle(ChatFormatting.GRAY));
-            } else
-                tooltip.add(Component.literal("[").withStyle(ChatFormatting.DARK_GRAY).append(Component.translatable("key.keyboard.left.shift").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC)).append(Component.literal("]").withStyle(ChatFormatting.DARK_GRAY)));
+            } else tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
         }
 
         else {
