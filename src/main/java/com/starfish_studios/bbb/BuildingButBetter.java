@@ -2,12 +2,10 @@ package com.starfish_studios.bbb;
 
 import com.google.common.reflect.Reflection;
 import com.starfish_studios.bbb.event.BlockUseEvent;
-import com.starfish_studios.bbb.integration.IntegrationHandler;
 import com.starfish_studios.bbb.registry.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.Util;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
@@ -22,10 +20,6 @@ import static com.starfish_studios.bbb.registry.BBBItems.*;
 public class BuildingButBetter implements ModInitializer {
 	public static final String MOD_ID = "bbb";
 
-	public static boolean isModLoaded(String mod) {
-		return FabricLoader.getInstance().isModLoaded(mod);
-	}
-
 	@Override
 	public void onInitialize() {
 		BlockUseEvent.EVENT.register(new BlockUseEvent());
@@ -33,8 +27,7 @@ public class BuildingButBetter implements ModInitializer {
 				BBBCreativeModeTab.class,
 				BBBSoundEvents.class,
 				BBBItems.class,
-				BBBBlocks.class,
-				IntegrationHandler.class
+				BBBBlocks.class
 		);
 
 		// region CREATIVE TAB INJECTIONS
