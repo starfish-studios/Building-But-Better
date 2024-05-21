@@ -257,17 +257,17 @@ public class BBBBlocks {
     // endregion
 
     // region FRAMES
-    public static final RegistryObject<Block> OAK_FRAME = BLOCKS.register("oak_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.OAK_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final RegistryObject<Block> SPRUCE_FRAME = BLOCKS.register("spruce_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.SPRUCE_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final RegistryObject<Block> BIRCH_FRAME = BLOCKS.register("birch_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.BIRCH_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final RegistryObject<Block> JUNGLE_FRAME = BLOCKS.register("jungle_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.JUNGLE_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final RegistryObject<Block> ACACIA_FRAME = BLOCKS.register("acacia_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.ACACIA_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final RegistryObject<Block> DARK_OAK_FRAME = BLOCKS.register("dark_oak_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final RegistryObject<Block> MANGROVE_FRAME = BLOCKS.register("mangrove_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.MANGROVE_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final RegistryObject<Block> CHERRY_FRAME = BLOCKS.register("cherry_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.CHERRY_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final RegistryObject<Block> BAMBOO_FRAME = BLOCKS.register("bamboo_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.BAMBOO_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final RegistryObject<Block> CRIMSON_FRAME = BLOCKS.register("crimson_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.CRIMSON_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final RegistryObject<Block> WARPED_FRAME = BLOCKS.register("warped_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.WARPED_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
+    public static final RegistryObject<Block> OAK_FRAME = BLOCKS.register("oak_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.OAK_PLANKS)).noOcclusion().noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> SPRUCE_FRAME = BLOCKS.register("spruce_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.SPRUCE_PLANKS)).noOcclusion().noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> BIRCH_FRAME = BLOCKS.register("birch_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.BIRCH_PLANKS)).noOcclusion().noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> JUNGLE_FRAME = BLOCKS.register("jungle_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.JUNGLE_PLANKS)).noOcclusion().noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> ACACIA_FRAME = BLOCKS.register("acacia_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.ACACIA_PLANKS)).noOcclusion().noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> DARK_OAK_FRAME = BLOCKS.register("dark_oak_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion().noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> MANGROVE_FRAME = BLOCKS.register("mangrove_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.MANGROVE_PLANKS)).noOcclusion().noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> CHERRY_FRAME = BLOCKS.register("cherry_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.CHERRY_PLANKS)).noOcclusion().noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> BAMBOO_FRAME = BLOCKS.register("bamboo_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.BAMBOO_PLANKS)).noOcclusion().noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> CRIMSON_FRAME = BLOCKS.register("crimson_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.CRIMSON_PLANKS)).noOcclusion().noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> WARPED_FRAME = BLOCKS.register("warped_frame", () -> new FrameBlock(BlockBehaviour.Properties.copy((Blocks.WARPED_PLANKS)).noOcclusion().noCollission().pushReaction(PushReaction.DESTROY)));
     // endregion
 
     // region WOODEN LANTERNS

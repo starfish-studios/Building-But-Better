@@ -209,7 +209,12 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     public boolean validConnection(BlockState state) {
-        if (state.isSolid()) {
+        if (state.isFaceSturdy(null, null, Direction.UP) ||
+                state.isFaceSturdy(null, null, Direction.DOWN) ||
+                state.isFaceSturdy(null, null, Direction.NORTH) ||
+                state.isFaceSturdy(null, null, Direction.EAST) ||
+                state.isFaceSturdy(null, null, Direction.SOUTH) ||
+                state.isFaceSturdy(null, null, Direction.WEST)) {
             return true;
         }
         return state.is(BBBTags.BBBBlockTags.FRAMES);
