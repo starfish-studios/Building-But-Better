@@ -12,6 +12,7 @@ import net.minecraft.world.level.material.PushReaction;
 
 import static net.minecraft.world.level.block.Blocks.litBlockEmission;
 import static net.minecraft.world.level.material.PushReaction.BLOCK;
+import static net.minecraft.world.level.material.PushReaction.DESTROY;
 
 public class BBBBlocks {
     // Stone, Blackstone, Deepslate, Nether Brick, Sandstone, Red Sandstone, Quartz
@@ -31,20 +32,20 @@ public class BBBBlocks {
     // endregion
 
     // region BLOCKS
-    public static final Block STONE_BLOCK = register("stone_block", new BlockBlock(BlockBlock.Types.STONE, FabricBlockSettings.copy((Blocks.STONE)).pushReaction(PushReaction.DESTROY)));
-    public static final Block WALL_STONE_BLOCK = register("wall_stone_block", new WallBlockBlock(BlockBlock.Types.STONE, FabricBlockSettings.copy((Blocks.STONE)).pushReaction(PushReaction.DESTROY).dropsLike(STONE_BLOCK)));
-    public static final Block BLACKSTONE_BLOCK = register("blackstone_block", new BlockBlock(BlockBlock.Types.BLACKSTONE, FabricBlockSettings.copy((Blocks.BLACKSTONE)).pushReaction(PushReaction.DESTROY)));
-    public static final Block WALL_BLACKSTONE_BLOCK = register("wall_blackstone_block", new WallBlockBlock(BlockBlock.Types.BLACKSTONE, FabricBlockSettings.copy((Blocks.BLACKSTONE)).pushReaction(PushReaction.DESTROY).dropsLike(BLACKSTONE_BLOCK)));
-    public static final Block DEEPSLATE_BLOCK = register("deepslate_block", new BlockBlock(BlockBlock.Types.DEEPSLATE, FabricBlockSettings.copy((Blocks.DEEPSLATE)).pushReaction(PushReaction.DESTROY)));
-    public static final Block WALL_DEEPSLATE_BLOCK = register("wall_deepslate_block", new WallBlockBlock(BlockBlock.Types.DEEPSLATE, FabricBlockSettings.copy((Blocks.DEEPSLATE)).pushReaction(PushReaction.DESTROY).dropsLike(DEEPSLATE_BLOCK)));
-    public static final Block NETHER_BRICK_BLOCK = register("nether_brick_block", new BlockBlock(BlockBlock.Types.NETHER_BRICK, FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).pushReaction(PushReaction.DESTROY)));
-    public static final Block WALL_NETHER_BRICK_BLOCK = register("wall_nether_brick_block", new WallBlockBlock(BlockBlock.Types.NETHER_BRICK, FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).pushReaction(PushReaction.DESTROY).dropsLike(NETHER_BRICK_BLOCK)));
-    public static final Block SANDSTONE_BLOCK = register("sandstone_block", new BlockBlock(BlockBlock.Types.SANDSTONE, FabricBlockSettings.copy((Blocks.SANDSTONE)).pushReaction(PushReaction.DESTROY)));
-    public static final Block WALL_SANDSTONE_BLOCK = register("wall_sandstone_block", new WallBlockBlock(BlockBlock.Types.SANDSTONE, FabricBlockSettings.copy((Blocks.SANDSTONE)).pushReaction(PushReaction.DESTROY).dropsLike(SANDSTONE_BLOCK)));
-    public static final Block RED_SANDSTONE_BLOCK = register("red_sandstone_block", new BlockBlock(BlockBlock.Types.RED_SANDSTONE, FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).pushReaction(PushReaction.DESTROY)));
-    public static final Block WALL_RED_SANDSTONE_BLOCK = register("wall_red_sandstone_block", new WallBlockBlock(BlockBlock.Types.RED_SANDSTONE, FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).pushReaction(PushReaction.DESTROY).dropsLike(RED_SANDSTONE_BLOCK)));
-    public static final Block QUARTZ_BLOCK = register("quartz_block", new BlockBlock(BlockBlock.Types.QUARTZ, FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).pushReaction(PushReaction.DESTROY)));
-    public static final Block WALL_QUARTZ_BLOCK = register("wall_quartz_block", new WallBlockBlock(BlockBlock.Types.QUARTZ, FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).pushReaction(PushReaction.DESTROY).dropsLike(QUARTZ_BLOCK)));
+    public static final Block STONE_BLOCK = register("stone_block", new BlockBlock(BlockBlock.Types.STONE, FabricBlockSettings.copy((Blocks.STONE)).pushReaction(DESTROY)));
+    public static final Block WALL_STONE_BLOCK = register("wall_stone_block", new WallBlockBlock(BlockBlock.Types.STONE, FabricBlockSettings.copy((Blocks.STONE)).pushReaction(DESTROY).dropsLike(STONE_BLOCK)));
+    public static final Block BLACKSTONE_BLOCK = register("blackstone_block", new BlockBlock(BlockBlock.Types.BLACKSTONE, FabricBlockSettings.copy((Blocks.BLACKSTONE)).pushReaction(DESTROY)));
+    public static final Block WALL_BLACKSTONE_BLOCK = register("wall_blackstone_block", new WallBlockBlock(BlockBlock.Types.BLACKSTONE, FabricBlockSettings.copy((Blocks.BLACKSTONE)).pushReaction(DESTROY).dropsLike(BLACKSTONE_BLOCK)));
+    public static final Block DEEPSLATE_BLOCK = register("deepslate_block", new BlockBlock(BlockBlock.Types.DEEPSLATE, FabricBlockSettings.copy((Blocks.DEEPSLATE)).pushReaction(DESTROY)));
+    public static final Block WALL_DEEPSLATE_BLOCK = register("wall_deepslate_block", new WallBlockBlock(BlockBlock.Types.DEEPSLATE, FabricBlockSettings.copy((Blocks.DEEPSLATE)).pushReaction(DESTROY).dropsLike(DEEPSLATE_BLOCK)));
+    public static final Block NETHER_BRICK_BLOCK = register("nether_brick_block", new BlockBlock(BlockBlock.Types.NETHER_BRICK, FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).pushReaction(DESTROY)));
+    public static final Block WALL_NETHER_BRICK_BLOCK = register("wall_nether_brick_block", new WallBlockBlock(BlockBlock.Types.NETHER_BRICK, FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).pushReaction(DESTROY).dropsLike(NETHER_BRICK_BLOCK)));
+    public static final Block SANDSTONE_BLOCK = register("sandstone_block", new BlockBlock(BlockBlock.Types.SANDSTONE, FabricBlockSettings.copy((Blocks.SANDSTONE)).pushReaction(DESTROY)));
+    public static final Block WALL_SANDSTONE_BLOCK = register("wall_sandstone_block", new WallBlockBlock(BlockBlock.Types.SANDSTONE, FabricBlockSettings.copy((Blocks.SANDSTONE)).pushReaction(DESTROY).dropsLike(SANDSTONE_BLOCK)));
+    public static final Block RED_SANDSTONE_BLOCK = register("red_sandstone_block", new BlockBlock(BlockBlock.Types.RED_SANDSTONE, FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).pushReaction(DESTROY)));
+    public static final Block WALL_RED_SANDSTONE_BLOCK = register("wall_red_sandstone_block", new WallBlockBlock(BlockBlock.Types.RED_SANDSTONE, FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).pushReaction(DESTROY).dropsLike(RED_SANDSTONE_BLOCK)));
+    public static final Block QUARTZ_BLOCK = register("quartz_block", new BlockBlock(BlockBlock.Types.QUARTZ, FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).pushReaction(DESTROY)));
+    public static final Block WALL_QUARTZ_BLOCK = register("wall_quartz_block", new WallBlockBlock(BlockBlock.Types.QUARTZ, FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).pushReaction(DESTROY).dropsLike(QUARTZ_BLOCK)));
     // endregion
 
     // region COLUMNS
@@ -58,13 +59,13 @@ public class BBBBlocks {
     // endregion
 
     // region URNS
-    public static final Block STONE_URN = register("stone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.STONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
-    public static final Block BLACKSTONE_URN = register("blackstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
-    public static final Block DEEPSLATE_URN = register("deepslate_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS)).noOcclusion().pushReaction(PushReaction.DESTROY)));
-    public static final Block NETHER_BRICK_URN = register("nether_brick_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).noOcclusion().pushReaction(PushReaction.DESTROY)));
-    public static final Block SANDSTONE_URN = register("sandstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.SANDSTONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
-    public static final Block RED_SANDSTONE_URN = register("red_sandstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).noOcclusion().pushReaction(PushReaction.DESTROY)));
-    public static final Block QUARTZ_URN = register("quartz_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final Block STONE_URN = register("stone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.STONE)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block BLACKSTONE_URN = register("blackstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block DEEPSLATE_URN = register("deepslate_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block NETHER_BRICK_URN = register("nether_brick_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block SANDSTONE_URN = register("sandstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.SANDSTONE)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block RED_SANDSTONE_URN = register("red_sandstone_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block QUARTZ_URN = register("quartz_urn", new UrnBlock(FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).noOcclusion().pushReaction(DESTROY)));
     // endregion
 
     // region MOULDINGS
@@ -226,31 +227,31 @@ public class BBBBlocks {
     // endregion
 
     // region FRAMES
-    public static final Block OAK_FRAME = register("oak_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final Block SPRUCE_FRAME = register("spruce_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final Block BIRCH_FRAME = register("birch_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final Block JUNGLE_FRAME = register("jungle_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final Block ACACIA_FRAME = register("acacia_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final Block DARK_OAK_FRAME = register("dark_oak_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final Block MANGROVE_FRAME = register("mangrove_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final Block CHERRY_FRAME = register("cherry_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final Block BAMBOO_FRAME = register("bamboo_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final Block CRIMSON_FRAME = register("crimson_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
-    public static final Block WARPED_FRAME = register("warped_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noOcclusion().noCollission().pushReaction(BLOCK)));
+    public static final Block OAK_FRAME = register("oak_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block SPRUCE_FRAME = register("spruce_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block BIRCH_FRAME = register("birch_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block JUNGLE_FRAME = register("jungle_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block ACACIA_FRAME = register("acacia_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block DARK_OAK_FRAME = register("dark_oak_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block MANGROVE_FRAME = register("mangrove_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block CHERRY_FRAME = register("cherry_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block BAMBOO_FRAME = register("bamboo_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block CRIMSON_FRAME = register("crimson_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block WARPED_FRAME = register("warped_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
     // endregion
 
     // region WOODEN LANTERNS
-    public static final Block OAK_LANTERN = register("oak_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
-    public static final Block SPRUCE_LANTERN = register("spruce_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
-    public static final Block BIRCH_LANTERN = register("birch_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
-    public static final Block JUNGLE_LANTERN = register("jungle_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
-    public static final Block ACACIA_LANTERN = register("acacia_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
-    public static final Block DARK_OAK_LANTERN = register("dark_oak_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
-    public static final Block MANGROVE_LANTERN = register("mangrove_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
-    public static final Block CHERRY_LANTERN = register("cherry_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
-    public static final Block BAMBOO_LANTERN = register("bamboo_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
-    public static final Block CRIMSON_LANTERN = register("crimson_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
-    public static final Block WARPED_LANTERN = register("warped_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F)));
+    public static final Block OAK_LANTERN = register("oak_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(DESTROY).strength(0.3F)));
+    public static final Block SPRUCE_LANTERN = register("spruce_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(DESTROY).strength(0.3F)));
+    public static final Block BIRCH_LANTERN = register("birch_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(DESTROY).strength(0.3F)));
+    public static final Block JUNGLE_LANTERN = register("jungle_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(DESTROY).strength(0.3F)));
+    public static final Block ACACIA_LANTERN = register("acacia_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(DESTROY).strength(0.3F)));
+    public static final Block DARK_OAK_LANTERN = register("dark_oak_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(DESTROY).strength(0.3F)));
+    public static final Block MANGROVE_LANTERN = register("mangrove_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(DESTROY).strength(0.3F)));
+    public static final Block CHERRY_LANTERN = register("cherry_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(DESTROY).strength(0.3F)));
+    public static final Block BAMBOO_LANTERN = register("bamboo_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(DESTROY).strength(0.3F)));
+    public static final Block CRIMSON_LANTERN = register("crimson_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(DESTROY).strength(0.3F)));
+    public static final Block WARPED_LANTERN = register("warped_lantern", new WoodenLanternBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).lightLevel((blockStatex) -> 15).noOcclusion().pushReaction(DESTROY).strength(0.3F)));
     // endregion
 
     // region TRIMS
@@ -275,8 +276,8 @@ public class BBBBlocks {
     public static final Block STONE_TILE_SLAB = register("stone_tile_slab", new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
 
-    public static final Block BRAZIER = register("brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(15)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
-    public static final Block SOUL_BRAZIER = register("soul_brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(10)).noOcclusion().pushReaction(PushReaction.DESTROY).strength(1.0F, 1.5F)));
+    public static final Block BRAZIER = register("brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(15)).noOcclusion().pushReaction(DESTROY).strength(1.0F, 1.5F)));
+    public static final Block SOUL_BRAZIER = register("soul_brazier", new BrazierBlock(FabricBlockSettings.copy((Blocks.IRON_BLOCK)).lightLevel(litBlockEmission(10)).noOcclusion().pushReaction(DESTROY).strength(1.0F, 1.5F)));
 
 
      public static final Block ROPE = register("rope", new ChainBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).forceSolidOn().strength(0.1F).sound(SoundType.WOOL).noOcclusion()));
