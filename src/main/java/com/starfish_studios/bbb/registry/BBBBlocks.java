@@ -115,7 +115,7 @@ public class BBBBlocks {
     public static final Block MANGROVE_BEAM = register("mangrove_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_MANGROVE_LOG))));
     public static final Block MANGROVE_BEAM_STAIRS = register("mangrove_beam_stairs", new StairBlock((Blocks.MANGROVE_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)));
     public static final Block MANGROVE_BEAM_SLAB = register("mangrove_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS))));
-    public static final Block BAMBOO_BEAM = register("bamboo_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.BAMBOO))));
+    public static final Block BAMBOO_BEAM = register("bamboo_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS))));
     public static final Block BAMBOO_BEAM_STAIRS = register("bamboo_beam_stairs", new StairBlock((Blocks.BAMBOO_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS)));
     public static final Block BAMBOO_BEAM_SLAB = register("bamboo_beam_slab", new FacingSlabBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS))));
     public static final Block CHERRY_BEAM = register("cherry_beam", new RotatedPillarBlock(FabricBlockSettings.copy((Blocks.STRIPPED_CHERRY_LOG))));

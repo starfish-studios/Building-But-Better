@@ -3,7 +3,8 @@
   "package": "com.starfish_studios.bbb.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "PaintingMixin"
+    "PaintingMixin",
+    "create.BlockMovementChecksMixin"
   ],
   "injectors": {
     "defaultRequire": 1
