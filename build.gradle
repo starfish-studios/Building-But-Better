@@ -28,8 +28,20 @@ sourceSets {
 }
 
 
+def dataOutput = 'src/main/generated'
 loom {
 	accessWidenerPath.set(file("src/main/resources/bbb.accesswidener"))
+	runs {
+		datagen {
+			server()
+
+			name "Data Generation"
+			vmArg "-Dfabric-api-datagen"
+			vmArg "-Dfabric-api-datagen.output-dir=${file(dataOutput)}"
+
+			runDir "build/datagen"
+		}
+	}
 }
 
 

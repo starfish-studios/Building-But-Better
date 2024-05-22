@@ -21,6 +21,9 @@
 		],
 		"client": [
 			"com.starfish_studios.bbb.BBBClient"
+		],
+		"datagen": [
+			"com.starfish_studios.bbb.BBBDataGenerator"
 		]
 	},
 	"mixins": [
