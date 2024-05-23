@@ -3,6 +3,7 @@
   "package": "com.starfish_studios.bbb.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "BushBlockMixin",
     "PaintingMixin"
   ],
   "injectors": {

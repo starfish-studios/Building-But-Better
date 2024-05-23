@@ -226,6 +226,19 @@ public class BBBBlocks {
     public static final Block WARPED_PALLET = register("warped_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noOcclusion()));
     // endregion
 
+    // region RAILINGS
+    public static final Block OAK_RAILING = register("oak_railing", new StairBlock((Blocks.OAK_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final Block SPRUCE_RAILING = register("spruce_railing", new StairBlock((Blocks.SPRUCE_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
+    public static final Block BIRCH_RAILING = register("birch_railing", new StairBlock((Blocks.BIRCH_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
+    public static final Block JUNGLE_RAILING = register("jungle_railing", new StairBlock((Blocks.JUNGLE_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS).noOcclusion()));
+    public static final Block ACACIA_RAILING = register("acacia_railing", new StairBlock((Blocks.ACACIA_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
+    public static final Block DARK_OAK_RAILING = register("dark_oak_railing", new StairBlock((Blocks.DARK_OAK_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
+    public static final Block MANGROVE_RAILING = register("mangrove_railing", new StairBlock((Blocks.MANGROVE_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS).noOcclusion()));
+    public static final Block CHERRY_RAILING = register("cherry_railing", new StairBlock((Blocks.CHERRY_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.CHERRY_PLANKS).noOcclusion()));
+    public static final Block BAMBOO_RAILING = register("bamboo_railing", new StairBlock((Blocks.BAMBOO_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS).noOcclusion()));
+    public static final Block CRIMSON_RAILING = register("crimson_railing", new StairBlock((Blocks.CRIMSON_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
+    public static final Block WARPED_RAILING = register("warped_railing", new StairBlock((Blocks.WARPED_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
+
     // region FRAMES
     public static final Block OAK_FRAME = register("oak_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
     public static final Block SPRUCE_FRAME = register("spruce_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
@@ -238,6 +251,14 @@ public class BBBBlocks {
     public static final Block BAMBOO_FRAME = register("bamboo_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
     public static final Block CRIMSON_FRAME = register("crimson_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
     public static final Block WARPED_FRAME = register("warped_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+
+    public static final Block STONE_FRAME = register("stone_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.STONE)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block BLACKSTONE_FRAME = register("blackstone_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.BLACKSTONE)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block DEEPSLATE_FRAME = register("deepslate_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.DEEPSLATE_BRICKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block NETHER_BRICK_FRAME = register("nether_brick_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.NETHER_BRICKS)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block SANDSTONE_FRAME = register("sandstone_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.SANDSTONE)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block RED_SANDSTONE_FRAME = register("red_sandstone_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.RED_SANDSTONE)).noOcclusion().noCollission().pushReaction(DESTROY)));
+    public static final Block QUARTZ_FRAME = register("quartz_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.QUARTZ_BLOCK)).noOcclusion().noCollission().pushReaction(DESTROY)));
     // endregion
 
     // region WOODEN LANTERNS

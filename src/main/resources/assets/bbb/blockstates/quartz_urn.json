@@ -1,7 +1,17 @@
 {
-  "variants": {
-    "": {
-      "model": "bbb:block/urn/quartz"
-    }
-  }
+    "multipart": [
+        {
+            "apply": {
+                "model": "bbb:block/urn/quartz"
+            }
+        },
+        {
+            "when": {
+                "soiled": "true"
+            },
+            "apply": {
+                "model": "bbb:block/urn/soiled"
+            }
+        }
+    ]
 }

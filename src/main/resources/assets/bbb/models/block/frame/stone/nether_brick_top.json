@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/frame/stone/top",
+    "textures": {
+        "texture": "bbb:block/frame/stone/nether_brick",
+        "particle": "block/nether_brick"
+    }
+}

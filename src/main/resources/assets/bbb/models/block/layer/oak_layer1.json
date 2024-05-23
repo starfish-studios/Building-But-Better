@@ -1,5 +1,4 @@
 {
-	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/snow_height4",
 	"textures": {
 		"particle": "minecraft:block/oak_planks",

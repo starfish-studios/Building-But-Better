@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/frame/stone/bottom_left_corner",
+    "textures": {
+        "texture": "bbb:block/frame/stone/stone",
+        "particle": "block/stone"
+    }
+}

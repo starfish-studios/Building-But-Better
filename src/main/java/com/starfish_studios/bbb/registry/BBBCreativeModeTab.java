@@ -17,6 +17,7 @@ public class BBBCreativeModeTab {
     public static final CreativeModeTab ITEM_GROUP = register("item_group", FabricItemGroup.builder().icon(CORNERSTONE::getDefaultInstance).title(Component.translatable("itemGroup.bbb.tab")).displayItems((featureFlagSet, output) -> {
 
         output.accept(HAMMER);
+        output.accept(CHISEL);
         output.accept(ROPE);
 
         // output.accept(PLASTER);
@@ -26,6 +27,14 @@ public class BBBCreativeModeTab {
         output.accept(BRAZIER);
         output.accept(SOUL_BRAZIER);
         output.accept(IRON_FENCE);
+
+        output.accept(STONE_FRAME);
+        output.accept(BLACKSTONE_FRAME);
+        output.accept(SANDSTONE_FRAME);
+        output.accept(RED_SANDSTONE_FRAME);
+        output.accept(QUARTZ_FRAME);
+        output.accept(DEEPSLATE_FRAME);
+        output.accept(NETHER_BRICK_FRAME);
 
         output.accept(POLISHED_STONE);
         output.accept(POLISHED_STONE_STAIRS);

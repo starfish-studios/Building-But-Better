@@ -1,0 +1,17 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "bbb:block/urn/oak"
+      }
+    },
+    {
+      "when": {
+        "soiled": "true"
+      },
+      "apply": {
+        "model": "bbb:block/urn/soiled"
+      }
+    }
+  ]
+}

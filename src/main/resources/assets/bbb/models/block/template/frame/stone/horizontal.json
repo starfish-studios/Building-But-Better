@@ -1,0 +1,20 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"texture": "bbb:block/frame/stone/stone"
+	},
+	"elements": [
+		{
+			"from": [0, 6, 13.98],
+			"to": [16, 10, 15.98],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 14.98]},
+			"faces": {
+				"north": {"uv": [14, 6.5, 16, 14], "rotation": 270, "texture": "#texture"},
+				"south": {"uv": [16, 14, 14, 6.5], "rotation": 90, "texture": "#texture"},
+				"up": {"uv": [13, 6.5, 14, 14], "rotation": 90, "texture": "#texture"},
+				"down": {"uv": [13, 6.5, 14, 14], "rotation": 90, "texture": "#texture"}
+			}
+		}
+	]
+}

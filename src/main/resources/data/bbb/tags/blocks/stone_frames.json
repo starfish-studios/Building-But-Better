@@ -1,0 +1,11 @@
+{
+  "values": [
+    "bbb:stone_frame",
+    "bbb:blackstone_frame",
+    "bbb:sandstone_frame",
+    "bbb:red_sandstone_frame",
+    "bbb:quartz_frame",
+    "bbb:deepslate_frame",
+    "bbb:nether_brick_frame"
+  ]
+}

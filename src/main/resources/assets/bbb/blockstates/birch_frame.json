@@ -44,7 +44,8 @@
             "when": {
                 "left": "true",
                 "top": "true",
-                "facing": "north"
+                "facing": "north",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_top_left_corner",
@@ -55,7 +56,8 @@
             "when": {
                 "right": "true",
                 "top": "true",
-                "facing": "north"
+                "facing": "north",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_top_right_corner",
@@ -66,7 +68,8 @@
             "when": {
                 "left": "true",
                 "bottom": "true",
-                "facing": "north"
+                "facing": "north",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_bottom_left_corner",
@@ -77,7 +80,8 @@
             "when": {
                 "right": "true",
                 "bottom": "true",
-                "facing": "north"
+                "facing": "north",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_bottom_right_corner",
@@ -132,7 +136,8 @@
             "when": {
                 "left": "true",
                 "top": "true",
-                "facing": "east"
+                "facing": "east",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_top_left_corner",
@@ -144,7 +149,8 @@
             "when": {
                 "right": "true",
                 "top": "true",
-                "facing": "east"
+                "facing": "east",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_top_right_corner",
@@ -156,7 +162,8 @@
             "when": {
                 "left": "true",
                 "bottom": "true",
-                "facing": "east"
+                "facing": "east",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_bottom_left_corner",
@@ -168,7 +175,8 @@
             "when": {
                 "right": "true",
                 "bottom": "true",
-                "facing": "east"
+                "facing": "east",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_bottom_right_corner",
@@ -224,7 +232,8 @@
             "when": {
                 "left": "true",
                 "top": "true",
-                "facing": "south"
+                "facing": "south",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_top_left_corner",
@@ -236,7 +245,8 @@
             "when": {
                 "right": "true",
                 "top": "true",
-                "facing": "south"
+                "facing": "south",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_top_right_corner",
@@ -248,7 +258,8 @@
             "when": {
                 "left": "true",
                 "bottom": "true",
-                "facing": "south"
+                "facing": "south",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_bottom_left_corner",
@@ -260,7 +271,8 @@
             "when": {
                 "right": "true",
                 "bottom": "true",
-                "facing": "south"
+                "facing": "south",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_bottom_right_corner",
@@ -316,7 +328,8 @@
             "when": {
                 "left": "true",
                 "top": "true",
-                "facing": "west"
+                "facing": "west",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_top_left_corner",
@@ -328,7 +341,8 @@
             "when": {
                 "right": "true",
                 "top": "true",
-                "facing": "west"
+                "facing": "west",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_top_right_corner",
@@ -340,7 +354,8 @@
             "when": {
                 "left": "true",
                 "bottom": "true",
-                "facing": "west"
+                "facing": "west",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_bottom_left_corner",
@@ -352,7 +367,8 @@
             "when": {
                 "right": "true",
                 "bottom": "true",
-                "facing": "west"
+                "facing": "west",
+                "corners": "true"
             },
             "apply": {
                 "model": "bbb:block/frame/birch_bottom_right_corner",

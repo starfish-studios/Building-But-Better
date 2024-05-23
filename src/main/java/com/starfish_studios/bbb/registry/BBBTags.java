@@ -12,6 +12,10 @@ public interface BBBTags {
 
     // region BLOCK TAGS
     interface BBBBlockTags {
+        TagKey<Block> CHISEL_STONE = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "chisel_stone"));
+        TagKey<Block> URNS = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "urns"));
+
+
         TagKey<Block> METAL_FENCES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "metal_fences"));
         TagKey<Block> MOULDINGS = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "mouldings"));
         TagKey<Block> HEDGES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "hedges"));
@@ -19,6 +23,7 @@ public interface BBBTags {
 
         TagKey<Block> STONE_FENCES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "stone_fences"));
         TagKey<Block> FRAMES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "frames"));
+        TagKey<Block> STONE_FRAMES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "stone_frames"));
         TagKey<Block> SUPPORTS = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "supports"));
         TagKey<Block> PALLETS = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "pallets"));
         TagKey<Block> COLUMNS = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "columns"));
@@ -29,9 +34,12 @@ public interface BBBTags {
     // region ITEM TAGS
     interface BBBItemTags {
 
+        TagKey<Item> CHISEL_STONE = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "chisel/stone"));
+
         TagKey<Item> LANTERNS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "lanterns"));
         TagKey<Item> MOULDINGS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "mouldings"));
         TagKey<Item> FRAMES = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "frames"));
+        TagKey<Item> STONE_FRAMES = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "stone_frames"));
         TagKey<Item> SUPPORTS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "supports"));
         TagKey<Item> PALLETS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "pallets"));
         TagKey<Item> COLUMNS = TagKey.create(Registries.ITEM, new ResourceLocation(MOD_ID, "columns"));

@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "bbb:block/frame/stone/oak",
+		"texture": "bbb:block/frame/stone/oak"
+	},
+	"elements": [
+		{
+			"from": [5.99824, -3.31676, 13.98],
+			"to": [9.99824, 19.31324, 15.98],
+			"rotation": {"angle": 45, "axis": "z", "origin": [7.99824, 7.99824, 15]},
+			"faces": {
+				"north": {"uv": [16, 15.5, 14, 4.5], "texture": "#texture"},
+				"east": {"uv": [14, 15.5, 13, 4.5], "texture": "#texture"},
+				"south": {"uv": [14, 4.5, 16, 15.5], "texture": "#texture"},
+				"west": {"uv": [14, 15.5, 13, 4.5], "texture": "#texture"}
+			}
+		}
+	]
+}

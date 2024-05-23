@@ -84,7 +84,7 @@ public class DescriptionBlockItem extends BlockItem {
             } else tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
         }
 
-        else if (stack.is(BBBTags.BBBItemTags.FRAMES)) {
+        else if (stack.is(BBBTags.BBBItemTags.FRAMES) || stack.is(BBBTags.BBBItemTags.STONE_FRAMES)) {
             if (Screen.hasShiftDown()) {
                 tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE).append(Component.translatable("description.bbb.frame1").withStyle(ChatFormatting.GRAY)));
                 tooltip.add(Component.translatable("description.bbb.frame2").withStyle(ChatFormatting.GRAY));

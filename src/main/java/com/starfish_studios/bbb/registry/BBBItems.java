@@ -14,6 +14,7 @@ public class BBBItems {
 
     public static final Item CORNERSTONE = register("bbb", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON).fireproof()));
     public static final Item HAMMER = register("hammer", new HammerItem(new FabricItemSettings().maxCount(1).durability(256)));
+    public static final Item CHISEL = register("chisel", new Item(new FabricItemSettings().maxCount(1).durability(256)));
 
     public static final Item STONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.STONE_BLOCK, BBBBlocks.WALL_STONE_BLOCK, new Item.Properties(), Direction.DOWN));
     public static final Item BLACKSTONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.BLACKSTONE_BLOCK, BBBBlocks.WALL_BLACKSTONE_BLOCK, new Item.Properties(), Direction.DOWN));
@@ -23,6 +24,20 @@ public class BBBItems {
     public static final Item RED_SANDSTONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.RED_SANDSTONE_BLOCK, BBBBlocks.WALL_RED_SANDSTONE_BLOCK, new Item.Properties(), Direction.DOWN));
     public static final Item QUARTZ_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.QUARTZ_BLOCK, BBBBlocks.WALL_QUARTZ_BLOCK, new Item.Properties(), Direction.DOWN));
 
+
+    // region RAILINGS
+    public static final Item OAK_RAILING = register("oak_railing", new DescriptionBlockItem(BBBBlocks.OAK_RAILING, new FabricItemSettings()));
+    public static final Item SPRUCE_RAILING = register("spruce_railing", new DescriptionBlockItem(BBBBlocks.SPRUCE_RAILING, new FabricItemSettings()));
+    public static final Item BIRCH_RAILING = register("birch_railing", new DescriptionBlockItem(BBBBlocks.BIRCH_RAILING, new FabricItemSettings()));
+    public static final Item JUNGLE_RAILING = register("jungle_railing", new DescriptionBlockItem(BBBBlocks.JUNGLE_RAILING, new FabricItemSettings()));
+    public static final Item ACACIA_RAILING = register("acacia_railing", new DescriptionBlockItem(BBBBlocks.ACACIA_RAILING, new FabricItemSettings()));
+    public static final Item DARK_OAK_RAILING = register("dark_oak_railing", new DescriptionBlockItem(BBBBlocks.DARK_OAK_RAILING, new FabricItemSettings()));
+    public static final Item CRIMSON_RAILING = register("crimson_railing", new DescriptionBlockItem(BBBBlocks.CRIMSON_RAILING, new FabricItemSettings()));
+    public static final Item WARPED_RAILING = register("warped_railing", new DescriptionBlockItem(BBBBlocks.WARPED_RAILING, new FabricItemSettings()));
+    public static final Item MANGROVE_RAILING = register("mangrove_railing", new DescriptionBlockItem(BBBBlocks.MANGROVE_RAILING, new FabricItemSettings()));
+    public static final Item BAMBOO_RAILING = register("bamboo_railing", new DescriptionBlockItem(BBBBlocks.BAMBOO_RAILING, new FabricItemSettings()));
+    public static final Item CHERRY_RAILING = register("cherry_railing", new DescriptionBlockItem(BBBBlocks.CHERRY_RAILING, new FabricItemSettings()));
+    // endregion
 
     public static final Item OAK_WALL = register("oak_wall", new BlockItem(BBBBlocks.OAK_WALL, new FabricItemSettings()));
     public static final Item SPRUCE_WALL = register("spruce_wall", new BlockItem(BBBBlocks.SPRUCE_WALL, new FabricItemSettings()));
@@ -243,6 +258,14 @@ public class BBBItems {
     public static final Item BAMBOO_FRAME = register("bamboo_frame", new DescriptionBlockItem(BBBBlocks.BAMBOO_FRAME, new FabricItemSettings()));
     public static final Item CRIMSON_FRAME = register("crimson_frame", new DescriptionBlockItem(BBBBlocks.CRIMSON_FRAME, new FabricItemSettings()));
     public static final Item WARPED_FRAME = register("warped_frame", new DescriptionBlockItem(BBBBlocks.WARPED_FRAME, new FabricItemSettings()));
+
+    public static final Item STONE_FRAME = register("stone_frame", new DescriptionBlockItem(BBBBlocks.STONE_FRAME, new FabricItemSettings()));
+    public static final Item BLACKSTONE_FRAME = register("blackstone_frame", new DescriptionBlockItem(BBBBlocks.BLACKSTONE_FRAME, new FabricItemSettings()));
+    public static final Item DEEPSLATE_FRAME = register("deepslate_frame", new DescriptionBlockItem(BBBBlocks.DEEPSLATE_FRAME, new FabricItemSettings()));
+    public static final Item NETHER_BRICK_FRAME = register("nether_brick_frame", new DescriptionBlockItem(BBBBlocks.NETHER_BRICK_FRAME, new FabricItemSettings()));
+    public static final Item SANDSTONE_FRAME = register("sandstone_frame", new DescriptionBlockItem(BBBBlocks.SANDSTONE_FRAME, new FabricItemSettings()));
+    public static final Item RED_SANDSTONE_FRAME = register("red_sandstone_frame", new DescriptionBlockItem(BBBBlocks.RED_SANDSTONE_FRAME, new FabricItemSettings()));
+    public static final Item QUARTZ_FRAME = register("quartz_frame", new DescriptionBlockItem(BBBBlocks.QUARTZ_FRAME, new FabricItemSettings()));
     // endregion
 
 

@@ -1,7 +1,17 @@
 {
-  "variants": {
-    "": {
-      "model": "bbb:block/urn/red_sandstone"
-    }
-  }
+    "multipart": [
+        {
+            "apply": {
+                "model": "bbb:block/urn/red_sandstone"
+            }
+        },
+        {
+            "when": {
+                "soiled": "true"
+            },
+            "apply": {
+                "model": "bbb:block/urn/soiled"
+            }
+        }
+    ]
 }

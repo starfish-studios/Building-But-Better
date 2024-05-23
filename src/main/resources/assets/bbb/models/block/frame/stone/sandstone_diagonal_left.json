@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/frame/stone/diagonal_left",
+    "textures": {
+        "texture": "bbb:block/frame/stone/sandstone",
+        "particle": "block/sandstone"
+    }
+}

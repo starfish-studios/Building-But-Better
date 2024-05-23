@@ -1,0 +1,95 @@
+{
+    "credit": "Made with Blockbench",
+    "texture_size": [
+        32,
+        32
+    ],
+    "textures": {
+        "texture": "bbb:block/frame/birch_frame"
+    },
+    "elements": [
+        {
+            "from": [
+                8.99176,
+                -3.65,
+                12.99
+            ],
+            "to": [
+                13.01176,
+                19,
+                16.01
+            ],
+            "rotation": {
+                "angle": -45,
+                "axis": "z",
+                "origin": [
+                    11.00176,
+                    10.99824,
+                    15
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        1,
+                        0,
+                        12,
+                        2
+                    ],
+                    "rotation": 90,
+                    "texture": "#texture"
+                },
+                "east": {
+                    "uv": [
+                        1,
+                        5.5,
+                        12,
+                        7
+                    ],
+                    "rotation": 90,
+                    "texture": "#texture"
+                },
+                "south": {
+                    "uv": [
+                        12,
+                        2,
+                        1,
+                        0
+                    ],
+                    "rotation": 90,
+                    "texture": "#texture"
+                },
+                "west": {
+                    "uv": [
+                        1,
+                        4,
+                        12,
+                        5.5
+                    ],
+                    "rotation": 90,
+                    "texture": "#texture"
+                },
+                "up": {
+                    "uv": [
+                        6.5,
+                        9,
+                        5,
+                        7
+                    ],
+                    "rotation": 90,
+                    "texture": "#texture"
+                },
+                "down": {
+                    "uv": [
+                        8,
+                        9,
+                        6.5,
+                        7
+                    ],
+                    "rotation": 90,
+                    "texture": "#texture"
+                }
+            }
+        }
+    ]
+}

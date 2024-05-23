@@ -32,7 +32,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class FrameBlock extends Block implements SimpleWaterloggedBlock {
-    public static final BooleanProperty SIDES = BooleanProperty.create("sides");
+    public static final BooleanProperty CORNERS = BooleanProperty.create("corners");
     public static final EnumProperty<FrameStickDirection> FRAME_CENTER = BBBBlockStateProperties.FRAME_CENTER;
 
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -63,13 +63,15 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
                 .setValue(BOTTOM, true)
                 .setValue(LEFT, true)
                 .setValue(RIGHT, true)
-                .setValue(SIDES, true)
+                .setValue(CORNERS, true)
                 .setValue(FRAME_CENTER, FrameStickDirection.NONE));
     }
 
     @Override
     public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
         if (player.getItemInHand(interactionHand).is(BBBTags.BBBItemTags.HAMMERS)) {
+            // TODO: This cycles through the frame center options, rotating it sort of like an Item Frame
+            // region FRAME CENTER CYCLING
             if (blockState.getValue(FRAME_CENTER) == FrameStickDirection.NONE) {
                 blockState = blockState.setValue(FRAME_CENTER, FrameStickDirection.VERTICAL);
             } else if (blockState.getValue(FRAME_CENTER) == FrameStickDirection.VERTICAL) {
@@ -84,6 +86,7 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
             level.setBlock(blockPos, blockState, 3);
             level.playSound(player, blockPos, Blocks.SCAFFOLDING.getSoundType(level.getBlockState(blockPos)).getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
             return InteractionResult.SUCCESS;
+            // endregion
         } else return InteractionResult.PASS;
     }
 
@@ -141,7 +144,7 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING, WATERLOGGED, TOP, BOTTOM, LEFT, RIGHT, SIDES, FRAME_CENTER);
+        builder.add(FACING, WATERLOGGED, TOP, BOTTOM, LEFT, RIGHT, CORNERS, FRAME_CENTER);
     }
 
     @Override
@@ -219,6 +222,6 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
                 state.isFaceSturdy(null, null, Direction.WEST)) {
             return true;
         }
-        return state.is(BBBTags.BBBBlockTags.FRAMES);
+        return state.is(BBBTags.BBBBlockTags.FRAMES) || state.is(BBBTags.BBBBlockTags.STONE_FRAMES);
     }
 }

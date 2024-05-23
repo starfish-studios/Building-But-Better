@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/frame/stone/top_left_corner",
+    "textures": {
+        "texture": "bbb:block/frame/stone/deepslate",
+        "particle": "block/deepslate"
+    }
+}

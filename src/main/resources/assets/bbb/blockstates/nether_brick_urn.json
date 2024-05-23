@@ -1,7 +1,17 @@
 {
-  "variants": {
-    "": {
-      "model": "bbb:block/urn/nether_brick"
-    }
-  }
+    "multipart": [
+        {
+            "apply": {
+                "model": "bbb:block/urn/nether_brick"
+            }
+        },
+        {
+            "when": {
+                "soiled": "true"
+            },
+            "apply": {
+                "model": "bbb:block/urn/soiled"
+            }
+        }
+    ]
 }
