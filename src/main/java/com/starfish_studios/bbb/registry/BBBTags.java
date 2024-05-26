@@ -15,6 +15,8 @@ public interface BBBTags {
         TagKey<Block> CHISEL_STONE = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "chisel_stone"));
         TagKey<Block> URNS = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "urns"));
 
+        TagKey<Block> BALUSTRADES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "balustrades"));
+
 
         TagKey<Block> METAL_FENCES = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "metal_fences"));
         TagKey<Block> MOULDINGS = TagKey.create(Registries.BLOCK, new ResourceLocation(MOD_ID, "mouldings"));

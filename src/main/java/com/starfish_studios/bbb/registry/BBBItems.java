@@ -16,6 +16,10 @@ public class BBBItems {
     public static final Item HAMMER = register("hammer", new HammerItem(new FabricItemSettings().maxCount(1).durability(256)));
     public static final Item CHISEL = register("chisel", new Item(new FabricItemSettings().maxCount(1).durability(256)));
 
+    public static final Item OAK_BALUSTRADE = register("oak_balustrade", new DescriptionBlockItem(BBBBlocks.OAK_BALUSTRADE, new FabricItemSettings()));
+
+    public static final Item OAK_LATTICE = register("oak_lattice", new DescriptionBlockItem(BBBBlocks.OAK_LATTICE, new FabricItemSettings()));
+
     public static final Item STONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.STONE_BLOCK, BBBBlocks.WALL_STONE_BLOCK, new Item.Properties(), Direction.DOWN));
     public static final Item BLACKSTONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.BLACKSTONE_BLOCK, BBBBlocks.WALL_BLACKSTONE_BLOCK, new Item.Properties(), Direction.DOWN));
     public static final Item DEEPSLATE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.DEEPSLATE_BLOCK, BBBBlocks.WALL_DEEPSLATE_BLOCK, new Item.Properties(), Direction.DOWN));

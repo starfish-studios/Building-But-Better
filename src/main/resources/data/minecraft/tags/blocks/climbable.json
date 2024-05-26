@@ -1,6 +1,7 @@
 {
   "values": [
-    "#bbb:ladders"
+    "#bbb:ladders",
+    "#bbb:lattices"
   ],
   "replace": false
 }

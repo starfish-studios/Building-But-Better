@@ -1,0 +1,64 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "bbb:block/lattice/plants/cave_vines",
+		"plant": "bbb:block/lattice/plants/cave_vines"
+	},
+	"elements": [
+		{
+			"from": [-4, -4, 13.5],
+			"to": [20, 20, 13.5],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#plant", "cullface": "north"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#plant", "cullface": "south"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, -90, 0],
+			"translation": [2.75, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, -90, 0],
+			"translation": [2.75, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -75.75, 25],
+			"translation": [1.13, 3.2, 1.13],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -75.75, 25],
+			"translation": [1.13, 3.2, 1.13],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, -1.75],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [3, -1.75, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"fixed": {
+			"translation": [0, 0, -3],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "bone",
+			"origin": [-8, 0, -8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

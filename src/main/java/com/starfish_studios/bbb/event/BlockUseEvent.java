@@ -1,5 +1,6 @@
 package com.starfish_studios.bbb.event;
 
+import com.starfish_studios.bbb.block.BalustradeBlock;
 import com.starfish_studios.bbb.block.FrameBlock;
 import com.starfish_studios.bbb.block.MouldingBlock;
 import com.starfish_studios.bbb.block.StoneFenceBlock;
@@ -29,6 +30,17 @@ public class BlockUseEvent implements UseBlockCallback {
         final boolean isHammer = player.getItemInHand(hand).is(BBBTags.BBBItemTags.HAMMERS);
         BlockState blockState = level.getBlockState(blockPos);
         BlockHitResult blockHitResult = new BlockHitResult(hitResult.getLocation(), hitResult.getDirection(), blockPos, hitResult.isInside());
+
+        // TODO : HAMMER + BALUSTRADE
+        if (isHammer && level.getBlockState(blockPos).is(BBBTags.BBBBlockTags.BALUSTRADES) && player.isShiftKeyDown()) {
+            if (level.getBlockState(blockPos).getValue(BalustradeBlock.TILTED)) {
+                level.setBlock(blockPos, level.getBlockState(blockPos).setValue(BalustradeBlock.TILTED, false), 3);
+            } else {
+                level.setBlock(blockPos, level.getBlockState(blockPos).setValue(BalustradeBlock.TILTED, true), 3);
+            }
+            level.playSound(player, blockPos, blockState.getSoundType().getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
+            return InteractionResult.SUCCESS;
+        }
 
 
         //TODO : HAMMER + MOULDINGS

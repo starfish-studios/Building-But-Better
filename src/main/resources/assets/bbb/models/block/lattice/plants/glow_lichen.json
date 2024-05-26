@@ -1,0 +1,8 @@
+{
+	"parent": "bbb:block/template/lattice/plant",
+	"texture_size": [32, 32],
+	"textures": {
+		"plant": "block/glow_lichen",
+		"particle": "block/glow_lichen"
+	}
+}

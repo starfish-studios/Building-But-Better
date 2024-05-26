@@ -28,6 +28,8 @@ public class BBBCreativeModeTab {
         output.accept(SOUL_BRAZIER);
         output.accept(IRON_FENCE);
 
+        output.accept(OAK_BALUSTRADE);
+
         output.accept(STONE_FRAME);
         output.accept(BLACKSTONE_FRAME);
         output.accept(SANDSTONE_FRAME);

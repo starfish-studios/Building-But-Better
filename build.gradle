@@ -8,7 +8,7 @@ group = project.maven_group
 
 repositories {
 	maven { url = "https://maven.tterrag.com/" }
-	maven { url = "https://api.modrinth.com/maven" } // LazyDFU
+	maven { url = "https://api.modrinth.com/maven" } // Modrinth
 	maven { url = "https://maven.terraformersmc.com/releases/" } // Mod Menu
 	maven { url = "https://mvn.devos.one/snapshots/" } // Create Fabric, Porting Lib, Forge Tags, Milk Lib, Registrate Fabric
 	maven { url = "https://cursemaven.com" } // Forge Config API Port
@@ -56,6 +56,7 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
 
 	// Uncomment the following line to enable the deprecated Fabric API modules.
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.

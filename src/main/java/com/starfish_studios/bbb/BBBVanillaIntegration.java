@@ -9,7 +9,15 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.minecraft.client.color.block.BlockColor;
+import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.level.FoliageColor;
+import net.minecraft.world.level.GrassColor;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
 
 public class BBBVanillaIntegration {
 
@@ -19,12 +27,34 @@ public class BBBVanillaIntegration {
         public static void clientInit() {
             registerBlockRenderLayers();
             registerBlockEntityRenderers();
+            registerBlockColors();
         }
 
         //client methods
         private static void registerBlockEntityRenderers() {
             Reflection.initialize(BBBModelLayers.class);
             BlockEntityRendererRegistry.register(BBBBlockEntityType.BLOCK, context -> new BlockBlockRenderer());
+        }
+
+        private static void registerBlockColors() {
+
+            ColorProviderRegistry<Block, BlockColor> blockColor = ColorProviderRegistry.BLOCK;
+            blockColor.register((state, world, pos, tintIndex) -> {
+                        if (world == null || pos == null) {
+                            return FoliageColor.getDefaultColor();
+                        }
+                        return BiomeColors.getAverageFoliageColor(world, pos);
+                    },
+                    BBBBlocks.OAK_LATTICE
+            );
+
+            ColorProviderRegistry.ITEM.register((stack, tintIndex) -> {
+                        BlockState blockState = ((BlockItem)stack.getItem()).getBlock().defaultBlockState();
+                        return blockColor.get(((BlockItem)stack.getItem()).getBlock()).getColor(blockState, null, null, tintIndex);
+                    }
+//                    BBBBlocks.OAK_LATTICE
+            );
+
         }
 
         private static void registerBlockRenderLayers() {
@@ -50,7 +80,8 @@ public class BBBVanillaIntegration {
                     BBBBlocks.WARPED_LADDER,
                     BBBBlocks.MANGROVE_LADDER,
                     BBBBlocks.BAMBOO_LADDER,
-                    BBBBlocks.CHERRY_LADDER
+                    BBBBlocks.CHERRY_LADDER,
+                    BBBBlocks.OAK_LATTICE
             );
         }
     }

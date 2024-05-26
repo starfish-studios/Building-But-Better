@@ -1,0 +1,13 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "bbb:font/config.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "\uE000"
+      ]
+    }
+  ]
+}

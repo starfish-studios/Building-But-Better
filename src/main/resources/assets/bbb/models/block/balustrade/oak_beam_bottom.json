@@ -1,0 +1,7 @@
+{
+	"parent": "bbb:block/template/balustrade/beam_bottom",
+	"textures": {
+		"beam_bottom": "bbb:block/beam/oak_top",
+		"particle": "block/oak_planks"
+	}
+}

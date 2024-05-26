@@ -17,6 +17,19 @@ import static net.minecraft.world.level.material.PushReaction.DESTROY;
 public class BBBBlocks {
     // Stone, Blackstone, Deepslate, Nether Brick, Sandstone, Red Sandstone, Quartz
 
+    // region BALUSTRADES
+    public static final Block OAK_BALUSTRADE = register("oak_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
+//    public static final Block SPRUCE_BALUSTRADE = register("spruce_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion()));
+//    public static final Block BIRCH_BALUSTRADE = register("birch_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noOcclusion()));
+//    public static final Block JUNGLE_BALUSTRADE = register("jungle_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).noOcclusion()));
+//    public static final Block ACACIA_BALUSTRADE = register("acacia_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).noOcclusion()));
+//    public static final Block DARK_OAK_BALUSTRADE = register("dark_oak_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion()));
+
+
+    // region LATTICES
+    public static final Block OAK_LATTICE = register("oak_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
+
+
     // region WALLS
     public static final Block OAK_WALL = register("oak_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS))));
     public static final Block SPRUCE_WALL = register("spruce_wall", new WoodenWallBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS))));

@@ -3,6 +3,7 @@ package com.starfish_studios.bbb;
 import com.google.common.reflect.Reflection;
 import com.starfish_studios.bbb.event.BlockUseEvent;
 import com.starfish_studios.bbb.registry.*;
+import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
@@ -22,6 +23,7 @@ public class BuildingButBetter implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		MidnightConfig.init(MOD_ID, BBBConfig.class);
 		BlockUseEvent.EVENT.register(new BlockUseEvent());
 		Reflection.initialize(
 				BBBCreativeModeTab.class,
