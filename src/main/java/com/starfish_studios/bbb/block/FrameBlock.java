@@ -215,10 +215,10 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
         }
         var facing = state.getValue(FACING);
         return state
-                .setValue(TOP, checkConnection(level, currentPos, Direction.DOWN))
-                .setValue(BOTTOM, checkConnection(level, currentPos, Direction.UP))
-                .setValue(LEFT, checkConnection(level, currentPos, facing.getCounterClockWise()))
-                .setValue(RIGHT, checkConnection(level, currentPos, facing.getClockWise()));
+                .setValue(TOP, checkConnection(level, currentPos, Direction.UP))
+                .setValue(BOTTOM, checkConnection(level, currentPos, Direction.DOWN))
+                .setValue(LEFT, checkConnection(level, currentPos, facing.getClockWise()))
+                .setValue(RIGHT, checkConnection(level, currentPos, facing.getCounterClockWise()));
     }
 
     @Override
@@ -247,11 +247,11 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     private static boolean checkConnection(LevelAccessor level, BlockPos pos, Direction direction) {
-        var relativePos = pos.relative(direction.getOpposite());
+        var relativePos = pos.relative(direction);
         var state = level.getBlockState(relativePos);
         boolean validConnection = state.is(BBBTags.BBBBlockTags.FRAMES)
                 || state.is(BBBTags.BBBBlockTags.STONE_FRAMES)
-                || state.isFaceSturdy(level, relativePos, direction);
+                || state.isFaceSturdy(level, relativePos, direction.getOpposite());
         return !validConnection;
     }
 }
