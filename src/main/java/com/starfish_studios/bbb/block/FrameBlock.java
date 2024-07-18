@@ -3,18 +3,12 @@ package com.starfish_studios.bbb.block;
 import com.starfish_studios.bbb.BBBConfig;
 import com.starfish_studios.bbb.block.properties.BBBBlockStateProperties;
 import com.starfish_studios.bbb.block.properties.FrameStickDirection;
-import com.starfish_studios.bbb.registry.BBBItems;
 import com.starfish_studios.bbb.registry.BBBTags;
-import com.tterrag.registrate.util.entry.RegistryEntry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -216,8 +210,15 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
-        if (state.getValue(WATERLOGGED)) level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
-        return getConnections(state, level, currentPos);
+        if (state.getValue(WATERLOGGED)) {
+            level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+        }
+        var facing = state.getValue(FACING);
+        return state
+                .setValue(TOP, checkConnection(level, currentPos, Direction.DOWN))
+                .setValue(BOTTOM, checkConnection(level, currentPos, Direction.UP))
+                .setValue(LEFT, checkConnection(level, currentPos, facing.getCounterClockWise()))
+                .setValue(RIGHT, checkConnection(level, currentPos, facing.getClockWise()));
     }
 
     @Override
@@ -245,66 +246,12 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
         return false;
     }
 
-    public BlockState getConnections(BlockState state, LevelAccessor level, BlockPos pos) {
-        boolean n = validConnection(level.getBlockState(pos.north()));
-        boolean e = validConnection(level.getBlockState(pos.east()));
-        boolean s = validConnection(level.getBlockState(pos.south()));
-        boolean w = validConnection(level.getBlockState(pos.west()));
-        boolean t = validConnection(level.getBlockState(pos.above()));
-        boolean b = validConnection(level.getBlockState(pos.below()));
-        if (state.getValue(FACING) == Direction.NORTH) {
-            boolean top = !t || !validConnection(level.getBlockState(pos.above()));
-            boolean bottom = !b || !validConnection(level.getBlockState(pos.below()));
-            boolean left = !e || !validConnection(level.getBlockState(pos.east()));
-            boolean right = !w || !validConnection(level.getBlockState(pos.west()));
-            return state
-                    .setValue(TOP, top)
-                    .setValue(BOTTOM, bottom)
-                    .setValue(LEFT, left)
-                    .setValue(RIGHT, right);
-        } else if (state.getValue(FACING) == Direction.EAST) {
-            boolean top = !t || !validConnection(level.getBlockState(pos.above()));
-            boolean bottom = !b || !validConnection(level.getBlockState(pos.below()));
-            boolean left = !s || !validConnection(level.getBlockState(pos.south()));
-            boolean right = !n || !validConnection(level.getBlockState(pos.north()));
-            return state
-                    .setValue(TOP, top)
-                    .setValue(BOTTOM, bottom)
-                    .setValue(LEFT, left)
-                    .setValue(RIGHT, right);
-        } else if (state.getValue(FACING) == Direction.SOUTH) {
-            boolean top = !t || !validConnection(level.getBlockState(pos.above()));
-            boolean bottom = !b || !validConnection(level.getBlockState(pos.below()));
-            boolean left = !w || !validConnection(level.getBlockState(pos.west()));
-            boolean right = !e || !validConnection(level.getBlockState(pos.east()));
-            return state
-                    .setValue(TOP, top)
-                    .setValue(BOTTOM, bottom)
-                    .setValue(LEFT, left)
-                    .setValue(RIGHT, right);
-        } else if (state.getValue(FACING) == Direction.WEST) {
-            boolean top = !t || !validConnection(level.getBlockState(pos.above()));
-            boolean bottom = !b || !validConnection(level.getBlockState(pos.below()));
-            boolean left = !n || !validConnection(level.getBlockState(pos.north()));
-            boolean right = !s || !validConnection(level.getBlockState(pos.south()));
-            return state
-                    .setValue(TOP, top)
-                    .setValue(BOTTOM, bottom)
-                    .setValue(LEFT, left)
-                    .setValue(RIGHT, right);
-        }
-        return state;
-    }
-
-    public boolean validConnection(BlockState state) {
-        if (state.isFaceSturdy(null, null, Direction.UP) ||
-                state.isFaceSturdy(null, null, Direction.DOWN) ||
-                state.isFaceSturdy(null, null, Direction.NORTH) ||
-                state.isFaceSturdy(null, null, Direction.EAST) ||
-                state.isFaceSturdy(null, null, Direction.SOUTH) ||
-                state.isFaceSturdy(null, null, Direction.WEST)) {
-            return true;
-        }
-        return state.is(BBBTags.BBBBlockTags.FRAMES) || state.is(BBBTags.BBBBlockTags.STONE_FRAMES);
+    private static boolean checkConnection(LevelAccessor level, BlockPos pos, Direction direction) {
+        var relativePos = pos.relative(direction.getOpposite());
+        var state = level.getBlockState(relativePos);
+        boolean validConnection = state.is(BBBTags.BBBBlockTags.FRAMES)
+                || state.is(BBBTags.BBBBlockTags.STONE_FRAMES)
+                || state.isFaceSturdy(level, relativePos, direction);
+        return !validConnection;
     }
 }
