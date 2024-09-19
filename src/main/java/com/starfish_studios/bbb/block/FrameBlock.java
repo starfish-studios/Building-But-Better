@@ -246,47 +246,47 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     public BlockState getConnections(BlockState state, LevelAccessor level, BlockPos pos) {
-        boolean n = validConnection(level.getBlockState(pos.north()));
-        boolean e = validConnection(level.getBlockState(pos.east()));
-        boolean s = validConnection(level.getBlockState(pos.south()));
-        boolean w = validConnection(level.getBlockState(pos.west()));
-        boolean t = validConnection(level.getBlockState(pos.above()));
-        boolean b = validConnection(level.getBlockState(pos.below()));
+        boolean n = validConnection(level.getBlockState(pos.north()), level, pos.north());
+        boolean e = validConnection(level.getBlockState(pos.east()), level, pos.east());
+        boolean s = validConnection(level.getBlockState(pos.south()), level, pos.south());
+        boolean w = validConnection(level.getBlockState(pos.west()), level, pos.west());
+        boolean t = validConnection(level.getBlockState(pos.above()), level, pos.above());
+        boolean b = validConnection(level.getBlockState(pos.below()), level, pos.below());
         if (state.getValue(FACING) == Direction.NORTH) {
-            boolean top = !t || !validConnection(level.getBlockState(pos.above()));
-            boolean bottom = !b || !validConnection(level.getBlockState(pos.below()));
-            boolean left = !e || !validConnection(level.getBlockState(pos.east()));
-            boolean right = !w || !validConnection(level.getBlockState(pos.west()));
+            boolean top = !t || !validConnection(level.getBlockState(pos.above()), level, pos.above());
+            boolean bottom = !b || !validConnection(level.getBlockState(pos.below()), level, pos.below());
+            boolean left = !e || !validConnection(level.getBlockState(pos.east()), level, pos.east());
+            boolean right = !w || !validConnection(level.getBlockState(pos.west()), level, pos.west());
             return state
                     .setValue(TOP, top)
                     .setValue(BOTTOM, bottom)
                     .setValue(LEFT, left)
                     .setValue(RIGHT, right);
         } else if (state.getValue(FACING) == Direction.EAST) {
-            boolean top = !t || !validConnection(level.getBlockState(pos.above()));
-            boolean bottom = !b || !validConnection(level.getBlockState(pos.below()));
-            boolean left = !s || !validConnection(level.getBlockState(pos.south()));
-            boolean right = !n || !validConnection(level.getBlockState(pos.north()));
+            boolean top = !t || !validConnection(level.getBlockState(pos.above()), level, pos.above());
+            boolean bottom = !b || !validConnection(level.getBlockState(pos.below()), level, pos.below());
+            boolean left = !s || !validConnection(level.getBlockState(pos.south()), level, pos.south());
+            boolean right = !n || !validConnection(level.getBlockState(pos.north()), level, pos.north());
             return state
                     .setValue(TOP, top)
                     .setValue(BOTTOM, bottom)
                     .setValue(LEFT, left)
                     .setValue(RIGHT, right);
         } else if (state.getValue(FACING) == Direction.SOUTH) {
-            boolean top = !t || !validConnection(level.getBlockState(pos.above()));
-            boolean bottom = !b || !validConnection(level.getBlockState(pos.below()));
-            boolean left = !w || !validConnection(level.getBlockState(pos.west()));
-            boolean right = !e || !validConnection(level.getBlockState(pos.east()));
+            boolean top = !t || !validConnection(level.getBlockState(pos.above()), level, pos.above());
+            boolean bottom = !b || !validConnection(level.getBlockState(pos.below()), level, pos.below());
+            boolean left = !w || !validConnection(level.getBlockState(pos.west()), level, pos.west());
+            boolean right = !e || !validConnection(level.getBlockState(pos.east()), level, pos.east());
             return state
                     .setValue(TOP, top)
                     .setValue(BOTTOM, bottom)
                     .setValue(LEFT, left)
                     .setValue(RIGHT, right);
         } else if (state.getValue(FACING) == Direction.WEST) {
-            boolean top = !t || !validConnection(level.getBlockState(pos.above()));
-            boolean bottom = !b || !validConnection(level.getBlockState(pos.below()));
-            boolean left = !n || !validConnection(level.getBlockState(pos.north()));
-            boolean right = !s || !validConnection(level.getBlockState(pos.south()));
+            boolean top = !t || !validConnection(level.getBlockState(pos.above()), level, pos.above());
+            boolean bottom = !b || !validConnection(level.getBlockState(pos.below()), level, pos.below());
+            boolean left = !n || !validConnection(level.getBlockState(pos.north()), level, pos.north());
+            boolean right = !s || !validConnection(level.getBlockState(pos.south()), level, pos.south());
             return state
                     .setValue(TOP, top)
                     .setValue(BOTTOM, bottom)
@@ -296,15 +296,16 @@ public class FrameBlock extends Block implements SimpleWaterloggedBlock {
         return state;
     }
 
-    public boolean validConnection(BlockState state) {
-        if (state.isFaceSturdy(null, null, Direction.UP) ||
-                state.isFaceSturdy(null, null, Direction.DOWN) ||
-                state.isFaceSturdy(null, null, Direction.NORTH) ||
-                state.isFaceSturdy(null, null, Direction.EAST) ||
-                state.isFaceSturdy(null, null, Direction.SOUTH) ||
-                state.isFaceSturdy(null, null, Direction.WEST)) {
+    public boolean validConnection(BlockState state, BlockGetter getter, BlockPos pos) {
+        if (state.isFaceSturdy(getter, pos, Direction.UP) ||
+                state.isFaceSturdy(getter, pos, Direction.DOWN) ||
+                state.isFaceSturdy(getter, pos, Direction.NORTH) ||
+                state.isFaceSturdy(getter, pos, Direction.EAST) ||
+                state.isFaceSturdy(getter, pos, Direction.SOUTH) ||
+                state.isFaceSturdy(getter, pos, Direction.WEST)) {
             return true;
         }
+
         return state.is(BBBTags.BBBBlockTags.FRAMES) || state.is(BBBTags.BBBBlockTags.STONE_FRAMES);
     }
 }
