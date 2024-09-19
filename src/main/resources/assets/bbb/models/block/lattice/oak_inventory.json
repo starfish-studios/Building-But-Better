@@ -1,0 +1,10 @@
+{
+	"parent": "bbb:block/template/lattice/inventory",
+	"texture_size": [32, 32],
+	"textures": {
+		"texture": "bbb:block/lattice/oak",
+		"particle": "block/oak_planks",
+		"log_top": "block/oak_log_top",
+		"log_side": "block/oak_log"
+	}
+}

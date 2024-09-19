@@ -4,6 +4,7 @@
   - To remove the Dirt, simply right-click the Urn with any Shovel -- this uses the #minecraft:shovels tag, so any item tagged as a Shovel will work. 
   - Urns utilize Supplementaries' "prevents_offset_above" tag, so when using Supplementaries, plants will not have a random offset when placed inside of Urns. This prevents them from being placed on the edges of the Urn.
 - ### Stone Frames + Frame Tweaks
+ - ***Frames should no longer crash when connected to a non-solid block!***
   - Frames now have custom hitboxes, and can be interacted through. Their more precise hitboxes will be replaced with a larger hitbox when holding Hammers or Frames or crouching. 
     - **There is a config available to change these hitboxes to always be visible or to not get show at all when crouching.**
     - Frame tooltips also change depending on which config option you have enabled!

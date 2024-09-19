@@ -35,7 +35,7 @@ public class BalustradeBlock extends Block implements SimpleWaterloggedBlock {
     public static BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     public static VoxelShape BOTTOM_AABB = Block.box(0, 0, 0, 16, 2, 16);
-    public static VoxelShape TOP_AABB = Block.box(0, 12, 0, 16, 16, 16);
+    public static VoxelShape TOP_AABB = Block.box(0, 13, 0, 16, 16, 16);
     public static VoxelShape PILLAR_AABB = Block.box(4, 0, 4, 12, 16, 12);
 
     public static VoxelShape NORTH_TILTED_AABB = Shapes.or(

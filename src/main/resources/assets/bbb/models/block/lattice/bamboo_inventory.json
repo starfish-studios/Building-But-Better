@@ -1,0 +1,13 @@
+{
+    "parent": "bbb:block/template/lattice/inventory",
+    "texture_size": [
+        32,
+        32
+    ],
+    "textures": {
+        "texture": "bbb:block/lattice/bamboo",
+        "particle": "block/bamboo_planks",
+        "log_top": "block/bamboo_block_top",
+        "log_side": "block/bamboo_block"
+    }
+}

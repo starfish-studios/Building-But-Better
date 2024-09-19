@@ -77,7 +77,7 @@ public class LatticeBlock extends Block implements SimpleWaterloggedBlock, Bonem
         map.put(LatticePlantType.FLOWERING_AZALEA_LEAVES, Items.FLOWERING_AZALEA_LEAVES);
         map.put(LatticePlantType.MANGROVE_LEAVES, Items.MANGROVE_LEAVES);
         map.put(LatticePlantType.CHERRY_LEAVES, Items.CHERRY_LEAVES);
-        map.put(LatticePlantType.ROSE_BUSH, Items.ROSE_BUSH);
+//        map.put(LatticePlantType.ROSE_BUSH, Items.ROSE_BUSH);
         map.put(LatticePlantType.GLOW_LICHEN, Items.GLOW_LICHEN);
         map.put(LatticePlantType.CAVE_VINES, Items.GLOW_BERRIES);
     });

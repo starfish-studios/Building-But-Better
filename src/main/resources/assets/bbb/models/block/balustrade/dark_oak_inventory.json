@@ -1,0 +1,9 @@
+{
+    "parent": "bbb:block/template/balustrade/inventory",
+    "textures": {
+        "beam_sides": "bbb:block/beam/dark_oak",
+        "top": "bbb:block/balustrade/dark_oak_top",
+        "sides": "bbb:block/balustrade/dark_oak_sides",
+        "particle": "block/dark_oak_planks"
+    }
+}

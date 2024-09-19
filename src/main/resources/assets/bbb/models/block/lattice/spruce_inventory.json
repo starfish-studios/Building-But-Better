@@ -1,0 +1,13 @@
+{
+    "parent": "bbb:block/template/lattice/inventory",
+    "texture_size": [
+        32,
+        32
+    ],
+    "textures": {
+        "texture": "bbb:block/lattice/spruce",
+        "particle": "block/spruce_planks",
+        "log_top": "block/spruce_log_top",
+        "log_side": "block/spruce_log"
+    }
+}

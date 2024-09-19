@@ -1,8 +1,8 @@
 {
-	"parent": "bbb:block/lattice/plants/cave_vines",
+	"parent": "bbb:block/template/lattice/plant",
 	"texture_size": [32, 32],
 	"textures": {
-		"plant": "bbb:block/lattice/plants/cave_vines_lit",
-		"particle": "bbb:block/lattice/plants/cave_vines_lit"
+		"plant": "block/cave_vines_plant_lit",
+		"particle": "block/cave_vines_plant_lit"
 	}
 }

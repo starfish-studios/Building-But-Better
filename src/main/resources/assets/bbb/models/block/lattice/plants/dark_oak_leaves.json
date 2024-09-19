@@ -1,0 +1,11 @@
+{
+    "parent": "bbb:block/template/lattice/tinted_plant",
+    "texture_size": [
+        32,
+        32
+    ],
+    "textures": {
+        "plant": "block/dark_oak_leaves",
+        "particle": "block/dark_oak_leaves"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "parent": "bbb:block/template/lattice/middle",
+    "texture_size": [
+        32,
+        32
+    ],
+    "textures": {
+        "texture": "bbb:block/lattice/bamboo",
+        "particle": "block/bamboo_planks"
+    }
+}

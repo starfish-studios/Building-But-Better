@@ -1,0 +1,11 @@
+{
+    "parent": "bbb:block/template/lattice/plant",
+    "texture_size": [
+        32,
+        32
+    ],
+    "textures": {
+        "plant": "block/flowering_azalea_leaves",
+        "particle": "block/flowering_azalea_leaves"
+    }
+}

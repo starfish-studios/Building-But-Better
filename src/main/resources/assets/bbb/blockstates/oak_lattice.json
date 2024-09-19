@@ -39,6 +39,7 @@
                 "y": 270
             }
         },
+
         {
             "when": {
                 "plant_type": "oak_leaves",
@@ -75,6 +76,358 @@
             },
             "apply": {
                 "model": "bbb:block/lattice/plants/oak_leaves",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "plant_type": "spruce_leaves",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/spruce_leaves"
+            }
+        },
+        {
+            "when": {
+                "plant_type": "spruce_leaves",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/spruce_leaves",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "plant_type": "spruce_leaves",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/spruce_leaves",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "plant_type": "spruce_leaves",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/spruce_leaves",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "plant_type": "birch_leaves",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/birch_leaves"
+            }
+        },
+        {
+            "when": {
+                "plant_type": "birch_leaves",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/birch_leaves",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "plant_type": "birch_leaves",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/birch_leaves",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "plant_type": "birch_leaves",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/birch_leaves",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "plant_type": "jungle_leaves",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/jungle_leaves"
+            }
+        },
+        {
+            "when": {
+                "plant_type": "jungle_leaves",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/jungle_leaves",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "plant_type": "jungle_leaves",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/jungle_leaves",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "plant_type": "jungle_leaves",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/jungle_leaves",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "plant_type": "acacia_leaves",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/acacia_leaves"
+            }
+        },
+        {
+            "when": {
+                "plant_type": "acacia_leaves",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/acacia_leaves",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "plant_type": "acacia_leaves",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/acacia_leaves",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "plant_type": "acacia_leaves",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/acacia_leaves",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "plant_type": "dark_oak_leaves",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/dark_oak_leaves"
+            }
+        },
+        {
+            "when": {
+                "plant_type": "dark_oak_leaves",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/dark_oak_leaves",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "plant_type": "dark_oak_leaves",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/dark_oak_leaves",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "plant_type": "dark_oak_leaves",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/dark_oak_leaves",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "plant_type": "cherry_leaves",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/cherry_leaves"
+            }
+        },
+        {
+            "when": {
+                "plant_type": "cherry_leaves",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/cherry_leaves",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "plant_type": "cherry_leaves",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/cherry_leaves",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "plant_type": "cherry_leaves",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/cherry_leaves",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "plant_type": "mangrove_leaves",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/mangrove_leaves"
+            }
+        },
+        {
+            "when": {
+                "plant_type": "mangrove_leaves",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/mangrove_leaves",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "plant_type": "mangrove_leaves",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/mangrove_leaves",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "plant_type": "mangrove_leaves",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/mangrove_leaves",
+                "y": 270
+            }
+        },
+
+        {
+            "when": {
+                "plant_type": "azalea_leaves",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/azalea_leaves"
+            }
+        },
+        {
+            "when": {
+                "plant_type": "azalea_leaves",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/azalea_leaves",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "plant_type": "azalea_leaves",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/azalea_leaves",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "plant_type": "azalea_leaves",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/azalea_leaves",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "plant_type": "flowering_azalea_leaves",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/flowering_azalea_leaves"
+            }
+        },
+        {
+            "when": {
+                "plant_type": "flowering_azalea_leaves",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/flowering_azalea_leaves",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "plant_type": "flowering_azalea_leaves",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/flowering_azalea_leaves",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "plant_type": "flowering_azalea_leaves",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/plants/flowering_azalea_leaves",
                 "y": 270
             }
         },

@@ -1,0 +1,153 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_beam",
+                "uvlock": true
+            }
+        },
+        {
+            "when": {
+                "top": "false"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_beam_top",
+                "uvlock": true
+            }
+        },
+        {
+            "when": {
+                "bottom": "false"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_beam_bottom",
+                "uvlock": true
+            }
+        },
+        {
+            "when": {
+                "top": "true",
+                "facing": "north",
+                "tilted": "false"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_top"
+            }
+        },
+        {
+            "when": {
+                "top": "true",
+                "facing": "east",
+                "tilted": "false"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_top",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "top": "true",
+                "facing": "south",
+                "tilted": "false"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_top",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "top": "true",
+                "facing": "west",
+                "tilted": "false"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_top",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "top": "true",
+                "facing": "north",
+                "tilted": "true"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_top_tilted"
+            }
+        },
+        {
+            "when": {
+                "top": "true",
+                "facing": "east",
+                "tilted": "true"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_top_tilted",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "top": "true",
+                "facing": "south",
+                "tilted": "true"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_top_tilted",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "top": "true",
+                "facing": "west",
+                "tilted": "true"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_top_tilted",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "bottom": "true",
+                "facing": "north"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_bottom"
+            }
+        },
+        {
+            "when": {
+                "bottom": "true",
+                "facing": "east"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_bottom",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "bottom": "true",
+                "facing": "south"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_bottom",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "bottom": "true",
+                "facing": "west"
+            },
+            "apply": {
+                "model": "bbb:block/balustrade/crimson_bottom",
+                "y": 270
+            }
+        }
+    ]
+}

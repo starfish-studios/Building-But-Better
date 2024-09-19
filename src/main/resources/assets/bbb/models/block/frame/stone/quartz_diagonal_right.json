@@ -2,6 +2,6 @@
     "parent": "bbb:block/template/frame/stone/diagonal_right",
     "textures": {
         "texture": "bbb:block/frame/stone/quartz",
-        "particle": "block/quartz"
+        "particle": "block/quartz_block_top"
     }
 }

@@ -1,0 +1,9 @@
+{
+    "parent": "bbb:block/template/balustrade/inventory",
+    "textures": {
+        "beam_sides": "bbb:block/beam/cherry",
+        "top": "bbb:block/balustrade/cherry_top",
+        "sides": "bbb:block/balustrade/cherry_sides",
+        "particle": "block/cherry_planks"
+    }
+}

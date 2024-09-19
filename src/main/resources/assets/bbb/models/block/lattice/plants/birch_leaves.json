@@ -1,0 +1,11 @@
+{
+    "parent": "bbb:block/template/lattice/tinted_plant",
+    "texture_size": [
+        32,
+        32
+    ],
+    "textures": {
+        "plant": "block/birch_leaves",
+        "particle": "block/birch_leaves"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/balustrade/beam_bottom",
+    "textures": {
+        "beam_bottom": "bbb:block/beam/warped_top",
+        "particle": "block/warped_planks"
+    }
+}

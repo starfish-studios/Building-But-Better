@@ -19,15 +19,31 @@ public class BBBBlocks {
 
     // region BALUSTRADES
     public static final Block OAK_BALUSTRADE = register("oak_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
-//    public static final Block SPRUCE_BALUSTRADE = register("spruce_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion()));
-//    public static final Block BIRCH_BALUSTRADE = register("birch_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noOcclusion()));
-//    public static final Block JUNGLE_BALUSTRADE = register("jungle_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).noOcclusion()));
-//    public static final Block ACACIA_BALUSTRADE = register("acacia_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).noOcclusion()));
-//    public static final Block DARK_OAK_BALUSTRADE = register("dark_oak_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion()));
-
+    public static final Block SPRUCE_BALUSTRADE = register("spruce_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion()));
+    public static final Block BIRCH_BALUSTRADE = register("birch_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noOcclusion()));
+    public static final Block JUNGLE_BALUSTRADE = register("jungle_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).noOcclusion()));
+    public static final Block ACACIA_BALUSTRADE = register("acacia_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).noOcclusion()));
+    public static final Block DARK_OAK_BALUSTRADE = register("dark_oak_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion()));
+    public static final Block CRIMSON_BALUSTRADE = register("crimson_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).noOcclusion()));
+    public static final Block WARPED_BALUSTRADE = register("warped_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noOcclusion()));
+    public static final Block MANGROVE_BALUSTRADE = register("mangrove_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).noOcclusion()));
+    public static final Block BAMBOO_BALUSTRADE = register("bamboo_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).noOcclusion()));
+    public static final Block CHERRY_BALUSTRADE = register("cherry_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).noOcclusion()));
+    // endregion
 
     // region LATTICES
     public static final Block OAK_LATTICE = register("oak_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
+    public static final Block SPRUCE_LATTICE = register("spruce_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion()));
+    public static final Block BIRCH_LATTICE = register("birch_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noOcclusion()));
+    public static final Block JUNGLE_LATTICE = register("jungle_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).noOcclusion()));
+    public static final Block ACACIA_LATTICE = register("acacia_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).noOcclusion()));
+    public static final Block DARK_OAK_LATTICE = register("dark_oak_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion()));
+    public static final Block CRIMSON_LATTICE = register("crimson_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).noOcclusion()));
+    public static final Block WARPED_LATTICE = register("warped_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noOcclusion()));
+    public static final Block MANGROVE_LATTICE = register("mangrove_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).noOcclusion()));
+    public static final Block BAMBOO_LATTICE = register("bamboo_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).noOcclusion()));
+    public static final Block CHERRY_LATTICE = register("cherry_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).noOcclusion()));
+    // endregion
 
 
     // region WALLS

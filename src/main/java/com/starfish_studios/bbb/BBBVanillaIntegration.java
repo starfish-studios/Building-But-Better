@@ -45,7 +45,17 @@ public class BBBVanillaIntegration {
                         }
                         return BiomeColors.getAverageFoliageColor(world, pos);
                     },
-                    BBBBlocks.OAK_LATTICE
+                    BBBBlocks.OAK_LATTICE,
+                    BBBBlocks.SPRUCE_LATTICE,
+                    BBBBlocks.BIRCH_LATTICE,
+                    BBBBlocks.JUNGLE_LATTICE,
+                    BBBBlocks.ACACIA_LATTICE,
+                    BBBBlocks.DARK_OAK_LATTICE,
+                    BBBBlocks.CRIMSON_LATTICE,
+                    BBBBlocks.WARPED_LATTICE,
+                    BBBBlocks.MANGROVE_LATTICE,
+                    BBBBlocks.BAMBOO_LATTICE,
+                    BBBBlocks.CHERRY_LATTICE
             );
 
             ColorProviderRegistry.ITEM.register((stack, tintIndex) -> {
@@ -81,7 +91,17 @@ public class BBBVanillaIntegration {
                     BBBBlocks.MANGROVE_LADDER,
                     BBBBlocks.BAMBOO_LADDER,
                     BBBBlocks.CHERRY_LADDER,
-                    BBBBlocks.OAK_LATTICE
+                    BBBBlocks.OAK_LATTICE,
+                    BBBBlocks.SPRUCE_LATTICE,
+                    BBBBlocks.BIRCH_LATTICE,
+                    BBBBlocks.JUNGLE_LATTICE,
+                    BBBBlocks.ACACIA_LATTICE,
+                    BBBBlocks.DARK_OAK_LATTICE,
+                    BBBBlocks.CRIMSON_LATTICE,
+                    BBBBlocks.WARPED_LATTICE,
+                    BBBBlocks.MANGROVE_LATTICE,
+                    BBBBlocks.BAMBOO_LATTICE,
+                    BBBBlocks.CHERRY_LATTICE
             );
         }
     }

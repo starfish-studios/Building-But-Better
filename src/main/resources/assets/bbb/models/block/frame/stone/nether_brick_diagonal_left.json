@@ -2,6 +2,6 @@
     "parent": "bbb:block/template/frame/stone/diagonal_left",
     "textures": {
         "texture": "bbb:block/frame/stone/nether_brick",
-        "particle": "block/nether_brick"
+        "particle": "block/nether_bricks"
     }
 }

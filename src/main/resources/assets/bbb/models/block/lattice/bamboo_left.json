@@ -1,0 +1,12 @@
+{
+    "parent": "bbb:block/template/lattice/left",
+    "texture_size": [
+        32,
+        32
+    ],
+    "textures": {
+        "log_top": "block/bamboo_block_top",
+        "log_side": "block/bamboo_block",
+        "particle": "block/bamboo_block"
+    }
+}

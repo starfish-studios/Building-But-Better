@@ -15,7 +15,7 @@ public enum LatticePlantType implements StringRepresentable {
     FLOWERING_AZALEA_LEAVES("flowering_azalea_leaves"),
     MANGROVE_LEAVES("mangrove_leaves"),
     CHERRY_LEAVES("cherry_leaves"),
-    ROSE_BUSH("rose_bush"),
+//    ROSE_BUSH("rose_bush"),
     GLOW_LICHEN("glow_lichen"),
     CAVE_VINES("cave_vines");
 

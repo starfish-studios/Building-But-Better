@@ -28,7 +28,29 @@ public class BBBCreativeModeTab {
         output.accept(SOUL_BRAZIER);
         output.accept(IRON_FENCE);
 
+        output.accept(OAK_LATTICE);
+        output.accept(SPRUCE_LATTICE);
+        output.accept(BIRCH_LATTICE);
+        output.accept(JUNGLE_LATTICE);
+        output.accept(ACACIA_LATTICE);
+        output.accept(DARK_OAK_LATTICE);
+        output.accept(CRIMSON_LATTICE);
+        output.accept(WARPED_LATTICE);
+        output.accept(MANGROVE_LATTICE);
+        output.accept(BAMBOO_LATTICE);
+        output.accept(CHERRY_LATTICE);
+
         output.accept(OAK_BALUSTRADE);
+        output.accept(SPRUCE_BALUSTRADE);
+        output.accept(BIRCH_BALUSTRADE);
+        output.accept(JUNGLE_BALUSTRADE);
+        output.accept(ACACIA_BALUSTRADE);
+        output.accept(DARK_OAK_BALUSTRADE);
+        output.accept(CRIMSON_BALUSTRADE);
+        output.accept(WARPED_BALUSTRADE);
+        output.accept(MANGROVE_BALUSTRADE);
+        output.accept(BAMBOO_BALUSTRADE);
+        output.accept(CHERRY_BALUSTRADE);
 
         output.accept(STONE_FRAME);
         output.accept(BLACKSTONE_FRAME);

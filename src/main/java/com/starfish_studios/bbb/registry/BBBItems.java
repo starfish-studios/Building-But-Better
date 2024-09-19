@@ -12,13 +12,35 @@ import net.minecraft.world.item.*;
 
 public class BBBItems {
 
+    /// Oak, Spruce, Birch, Jungle, Acacia, Dark Oak, Crimson, Warped, Mangrove, Bamboo, Cherry
+
     public static final Item CORNERSTONE = register("bbb", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON).fireproof()));
     public static final Item HAMMER = register("hammer", new HammerItem(new FabricItemSettings().maxCount(1).durability(256)));
     public static final Item CHISEL = register("chisel", new Item(new FabricItemSettings().maxCount(1).durability(256)));
 
     public static final Item OAK_BALUSTRADE = register("oak_balustrade", new DescriptionBlockItem(BBBBlocks.OAK_BALUSTRADE, new FabricItemSettings()));
+    public static final Item SPRUCE_BALUSTRADE = register("spruce_balustrade", new DescriptionBlockItem(BBBBlocks.SPRUCE_BALUSTRADE, new FabricItemSettings()));
+    public static final Item BIRCH_BALUSTRADE = register("birch_balustrade", new DescriptionBlockItem(BBBBlocks.BIRCH_BALUSTRADE, new FabricItemSettings()));
+    public static final Item JUNGLE_BALUSTRADE = register("jungle_balustrade", new DescriptionBlockItem(BBBBlocks.JUNGLE_BALUSTRADE, new FabricItemSettings()));
+    public static final Item ACACIA_BALUSTRADE = register("acacia_balustrade", new DescriptionBlockItem(BBBBlocks.ACACIA_BALUSTRADE, new FabricItemSettings()));
+    public static final Item DARK_OAK_BALUSTRADE = register("dark_oak_balustrade", new DescriptionBlockItem(BBBBlocks.DARK_OAK_BALUSTRADE, new FabricItemSettings()));
+    public static final Item CRIMSON_BALUSTRADE = register("crimson_balustrade", new DescriptionBlockItem(BBBBlocks.CRIMSON_BALUSTRADE, new FabricItemSettings()));
+    public static final Item WARPED_BALUSTRADE = register("warped_balustrade", new DescriptionBlockItem(BBBBlocks.WARPED_BALUSTRADE, new FabricItemSettings()));
+    public static final Item MANGROVE_BALUSTRADE = register("mangrove_balustrade", new DescriptionBlockItem(BBBBlocks.MANGROVE_BALUSTRADE, new FabricItemSettings()));
+    public static final Item BAMBOO_BALUSTRADE = register("bamboo_balustrade", new DescriptionBlockItem(BBBBlocks.BAMBOO_BALUSTRADE, new FabricItemSettings()));
+    public static final Item CHERRY_BALUSTRADE = register("cherry_balustrade", new DescriptionBlockItem(BBBBlocks.CHERRY_BALUSTRADE, new FabricItemSettings()));
 
     public static final Item OAK_LATTICE = register("oak_lattice", new DescriptionBlockItem(BBBBlocks.OAK_LATTICE, new FabricItemSettings()));
+    public static final Item SPRUCE_LATTICE = register("spruce_lattice", new DescriptionBlockItem(BBBBlocks.SPRUCE_LATTICE, new FabricItemSettings()));
+    public static final Item BIRCH_LATTICE = register("birch_lattice", new DescriptionBlockItem(BBBBlocks.BIRCH_LATTICE, new FabricItemSettings()));
+    public static final Item JUNGLE_LATTICE = register("jungle_lattice", new DescriptionBlockItem(BBBBlocks.JUNGLE_LATTICE, new FabricItemSettings()));
+    public static final Item ACACIA_LATTICE = register("acacia_lattice", new DescriptionBlockItem(BBBBlocks.ACACIA_LATTICE, new FabricItemSettings()));
+    public static final Item DARK_OAK_LATTICE = register("dark_oak_lattice", new DescriptionBlockItem(BBBBlocks.DARK_OAK_LATTICE, new FabricItemSettings()));
+    public static final Item CRIMSON_LATTICE = register("crimson_lattice", new DescriptionBlockItem(BBBBlocks.CRIMSON_LATTICE, new FabricItemSettings()));
+    public static final Item WARPED_LATTICE = register("warped_lattice", new DescriptionBlockItem(BBBBlocks.WARPED_LATTICE, new FabricItemSettings()));
+    public static final Item MANGROVE_LATTICE = register("mangrove_lattice", new DescriptionBlockItem(BBBBlocks.MANGROVE_LATTICE, new FabricItemSettings()));
+    public static final Item BAMBOO_LATTICE = register("bamboo_lattice", new DescriptionBlockItem(BBBBlocks.BAMBOO_LATTICE, new FabricItemSettings()));
+    public static final Item CHERRY_LATTICE = register("cherry_lattice", new DescriptionBlockItem(BBBBlocks.CHERRY_LATTICE, new FabricItemSettings()));
 
     public static final Item STONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.STONE_BLOCK, BBBBlocks.WALL_STONE_BLOCK, new Item.Properties(), Direction.DOWN));
     public static final Item BLACKSTONE_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.BLACKSTONE_BLOCK, BBBBlocks.WALL_BLACKSTONE_BLOCK, new Item.Properties(), Direction.DOWN));

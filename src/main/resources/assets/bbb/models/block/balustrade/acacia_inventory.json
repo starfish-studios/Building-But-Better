@@ -1,0 +1,9 @@
+{
+    "parent": "bbb:block/template/balustrade/inventory",
+    "textures": {
+        "beam_sides": "bbb:block/beam/acacia",
+        "top": "bbb:block/balustrade/acacia_top",
+        "sides": "bbb:block/balustrade/acacia_sides",
+        "particle": "block/acacia_planks"
+    }
+}

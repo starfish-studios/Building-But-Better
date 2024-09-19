@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/balustrade/beam_bottom",
+    "textures": {
+        "beam_bottom": "bbb:block/beam/jungle_top",
+        "particle": "block/jungle_planks"
+    }
+}
