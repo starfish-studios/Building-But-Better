@@ -8,6 +8,8 @@
     "#bbb:frames",
     "#bbb:supports",
     "#bbb:trims",
-    "#bbb:wooden_walls"
+    "#bbb:wooden_walls",
+    "#bbb:balustrades",
+    "#bbb:lattices"
   ]
 }
