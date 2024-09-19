@@ -32,17 +32,17 @@ public class BBBBlocks {
     // endregion
 
     // region LATTICES
-    public static final Block OAK_LATTICE = register("oak_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
-    public static final Block SPRUCE_LATTICE = register("spruce_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion()));
-    public static final Block BIRCH_LATTICE = register("birch_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noOcclusion()));
-    public static final Block JUNGLE_LATTICE = register("jungle_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).noOcclusion()));
-    public static final Block ACACIA_LATTICE = register("acacia_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).noOcclusion()));
-    public static final Block DARK_OAK_LATTICE = register("dark_oak_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion()));
-    public static final Block CRIMSON_LATTICE = register("crimson_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).noOcclusion()));
-    public static final Block WARPED_LATTICE = register("warped_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noOcclusion()));
-    public static final Block MANGROVE_LATTICE = register("mangrove_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).noOcclusion()));
-    public static final Block BAMBOO_LATTICE = register("bamboo_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).noOcclusion()));
-    public static final Block CHERRY_LATTICE = register("cherry_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).noOcclusion()));
+    public static final Block OAK_LATTICE = register("oak_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block SPRUCE_LATTICE = register("spruce_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block BIRCH_LATTICE = register("birch_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.BIRCH_PLANKS)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block JUNGLE_LATTICE = register("jungle_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.JUNGLE_PLANKS)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block ACACIA_LATTICE = register("acacia_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.ACACIA_PLANKS)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block DARK_OAK_LATTICE = register("dark_oak_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.DARK_OAK_PLANKS)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block CRIMSON_LATTICE = register("crimson_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block WARPED_LATTICE = register("warped_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block MANGROVE_LATTICE = register("mangrove_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.MANGROVE_PLANKS)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block BAMBOO_LATTICE = register("bamboo_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.BAMBOO_PLANKS)).noOcclusion().pushReaction(DESTROY)));
+    public static final Block CHERRY_LATTICE = register("cherry_lattice", new LatticeBlock(FabricBlockSettings.copy((Blocks.CHERRY_PLANKS)).noOcclusion().pushReaction(DESTROY)));
     // endregion
 
 
@@ -254,19 +254,6 @@ public class BBBBlocks {
     public static final Block CRIMSON_PALLET = register("crimson_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.CRIMSON_PLANKS)).noOcclusion()));
     public static final Block WARPED_PALLET = register("warped_pallet", new PalletBlock(FabricBlockSettings.copy((Blocks.WARPED_PLANKS)).noOcclusion()));
     // endregion
-
-    // region RAILINGS
-    public static final Block OAK_RAILING = register("oak_railing", new StairBlock((Blocks.OAK_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
-    public static final Block SPRUCE_RAILING = register("spruce_railing", new StairBlock((Blocks.SPRUCE_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
-    public static final Block BIRCH_RAILING = register("birch_railing", new StairBlock((Blocks.BIRCH_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
-    public static final Block JUNGLE_RAILING = register("jungle_railing", new StairBlock((Blocks.JUNGLE_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS).noOcclusion()));
-    public static final Block ACACIA_RAILING = register("acacia_railing", new StairBlock((Blocks.ACACIA_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
-    public static final Block DARK_OAK_RAILING = register("dark_oak_railing", new StairBlock((Blocks.DARK_OAK_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
-    public static final Block MANGROVE_RAILING = register("mangrove_railing", new StairBlock((Blocks.MANGROVE_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS).noOcclusion()));
-    public static final Block CHERRY_RAILING = register("cherry_railing", new StairBlock((Blocks.CHERRY_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.CHERRY_PLANKS).noOcclusion()));
-    public static final Block BAMBOO_RAILING = register("bamboo_railing", new StairBlock((Blocks.BAMBOO_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS).noOcclusion()));
-    public static final Block CRIMSON_RAILING = register("crimson_railing", new StairBlock((Blocks.CRIMSON_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
-    public static final Block WARPED_RAILING = register("warped_railing", new StairBlock((Blocks.WARPED_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
 
     // region FRAMES
     public static final Block OAK_FRAME = register("oak_frame", new FrameBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion().noCollission().pushReaction(DESTROY)));

@@ -51,20 +51,6 @@ public class BBBItems {
     public static final Item QUARTZ_BLOCK = Items.registerBlock(new StandingAndWallBlockItem(BBBBlocks.QUARTZ_BLOCK, BBBBlocks.WALL_QUARTZ_BLOCK, new Item.Properties(), Direction.DOWN));
 
 
-    // region RAILINGS
-    public static final Item OAK_RAILING = register("oak_railing", new DescriptionBlockItem(BBBBlocks.OAK_RAILING, new FabricItemSettings()));
-    public static final Item SPRUCE_RAILING = register("spruce_railing", new DescriptionBlockItem(BBBBlocks.SPRUCE_RAILING, new FabricItemSettings()));
-    public static final Item BIRCH_RAILING = register("birch_railing", new DescriptionBlockItem(BBBBlocks.BIRCH_RAILING, new FabricItemSettings()));
-    public static final Item JUNGLE_RAILING = register("jungle_railing", new DescriptionBlockItem(BBBBlocks.JUNGLE_RAILING, new FabricItemSettings()));
-    public static final Item ACACIA_RAILING = register("acacia_railing", new DescriptionBlockItem(BBBBlocks.ACACIA_RAILING, new FabricItemSettings()));
-    public static final Item DARK_OAK_RAILING = register("dark_oak_railing", new DescriptionBlockItem(BBBBlocks.DARK_OAK_RAILING, new FabricItemSettings()));
-    public static final Item CRIMSON_RAILING = register("crimson_railing", new DescriptionBlockItem(BBBBlocks.CRIMSON_RAILING, new FabricItemSettings()));
-    public static final Item WARPED_RAILING = register("warped_railing", new DescriptionBlockItem(BBBBlocks.WARPED_RAILING, new FabricItemSettings()));
-    public static final Item MANGROVE_RAILING = register("mangrove_railing", new DescriptionBlockItem(BBBBlocks.MANGROVE_RAILING, new FabricItemSettings()));
-    public static final Item BAMBOO_RAILING = register("bamboo_railing", new DescriptionBlockItem(BBBBlocks.BAMBOO_RAILING, new FabricItemSettings()));
-    public static final Item CHERRY_RAILING = register("cherry_railing", new DescriptionBlockItem(BBBBlocks.CHERRY_RAILING, new FabricItemSettings()));
-    // endregion
-
     public static final Item OAK_WALL = register("oak_wall", new BlockItem(BBBBlocks.OAK_WALL, new FabricItemSettings()));
     public static final Item SPRUCE_WALL = register("spruce_wall", new BlockItem(BBBBlocks.SPRUCE_WALL, new FabricItemSettings()));
     public static final Item BIRCH_WALL = register("birch_wall", new BlockItem(BBBBlocks.BIRCH_WALL, new FabricItemSettings()));
