@@ -56,10 +56,10 @@ dependencies {
 
 	modImplementation ("curse.maven:every-compat-628539:5670282") // WoodGood + its dependency, Selene
 	modImplementation ("curse.maven:selene-499980:5666908")
+	modImplementation include ("maven.modrinth:midnightlib:${project.midnightlib_version}") // MidnightLib - included with the mod so people don't need to download it separately
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
 
 	// Uncomment the following line to enable the deprecated Fabric API modules.
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
