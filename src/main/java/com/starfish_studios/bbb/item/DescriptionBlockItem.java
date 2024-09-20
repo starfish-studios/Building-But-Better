@@ -22,6 +22,45 @@ public class DescriptionBlockItem extends BlockItem {
     public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag flagIn) {
         if (!BBBConfig.disableShiftTooltips) {
 
+            if (stack.is(BBBTags.BBBItemTags.BALUSTRADES)) {
+                if (Screen.hasShiftDown()) {
+                    tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE)
+                            .append(Component.translatable("description.bbb.balustrade1").withStyle(ChatFormatting.GRAY)));
+                    tooltip.add(Component.translatable("description.bbb.balustrade2").withStyle(ChatFormatting.GRAY));
+                    tooltip.add(Component.translatable("description.bbb.balustrade3").withStyle(ChatFormatting.GRAY));
+
+                    tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE)
+                            .append(Component.translatable("description.bbb.balustrade4").withStyle(ChatFormatting.GRAY)));
+                    tooltip.add(Component.translatable("description.bbb.balustrade5").withStyle(ChatFormatting.GRAY));
+                } else
+                    tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
+            }
+
+            if (stack.is(BBBTags.BBBItemTags.URNS)) {
+                if (Screen.hasShiftDown()) {
+                    tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE)
+                            .append(Component.translatable("description.bbb.urn1").withStyle(ChatFormatting.GRAY)));
+                    tooltip.add(Component.translatable("description.bbb.urn2").withStyle(ChatFormatting.GRAY));
+                    tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE)
+                            .append(Component.translatable("description.bbb.urn3").withStyle(ChatFormatting.GRAY)));
+                    tooltip.add(Component.translatable("description.bbb.urn4").withStyle(ChatFormatting.GRAY));
+                } else
+                    tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
+            }
+
+            if (stack.is(BBBTags.BBBItemTags.LATTICES)) {
+                if (Screen.hasShiftDown()) {
+                    tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE)
+                            .append(Component.translatable("description.bbb.lattice1").withStyle(ChatFormatting.GRAY)));
+                    tooltip.add(Component.translatable("description.bbb.lattice2").withStyle(ChatFormatting.GRAY));
+                    tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE)
+                            .append(Component.translatable("description.bbb.lattice3").withStyle(ChatFormatting.GRAY)));
+                    tooltip.add(Component.translatable("description.bbb.lattice4").withStyle(ChatFormatting.GRAY));
+                } else
+                    tooltip.add(Component.literal("[").append(Component.translatable("key.keyboard.left.shift")).append(Component.literal("]")).withStyle(ChatFormatting.DARK_GRAY, ChatFormatting.ITALIC));
+            }
+
+
             if (stack.is(BBBTags.BBBItemTags.LANTERNS)) {
                 if (Screen.hasShiftDown()) {
                     tooltip.add(Component.translatable("description.bbb.pencil").withStyle(ChatFormatting.BLUE)

@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.2-SNAPSHOT'
+	id 'fabric-loom' version '1.6-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -53,6 +53,9 @@ dependencies {
 	modImplementation "com.terraformersmc:modmenu:${project.mod_menu_version}"
 
 	modImplementation("com.simibubi.create:create-fabric-${minecraft_version}:${fabric_create_version}") // Create Fabric
+
+	modImplementation ("curse.maven:every-compat-628539:5670282") // WoodGood + its dependency, Selene
+	modImplementation ("curse.maven:selene-499980:5666908")
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"

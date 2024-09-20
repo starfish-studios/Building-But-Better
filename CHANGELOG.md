@@ -1,4 +1,6 @@
 # CHANGELOG
+- ### Updated Fabric Loader to 0.16.5.
+- ### Added native EveryCompat support.
 - ### There's a config now !!
 - ### Urns can now be interacted with Dirt -- when they are filled in this way, plants can be placed atop them.
   - To remove the Dirt, simply right-click the Urn with any Shovel -- this uses the #minecraft:shovels tag, so any item tagged as a Shovel will work. 
@@ -16,3 +18,8 @@
   - Balustrades replace the functionality of placing Trapdoors on top of Lecterns, but in all wood types.
   - Balustrades can be interacted with a Hammer on either their top or bottom half to toggle the top and bottom respectively. Their center beam cannot be toggled, and uses the texture of Wooden Walls / Beams so they can better connect with them.
   - Balustrades can be **SHIFT** + right-clicked with a Hammer to tilt the top cube to represent a slightly taller Lectern. Doing so will give them a custom hitbox, but they will act the same otherwise.
+- ### Added Lattices
+  - Can connect horizontally and vertically, but do not connect via corners.
+  - Plants like Leaves and certain other plants like Glow Berries and Vines can be placed on them.
+    - Glow Berries placed on them can be Bone Mealed to grow.
+  - They can be climbed.

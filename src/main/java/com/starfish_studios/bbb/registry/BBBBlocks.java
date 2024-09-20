@@ -17,6 +17,10 @@ import static net.minecraft.world.level.material.PushReaction.DESTROY;
 public class BBBBlocks {
     // Stone, Blackstone, Deepslate, Nether Brick, Sandstone, Red Sandstone, Quartz
 
+    // Write a list of every wood block.
+    // Trim, Beam, Beam Stairs, Beam Slab, Pallets, Supports, Balustrades, Walls, Frames, Lanterns, Ladders, Lattices
+
+
     // region BALUSTRADES
     public static final Block OAK_BALUSTRADE = register("oak_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.OAK_PLANKS)).noOcclusion()));
     public static final Block SPRUCE_BALUSTRADE = register("spruce_balustrade", new BalustradeBlock(FabricBlockSettings.copy((Blocks.SPRUCE_PLANKS)).noOcclusion()));

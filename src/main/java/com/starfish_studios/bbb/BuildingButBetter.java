@@ -7,6 +7,8 @@ import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
+import net.fabricmc.loader.api.FabricLoader;
+import net.mehvahdjukaar.every_compat.EveryCompat;
 import net.minecraft.Util;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
@@ -24,13 +26,21 @@ public class BuildingButBetter implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		MidnightConfig.init(MOD_ID, BBBConfig.class);
+
+
+		if(FabricLoader.getInstance().isModLoaded("everycomp")){
+			EveryCompat.ACTIVE_MODULES.put(MOD_ID, new BBBModule(MOD_ID));
+		}
+		
 		BlockUseEvent.EVENT.register(new BlockUseEvent());
+
 		Reflection.initialize(
 				BBBCreativeModeTab.class,
 				BBBSoundEvents.class,
 				BBBItems.class,
 				BBBBlocks.class
 		);
+
 
 		// region CREATIVE TAB INJECTIONS
 
