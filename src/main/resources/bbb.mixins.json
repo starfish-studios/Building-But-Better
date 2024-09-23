@@ -4,7 +4,7 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "bbb.refmap.json",
   "mixins": [
-    "PaintingMixin",
+    "HangingEntityMixin",
     "WallBlockAccessor"
   ],
   "injectors": {

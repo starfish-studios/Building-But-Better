@@ -1,0 +1,43 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"texture": "bbb:block/frame/oak",
+		"particle": "block/oak_planks"
+	},
+	"elements": [
+		{
+			"from": [15.98, 15.98, 12.98],
+			"to": [21.02, 20.02, 16.02],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 18, -1.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 2.5, 2], "texture": "#texture"},
+				"east": {"uv": [5, 7, 6.5, 9], "texture": "#texture"},
+				"south": {"uv": [2.5, 2, 0, 4], "texture": "#texture"},
+				"west": {"uv": [6.5, 7, 8, 9], "texture": "#texture"},
+				"up": {"uv": [2.5, 5.5, 0, 4], "texture": "#texture"},
+				"down": {"uv": [2.5, 5.5, 0, 7], "texture": "#texture"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": []
+		},
+		{
+			"name": "group",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0]
+		},
+		{
+			"name": "group",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": []
+		}
+	]
+}

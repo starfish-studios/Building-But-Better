@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/frame/inventory",
+    "textures": {
+        "texture": "bbb:block/frame/dark_oak",
+        "particle": "block/dark_oak_planks"
+    }
+}

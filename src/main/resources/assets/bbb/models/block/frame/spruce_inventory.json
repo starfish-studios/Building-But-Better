@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/frame/inventory",
+    "textures": {
+        "texture": "bbb:block/frame/spruce",
+        "particle": "block/spruce_planks"
+    }
+}

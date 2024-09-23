@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"texture": "bbb:block/frame/stone/oak",
+		"particle": "block/oak"
+	},
+	"elements": [
+		{
+			"from": [15.982, -0.018, 11.982],
+			"to": [20.018, 16.018, 16.018],
+			"rotation": {"angle": 0, "axis": "y", "origin": [18, 4, 15]},
+			"faces": {
+				"north": {"uv": [0, 4.5, 2.01, 12.51], "texture": "#texture"},
+				"east": {"uv": [2, 4.5, 4.01, 12.51], "texture": "#texture"},
+				"south": {"uv": [2.01, 4.5, 0, 12.51], "texture": "#texture"},
+				"west": {"uv": [5.51, 4.5, 3.5, 12.51], "texture": "#texture"},
+				"up": {"uv": [11.01, 11.51, 9, 9.5], "texture": "#texture"},
+				"down": {"uv": [11.01, 9.5, 9, 11.51], "texture": "#texture"}
+			}
+		},
+		{
+			"from": [15.96, 4.96, 11.96],
+			"to": [23.04, 11.04, 16.04],
+			"rotation": {"angle": 0, "axis": "y", "origin": [18, 4, 15]},
+			"faces": {
+				"north": {"uv": [5, 4.5, 8.5, 7.5], "texture": "#texture"},
+				"east": {"uv": [8.5, 6.5, 10.5, 9.5], "texture": "#texture"},
+				"south": {"uv": [5, 4.5, 8.5, 7.5], "texture": "#texture"},
+				"west": {"uv": [5, 9.5, 7, 12.5], "texture": "#texture"},
+				"up": {"uv": [8.5, 9.5, 5, 7.5], "texture": "#texture"},
+				"down": {"uv": [12, 4.5, 8.5, 6.5], "texture": "#texture"}
+			}
+		}
+	]
+}

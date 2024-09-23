@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/frame/inventory",
+    "textures": {
+        "texture": "bbb:block/frame/mangrove",
+        "particle": "block/mangrove_planks"
+    }
+}

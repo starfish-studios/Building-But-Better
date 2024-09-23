@@ -4,6 +4,15 @@
 
   "subtitles.block.layer.remove_layer": "Layer removed",
 
+  "bbb.midnightconfig.title": "Building But Better Config",
+  "bbb.midnightconfig.alwaysShowFrameHitboxes": "Always show Frame hitboxes",
+  "bbb.midnightconfig.alwaysShowFrameHitboxes.tooltip": "§8§o[?]§7§o If enabled, larger hitboxes for Frames will always be shown, rather than only when crouching.",
+  "bbb.midnightconfig.disableFrameCrouchHitbox": "Disable crouch hitbox for Frames",
+  "bbb.midnightconfig.disableFrameCrouchHitbox.tooltip": "§8§o[!]§7§o This does §lNOT §7§ocompletely remove them - they will still show when holding Frames and Hammers.",
+
+  "bbb.midnightconfig.disableShiftTooltips": "Disable Shift tooltips",
+  "bbb.midnightconfig.disableShiftTooltips.tooltip": "§8§o[?]§7§o If enabled, tooltips will be removed from all items.",
+
   "item.bbb.hammer": "Hammer",
 
   "block.bbb.stone_fence": "Stone Fence",
@@ -260,8 +269,11 @@
   "description.bbb.frame1": "Right-Click with a Hammer",
   "description.bbb.frame2": "to cycle through center supports.",
   "description.bbb.frame3": "Punch to remove center support.",
-  "description.bbb.frame4": "Automatically connects",
-  "description.bbb.frame5": "to other Frames.",
+  "description.bbb.frameConfig1": "Crouch or hold Hammers/Frames",
+  "description.bbb.frameConfig2": "to expand the Frame's hitbox.",
+  "description.bbb.frameConfig3": "Frame hitboxes are always shown.",
+  "description.bbb.frameConfig4": "Hold a Hammer or Frames",
+  "description.bbb.frameConfig5": "to expand the Frame's hitbox.",
 
   "description.bbb.pallet1": "Right-Click with a Hammer",
   "description.bbb.pallet2": "to add/remove layers.",

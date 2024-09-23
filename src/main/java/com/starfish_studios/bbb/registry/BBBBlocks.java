@@ -146,7 +146,7 @@ public class BBBBlocks {
     public static final RegistryObject<Block> MANGROVE_BEAM = BLOCKS.register("mangrove_beam", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy((Blocks.STRIPPED_MANGROVE_LOG))));
     public static final RegistryObject<Block> MANGROVE_BEAM_STAIRS = BLOCKS.register("mangrove_beam_stairs", () -> new StairBlock((Blocks.MANGROVE_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)));
     public static final RegistryObject<Block> MANGROVE_BEAM_SLAB = BLOCKS.register("mangrove_beam_slab", () -> new FacingSlabBlock(BlockBehaviour.Properties.copy((Blocks.MANGROVE_PLANKS))));
-    public static final RegistryObject<Block> BAMBOO_BEAM = BLOCKS.register("bamboo_beam", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy((Blocks.BAMBOO))));
+    public static final RegistryObject<Block> BAMBOO_BEAM = BLOCKS.register("bamboo_beam", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy((Blocks.BAMBOO_PLANKS))));
     public static final RegistryObject<Block> BAMBOO_BEAM_STAIRS = BLOCKS.register("bamboo_beam_stairs", () -> new StairBlock((Blocks.BAMBOO_PLANKS.defaultBlockState()), BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS)));
     public static final RegistryObject<Block> BAMBOO_BEAM_SLAB = BLOCKS.register("bamboo_beam_slab", () -> new FacingSlabBlock(BlockBehaviour.Properties.copy((Blocks.BAMBOO_PLANKS))));
     public static final RegistryObject<Block> CHERRY_BEAM = BLOCKS.register("cherry_beam", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy((Blocks.STRIPPED_CHERRY_LOG))));

@@ -6,6 +6,7 @@ import com.starfish_studios.bbb.registry.BBBBlocks;
 import com.starfish_studios.bbb.registry.BBBCreativeModeTab;
 import com.starfish_studios.bbb.registry.BBBItems;
 import com.starfish_studios.bbb.registry.BBBSoundEvents;
+import eu.midnightdust.lib.config.MidnightConfig;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -19,6 +20,8 @@ public class BuildingButBetter {
 	public static final String MOD_ID = "bbb";
 
 	public BuildingButBetter() {
+		MidnightConfig.init(BuildingButBetter.MOD_ID, BBBConfig.class);
+
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		IEventBus eventBus = MinecraftForge.EVENT_BUS;
 
