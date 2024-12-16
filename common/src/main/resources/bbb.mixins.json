@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.starfish_studios.building_but_better.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "WallBlockAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
