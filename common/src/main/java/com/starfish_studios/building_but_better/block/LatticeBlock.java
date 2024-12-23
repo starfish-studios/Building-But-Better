@@ -12,6 +12,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -200,40 +201,36 @@ public class LatticeBlock extends Block implements SimpleWaterloggedBlock, Bonem
         }
     }
 
-    public static InteractionResult use(@Nullable Entity entity, BlockState blockState, Level level, BlockPos blockPos) {
-
-        return InteractionResult.PASS;
-    }
-
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        if (!level.isClientSide && player.getItemInHand(hand).is(Items.SHEARS)) {
+    @Override
+    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+        if (!level.isClientSide && stack.is(Items.SHEARS)) {
             LatticePlantType plantType = state.getValue(PLANT_TYPE);
             if (state.getValue(BERRIES)) {
                 level.setBlock(pos, state.setValue(PLANT_TYPE, LatticePlantType.NONE), 3);
-                return CaveVines.use(null, state, level, pos);
+                return CaveVines.use(null, state, level, pos) == InteractionResult.SUCCESS ? ItemInteractionResult.SUCCESS : ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
             } else if (PLANT_TYPE_TO_ITEM.containsKey(plantType)) {
                 Item item = PLANT_TYPE_TO_ITEM.get(plantType);
                 if (item != null) {
                     level.setBlock(pos, state.setValue(PLANT_TYPE, LatticePlantType.NONE), 3);
                     popResource(level, pos, new ItemStack(item));
                     level.playSound(null, pos, SoundEvents.VINE_BREAK, SoundSource.BLOCKS, 1.0F, 1.0F);
-                    return InteractionResult.SUCCESS;
+                    return ItemInteractionResult.SUCCESS;
                 }
             }
         }
         if (state.getValue(PLANT_TYPE) == LatticePlantType.NONE) {
-            ItemStack itemStack = player.getItemInHand(hand);
-            if (PLANT_TYPE_TO_ITEM.containsValue(itemStack.getItem())) {
+            if (PLANT_TYPE_TO_ITEM.containsValue(stack.getItem())) {
                 for (Map.Entry<LatticePlantType, Item> entry : PLANT_TYPE_TO_ITEM.entrySet()) {
-                    if (entry.getValue() == itemStack.getItem()) {
+                    if (entry.getValue() == stack.getItem()) {
                         level.setBlock(pos, state.setValue(PLANT_TYPE, entry.getKey()), 3);
                         level.playSound(null, pos, entry.getKey() == LatticePlantType.VINES ? SoundEvents.VINE_PLACE : SoundEvents.GRASS_PLACE, SoundSource.BLOCKS, 1.0F, 1.0F);
-                        return InteractionResult.SUCCESS;
+                        return ItemInteractionResult.SUCCESS;
                     }
                 }
             }
         }
-        return CaveVines.use(null, state, level, pos);
+        //return CaveVines.use(null, state, level, pos);
+        return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }
 
 

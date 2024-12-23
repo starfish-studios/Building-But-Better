@@ -1,7 +1,16 @@
 {
     "variants": {
-        "": {
-            "model": "bbb:block/block/deepslate"
+        "rotation=0": {
+            "model": "bbb:block/block/deepslate_block_chunk_0"
+        },
+		"rotation=1": {
+            "model": "bbb:block/block/deepslate_block_chunk_1"
+        },
+		"rotation=2": {
+            "model": "bbb:block/block/deepslate_block_chunk_2"
+        },
+		"rotation=3": {
+            "model": "bbb:block/block/deepslate_block_chunk_3"
         }
     }
 }

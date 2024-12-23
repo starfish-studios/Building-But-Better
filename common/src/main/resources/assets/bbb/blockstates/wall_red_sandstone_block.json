@@ -1,7 +1,19 @@
 {
     "variants": {
-        "": {
-            "model": "bbb:block/block/red_sandstone"
+        "facing=north": {
+            "model": "bbb:block/block/wall_red_sandstone_block_chunk"
+        },
+		"facing=east": {
+            "model": "bbb:block/block/wall_red_sandstone_block_chunk",
+			"y": 90
+        },
+		"facing=south": {
+            "model": "bbb:block/block/wall_red_sandstone_block_chunk",
+			"y": 180
+        },
+		"facing=west": {
+            "model": "bbb:block/block/wall_red_sandstone_block_chunk",
+			"y": 270
         }
     }
 }

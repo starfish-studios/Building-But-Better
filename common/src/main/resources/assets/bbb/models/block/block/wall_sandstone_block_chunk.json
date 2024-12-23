@@ -1,0 +1,6 @@
+{
+	"parent": "bbb:block/block/template_wall_block_chunk",
+	"textures": {
+		"0": "bbb:block/block/sandstone"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "bbb:block/block/template_block_chunk_0",
+	"textures": {
+		"0": "bbb:block/block/nether_brick"
+	}
+}

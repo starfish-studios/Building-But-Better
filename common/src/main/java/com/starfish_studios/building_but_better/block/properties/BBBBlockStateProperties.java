@@ -26,4 +26,5 @@ public class BBBBlockStateProperties {
     public static final BooleanProperty LAYER_2 = BooleanProperty.create("layer_2");
     public static final BooleanProperty LAYER_3 = BooleanProperty.create("layer_3");
     public static final BooleanProperty LAYER_4 = BooleanProperty.create("layer_4");
+    public static final IntegerProperty ROTATION_4 = IntegerProperty.create("rotation", 0, 3);
 }

@@ -60,7 +60,7 @@ public class BrazierBlock extends Block implements SimpleWaterloggedBlock {
         }
 
         if (stack.is(Items.FLINT_AND_STEEL) && !state.getValue(LIT)) {
-            //stack.hurtAndBreak(1, player, (playerEntity) -> { playerEntity.broadcastBreakEvent(interactionHand); });
+            stack.hurtAndBreak(1, player, LivingEntity.getSlotForHand(hand));
             level.playSound(null, pos, SoundEvents.FLINTANDSTEEL_USE, SoundSource.BLOCKS, 1.0F, level.random.nextFloat() * 0.4F + 0.8F);
             level.setBlock(pos, state.setValue(LIT, true), 11);
             return ItemInteractionResult.SUCCESS;

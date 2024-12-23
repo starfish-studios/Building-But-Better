@@ -65,11 +65,12 @@ public class BalustradeBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
-        if (!player.getItemInHand(hand).is(ModItemTags.HAMMERS)) return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+        if (!stack.is(ModItemTags.HAMMERS)) return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
 
-        if (hitResult.getLocation().y - (double)pos.getY() > 0.5D) {
+        boolean half = hitResult.getLocation().y - (double)pos.getY() > 0.5D;
+        if (half) {
             level.setBlockAndUpdate(pos, state.cycle(TOP));
-        } else if (hitResult.getLocation().y - (double)pos.getY() < 0.5D) {
+        } else {
             level.setBlockAndUpdate(pos, state.cycle(BOTTOM));
         }
         level.playSound(player, pos, state.getSoundType().getPlaceSound(), player.getSoundSource(), 1.0F, 1.0F);
