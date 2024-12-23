@@ -1,7 +1,8 @@
 {
-    "parent": "bbb:block/template/wooden_lantern",
-    "textures": {
-        "particle": "minecraft:block/warped_planks",
-        "texture": "bbb:block/lantern/warped"
-    }
+	"parent": "bbb:block/template/wooden_lantern",
+	"textures": {
+		"texture": "bbb:block/lantern/warped",
+		"light": "bbb:block/lantern/warped_light",
+		"particle": "minecraft:block/warped_planks"
+	}
 }

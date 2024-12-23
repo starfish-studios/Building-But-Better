@@ -1,87 +1,55 @@
 {
-	"texture_size": [18, 16],
+	"parent": "minecraft:block/block",
 	"textures": {
-		"texture": "bbb:block/lantern/oak"
+		"light": "bbb:block/lantern/oak_light",
+		"texture": "bbb:block/lantern/oak",
+		"particle": "bbb:block/lantern/oak_light"
 	},
 	"elements": [
-		{
-			"from": [3, 11, 3],
-			"to": [13, 13, 13],
-			"faces": {
-				"north": {"uv": [0, 0, 8.88889, 2], "texture": "#texture"},
-				"east": {"uv": [0, 0, 8.88889, 2], "texture": "#texture"},
-				"south": {"uv": [0, 0, 8.88889, 2], "texture": "#texture"},
-				"west": {"uv": [0, 0, 8.88889, 2], "texture": "#texture"},
-				"up": {"uv": [8.88889, 12, 0, 2], "texture": "#texture"},
-				"down": {"uv": [8.88889, 2, 0, 12], "texture": "#texture"}
-			}
-		},
-		{
-			"from": [3, 0, 3],
-			"to": [13, 2, 13],
-			"faces": {
-				"north": {"uv": [0, 0, 8.88889, 2], "texture": "#texture"},
-				"east": {"uv": [0, 0, 8.88889, 2], "texture": "#texture"},
-				"south": {"uv": [0, 0, 8.88889, 2], "texture": "#texture"},
-				"west": {"uv": [0, 0, 8.88889, 2], "texture": "#texture"},
-				"up": {"uv": [8.88889, 12, 0, 2], "texture": "#texture"},
-				"down": {"uv": [8.88889, 2, 0, 12], "texture": "#texture"}
-			}
-		},
 		{
 			"from": [6, 13, 6],
 			"to": [10, 16, 10],
 			"faces": {
-				"north": {"uv": [4.44444, 12, 8, 15], "texture": "#texture"},
-				"east": {"uv": [4.44444, 12, 8, 15], "texture": "#texture"},
-				"south": {"uv": [4.44444, 12, 8, 15], "texture": "#texture"},
-				"west": {"uv": [4.44444, 12, 8, 15], "texture": "#texture"},
-				"up": {"uv": [3.55556, 16, 0, 12], "texture": "#texture"},
-				"down": {"uv": [0, 0, 0, 0], "texture": "#texture"}
+				"north": {"uv": [5, 12, 9, 15], "texture": "#texture"},
+				"east": {"uv": [5, 12, 9, 15], "texture": "#texture"},
+				"south": {"uv": [5, 12, 9, 15], "texture": "#texture"},
+				"west": {"uv": [5, 12, 9, 15], "texture": "#texture"},
+				"up": {"uv": [0, 12, 4, 16], "texture": "#texture", "cullface": "up"}
 			}
 		},
 		{
 			"from": [4, 2, 4],
 			"to": [12, 11, 12],
 			"faces": {
-				"north": {"uv": [8.88889, 0, 16, 9], "texture": "#texture"},
-				"east": {"uv": [8.88889, 0, 16, 9], "texture": "#texture"},
-				"south": {"uv": [8.88889, 0, 16, 9], "texture": "#texture"},
-				"west": {"uv": [8.88889, 0, 16, 9], "texture": "#texture"},
-				"up": {"uv": [0, 0, 0, 0], "texture": "#texture"},
-				"down": {"uv": [0, 0, 0, 0], "texture": "#texture", "cullface": "down"}
+				"north": {"uv": [0, 0, 8, 9], "texture": "#light"},
+				"east": {"uv": [0, 0, 8, 9], "texture": "#light"},
+				"south": {"uv": [0, 0, 8, 9], "texture": "#light"},
+				"west": {"uv": [0, 0, 8, 9], "texture": "#light"}
+			}
+		},
+		{
+			"from": [3, 11, 3],
+			"to": [13, 13, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 10, 2], "texture": "#texture"},
+				"east": {"uv": [0, 0, 10, 2], "texture": "#texture"},
+				"south": {"uv": [0, 0, 10, 2], "texture": "#texture"},
+				"west": {"uv": [0, 0, 10, 2], "texture": "#texture"},
+				"up": {"uv": [0, 2, 10, 12], "texture": "#texture"},
+				"down": {"uv": [0, 2, 10, 12], "texture": "#texture"}
+			}
+		},
+		{
+			"from": [3, 0, 3],
+			"to": [13, 2, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 10, 2], "texture": "#texture"},
+				"east": {"uv": [0, 0, 10, 2], "texture": "#texture"},
+				"south": {"uv": [0, 0, 10, 2], "texture": "#texture"},
+				"west": {"uv": [0, 0, 10, 2], "texture": "#texture"},
+				"up": {"uv": [0, 2, 10, 12], "texture": "#texture"},
+				"down": {"uv": [0, 2, 10, 12], "texture": "#texture", "cullface": "down"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [75, 45, 0],
-			"translation": [0, 2.5, 0],
-			"scale": [0.375, 0.375, 0.375]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [75, 45, 0],
-			"translation": [0, 2.5, 0],
-			"scale": [0.375, 0.375, 0.375]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, 45, 0],
-			"scale": [0.4, 0.4, 0.4]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, 225, 0],
-			"scale": [0.4, 0.4, 0.4]
-		},
-		"ground": {
-			"translation": [0, 3, 0],
-			"scale": [0.25, 0.25, 0.25]
-		},
-		"gui": {
-			"rotation": [30, 225, 0],
-			"scale": [0.625, 0.625, 0.625]
-		},
-		"fixed": {
-			"scale": [0.5, 0.5, 0.5]
-		}
-	}
+	]
 }
