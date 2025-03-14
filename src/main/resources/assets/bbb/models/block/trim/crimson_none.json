@@ -1,7 +1,8 @@
 {
     "parent": "minecraft:block/cube_column",
     "textures": {
-        "end": "bbb:block/trim/crimson_top_face",
-        "side": "bbb:block/trim/crimson_none"
+        "end": "bbb:block/sanded_planks/crimson",
+        "side": "bbb:block/trim/crimson",
+        "particle": "block/crimson_planks"
     }
 }

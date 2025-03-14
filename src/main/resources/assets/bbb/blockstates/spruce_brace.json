@@ -1,0 +1,219 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "facing": "north"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_post"
+            }
+        },
+        {
+            "when": {
+                "facing": "east"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_post",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_post",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_post",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "half": "top",
+                "brace": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_top"
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "half": "top",
+                "brace": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_top",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "half": "top",
+                "brace": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_top",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "half": "top",
+                "brace": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_top",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "half": "bottom",
+                "brace": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_top",
+                "x": 180,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "half": "bottom",
+                "brace": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_top",
+                "x": 180,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "half": "bottom",
+                "brace": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_top",
+                "x": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "half": "bottom",
+                "brace": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_top",
+                "x": 180,
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "half": "top",
+                "support": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_support"
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "half": "top",
+                "support": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_support",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "half": "top",
+                "support": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_support",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "half": "top",
+                "support": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_support",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "half": "bottom",
+                "support": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_support",
+                "x": 180,
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "half": "bottom",
+                "support": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_support",
+                "x": 180,
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "half": "bottom",
+                "support": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_support",
+                "x": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "half": "bottom",
+                "support": "true"
+            },
+            "apply": {
+                "model": "bbb:block/brace/spruce_brace_support",
+                "x": 180,
+                "y": 90
+            }
+        }
+    ]
+}

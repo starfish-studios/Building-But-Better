@@ -3,7 +3,7 @@
 	"id": "bbb",
 	"version": "${version}",
 	"name": "Building But Better",
-	"description": "A mod focused on adding new building blocks with customizability and interactions!",
+	"description": "A mod focused on adding new building blocks with customizability and interactions!\n§c§l§u§o! Pre-releases WILL be buggy ! §cPlease report any issues on our GitHub or Discord.\n§9§l§uCHANGELOG (2.0pre1)§7\n- Added Stone Frames and fixed Frames crashing when connecting to non-solid blocks.\n- Added Balustrades\n- Added Lattices\n- Added native EveryCompat support.\n- There's a config now !!\n- Urns can now be interacted with Dirt -- when they are filled in this way, plants can be placed atop them. Use a Shovel to remove the Dirt.",
 	"accessWidener" : "bbb.accesswidener",
 	"authors": [
 		"Starfish Studios"

@@ -1,7 +1,8 @@
 {
     "parent": "minecraft:block/cube_column",
     "textures": {
-        "end": "bbb:block/trim/cherry_top_face",
-        "side": "bbb:block/trim/cherry_top"
+        "end": "bbb:block/sanded_planks/cherry",
+        "side": "bbb:block/trim/cherry_top",
+        "particle": "block/cherry_planks"
     }
 }

@@ -1,7 +1,8 @@
 {
     "parent": "minecraft:block/cube_column",
     "textures": {
-        "end": "bbb:block/trim/jungle_top_face",
-        "side": "bbb:block/trim/jungle_middle"
+        "end": "bbb:block/sanded_planks/jungle",
+        "side": "bbb:block/trim/jungle_middle",
+        "particle": "block/jungle_planks"
     }
 }

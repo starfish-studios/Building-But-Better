@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/brace",
+    "textures": {
+        "all": "bbb:block/brace/warped",
+        "particle": "block/warped_planks"
+    }
+}

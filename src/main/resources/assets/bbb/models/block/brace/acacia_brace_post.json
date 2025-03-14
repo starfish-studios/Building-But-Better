@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/brace_post",
+    "textures": {
+        "all": "bbb:block/brace/acacia",
+        "particle": "block/acacia_planks"
+    }
+}

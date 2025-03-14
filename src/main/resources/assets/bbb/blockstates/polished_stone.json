@@ -1,7 +1,13 @@
 {
   "variants": {
-    "": {
-      "model": "bbb:block/polished_stone"
-    }
+    "type=none,axis=x": {"model": "bbb:block/polished_stone"},
+    "type=none,axis=y": {"model": "bbb:block/polished_stone"},
+    "type=none,axis=z": {"model": "bbb:block/polished_stone"},
+    "type=top,axis=x": {"model": "bbb:block/polished_stone_top2","x": 90,"y": 90},
+    "type=top,axis=y": {"model": "bbb:block/polished_stone_top"},
+    "type=top,axis=z": {"model": "bbb:block/polished_stone_top2","x": 270},
+    "type=bottom,axis=x": {"model": "bbb:block/polished_stone_bottom2","x": 90,"y": 90},
+    "type=bottom,axis=y": {"model": "bbb:block/polished_stone_bottom"},
+    "type=bottom,axis=z": {"model": "bbb:block/polished_stone_bottom2","x": 270}
   }
 }

@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/brace",
+    "textures": {
+        "all": "bbb:block/brace/jungle",
+        "particle": "block/jungle_planks"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/brace_post",
+    "textures": {
+        "all": "bbb:block/brace/mangrove",
+        "particle": "block/mangrove_planks"
+    }
+}

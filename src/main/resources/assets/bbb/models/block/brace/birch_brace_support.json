@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/brace_support",
+    "textures": {
+        "all": "bbb:block/brace/birch",
+        "particle": "block/birch_planks"
+    }
+}

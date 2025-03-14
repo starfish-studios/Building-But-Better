@@ -1,0 +1,46 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"all": "bbb:block/railing/oak"
+	},
+	"elements": [
+		{
+			"from": [-2.94016, 3.87355, 7.02],
+			"to": [9.03984, 5.24777, 8.98],
+			"rotation": {"angle": -90, "axis": "x", "origin": [8, 3.5, 8]},
+			"rotated": [-90, -45, 90],
+			"faces": {
+				"north": {"uv": [11.49481, 5.75, 8.5, 6], "texture": "#all"},
+				"east": {"uv": [8.25, 9, 8.75, 9.25], "texture": "#all"},
+				"south": {"uv": [8.5, 5.75, 11.49481, 6], "texture": "#all"},
+				"west": {"uv": [8.75, 9, 9.25, 9.25], "texture": "#all"},
+				"up": {"uv": [7.75, 8.5, 4.75519, 8], "texture": "#all"},
+				"down": {"uv": [14, 3, 11.00519, 3.5], "texture": "#all"}
+			}
+		},
+		{
+			"from": [9.04984, 3.86355, 7.01],
+			"to": [21.07148, 5.25777, 8.99],
+			"rotation": {"angle": -90, "axis": "x", "origin": [8, 3.5, 8]},
+			"rotated": [-90, -45, 90],
+			"faces": {
+				"north": {"uv": [14.5, 5.75, 11.49481, 6], "texture": "#all"},
+				"east": {"uv": [8.25, 9, 8.75, 9.25], "texture": "#all"},
+				"south": {"uv": [11.49481, 5.75, 14.5, 6], "texture": "#all"},
+				"west": {"uv": [8.75, 9, 9.25, 9.25], "texture": "#all"},
+				"up": {"uv": [4.75519, 8.5, 1.75, 8], "texture": "#all"},
+				"down": {"uv": [11.00519, 3, 8, 3.5], "texture": "#all"}
+			}
+		},
+		{
+			"from": [0, -8, 8],
+			"to": [16, 12, 8],
+			"rotation": {"angle": -90, "axis": "y", "origin": [8, 3.5, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 5], "texture": "#all"},
+				"south": {"uv": [4, 0, 0, 5], "texture": "#all"}
+			}
+		}
+	]
+}

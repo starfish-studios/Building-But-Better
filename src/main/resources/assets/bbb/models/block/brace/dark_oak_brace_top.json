@@ -1,0 +1,7 @@
+{
+    "parent": "bbb:block/template/brace_top",
+    "textures": {
+        "all": "bbb:block/brace/dark_oak",
+        "particle": "block/dark_oak_planks"
+    }
+}
