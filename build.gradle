@@ -44,6 +44,9 @@ loom {
 	}
 }
 
+remapJar {
+	archiveFileName.set("building-but-better-2.0pre1+fabric-1.20.1.jar")
+}
 
 dependencies {
 	// To change the versions see the gradle.properties file
