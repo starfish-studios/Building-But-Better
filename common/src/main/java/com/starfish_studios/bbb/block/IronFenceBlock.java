@@ -60,13 +60,19 @@ public class IronFenceBlock extends WallBlock {
     public @NotNull BlockState updateShape(BlockState state, @NotNull Direction direction, @NotNull BlockState neighbor, @NotNull LevelAccessor level, @NotNull BlockPos pos, @NotNull BlockPos neighborPos) {
         if (state.getValue(WATERLOGGED)) { level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level)); }
         if (direction == Direction.DOWN) return super.updateShape(state, direction, neighbor, level, pos, neighborPos);
-        if (direction == Direction.UP) return topUpdate(level, state, neighborPos, neighbor);
+        if (direction == Direction.UP) {
+            return redoConnections(level, state, neighborPos, neighbor,
+                    state.getValue(NORTH_WALL) != WallSide.NONE,
+                    state.getValue(EAST_WALL) != WallSide.NONE,
+                    state.getValue(SOUTH_WALL) != WallSide.NONE,
+                    state.getValue(WEST_WALL) != WallSide.NONE);
+        }
 
         Direction opposite = direction.getOpposite();
-        boolean north = direction == Direction.NORTH ? connectsToCustom(neighbor, neighbor.isFaceSturdy(level, neighborPos, opposite), opposite) : isConnected(state, NORTH_WALL);
-        boolean east = direction == Direction.EAST ? connectsToCustom(neighbor, neighbor.isFaceSturdy(level, neighborPos, opposite), opposite) : isConnected(state, EAST_WALL);
-        boolean south = direction == Direction.SOUTH ? connectsToCustom(neighbor, neighbor.isFaceSturdy(level, neighborPos, opposite), opposite) : isConnected(state, SOUTH_WALL);
-        boolean west = direction == Direction.WEST ? connectsToCustom(neighbor, neighbor.isFaceSturdy(level, neighborPos, opposite), opposite) : isConnected(state, WEST_WALL);
+        boolean north = direction == Direction.NORTH ? connectsToCustom(neighbor, neighbor.isFaceSturdy(level, neighborPos, opposite), opposite) : state.getValue(NORTH_WALL) != WallSide.NONE;
+        boolean east = direction == Direction.EAST ? connectsToCustom(neighbor, neighbor.isFaceSturdy(level, neighborPos, opposite), opposite) : state.getValue(EAST_WALL) != WallSide.NONE;
+        boolean south = direction == Direction.SOUTH ? connectsToCustom(neighbor, neighbor.isFaceSturdy(level, neighborPos, opposite), opposite) : state.getValue(SOUTH_WALL) != WallSide.NONE;
+        boolean west = direction == Direction.WEST ? connectsToCustom(neighbor, neighbor.isFaceSturdy(level, neighborPos, opposite), opposite) : state.getValue(WEST_WALL) != WallSide.NONE;
 
         BlockPos upPos = pos.above();
         BlockState aboveState = level.getBlockState(upPos);

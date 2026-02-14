@@ -8,3 +8,5 @@
 /forge/.gradle/
 /.gradle/*
 /.idea/*
+/build
+/run

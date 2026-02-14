@@ -24,6 +24,7 @@ import java.util.Map;
 
 import static com.starfish_studios.bbb.BuildingButBetter.MOD_ID;
 
+@SuppressWarnings({"removal", "deprecation"})
 public class BBBModule extends SimpleModule {
 
     // Trim, Beam, Beam Stairs, Beam Slab, Pallets, Supports, Balustrades, Walls, Frames, Lanterns, Ladders, Lattices

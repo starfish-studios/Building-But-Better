@@ -1,7 +1,0 @@
-{
-    "parent": "bbb:block/template/moulding",
-    "textures": {
-        "texture": "bbb:block/moulding/stone",
-        "particle": "block/stone"
-    }
-}
