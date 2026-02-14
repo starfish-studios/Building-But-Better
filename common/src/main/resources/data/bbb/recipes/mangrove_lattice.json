@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+  "category": "building",
+    "pattern": [
+        "SPS",
+        "PSP",
+        "SPS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:stick"
+        },
+        "P": {
+            "item": "minecraft:mangrove_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:mangrove_lattice",
+        "count": 6
+    }
+}

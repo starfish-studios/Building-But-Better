@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+  "category": "building",
+    "pattern": [
+        "SPS",
+        "PSP",
+        "SPS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:stick"
+        },
+        "P": {
+            "item": "minecraft:warped_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:warped_lattice",
+        "count": 6
+    }
+}

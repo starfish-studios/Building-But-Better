@@ -1,0 +1,21 @@
+{
+      "category": "building",
+	"type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SPS",
+        "PSP",
+        "SPS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:stick"
+        },
+        "P": {
+            "item": "minecraft:bamboo_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:bamboo_lattice",
+        "count": 6
+    }
+}

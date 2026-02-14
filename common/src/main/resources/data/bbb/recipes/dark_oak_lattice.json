@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+  "category": "building",
+    "pattern": [
+        "SPS",
+        "PSP",
+        "SPS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:stick"
+        },
+        "P": {
+            "item": "minecraft:dark_oak_planks"
+        }
+    },
+    "result": {
+        "item": "bbb:dark_oak_lattice",
+        "count": 6
+    }
+}

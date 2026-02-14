@@ -1,0 +1,19 @@
+{
+  "category": "building",
+  "group": "bbb/frames",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "A A",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:blackstone_slab"
+    }
+  },
+  "result": {
+    "item": "bbb:blackstone_frame",
+    "count": 12
+  }
+}

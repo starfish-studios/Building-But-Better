@@ -1,0 +1,18 @@
+{
+  "category": "building",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    " A ",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stripped_cherry_log"
+    }
+  },
+  "result": {
+    "item": "bbb:cherry_balustrade",
+    "count": 6
+  }
+}
