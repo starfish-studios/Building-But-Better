@@ -2,6 +2,7 @@ plugins {
     id 'dev.architectury.loom' version '1.7-SNAPSHOT' apply false
     id 'architectury-plugin' version '3.4-SNAPSHOT'
     id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
+    id 'me.modmuss50.mod-publish-plugin' version '1.1.0'
 }
 
 architectury {
@@ -79,5 +80,65 @@ subprojects {
             // The repositories here will be used for publishing your artifact, not for
             // retrieving dependencies.
         }
+    }
+}
+
+// Mod Publishing
+def publishingFile = file("publishing.properties")
+if (!publishingFile.exists()) {
+    throw new InvalidUserDataException("publishing.properties could not be found.")
+}
+def publishing = new Properties()
+publishingFile.withInputStream { publishing.load(it) }
+publishing.each { k, v -> if (v != null) publishing.setProperty(k, v.toString().trim()) }
+
+publishMods {
+    changelog = file("CHANGELOG.md").exists() ? file("CHANGELOG.md").text : "Changelog not found - check the repository for updates."
+    type = project.version.toString().toLowerCase().contains("pre") ? BETA : STABLE
+    maxRetries = 5
+
+    def cfOptions = curseforgeOptions {
+        accessToken = providers.provider({ publishing.getProperty("curseforgeToken") })
+        projectId = publishing.getProperty("curseforgeId")
+        minecraftVersions.add(project.minecraft_version)
+        projectSlug = "building-but-better"
+    }
+
+    def mrOptions = modrinthOptions {
+        accessToken = providers.provider({ publishing.getProperty("modrinthToken") })
+        projectId = publishing.getProperty("modrinthId")
+        minecraftVersions.add(project.minecraft_version)
+    }
+
+    curseforge("curseforgeFabric") {
+        from cfOptions
+        file project(":fabric")
+        modLoaders.add("fabric")
+        requires("architectury-api")
+        displayName = "Building But Better ${project.version} (Fabric ${project.minecraft_version})"
+    }
+
+    curseforge("curseforgeForge") {
+        from cfOptions
+        file project(":forge")
+        modLoaders.add("forge")
+        requires("architectury-api")
+        displayName = "Building But Better ${project.version} (Forge ${project.minecraft_version})"
+    }
+
+    modrinth("modrinthFabric") {
+        from mrOptions
+        file project(":fabric")
+        modLoaders.add("fabric")
+        requires("architectury-api")
+        displayName = "Building But Better ${project.version} (Fabric ${project.minecraft_version})"
+    }
+
+    modrinth("modrinthForge") {
+        from mrOptions
+        file project(":forge")
+        modLoaders.add("forge")
+        requires("architectury-api")
+        displayName = "Building But Better ${project.version} (Forge ${project.minecraft_version})"
     }
 }
