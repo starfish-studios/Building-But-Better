@@ -28,6 +28,7 @@ public class BBBVanillaIntegration {
         private static void registerBlockColors() {
 
             ColorHandlerRegistry.registerBlockColors((state, world, pos, tintIndex) -> {
+                        if (tintIndex != 1) return -1;
                         if (world == null || pos == null) {
                             return FoliageColor.getDefaultColor();
                         }

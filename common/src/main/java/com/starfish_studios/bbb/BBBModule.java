@@ -59,6 +59,7 @@ public class BBBModule extends SimpleModule {
 //        );
         for (Map.Entry<WoodType, Block> entry : lattices.blocks.entrySet()) {
             blockColor.register((state, world, pos, tintIndex) -> {
+                        if (tintIndex != 1) return -1;
                         if (world == null || pos == null) {
                             return FoliageColor.getDefaultColor();
                         }

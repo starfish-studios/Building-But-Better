@@ -12,8 +12,8 @@
 			"shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#plant", "cullface": "north", "tintindex": 0},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#plant", "cullface": "south", "tintindex": 0}
+				"north": {"uv": [0, 0, 16, 16], "texture": "#plant", "cullface": "north", "tintindex": 1},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#plant", "cullface": "south", "tintindex": 1}
 			}
 		}
 	],

@@ -2,6 +2,119 @@
     "multipart": [
         {
             "when": {
+                "facing": "north"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/spruce_middle"
+            }
+        },
+        {
+            "when": {
+                "facing": "east"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/spruce_middle",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/spruce_middle",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/spruce_middle",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "left": "true"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/spruce_left"
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "left": "true"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/spruce_left",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "left": "true"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/spruce_left",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "left": "true"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/spruce_left",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "right": "true"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/spruce_right"
+            }
+        },
+        {
+            "when": {
+                "facing": "east",
+                "right": "true"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/spruce_right",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "south",
+                "right": "true"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/spruce_right",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "facing": "west",
+                "right": "true"
+            },
+            "apply": {
+                "model": "bbb:block/lattice/spruce_right",
+                "y": 270
+            }
+        },
+        {
+            "when": {
                 "plant_type": "vines",
                 "facing": "north"
             },
@@ -551,119 +664,6 @@
             },
             "apply": {
                 "model": "bbb:block/lattice/plants/cave_vines_lit",
-                "y": 270
-            }
-        },
-        {
-            "when": {
-                "facing": "north"
-            },
-            "apply": {
-                "model": "bbb:block/lattice/spruce_middle"
-            }
-        },
-        {
-            "when": {
-                "facing": "east"
-            },
-            "apply": {
-                "model": "bbb:block/lattice/spruce_middle",
-                "y": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "south"
-            },
-            "apply": {
-                "model": "bbb:block/lattice/spruce_middle",
-                "y": 180
-            }
-        },
-        {
-            "when": {
-                "facing": "west"
-            },
-            "apply": {
-                "model": "bbb:block/lattice/spruce_middle",
-                "y": 270
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "left": "true"
-            },
-            "apply": {
-                "model": "bbb:block/lattice/spruce_left"
-            }
-        },
-        {
-            "when": {
-                "facing": "east",
-                "left": "true"
-            },
-            "apply": {
-                "model": "bbb:block/lattice/spruce_left",
-                "y": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "south",
-                "left": "true"
-            },
-            "apply": {
-                "model": "bbb:block/lattice/spruce_left",
-                "y": 180
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "left": "true"
-            },
-            "apply": {
-                "model": "bbb:block/lattice/spruce_left",
-                "y": 270
-            }
-        },
-        {
-            "when": {
-                "facing": "north",
-                "right": "true"
-            },
-            "apply": {
-                "model": "bbb:block/lattice/spruce_right"
-            }
-        },
-        {
-            "when": {
-                "facing": "east",
-                "right": "true"
-            },
-            "apply": {
-                "model": "bbb:block/lattice/spruce_right",
-                "y": 90
-            }
-        },
-        {
-            "when": {
-                "facing": "south",
-                "right": "true"
-            },
-            "apply": {
-                "model": "bbb:block/lattice/spruce_right",
-                "y": 180
-            }
-        },
-        {
-            "when": {
-                "facing": "west",
-                "right": "true"
-            },
-            "apply": {
-                "model": "bbb:block/lattice/spruce_right",
                 "y": 270
             }
         }
