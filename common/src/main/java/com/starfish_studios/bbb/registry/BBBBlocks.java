@@ -6,6 +6,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.WeatheringCopper.WeatherState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -276,14 +277,14 @@ public class BBBBlocks {
     public static final RegistrySupplier<Block> END_STONE_BRICK_LAYER = BLOCKS.register("end_stone_brick_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.END_STONE_BRICKS))));
     public static final RegistrySupplier<Block> PURPUR_LAYER = BLOCKS.register("purpur_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.PURPUR_BLOCK))));
     public static final RegistrySupplier<Block> QUARTZ_LAYER = BLOCKS.register("quartz_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.QUARTZ_BLOCK))));
-    public static final RegistrySupplier<Block> CUT_COPPER_LAYER = BLOCKS.register("cut_copper_layer", () -> new WeatheringCopperLayerBlock(WeatheringCopperLayerBlock.WeatherState.UNAFFECTED, BlockBehaviour.Properties.copy((Blocks.CUT_COPPER))));
-    public static final RegistrySupplier<Block> EXPOSED_CUT_COPPER_LAYER = BLOCKS.register("exposed_cut_copper_layer", () -> new WeatheringCopperLayerBlock(WeatheringCopperLayerBlock.WeatherState.EXPOSED, BlockBehaviour.Properties.copy((Blocks.EXPOSED_CUT_COPPER))));
-    public static final RegistrySupplier<Block> WEATHERED_CUT_COPPER_LAYER = BLOCKS.register("weathered_cut_copper_layer", () -> new WeatheringCopperLayerBlock(WeatheringCopperLayerBlock.WeatherState.WEATHERED, BlockBehaviour.Properties.copy((Blocks.WEATHERED_CUT_COPPER))));
-    public static final RegistrySupplier<Block> OXIDIZED_CUT_COPPER_LAYER = BLOCKS.register("oxidized_cut_copper_layer", () -> new WeatheringCopperLayerBlock(WeatheringCopperLayerBlock.WeatherState.OXIDIZED, BlockBehaviour.Properties.copy((Blocks.OXIDIZED_CUT_COPPER))));
-    public static final RegistrySupplier<Block> WAXED_CUT_COPPER_LAYER = BLOCKS.register("waxed_cut_copper_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.WAXED_CUT_COPPER))));
-    public static final RegistrySupplier<Block> WAXED_EXPOSED_CUT_COPPER_LAYER = BLOCKS.register("waxed_exposed_cut_copper_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.WAXED_EXPOSED_CUT_COPPER))));
-    public static final RegistrySupplier<Block> WAXED_WEATHERED_CUT_COPPER_LAYER = BLOCKS.register("waxed_weathered_cut_copper_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.WAXED_WEATHERED_CUT_COPPER))));
-    public static final RegistrySupplier<Block> WAXED_OXIDIZED_CUT_COPPER_LAYER = BLOCKS.register("waxed_oxidized_cut_copper_layer", () -> new LayerBlock(BlockBehaviour.Properties.copy((Blocks.WAXED_OXIDIZED_CUT_COPPER))));
+    public static final RegistrySupplier<Block> CUT_COPPER_LAYER = BLOCKS.register("cut_copper_layer", () -> new WeatheringCopperLayerBlock(WeatherState.UNAFFECTED, BlockBehaviour.Properties.copy((Blocks.CUT_COPPER))));
+    public static final RegistrySupplier<Block> EXPOSED_CUT_COPPER_LAYER = BLOCKS.register("exposed_cut_copper_layer", () -> new WeatheringCopperLayerBlock(WeatherState.EXPOSED, BlockBehaviour.Properties.copy((Blocks.EXPOSED_CUT_COPPER))));
+    public static final RegistrySupplier<Block> WEATHERED_CUT_COPPER_LAYER = BLOCKS.register("weathered_cut_copper_layer", () -> new WeatheringCopperLayerBlock(WeatherState.WEATHERED, BlockBehaviour.Properties.copy((Blocks.WEATHERED_CUT_COPPER))));
+    public static final RegistrySupplier<Block> OXIDIZED_CUT_COPPER_LAYER = BLOCKS.register("oxidized_cut_copper_layer", () -> new WeatheringCopperLayerBlock(WeatherState.OXIDIZED, BlockBehaviour.Properties.copy((Blocks.OXIDIZED_CUT_COPPER))));
+    public static final RegistrySupplier<Block> WAXED_CUT_COPPER_LAYER = BLOCKS.register("waxed_cut_copper_layer", () -> new WaxedCopperLayerBlock(BlockBehaviour.Properties.copy((Blocks.WAXED_CUT_COPPER)), CUT_COPPER_LAYER));
+    public static final RegistrySupplier<Block> WAXED_EXPOSED_CUT_COPPER_LAYER = BLOCKS.register("waxed_exposed_cut_copper_layer", () -> new WaxedCopperLayerBlock(BlockBehaviour.Properties.copy((Blocks.WAXED_EXPOSED_CUT_COPPER)), EXPOSED_CUT_COPPER_LAYER));
+    public static final RegistrySupplier<Block> WAXED_WEATHERED_CUT_COPPER_LAYER = BLOCKS.register("waxed_weathered_cut_copper_layer", () -> new WaxedCopperLayerBlock(BlockBehaviour.Properties.copy((Blocks.WAXED_WEATHERED_CUT_COPPER)), WEATHERED_CUT_COPPER_LAYER));
+    public static final RegistrySupplier<Block> WAXED_OXIDIZED_CUT_COPPER_LAYER = BLOCKS.register("waxed_oxidized_cut_copper_layer", () -> new WaxedCopperLayerBlock(BlockBehaviour.Properties.copy((Blocks.WAXED_OXIDIZED_CUT_COPPER)), OXIDIZED_CUT_COPPER_LAYER));
     // endregion
 
     // region FRAMES
